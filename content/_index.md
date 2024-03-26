@@ -1,6 +1,6 @@
 ---
 title: 'Homepage'
-meta_title: 'Limeleaf Workers Collective'
+meta_title: 'Limeleaf Worker Collective'
 description: "Fresh, sustainable, simple tech solutions"
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true

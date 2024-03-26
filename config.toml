@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Limeleaf Workers Collective"
+title = "Limeleaf Worker Collective"
 
 [module]
   [module.hugoVersion]
@@ -24,7 +24,7 @@ title = "Limeleaf Workers Collective"
     mobile_height = "36px"
     desktop = "images/logo/limeleaf-logo-L.svg"
     desktop_height = "36px"
-    alt = "Limeleaf Workers Collective - Fresh, sustainable, simple tech solutions"
+    alt = "Limeleaf Worker Collective - Fresh, sustainable, simple tech solutions"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
@@ -51,7 +51,7 @@ title = "Limeleaf Workers Collective"
     summary_large_truncate = 600 # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = '© 2024 Limeleaf Workers Collective LLC'
+    copyright_text = '© 2024 Limeleaf Worker Collective LLC'
 
 [menu]
   # Main Menu
