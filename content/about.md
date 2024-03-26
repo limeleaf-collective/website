@@ -1,5 +1,5 @@
 ---
-title: 'About'
+title: 'About Us'
 date: 2018-02-22T17:01:34+07:00
 intro_image: "images/features/saratoga-springs.jpg"
 intro_image_absolute: true
@@ -7,59 +7,9 @@ intro_image_hide_on_mobile: false
 ---
 
 We bring over six decades of collective experience in every facet of software development to the table.
-
-Our team has worked at Google, Electronic Arts, ngrok, Kinetic, Harvard University, JW Player, and others on a wide range of projects, including:
-
-- High-volume websites, distributed content management systems, and back-end services for the gaming industry
-- Chrome web browser
-- Web, mobile and connected TV apps for brands such as PokerTV, Univision, Fox, Crackle and more
-- Globally distributed video delivery platforms and realtime video apps
-- Ultra low-latency network stacks
-- Embedded devices and IoT
-
+Our team has worked at Google, Electronic Arts, ngrok, Kinetic, Harvard University, JW Player, and others on a wide range of projects.
 Limeleaf is proud to be an employee-owned company, based in Saratoga Springs, New York.
-Contact us today to learn more about how we can help you reach your goals.
 
-![About Us](/images/smartworks-coworking-cW4lLTavU80-unsplash.jpg)
+![](/images/features/saratoga-springs.jpg)
 
-## Ne verba patulosque numen vix libet
-
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
-
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
-
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
-
-## Postquam tamen
-
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+[Contact us today](mailto:info@limeleaf.io) to learn more about how we can help you reach your goals.
