@@ -1,0 +1,13 @@
+:root {
+  --pico-primary: #1C7258 !important;
+  --pico-primary-background: #1C7258 !important;
+  --pico-primary-underline: #1C7258 !important;
+  --pico-primary-hover: #009472 !important;
+  --pico-primary-hover-background: #009472 !important;
+  --pico-font-size: 155% !important;
+}
+
+main img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px #aaa;
+}
