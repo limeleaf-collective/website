@@ -1,14 +1,10 @@
----
-title: 'Homepage'
-meta_title: 'Limeleaf Workers Collective'
-description: "Fresh, sustainable, simple tech solutions"
-intro_image: "images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
----
++++
+title = "Fresh, sustainable, simple tech solutions"
 
-# Fresh, sustainable, simple tech solutions
+[extra]
+photo = "https://limeleaf.io/assets/images/image01.jpg?v=72ba8aad"
++++
 
-We specialize in software engineering, IT support services, and business development.
+We specialize in software engineering, IT support services, and product development for small and medium businesses, nonprofits, schools, and governments.
 
-Our solutions focus on simplicity, efficiency, and reliability. We only build on the bleeding edge when clients request it.
+Whether you're looking to develop a new application or service, optimize your existing technology infrastructure, or simply need extra technical support and expertise, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.

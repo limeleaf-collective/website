@@ -1,15 +1,13 @@
----
-title: "Software Development"
-date: 2018-11-18T12:33:46+10:00
-draft: false
-featured: true
-weight: 1
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
----
++++
+title = "Software Development"
+
+[extra]
+photo = "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg"
++++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum. Tellus molestie nunc non blandit massa enim. Tellus elementum sagittis vitae et leo duis ut diam.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+<!-- more -->
 
 # Objectives
 
