@@ -11,20 +11,20 @@
     <title>{% block title %} {% endblock title %}</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
   </head>
   <body>
     <header class="container">
       <nav>
         <ul>
-          <li><a href="{{ config.base_url }}"><img src="https://limeleaf.io/assets/images/image04.png?v=72ba8aad" /></a></li>
+          <li><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" /></a></li>
         </ul>
         <ul>
           
-          <li><a href="/members">Who we are</a></li>
-          <li><a href="/services">What we do</a></li>
-          <li><a href="/blog">What we talk about</a></li>
-          <li><a href="/contact">Get in touch</a></li>
+          <li><a href="{{ get_url(path="@/members/_index.md") }}">Who we are</a></li>
+          <li><a href="{{ get_url(path="@/services/_index.md") }}">What we do</a></li>
+          <li><a href="{{ get_url(path="@/blog/_index.md") }}">What we talk about</a></li>
+          <li><a href="{{ get_url(path="@/contact/_index.md") }}">Get in touch</a></li>
         </ul>
       </nav>
     </header>
