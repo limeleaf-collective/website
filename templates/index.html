@@ -12,7 +12,7 @@
       {{ section.content | safe }}
     </div>
     <div>
-      <img src="{{ section.extra.photo }}" />
+      <img src="{{ get_url(path=section.extra.photo) }}" />
     </div>
   </section>
 </main>

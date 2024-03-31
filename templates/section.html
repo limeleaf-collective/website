@@ -13,7 +13,7 @@
     </div>
 
     {% if section.extra.photo != "" %}
-    <img src="{{ section.extra.photo }}" />
+    <img src="{{ get_url(path=section.extra.photo) }}" />
     {% endif %}
   </section>
 
@@ -23,7 +23,7 @@
       {% for page in section.pages %}
       <article>
         <header>
-          <img src="{{ page.extra.photo }}" />
+          <img src="{{ get_url(path=page.extra.photo) }}" />
         </header>
         <h3>{{ page.title }}</h3>
         {{ page.summary | safe }}

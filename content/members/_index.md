@@ -2,7 +2,7 @@
 title = "Who we are"
 
 [extra]
-photo = "https://limeleaf.io/assets/images/image01.jpg?v=72ba8aad"
+photo = "images/members/saratoga-springs.jpg"
 +++
 
 We bring over six decades of collective experience in every facet of
