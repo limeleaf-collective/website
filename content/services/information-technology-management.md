@@ -1,15 +1,13 @@
----
-title: "IT Management"
-date: 2018-11-28T15:14:54+10:00
-featured: true
-draft: false
-weight: 5
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
----
++++
+title = "Information Technology Management"
+
+[extra]
+photo = "/images/services/it.jpg"
++++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum. Tellus molestie nunc non blandit massa enim. Tellus elementum sagittis vitae et leo duis ut diam.
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+<!-- more -->
 
 # Objectives
 

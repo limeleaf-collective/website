@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark" />
+
+    <title>{% block title %} {% endblock title %}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="{{ config.base_url }}"><img src="https://limeleaf.io/assets/images/image04.png?v=72ba8aad" /></a></li>
+        </ul>
+        <ul>
+          
+          <li><a href="/members">Who we are</a></li>
+          <li><a href="/services">What we do</a></li>
+          <li><a href="/blog">What we talk about</a></li>
+          <li><a href="/contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {% block content %} {% endblock content %}
+
+    <footer class="container">
+      <p>&copy; {{ now() | date(format="%Y") }}. {{ config.title }}</p>
+    </footer>
+  </body>
+</html>

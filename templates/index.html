@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title%}
+  {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+<main class="container">
+  <section class="grid">
+    <div>
+      <h2>{{ section.title }}</h2>
+      {{ section.content | safe }}
+    </div>
+    <div>
+      <img src="{{ section.extra.photo }}" />
+    </div>
+  </section>
+</main>
+{% endblock content %}

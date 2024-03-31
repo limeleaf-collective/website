@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title%}
+  {{ section.title}} - {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+<main class="container">
+  <section class="grid">
+    <div>
+      <h2>{{ section.title }}</h2>
+      {{ section.content | safe }}
+    </div>
+
+    {% if section.extra.photo != "" %}
+    <img src="{{ section.extra.photo }}" />
+    {% endif %}
+  </section>
+
+  {% if current_path == "/members/" or current_path == "/services/" %}
+  <section>
+    <div class="grid">
+      {% for page in section.pages %}
+      <article>
+        <header>
+          <img src="{{ page.extra.photo }}" />
+        </header>
+        <h3>{{ page.title }}</h3>
+        {{ page.summary | safe }}
+
+        <a role="button" href="{{ page.permalink }}">More...</a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% elif current_path == "/blog/" %}
+    <section>
+      {% for post in section.pages %}
+      <article>
+        <header>
+          <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+          <time>{{ post.date }}</time></a>
+        </header>
+        {{ post.summary | safe }}
+      </article>
+      {% endfor %}
+    </section>
+  {% endif %}
+</main>
+{% endblock content %}

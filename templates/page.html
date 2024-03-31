@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title%}
+  {{ page.title}} - {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+<main class="container">
+  <section>
+    <img src="{{ page.extra.photo }}" style="float: right; width: 50%;" />
+
+    <h2>{{ page.title }}</h2>
+    {{ page.content | safe }}
+  </section>
+</main>
+{% endblock content %}
