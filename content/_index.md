@@ -2,7 +2,7 @@
 title = "Fresh, sustainable, simple tech solutions"
 
 [extra]
-photo = "/images/services/tech.jpg"
+photo = "images/services/tech.jpg"
 +++
 
 We specialize in software engineering, IT support services, and product development for small and medium businesses, nonprofits, schools, and governments.

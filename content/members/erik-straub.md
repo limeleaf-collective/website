@@ -2,7 +2,7 @@
 title = "Erik Straub"
 
 [extra]
-photo = "/images/members/erik-straub.jpg"
+photo = "images/members/erik-straub.jpg"
 +++
 
 With a wealth of experience across video streaming
