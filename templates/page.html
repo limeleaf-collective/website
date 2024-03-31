@@ -7,7 +7,7 @@
 {% block content %}
 <main class="container">
   <section>
-    <img src="{{ page.extra.photo }}" style="float: right; width: 50%;" />
+    <img src="{{ get_url(path=page.extra.photo) }}" style="float: right; width: 50%;" />
 
     <h2>{{ page.title }}</h2>
     {{ page.content | safe }}
