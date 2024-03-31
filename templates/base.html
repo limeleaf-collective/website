@@ -14,18 +14,16 @@
     <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
   </head>
   <body>
-    <header class="container">
+    <header class="container grid">
+      <a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" /></a>
+
+      <hr />
+
       <nav>
-        <ul>
-          <li><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" /></a></li>
-        </ul>
-        <ul>
-          
-          <li><a href="{{ get_url(path="@/members/_index.md") }}">Who we are</a></li>
-          <li><a href="{{ get_url(path="@/services/_index.md") }}">What we do</a></li>
-          <li><a href="{{ get_url(path="@/blog/_index.md") }}">What we talk about</a></li>
-          <li><a href="{{ get_url(path="@/contact/_index.md") }}">Get in touch</a></li>
-        </ul>
+        <a href="{{ get_url(path="@/members/_index.md") }}">Members</a>
+        <a href="{{ get_url(path="@/services/_index.md") }}">Services</a>
+        <a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a>
+        <a href="{{ get_url(path="@/contact/_index.md") }}">Contact</a>
       </nav>
     </header>
 
