@@ -6,15 +6,19 @@
 
 {% block content %}
 <main class="container">
-  <section>
-    <img src="{{ section.extra.photo }}" style="float: right; width: 50%;" />
+  <section class="grid">
+    <div>
+      <h2>{{ section.title }}</h2>
+      {{ section.content | safe }}
+    </div>
 
-    <h2>{{ section.title }}</h2>
-    {{ section.content | safe }}
+    {% if section.extra.photo != "" %}
+    <img src="{{ section.extra.photo }}" />
+    {% endif %}
   </section>
 
   {% if current_path == "/members/" or current_path == "/services/" %}
-  <section style="clear: both;">
+  <section>
     <div class="grid">
       {% for page in section.pages %}
       <article>
@@ -30,7 +34,7 @@
     </div>
   </section>
   {% elif current_path == "/blog/" %}
-    <section style="clear: both;">
+    <section>
       {% for post in section.pages %}
       <article>
         <header>

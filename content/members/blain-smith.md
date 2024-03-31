@@ -2,14 +2,13 @@
 title = "Blain Smith"
 
 [extra]
-photo = "https://dentistry.ucsf.edu/sites/default/files/styles/tout_sm_2x/public/2020-10/reddy_head_shot_square.jpg?itok=KwBq4A41"
+photo = "/images/members/blain-smith.jpg"
 +++
 
 Blain has spent 27 years working in web, video streaming, gaming, cloud
-services, distributed systems, and networking. He has worked with some
-of the largest and most popular AAA gaming studios to build their
-publishing, matchmaking, authentication, and telemetry platforms while
-working at Wolfjaw Studios and Rocket Science.
+services, distributed systems, and networking. He has held many
+tehnical lead roles and worked closely with product leadership to build
+software solutions.
 
 <!-- more -->
 

@@ -2,7 +2,7 @@
 title = "John Luther"
 
 [extra]
-photo = "https://dentistry.ucsf.edu/sites/default/files/styles/tout_sm_2x/public/2020-10/reddy_head_shot_square.jpg?itok=KwBq4A41"
+photo = "/images/members/john-luther.jpg"
 +++
 
 John has worked in digital media, web, and cloud software product

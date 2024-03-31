@@ -1,8 +1,8 @@
 +++
-title = "Software Development"
+title = "Software and Systems Development"
 
 [extra]
-photo = "/images/austin-distel-nGc5RT2HmF0-unsplash.jpg"
+photo = "/images/services/software.jpg"
 +++
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum. Tellus molestie nunc non blandit massa enim. Tellus elementum sagittis vitae et leo duis ut diam.
