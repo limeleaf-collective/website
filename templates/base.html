@@ -10,14 +10,15 @@
 
     <title>{% block title %} {% endblock title %}</title>
 
+    <link rel="icon" type="image/png" href="{{ get_url(path="images/favicon.svg") }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
     <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
   </head>
   <body>
-    <header class="container grid">
-      <a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" /></a>
-
-      <hr />
+    <header class="container">
+      <div>
+        <a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" style="width: 50%;" /></a>
+      </div>
 
       <nav>
         <a href="{{ get_url(path="@/members/_index.md") }}">Members</a>
@@ -31,6 +32,13 @@
 
     <footer class="container">
       <p>&copy; {{ now() | date(format="%Y") }}. {{ config.title }}</p>
+
+      <nav>
+        <a href="https://github.com/limeleaf-collective">GitHub</a>
+        <a href="https://social.coop/@limeleaf">Mastodon</a>
+        <a href="https://www.linkedin.com/company/limeleaf-llc">LinkedIn</a>
+        <a href="https://opencollective.com/limeleaf-collective">Open Collective</a>
+      </nav>
     </footer>
   </body>
 </html>

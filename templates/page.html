@@ -6,11 +6,13 @@
 
 {% block content %}
 <main class="container">
-  <section>
-    <img src="{{ get_url(path=page.extra.photo) }}" style="float: right; width: 50%;" />
-
-    <h2>{{ page.title }}</h2>
-    {{ page.content | safe }}
+  <section class="grid">
+    <div>
+      <h2>{{ page.title }}</h2>
+      {{ page.content | safe }}
+    </div>
+    
+    <img src="{{ get_url(path=page.extra.photo) }}" />
   </section>
 </main>
 {% endblock content %}

@@ -1,5 +1,6 @@
 +++
 title = "What we do"
+sort_by = "weight"
 
 [extra]
 photo = ""
