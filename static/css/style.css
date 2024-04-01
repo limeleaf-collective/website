@@ -4,8 +4,6 @@
   --pico-primary-underline: #1C7258 !important;
   --pico-primary-hover: #009472 !important;
   --pico-primary-hover-background: #009472 !important;
-  --pico-spacing: 3rem;
-  --pico-font-size: 150%;
 }
 
 body > header, body > footer {
@@ -22,14 +20,18 @@ nav a {
   margin: 0 10px;
 }
 
-article header img {
-  width: 100%;
+article header {
+  text-align: center;
+}
+
+article img {
+  width: 65%;
 }
 
 .members article header img {
   border-radius: 300px;
 }
 
-.services article h2 {
+.services article {
   text-align: center;
 }
