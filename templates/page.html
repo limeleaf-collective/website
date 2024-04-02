@@ -11,8 +11,10 @@
       <h2>{{ page.title }}</h2>
       {{ page.content | safe }}
     </div>
-    
+
+    {% if page.extra.photo != "" %}
     <img src="{{ get_url(path=page.extra.photo) }}" />
+    {% endif %}
   </section>
 </main>
 {% endblock content %}
