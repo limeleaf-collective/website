@@ -6,13 +6,17 @@ weight = 0
 photo = "images/services/software.jpg"
 +++
 
+With decades of experience in software development, our expert onshore developers possess a deep understanding of the latest technologies, frameworks, and best practices. We stay ahead of the curve to ensure that our clients receive innovative solutions tailored to their unique business needs.
+
 <!-- more -->
+
+### Some of Our Capabilities
 
 - Web, mobile, and connected TV apps
 - Backend web and API services
 - REST API development
 - System integrations
-- Gaming
+- Video games
 - Embedded systems and IoT
 - Video processing and distribution
 - Realtime video, WebRTC
