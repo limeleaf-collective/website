@@ -1,5 +1,5 @@
 +++
-title = "What we talk about"
+title = "What We Talk About"
 
 [extra]
 photo = ""
