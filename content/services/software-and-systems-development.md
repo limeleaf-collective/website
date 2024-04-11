@@ -12,7 +12,8 @@ With decades of experience in software development, our expert onshore developer
 
 ### Some of Our Capabilities
 
-- Web, mobile, and connected TV apps
+- Web, native mobile, and connected TV apps
+- Website development
 - Backend web and API services
 - REST API development
 - System integrations
