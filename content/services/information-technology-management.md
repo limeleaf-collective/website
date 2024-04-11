@@ -6,16 +6,16 @@ weight = 3
 photo = "images/services/it.jpg"
 +++
 
-Do you lie awake wondering if your systems are running and secure? Go back to bed and let us worry for you! 
+We can set up and administer your IT systems, ensuring that they are performant and secure.  
 
 <!-- more -->
 ### How We Can Help
 
 - Setup, administration, and optimization of servers and networks
-- Website development and hosting
+- Website hosting
 - Productivity suite deployment and management (Microsoft Office, Google Workspace)
 - E-mail implementation, security, and maintenance
-- Blog, newsletter content management and distribution
+- Blog and newsletter content management and distribution
 - Antivirus
 - System hardening
 - Cloud infrastructure

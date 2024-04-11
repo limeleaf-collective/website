@@ -6,7 +6,7 @@ sort_by = "weight"
 photo = ""
 +++
 
-At Limeleaf, we help small organizations harness the power of software to stay competitive in today's fast-paced digital world.
+At Limeleaf, we help small organizations harness the power of software to stay competitive in today's digital world.
 
 We understand that every organization has unique needs and challenges, which is why we take a collaborative approach to every project. Our team works closely with clients to understand their specific requirements and develop solutions tailored to their needs and budgets.
 
