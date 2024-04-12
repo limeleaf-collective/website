@@ -1,6 +1,7 @@
 +++
 title = "Why Limeleaf Operates as a Co-Op"
 date = 2024-02-11
+updated = 2024-04-10
 
 [extra]
 photo = ""
@@ -10,7 +11,7 @@ Cooperatives have gotten a bad rap over the years. They’ve been portrayed as i
 
 <!-- more -->
 
-But we believe the co-op model offers unique advantages for small tech companies (note the word small) trying to build an equitable, purpose-driven culture. In small companies, collective ownership can breed accountability, foster innovation, and fuel a genuine excitement to succeed. It also improves the chances that co-op Members, not just founders and outside investors, benefit from that success.
+However, we believe the co-op model offers unique advantages for small tech companies (note the word small) trying to build an equitable, purpose-driven culture. In small companies, collective ownership can breed accountability, foster innovation, and fuel a genuine excitement to succeed. It also improves the chances that co-op Members, not just founders and outside investors, benefit from that success.
 
 So, what do we mean when we say, “Limeleaf operates as a co-op”?
 
