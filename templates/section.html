@@ -48,9 +48,10 @@
       <article>
         <header>
           <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
-          <time>{{ post.date }}</time></a>
+          <time>{{ post.date }}</time>
         </header>
         {{ post.summary | safe }}
+        <footer><a href="{{ post.permalink }}">Continue Reading</a></footer>
       </article>
       {% endfor %}
     </section>
