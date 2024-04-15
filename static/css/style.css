@@ -12,6 +12,29 @@ body > header, body > footer {
   text-align: center;
 }
 
+header .logo {
+    width: 100%;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+    padding: 1em;
+}
+
+header .logo img {
+    height: 56px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
 nav {
   display: inline-block;
   justify-content: normal;
@@ -26,12 +49,21 @@ article header {
   text-align: left;
 }
 
-article img {
+.members article img {
   width: 65%;
+}
+
+.members article header {
+    text-align: center;
 }
 
 .members article header img {
   border-radius: 300px;
+  margin: 1em;
+}
+
+.members article header a {
+    text-decoration: none;
 }
 
 .services article {

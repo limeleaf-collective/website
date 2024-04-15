@@ -3,7 +3,7 @@ title = "Software and Systems Development"
 weight = 0
 
 [extra]
-photo = "images/services/software.jpg"
+feature_photo = "images/services/software.jpg"
 +++
 
 With decades of experience in software development, our expert onshore developers possess a deep understanding of the latest technologies, frameworks, and best practices. We stay ahead of the curve to ensure that our clients receive innovative solutions tailored to their unique business needs.

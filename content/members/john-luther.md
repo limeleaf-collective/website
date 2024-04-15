@@ -2,7 +2,7 @@
 title = "John Luther"
 
 [extra]
-photo = "images/members/john-luther.jpg"
+feature_photo = "images/members/john-luther.jpg"
 +++
 
 John has worked in digital media, web, and cloud software product

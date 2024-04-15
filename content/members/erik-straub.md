@@ -2,7 +2,7 @@
 title = "Erik Straub"
 
 [extra]
-photo = "images/members/erik-straub.jpg"
+feature_photo = "images/members/erik-straub.jpg"
 +++
 
 With a wealth of experience across video streaming
@@ -16,7 +16,7 @@ Erik brings two decades of experience specializing in building back-end
 services and process automation systems across various industries.
 Throughout his career, he has been focused on creating scalable,
 efficient solutions that prioritize correctness, stability and
-observability. 
+observability.
 
 Outside of work, Erik takes advantage of the amazing environment that
 upstate New York has to offer. Whether he's hiking with his dogs or

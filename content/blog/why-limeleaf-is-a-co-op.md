@@ -4,7 +4,7 @@ date = 2024-02-11
 updated = 2024-04-10
 
 [extra]
-photo = ""
+feature_photo = ""
 +++
 
 Cooperatives have gotten a bad rap over the years. They’ve been portrayed as impractical, plagued by decision paralysis, and insufferably [hippy-dippy][1].
@@ -21,7 +21,7 @@ We are idealistic but not naive. We realize that conflict and power dynamics are
 
 We’re still writing our OA. As we do, we're imagining plenty of “what if” scenarios to make sure when conflicts arise, they are resolved through the institutions and processes embodied in the OA, not between individuals.
 
-Prior to joining Limeleaf, all new Members must accept and sign the OA. If you’re curious, the draft is [available online][2]. We welcome constructive comments. 
+Prior to joining Limeleaf, all new Members must accept and sign the OA. If you’re curious, the draft is [available online][2]. We welcome constructive comments.
 
 It's also a matter of goals. We feel like the co-op model aligns well with our long-term goals for the company. We agree with and share [Steph Ango's goals for his company][4]:
 

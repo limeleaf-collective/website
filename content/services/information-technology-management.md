@@ -3,10 +3,10 @@ title = "Information Technology Management"
 weight = 3
 
 [extra]
-photo = "images/services/it.jpg"
+feature_photo = "images/services/it.jpg"
 +++
 
-We can set up and administer your IT systems, ensuring that they are performant and secure.  
+We can set up and administer your IT systems, ensuring that they are performant and secure.
 
 <!-- more -->
 ### How We Can Help

@@ -2,7 +2,7 @@
 title = "Fresh, Sustainable, Simple Tech Solutions"
 
 [extra]
-photo = "images/services/tech.jpg"
+feature_photo = "images/services/tech.jpg"
 +++
 
 We specialize in software engineering, product development, and IT management for businesses, social impact startups, and technologically underserved communities.

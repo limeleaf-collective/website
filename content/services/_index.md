@@ -3,7 +3,7 @@ title = "What We Do"
 sort_by = "weight"
 
 [extra]
-photo = ""
+feature_photo = ""
 +++
 
 At Limeleaf, we help small organizations harness the power of software to stay competitive in today's digital world.

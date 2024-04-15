@@ -2,7 +2,7 @@
 title = "Who We Are"
 
 [extra]
-photo = "images/members/saratoga-springs.jpg"
+feature_photo = "images/members/saratoga-springs.jpg"
 +++
 
 Limeleaf is proud to be a member-owned, democratically managed company, based in [Saratoga

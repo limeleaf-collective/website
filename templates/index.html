@@ -11,9 +11,9 @@
       <h2>{{ section.title }}</h2>
       {{ section.content | safe }}
     </div>
-    <div>
-      <img src="{{ get_url(path=section.extra.photo) }}" />
-    </div>
+    <figure>
+      <img src="{{ get_url(path=section.extra.feature_photo) }}" />
+    </figure>
   </section>
 </main>
 {% endblock content %}

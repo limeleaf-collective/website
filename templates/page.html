@@ -7,13 +7,21 @@
 {% block content %}
 <main class="container">
   <section class="grid">
-    <div>
-      <h2>{{ page.title }}</h2>
-      {{ page.content | safe }}
-    </div>
+    <article>
+        <hgroup>
+            <h2>{{ page.title }}</h2>
+            {% if page.extra.tagline %}
+            <p>{{ page.extra.tagline }}</p>
+            {% endif %}
+        </hgroup>
 
-    {% if page.extra.photo != "" %}
-    <img src="{{ get_url(path=page.extra.photo) }}" />
+      {{ page.content | safe }}
+    </article>
+
+    {% if page.extra.feature_photo != "" %}
+    <figure>
+        <img src="{{ get_url(path=page.extra.feature_photo) }}" class="feature" />
+    </figure>
     {% endif %}
   </section>
 </main>

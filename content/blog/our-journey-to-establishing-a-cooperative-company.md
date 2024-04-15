@@ -3,10 +3,10 @@ title = "Our Journey to Establishing a Cooperative Company"
 date = 2024-04-12
 
 [extra]
-photo = ""
+feature_photo = ""
 +++
 
-At Limeleaf, how we do our work is equally important as the work itself. [As we explained in a previous post](https://limeleaf.io/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), Limeleaf operates as a worker cooperative, and we are dedicated to embodying the [Seven Cooperative Principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Cooperative identity, values & principles"). 
+At Limeleaf, how we do our work is equally important as the work itself. [As we explained in a previous post](https://limeleaf.io/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), Limeleaf operates as a worker cooperative, and we are dedicated to embodying the [Seven Cooperative Principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Cooperative identity, values & principles").
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ Today, we'll begin with the first snag we hit–establishing Limeleaf as a New Y
 
 ## Incorporating as a Co-Op in New York State - Nope!
 
-We are proud denizens of the Empire State, and in keeping with our company's local-first ethos, we wanted to incorporate Limeleaf in our home state. However, we are only three members at this point, and [New York requires at least five members](https://codes.findlaw.com/ny/cooperative-corporations-law/cco-sect-11/ "Corporations organized under the business corporation law") to incorporate under the [Cooperative Corporations Law (CCL)](https://codes.findlaw.com/ny/cooperative-corporations-law/ "Cooperative Corporations Law (CCL)"). 
+We are proud denizens of the Empire State, and in keeping with our company's local-first ethos, we wanted to incorporate Limeleaf in our home state. However, we are only three members at this point, and [New York requires at least five members](https://codes.findlaw.com/ny/cooperative-corporations-law/cco-sect-11/ "Corporations organized under the business corporation law") to incorporate under the [Cooperative Corporations Law (CCL)](https://codes.findlaw.com/ny/cooperative-corporations-law/ "Cooperative Corporations Law (CCL)").
 
 What's more, New York only allows co-ops formed under the CCL to have the words "co-op" or "cooperative" in their name (in fact, they mandate it). If we couldn't incorporate our company under the CCL, how would we structure it, and what would we call ourselves to express our identity as a cooperative business? After a conversation with our co-op technical advisor, we found an option: the Limited Liability Corporation, or LLC for short.
 
@@ -28,7 +28,7 @@ What's more, New York only allows co-ops formed under the CCL to have the words 
 
 Deciding how you want to structure your business is called "choosing an entity."
 
-An LLC is a business structure that combines the limited liability protection of a corporation with the tax simplicity of a partnership. Unlike corporations, LLCs have **members** rather than shareholders and can be more flexible in structuring ownership, profit distributions, and management structures. We thought this membership notion aligned well with our cooperative principles. 
+An LLC is a business structure that combines the limited liability protection of a corporation with the tax simplicity of a partnership. Unlike corporations, LLCs have **members** rather than shareholders and can be more flexible in structuring ownership, profit distributions, and management structures. We thought this membership notion aligned well with our cooperative principles.
 
 In addition, we opted for a [member-managed LLC instead of a manager-managed LLC](https://staterequirement.com/llc/types-of-llcs/ "Types of LLCs"), as it will enable us to implement democratic decision-making processes among our members.
 
