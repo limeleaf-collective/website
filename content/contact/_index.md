@@ -2,7 +2,8 @@
 title = "Get In Touch"
 
 [extra]
-feature_photo = "images/contact/email.jpg"
+feature_photo = "images/contact/email.png"
+feature_photo_alt = "Email illustration"
 +++
 
 Send us an email and we'll set up a meeting to chat about how we can

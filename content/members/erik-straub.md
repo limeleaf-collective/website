@@ -3,6 +3,7 @@ title = "Erik Straub"
 
 [extra]
 feature_photo = "images/members/erik-straub.jpg"
+feature_photo_alt = "Erik Straub photo"
 +++
 
 With a wealth of experience across video streaming

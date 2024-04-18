@@ -3,6 +3,7 @@ title = "Blain Smith"
 
 [extra]
 feature_photo = "images/members/blain-smith.jpg"
+feature_photo_alt = "Blain Smith photo"
 +++
 
 Blain has spent 27 years working in web, video streaming, gaming, cloud

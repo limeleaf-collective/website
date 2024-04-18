@@ -4,7 +4,8 @@
   --pico-primary-underline: #1C7258 !important;
   --pico-primary-hover: #009472 !important;
   --pico-primary-hover-background: #009472 !important;
-  --pico-font-size: 110% !important;
+  --pico-font-size: 105% !important;
+  --pico-background-color: #fdfdfd !important;
 
 }
 
@@ -23,7 +24,7 @@ figure {
 }
 
 header .logo img {
-    height: 56px;
+    height: 72px;
 }
 
 footer p {
@@ -35,6 +36,9 @@ footer a {
     text-decoration: none;
 }
 
+footer .attribution a {
+  font-size: 0.9em;
+}
 nav {
   display: inline-block;
   justify-content: normal;
@@ -63,9 +67,17 @@ article header {
 }
 
 .members article header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .services article {
   text-align: center;
+}
+
+.services article h4 a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 550;
 }

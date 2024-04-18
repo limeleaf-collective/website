@@ -3,6 +3,7 @@ title = "Who We Are"
 
 [extra]
 feature_photo = "images/members/saratoga-springs.jpg"
+feature_photo_alt = "Saratoga Springs postcard image"
 +++
 
 Limeleaf is proud to be a member-owned, democratically managed company, based in [Saratoga

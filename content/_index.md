@@ -2,11 +2,12 @@
 title = "Fresh, Sustainable, Simple Tech Solutions"
 
 [extra]
-feature_photo = "images/services/tech.jpg"
+feature_photo = "images/services/tech.png"
+feature_photo_alt = "Tech illustration"
 +++
 
 We specialize in software engineering, product development, and IT management for businesses, social impact startups, and technologically underserved communities.
 
-Whether you're looking to develop a new application or service, optimize your existing technology infrastructure, or simply need extra technical support and guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.
+Whether you want to develop a new application or service, optimize your technology infrastructure, or simply need technical guidance, Limeleaf has the expertise, experience, and innovative spirit to help you succeed.
 
 Learn more about [what we do](/services "Our services"), [who we are](/members "About Limeleaf"), or [contact us to schedule a consultation](/contact "Contact us").

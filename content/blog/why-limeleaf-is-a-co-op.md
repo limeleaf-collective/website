@@ -5,6 +5,7 @@ updated = 2024-04-10
 
 [extra]
 feature_photo = ""
+feature_photo_alt = ""
 +++
 
 Cooperatives have gotten a bad rap over the years. They’ve been portrayed as impractical, plagued by decision paralysis, and insufferably [hippy-dippy][1].
