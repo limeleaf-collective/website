@@ -1,12 +1,15 @@
 +++
 title = "Information Technology Management"
-weight = 3
+weight = 4
 
 [extra]
-feature_photo = "images/services/it.jpg"
+feature_photo = "images/services/it.png"
+feature_photo_alt = "IT services illustration"
 +++
 
-We can set up and administer your IT systems, ensuring that they are performant and secure.
+We can set up and administer your IT systems, ensuring that they are performant and secure. 
+
+[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your IT needs and get a quote.
 
 <!-- more -->
 ### How We Can Help

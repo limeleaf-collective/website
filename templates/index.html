@@ -12,7 +12,7 @@
       {{ section.content | safe }}
     </div>
     <figure>
-      <img src="{{ get_url(path=section.extra.feature_photo) }}" />
+      <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" />
     </figure>
   </section>
 </main>
