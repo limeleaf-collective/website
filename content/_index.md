@@ -2,7 +2,7 @@
 title = "Fresh, Sustainable, Simple Tech Solutions"
 
 [extra]
-feature_photo = "images/services/tech.png"
+feature_photo = "images/services/tech.svg"
 feature_photo_alt = "Tech illustration"
 +++
 
