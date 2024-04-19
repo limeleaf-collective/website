@@ -2,7 +2,7 @@
 title = "Get In Touch"
 
 [extra]
-feature_photo = "images/contact/email.png"
+feature_photo = "images/contact/email.svg"
 feature_photo_alt = "Email illustration"
 +++
 

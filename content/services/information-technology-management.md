@@ -3,7 +3,7 @@ title = "Information Technology Management"
 weight = 4
 
 [extra]
-feature_photo = "images/services/it.png"
+feature_photo = "images/services/it.svg"
 feature_photo_alt = "IT services illustration"
 +++
 

@@ -3,7 +3,7 @@ title = "Product Development"
 weight = 1
 
 [extra]
-feature_photo = "images/services/prod-dev.png"
+feature_photo = "images/services/prod-dev.svg"
 feature_photo_alt = "Product development illustration"
 +++
 

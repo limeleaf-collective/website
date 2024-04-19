@@ -3,7 +3,7 @@ title = "How We Work"
 weight = 0
 
 [extra]
-feature_photo = "images/services/how-we-work.png"
+feature_photo = "images/services/how-we-work.svg"
 feature_photo_alt = "How We Work illustration"
 +++
 

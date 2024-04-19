@@ -3,7 +3,7 @@ title = "Software and Systems Engineering"
 weight = 2
 
 [extra]
-feature_photo = "images/services/software.png"
+feature_photo = "images/services/software.svg"
 feature_photo_alt = "Software illustration"
 +++
 
