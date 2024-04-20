@@ -1,3 +1,6 @@
 base_url = "https://limeleaf.io"
 title = "Limeleaf Worker Collective, LLC."
 description = "Limeleaf is a software development cooperative that builds fresh, sustainable, simple tech solutions for small businesses, startups, and nonprofits."
+
+generate_feed = true
+feed_filename = "rss.xml"
