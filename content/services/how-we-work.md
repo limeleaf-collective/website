@@ -29,11 +29,11 @@ The package includes:
 
 ### Our SLC Process
 
-1. **Presales discovery call.** We learn about the desired outcomes for your product and understand the scope of work. 
+1. **Presales discovery call.** We learn about the desired outcomes for your product and understand the scope of work.
 2. **Price quote.** Estimate the months required to do the work and the monthly rate.
 3. **Signed contract.**
 4. **Business requirements workshop.** Identify the business problems your SLC solves and its critical functionality.
 5. **Product requirements.** Prioritize core features, define architecture/tech stack, set milestones, and write user stories.
 6. **Wireframes.** Develop basic functional UI design (if you want a more advanced UI, we can work with your designer).
 7. **Software development.** Coding and testing.
-8. **Final MVP deployed to your infrastructure.**
+8. **Final SLC deployed to your infrastructure.**
