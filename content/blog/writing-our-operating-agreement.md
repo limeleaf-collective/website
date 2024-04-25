@@ -50,7 +50,7 @@ In cases of involuntary termination, a unanimous vote of all members (except the
 
 Crafting an OA for Limeleaf required extensive research, communication, and collaboration among all three members. In the end, we think we created a document that serves as a solid foundation for our company's future. 
 
-We were also reminded that successful co-ops require open and honest communication, a willingness to listen and adapt, and a shared commitment to the collective good. As Limeleaf grows and evolves, we know that our OA will help us navigate the complexities of running a (we hope) successful company while staying true to our [democratic principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Seven democratic principles")
+We were also reminded that successful co-ops require open and honest communication, a willingness to listen and adapt, and a shared commitment to the collective good. As Limeleaf grows and evolves, we know that our OA will help us navigate the complexities of running a (we hope) successful company while staying true to our [democratic principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Seven democratic principles").
 
 ## We Want to Hear From You!
 
