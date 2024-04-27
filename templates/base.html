@@ -19,16 +19,12 @@
   </head>
   <body>
     <header class="container">
+      <a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" id="logo" /></a>
       <nav>
-        <ul>
-            <li class="logo"><a href="{{ get_url(path="@/_index.md") }}"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" /></a></li>
-        </ul>
-        <ul>
-            <li><a href="{{ get_url(path="@/members/_index.md") }}">About Us</a></li>
-            <li><a href="{{ get_url(path="@/services/_index.md") }}">Services</a></li>
-            <li><a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a></li>
-            <li><a href="{{ get_url(path="@/contact/_index.md") }}">Contact</a></li>
-        </ul>
+        <a href="{{ get_url(path="@/members/_index.md") }}">About Us</a>
+        <a href="{{ get_url(path="@/services/_index.md") }}">Services</a>
+        <a href="{{ get_url(path="@/blog/_index.md") }}">Blog</a>
+        <a href="{{ get_url(path="@/contact/_index.md") }}">Contact</a>
       </nav>
     </header>
 

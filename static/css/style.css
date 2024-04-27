@@ -9,22 +9,20 @@
 
 }
 
-body > header, body > footer {
-  text-align: center;
+#logo {
+  display: block;
+  margin: 1em auto;
+  width: 50%;
+  max-width: 30em;
 }
 
-header .logo {
-    width: 100%;
-    text-align: center;
+body > header, body > footer {
+  text-align: center;
 }
 
 figure {
     text-align: center;
     padding: 1em;
-}
-
-header .logo img {
-    height: 72px;
 }
 
 footer p {
