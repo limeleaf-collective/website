@@ -32,7 +32,7 @@
 
     <footer class="container">
       <p>&copy; {{ now() | date(format="%Y") }} {{ config.title }}</p>
-      <p class="attribution"><a href="https://storyset.com" title="Storyset website">Site illustrations by Storyset</a> | <a href="/contact/privacy" title="Limeleaf privacy policy">Privacy Policy</p>
+      <p class="attribution"><a href="https://storyset.com" title="Storyset website">Site illustrations by Storyset</a> | <a href="{{ get_url(path="@/contact/privacy.md") }}" title="Limeleaf privacy policy">Privacy Policy</p>
       <nav>
         <a href="https://github.com/limeleaf-collective" alt="GitHub" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="https://social.coop/@limeleaf" alt="Mastodon" title="Mastodon"><i class="fa fa-mastodon" aria-hidden="true"></i></a>
