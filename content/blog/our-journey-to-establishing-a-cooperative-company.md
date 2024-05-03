@@ -1,5 +1,5 @@
 +++
-title = "Our Journey to Establishing a Cooperative Company - Part 1"
+title = "Foundling Limeleaf: Our Journey to Establishing a Cooperative Company"
 date = 2024-04-12
 
 [extra]

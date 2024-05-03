@@ -17,6 +17,7 @@ We can provide specialized experts to augment your team for almost any software 
 
 ### Some of Our Capabilities
 
+- Full-stack development
 - Web, native mobile, and connected TV apps
 - Video processing and distribution
 - Realtime video, WebRTC
