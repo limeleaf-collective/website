@@ -14,10 +14,10 @@ John started his career at [RSA Security][5] working on 2FA and cryptographic SD
 
 John joined [JW Player][7] in 2014 and led several product teams there before taking over JW Platform and growing it into a leading SaaS video platform with over a billion monthly active users worldwide. He founded Limeleaf with Blain and Erik in 2024.
 
-[1]: https://w3.org
-[2]: https://ietf.org
-[3]: https://www.cta.tech/Resources/Standards/WAVE-Project
-[4]: https://webmproject.org/
-[5]: https://rsa.com
-[6]: https://aomedia.org
-[7]: https://jwplayer.com
+[1]: https://w3.org "W3C home page"
+[2]: https://ietf.org "IETF home page"
+[3]: https://www.cta.tech/Resources/Standards/WAVE-Project "WAVE Project page"
+[4]: https://webmproject.org/ "WebM Project page"
+[5]: https://rsa.com "RSA home page"
+[6]: https://aomedia.org "Alliance for Open Media home page"
+[7]: https://jwplayer.com "JWP home page"

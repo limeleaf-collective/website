@@ -11,4 +11,4 @@ work together!
 
 One of our members will get back to you as soon as possible.
 
-<a role="button" href="mailto:info@limeleaf.io">Email info@limeleaf.io</a>
+<a role="button" href="mailto:info@limeleaf.io" title="Limeleaf email address">Email info@limeleaf.io</a>

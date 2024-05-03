@@ -26,7 +26,7 @@
         <article>
           <header>
             <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+            <h3><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h3>
           </header>
           {{ page.summary | safe }}
         </article>
@@ -39,7 +39,7 @@
         {% for page in section.pages %}
         <article>
             <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h4><a href="{{ page.permalink }}">{{ page.title }}</a></h4>
+            <h4><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h4>
         </article>
         {% endfor %}
       </div>
@@ -49,11 +49,11 @@
       {% for post in section.pages %}
       <article>
         <header>
-          <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+          <h4><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h4>
           <time>{{ post.date }}</time>
         </header>
         {{ post.summary | safe }}
-        <footer><a href="{{ post.permalink }}">Continue Reading</a></footer>
+        <footer><a href="{{ post.permalink }}" title="{{ post.title }}">Continue Reading</a></footer>
       </article>
       {% endfor %}
     </section>
