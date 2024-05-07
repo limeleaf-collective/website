@@ -2,6 +2,9 @@
 title = "Foundling Limeleaf: Our Journey to Establishing a Cooperative Company"
 date = 2024-04-12
 
+[taxonomies]
+tags = ["Company"]
+
 [extra]
 feature_photo = ""
 feature_photo_alt = ""

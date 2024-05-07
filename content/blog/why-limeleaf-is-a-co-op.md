@@ -3,6 +3,9 @@ title = "Why Limeleaf Operates as a Co-Op"
 date = 2024-02-11
 updated = 2024-04-10
 
+[taxonomies]
+tags = ["Company"]
+
 [extra]
 feature_photo = ""
 feature_photo_alt = ""
