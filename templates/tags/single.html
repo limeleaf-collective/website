@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title%}
+  {{ term.name }} - {{ config.title }}
+{% endblock title %}
+
+{% block content %}
+<main class="container">
+  <section>
+      <h1>{{ term.name }} Posts</h1>
+  </section>
+
+  {% for post in term.pages %}
+  <article>
+    <header>
+      <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
+      <time>{{ post.date }}</time>
+    </header>
+    {{ post.summary | safe }}
+    <footer><a href="{{ post.permalink }}">Continue Reading</a></footer>
+  </article>
+  {% endfor %}
+</main>
+{% endblock content %}

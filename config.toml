@@ -4,3 +4,7 @@ description = "Limeleaf is a software development cooperative that builds fresh,
 
 generate_feed = true
 feed_filename = "rss.xml"
+
+taxonomies = [
+  { name = "tags", feed = false },
+]
