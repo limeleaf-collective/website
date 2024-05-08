@@ -8,7 +8,7 @@ feature_photo_alt = "Saratoga Springs postcard image"
 
 Limeleaf team members bring over six decades of collective experience in every facet of software development to the table. Our members have worked at [Google][2], [Electronic Arts][3], [ngrok][4], [Kinetic][5], [Harvard University][6], [RSA Security][8], [JWP (JW Player)][7], and others on a wide range of projects.
 
-With backgrounds spanning software engineering, systems design, project and product management, technical planning, R&D, and mission-critical deployments, we aim to provide our expertise to other industries so that they feel competitive in the modern tech world. We want to see your technology needs not only succeed, but also be sustainable long-term while keeping a close eye on security, privacy, and humane practices.
+After long careers in Big tech, we started Limeleaf to help others and share our expertise. Our team's skills in software engineering, systems design, project and product management, technical planning, R&D, and mission-critical deployments enable us to enhance your competitiveness in the tech industry. We aim to ensure your technology not only succeeds but also remains sustainable and secure, with a strong commitment to privacy and ethical practices.
 
 Limeleaf is proud to be a member-owned, democratically managed company, based in [Saratoga Springs, New York][1]. We strive to embody the [Seven Cooperative Principles][9] in our work.
 
