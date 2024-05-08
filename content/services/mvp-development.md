@@ -1,19 +1,19 @@
 +++
-title = "Minimum Viable Product (MVP) Development"
-weight = 4
+title = "Let Us Build Your MVP"
+weight = 1
 
 [extra]
 feature_photo = "images/services/it.svg"
 feature_photo_alt = "IT services illustration"
 +++
 
-We understand the importance of bringing your product to market quickly and efficiently, so we offer a unique service to help you build your Minimum Viable Product (MVP), which we refer to as a [Simple, Lean, and Concise (SLC)](https://longform.asmartbear.com/slc/ "what is Simple, Lean, and Concise (SLC)?") solution. Our team of staff-level developers and product managers will collaborate closely with you to understand your vision and goals, ensuring that we create an MVP that meets your specific needs and requirements.
+We understand the importance of bringing your product to market quickly and efficiently, so we offer a unique service to help you build your Minimum Viable Product (MVP), which we refer to as a [Simple, Lean, and Concise (SLC)](https://longform.asmartbear.com/slc/ "what is Simple, Lean, and Concise (SLC)?") solution. 
+
+Our team of staff-level developers and product managers will collaborate closely with you to understand your vision and goals, ensuring we create an MVP that validates your idea in the market.
 
 ### Predictable Costs
 
 We operate on a fixed-time / fixed-price basis for MVP development. This provides cost predictability, allowing you to plan your resources effectively while eliminating surprises or hidden costs.
-
-Our team will craft a functional and user-friendly product that incorporates the core features necessary to validate your idea in the market.
 
 ### Your Long-Term Development Partners
 

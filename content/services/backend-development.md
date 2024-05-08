@@ -1,13 +1,13 @@
 +++
 title = "Backend Development"
-weight = 4
+weight = 3
 
 [extra]
 feature_photo = "images/services/backend-developer.svg"
 feature_photo_alt = "Developer illustration"
 +++
 
-We believe that straightforward technology, when properly implemented, leads to stable and resilient systems. Simplicity, often seen as “boring” in technology, is crucial—it ensures clarity, conciseness, and ease of maintenance. Our approach has proven effective on some of the world's busiest platforms, including video games and online streaming services with billions of monthly users.
+We believe that straightforward technology, when properly implemented, leads to stable and resilient systems. Simplicity, often seen as "boring" in technology, is crucial—it ensures clarity, conciseness, and ease of maintenance. Our approach has proven effective on some of the world's busiest platforms, including video games and online streaming services with billions of monthly users.
 
 ### Solving Complex Problems with Simplicity
 

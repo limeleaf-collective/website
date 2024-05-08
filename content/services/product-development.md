@@ -43,18 +43,17 @@ Product definition and refinement are integral parts of the software development
 
 Define the scope and purpose of the software product. It involves several key activities:
 
-- **Requirements Gathering:** Collect requirements from stakeholders, potential users, and competitors. This step is crucial for understanding what the stakeholders expect from the product.
-- **Feasibility Study:** Analyze whether the project is feasible with available technologies and within the budgetary constraints. The study helps determine whether the project should proceed as planned, need adjustments, or be abandoned.
-- **Specification Development:** The requirements are documented clearly and in detail.
-- **Prototyping:** A prototype of the product may be created to help stakeholders understand how the software will function. Based on feedback collected from using the prototype, the product's requirements are refined.
+- **Requirements Gathering**. Collect requirements from stakeholders, potential users, and competitors. This step is crucial for understanding what the stakeholders expect from the product.
+- **Feasibility Study**. Analyze whether the project is feasible with available technologies and within the budgetary constraints. The study helps determine whether the project should proceed as planned, need adjustments, or be abandoned.
+- **Specification Development**. The requirements are documented clearly and in detail.
+- **Prototyping / Minimum Viable Product**. A prototype of the product may be created to help stakeholders understand how the software will function. Based on feedback collected from using the prototype, the product's requirements are refined.
 
 ### Software Product Refinement
 
 We iterate over the product definition to improve its alignment with user needs, available technologies, and business goals. Key activities include:
 
-- **Iterative Development:** Using an iterative process, the product is reviewed and refined based on feedback and testing results.
-- **User Feedback:** Collecting and analyzing user feedback is crucial for refining the product. It helps in identifying what changes are necessary to improve product flow and usability.
-- **Quality Assurance:** This includes functional testing, performance testing, usability testing, and security testing.
-- **Market Analysis:** Regular analysis of market trends and competitor analysis helps in refining the product to ensure it remains competitive and meets market demands.
-- **Feature Update and Scaling:** Based on feedback and new requirements, additional features may be added, or existing features may be improved. The software may also need to be scaled to accommodate more users or data.
-
+- **Market Analysis**. Regular analysis of market trends and competitor analysis helps in refining the product to ensure it remains competitive and meets market demands.
+- **Iterative Development**. Using an iterative process, the product is reviewed and refined based on feedback and testing results.
+- **User Feedback** Collecting and analyzing user feedback is crucial for refining the product. It helps in identifying what changes are necessary to improve product flow and usability.
+- **Feature Updates and Scaling**. Based on feedback and new requirements, additional features may be added, or existing features may be improved. The software may also need to be scaled to accommodate more users or data.
+- **Quality Assurance**. This includes functional testing, performance testing, usability testing, and security testing.

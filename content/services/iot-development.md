@@ -1,6 +1,6 @@
 +++
 title = "IoT Development and Rust Programming"
-weight = 4
+weight = 5
 
 [extra]
 feature_photo = "images/services/it.svg"
@@ -21,6 +21,6 @@ Let us guide you through the complexities of IoT technology to bring your produc
 
 ### Rust Programming
 
-When resources are tight, or you need to squeeze every bit of performance out of CPUs, RAM, and disk space, Rust is the answer. For years, it has challenged C and C++ as the choice when writing systems-level services such as operating systems, embedded devices, and mission-critical services. 
+When resources are tight, or you need to squeeze every bit of performance out of CPUs, RAM, and disk space, [Rust](https://rust-lang.org "Rust language website") is the answer. For years, it has challenged C and C++ as the choice when writing systems-level services such as operating systems, embedded devices, and mission-critical services. 
 
 Rust's memory management and guarantee of memory safety make it the perfect choice for us to work on your next embedded or IoT project.
