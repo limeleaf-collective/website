@@ -56,7 +56,7 @@
       <article>
         <header>
           <h4><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-          <time>{{ post.date }}</time>
+          <time>{{ post.date | date(format="%B %e, %Y")}}</time>
         </header>
         {{ post.summary | safe }}
         <footer><a href="{{ post.permalink }}" title="{{ post.title }}">Continue Reading</a></footer>
