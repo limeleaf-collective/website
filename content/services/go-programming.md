@@ -1,6 +1,6 @@
 +++
 title = "Go Programming"
-weight = 2
+weight = 5
 
 [extra]
 feature_photo = "images/services/it.svg"

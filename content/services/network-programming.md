@@ -1,6 +1,6 @@
 +++
 title = "Network Programming"
-weight = 6
+weight = 7
 
 [extra]
 feature_photo = "images/services/it.svg"

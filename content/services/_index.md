@@ -1,5 +1,5 @@
 +++
-title = "Our Software Development Services"
+title = "Our Development Services"
 sort_by = "weight"
 
 [extra]

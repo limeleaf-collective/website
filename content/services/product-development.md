@@ -1,6 +1,6 @@
 +++
 title = "Product Development"
-weight = 1
+weight = 2
 
 [extra]
 feature_photo = "images/services/prod-dev.svg"
