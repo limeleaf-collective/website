@@ -68,11 +68,17 @@ article header {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .services .grid {
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+  }
+}
+
 .services article {
   text-align: center;
 }
 
-h4 a {
+h4, h5 a {
   text-decoration: none;
 }
 
