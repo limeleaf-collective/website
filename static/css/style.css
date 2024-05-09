@@ -78,7 +78,7 @@ article header {
   text-align: center;
 }
 
-h4 a {
+h4, h5 a {
   text-decoration: none;
 }
 

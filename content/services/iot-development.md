@@ -1,9 +1,9 @@
 +++
 title = "IoT Development"
-weight = 4
+weight = 7
 
 [extra]
-feature_photo = "images/services/it.svg"
+feature_photo = "images/services/iot2.svg"
 feature_photo_alt = "IoT illustration"
 +++
 

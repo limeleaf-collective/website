@@ -1,6 +1,6 @@
 +++
 title = "Audio/Video Streaming"
-weight = 7
+weight = 5
 
 [extra]
 feature_photo = "images/services/video.svg"

@@ -6,9 +6,7 @@ feature_photo = "images/contact/email.svg"
 feature_photo_alt = "Email illustration"
 +++
 
-Send us an email and we'll set up a meeting to chat about how we can
-work together!
-
-One of our members will get back to you as soon as possible.
+Send us an email or <a href="https://calendly.com/limeleaf/30min" title="Calendly link">schedule a call</a> and we'll meet to chat about how we can work together!
 
 <a role="button" href="mailto:info@limeleaf.io" title="Limeleaf email address">Email info@limeleaf.io</a>
+
