@@ -3,8 +3,8 @@ title = "Let Us Build Your MVP"
 weight = 1
 
 [extra]
-feature_photo = "images/services/it.svg"
-feature_photo_alt = "IT services illustration"
+feature_photo = "images/services/mvp.svg"
+feature_photo_alt = "MVP illustration"
 +++
 
 We understand the importance of bringing your product to market quickly and efficiently, so we offer a unique service to help you build your Minimum Viable Product (MVP), which we refer to as a [Simple, Lean, and Concise (SLC)](https://longform.asmartbear.com/slc/ "what is Simple, Lean, and Concise (SLC)?") solution. 

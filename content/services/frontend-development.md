@@ -1,10 +1,10 @@
 +++
 title = "Frontend Development"
-weight = 3
+weight = 4
 
 [extra]
-feature_photo = "images/services/backend-developer.svg"
-feature_photo_alt = "Developer illustration"
+feature_photo = "images/services/front-end.svg"
+feature_photo_alt = "Front-end development illustration"
 +++
 
 Our team crafts exceptional user experiences using a range of modern web technologies. We believe in building websites on a solid foundation of well-structured HTML and responsive CSS, with just the right amount of JavaScript for interactivity and functionality.

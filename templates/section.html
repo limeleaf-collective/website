@@ -39,7 +39,7 @@
         {% for page in section.pages %}
         <article>
             <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h4><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h4>
+            <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
         </article>
         {% endfor %}
         <div>

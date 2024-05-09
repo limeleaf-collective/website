@@ -1,10 +1,10 @@
 +++
 title = "Network Programming"
-weight = 7
+weight = 8
 
 [extra]
-feature_photo = "images/services/it.svg"
-feature_photo_alt = "IT services illustration"
+feature_photo = "images/services/network.svg"
+feature_photo_alt = "Network programming illustration"
 +++
 
 Nowadays, with everything from cars to earbuds being labeled as "smart" and connected to the Internet, network programming has become essential. The OSI model, a fundamental framework for networking developed in the 1970s, remains largely unchanged. 
