@@ -1,5 +1,6 @@
 +++
 title = "Who We Are"
+description = "Limeleaf team members and their backgrounds"
 
 [extra]
 feature_photo = "images/members/saratoga-springs.jpg"

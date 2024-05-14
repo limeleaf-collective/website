@@ -2,10 +2,11 @@
 
 {% block meta_content %}
   <title>{{ section.title}} - {{ config.title }}</title>
-  <meta name="description" content="{{ section.description }} — {{ config.description }}" />
-  
-  <meta property="og:title" content="{{ section.title }} — {{ config.title }}" />
-  <meta property="og:description" content="{{ section.description }} — {{ config.description }}" />
+  <meta property="og:title" content="{{ section.title }} - {{ config.title }}" />
+  {% if section.description %}
+  <meta name="description" content="{{ section.description }}" />
+  <meta property="og:description" content="{{ section.description }}" />
+  {% endif %}
 {% endblock meta_content %}
 
 {% block content %}

@@ -1,5 +1,6 @@
 +++
 title = "Get In Touch"
+description = "Contact Limeleaf to discuss your software development project."
 
 [extra]
 feature_photo = "images/contact/email.svg"

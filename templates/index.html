@@ -2,10 +2,9 @@
 
 {% block meta_content %}
   <title>{{ config.title }}</title>
-  <meta name="description" content="{{ config.description }}" />
-  
   <meta property="og:title" content="{{ config.title }}" />
   <meta property="og:description" content="{{ config.description }}" />
+  <meta name="description" content="{{ config.description }}" />
 {% endblock meta_content %}
 
 {% block content %}

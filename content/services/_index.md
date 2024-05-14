@@ -1,6 +1,6 @@
 +++
 title = "Our Software Development Services"
-description = "Our Software Development Services"
+description = "Software and product services that Limeleaf provides to clients."
 sort_by = "weight"
 
 [extra]

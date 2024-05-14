@@ -1,5 +1,6 @@
 +++
 title = "Let Us Build Your MVP"
+description = "Minimal Viable Product (MVP) development services from Limeleaf."
 weight = 1
 
 [extra]
@@ -11,11 +12,11 @@ We understand the importance of bringing your product to market quickly and effi
 
 Our team of staff-level developers and product managers will collaborate closely with you to understand your vision and goals, ensuring we create an SLC that validates your idea in the market.
 
-### Predictable Costs
+## Predictable Costs
 
 We operate on a fixed-time / fixed-price basis for [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?") development. This provides cost predictability, allowing you to plan your resources effectively while eliminating surprises or hidden costs.
 
-### Your Long-Term Development Partners
+## Your Long-Term Development Partners
 
 Once the [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?") is complete, you can extend the package to develop the product further. Whether you want to add new features, improve the user interface, optimize performance, or scale your product, our team will be ready to support you in the next phase of your product's growth.
 

@@ -1,5 +1,6 @@
 +++
 title = "Frontend Development"
+description = "Frontend software development services from Limeleaf."
 weight = 4
 
 [extra]
@@ -7,12 +8,21 @@ feature_photo = "images/services/front-end.svg"
 feature_photo_alt = "Front-end development illustration"
 +++
 
-Our team crafts exceptional user experiences using a range of modern web technologies. We believe in building websites on a solid foundation of well-structured HTML and responsive CSS, with just the right amount of JavaScript for interactivity and functionality.
+We work with proven frontend technologies and frameworks to create responsive, engaging, accessible user interfaces that drive user engagement and achieve your business goals.
 
-### Flexible and Future-Proof
+## Responsive and Mobile-First Design
 
-Need to work with a specific front-end framework or library? No problem. Our developers are skilled in a variety of technologies, including React, Vue.js, Angular, and the latest frameworks. We'll choose the best tools for your project and ensure your site is built to scale.
+Users access applications on a variety of devices, so responsive UX design is crucial. We ensure that your application delivers a seamless experience across desktops, tablets, and smartphones to provide a consistent and enjoyable experience for all users.
 
-### Proficient Collaborators
+## Performance Optimization and Speed
 
-If you have your own design team, we will work closely with them to ensure pixel-perfect implementation of your brand's visual identity across all devices and screen sizes.
+We understand the importance of performance in retaining users and improving engagement. Our focus on speed and performance not only enhances user satisfaction but also positively impacts your application's SEO and overall success.
+
+## Integration with Backend Systems
+
+A seamless connection between frontend and [backend systems](/services/backend-development/ "Backend development services") is essential for a cohesive application. Our developers work closely with backend teams to ensure that data flows efficiently and that the user interface interacts perfectly with backend services. By providing a unified development approach, we deliver applications that meet your business requirements and offer an exceptional user experience.
+
+## Collaborating with Your Design Team
+
+We can also work with your design team to bring their creative vision to life. We can translate design mockups into fully functional, responsive user interfaces that deliver a seamless and engaging experience for your users.
+
