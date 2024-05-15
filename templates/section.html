@@ -3,6 +3,9 @@
 {% block meta_content %}
   <title>{{ section.title}} - {{ config.title }}</title>
   <meta property="og:title" content="{{ section.title }} - {{ config.title }}" />
+  <meta property="og:url" content="https://limeleaf.io" />
+  <meta property="og:image" content="https://limeleaf.io/images/logo/limeleaf-logo.png" />
+  <meta property=”og:type” content=”website” />
   {% if section.description %}
   <meta name="description" content="{{ section.description }}" />
   <meta property="og:description" content="{{ section.description }}" />
