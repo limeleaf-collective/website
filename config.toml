@@ -1,7 +1,9 @@
 base_url = "https://limeleaf.io"
 title = "Limeleaf Worker Collective"
-copyright = "Limeleaf Worker Collective, LLC"
 description = "Limeleaf is a software development cooperative that provide Staff-level software engineering and product development for businesses, brands, and startups."
 
 generate_feed = true
 feed_filename = "rss.xml"
+
+[extra]
+copyright = "Limeleaf Worker Collective, LLC"
