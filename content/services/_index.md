@@ -8,7 +8,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-At Limeleaf, we help organizations harness the power of software to stay competitive in today's digital world.
+At Limeleaf, we help organizations harness the power of software to stay competitive in the digital world.
 
 Every business is unique, so our team works closely with clients to understand their requirements and develop solutions tailored to their needs and budgets.
 
