@@ -8,7 +8,7 @@ feature_photo = "images/services/go-programming.svg"
 feature_photo_alt = "Go programming illustration"
 +++
 
-[Go](https://go.dev "Go language website") is used for some of the most popular cloud-based and network-connected software and by some of the biggest infrastructure providers in the world. Its focus on simplicity, correctness, concurrency support, and “batteries-included” standard library make it the ideal choice when building any network-connected software system. 
+The [Go language](https://go.dev "Go language website") is used for some of the most popular cloud-based and network-connected software and by some of the biggest infrastructure providers in the world. Its focus on simplicity, correctness, concurrency support, and “batteries-included” standard library make it the ideal choice when building network-connected software. 
 
 Choose us for your Go programming projects to build high-performance, scalable, and maintainable applications that drive your business forward.
 
