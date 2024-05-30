@@ -47,6 +47,50 @@ when using your service.
 
 ## Simple Auth
 
+**Go Example**
+```go
+func RegistraionHandler(w http.ResponseWriter, r *http.Request) {
+  r.ParseForm()
+
+  email := r.FormValue("email")
+  password := r.FormValue("password")
+
+  if userDB.AlreadyRegistered(email) {
+    http.Redirect(w, r, "/register?error=User already exists", http.StatusSeeOther)
+    return
+  }
+
+  encryptedPassword, _ := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
+
+  _ := userDB.Create(email, encryptedPassword)
+
+  http.Redirect(w, r, "/sign-in", http.StatusSeeOther)
+}
+
+func SignInHandler(w http.ResponseWriter, r http.Request) {
+  r.ParseForm()
+
+  // Check db for creds
+
+  http.Redirect(w, r, "/dashboard", http.StatusSeeOther)
+}
+```
+
+**Rust Example**
+```rust
+#[derive(Deserialize, Debug)]
+struct Credentials {
+    email: String,
+    password: String,
+}
+
+async fn simple_auth_handler(Form(input): Form<Credentials>) {
+  // Check db for creds
+
+  Redirect::to("/dashboard")
+}
+```
+
 ## OAuth
 
 ## Magic Links

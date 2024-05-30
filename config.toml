@@ -8,3 +8,8 @@ feed_filename = "rss.xml"
 taxonomies = [
   { name = "tags", feed = false },
 ]
+
+[markdown]
+highlight_code = true
+highlight_theme = "bbedit"
+
