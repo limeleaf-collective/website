@@ -1,26 +1,26 @@
 +++
 title = "Product Development"
 description = "Product development and product management services from Limeleaf."
-weight = 2
+weight = 4
 
 [extra]
 feature_photo = "images/services/prod-dev.svg"
 feature_photo_alt = "Product development illustration"
 +++
 
-Do you have a great idea for a software product, but no idea where to start? Need someone to build your MVP? Or maybe a fractional CTO to define your ideal tech stack, or a Product Expert to help with product definition?
-
-We do all that, and more! We handle requirements, prototyping, architecture, coding, project management, testing, deployment, and maintenance to deliver high-quality software solutions on time and on budget. 
-
-[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project and get a quote.
+Do you have a great idea for a software product, but no idea where to start? Let us help!
 
 <!-- more -->
 
-## Product Requirements Development
+We handle requirements, prototyping, architecture, coding, project management, testing, deployment, and maintenance to deliver high-quality software solutions on time and on budget. 
 
-At Limeleaf, we take Product seriously and believe that well-crafted requirements are the essential foundation for building great software products for our clients. Requirements require careful planning, execution, and continuous management to ensure that the end product aligns with the needs and expectations of its users and stakeholders.
+[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
 
-From our experiences working on products like [Google Chrome](https://www.google.com/chrome/), [JW Platform](https://jwplayer.com), [Kinetic](https://www.wearkinetic.com/), [ngrok](https://ngrok.com), and many world-renowned video games, we have learned that high-quality requirements help avoid scope creep, missed deadlines, and unhappy users.
+## Translate Your Business Requirements Into Product Requirements
+
+We believe that well-crafted requirements are the essential foundation for building great software products for our clients. Clear requirements require understanding your business and goals to ensure the end product aligns with the needs and expectations of its users and stakeholders.
+
+From our experiences working on products at [Google Chrome](https://www.google.com/chrome/), [JW Platform](https://jwplayer.com), [Kinetic](https://www.wearkinetic.com/), [RSA Security](https://rsa.com "RSA Security"), [ngrok](https://ngrok.com), and many world-renowned video games, we have learned that high-quality requirements help avoid scope creep, missed deadlines, and unhappy users.
 
 The Limeleaf high-level requirements process:
 

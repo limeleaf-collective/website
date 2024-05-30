@@ -48,6 +48,25 @@
         <article>
             <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
             <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
+            {{ page.summary | safe }}
+        </article>
+        {% endfor %}
+        <div>
+          <h2>Ready to chat?</h2>
+          <p>Let's book a consultation and tell us about your project.</p>
+          <p>We'd love to work with you!</p>
+          <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Hire Us</a>
+        </div>
+      </div>
+    </section>
+    {% elif current_path == "/case-studies/" %}
+    <section class="case-studies">
+      <div class="grid">
+        {% for page in section.pages %}
+        <article>
+            <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
+            <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
+            {{ page.summary | safe }}
         </article>
         {% endfor %}
         <div>
