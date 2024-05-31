@@ -2,18 +2,25 @@
   --pico-primary: #1C7258 !important;
   --pico-primary-background: #1C7258 !important;
   --pico-primary-underline: #1C7258 !important;
-  --pico-primary-hover: #009472 !important;
-  --pico-primary-hover-background: #009472 !important;
+  --pico-primary-hover: #31c79a !important;
+  --pico-primary-hover-background: #31c79a !important;
   --pico-font-size: 100% !important;
   --pico-background-color: #fdfdfd !important;
-
+  --pico-box-shadow: none !important;
+  --pico-font-family: "Open Sans", sans-serif;
+  --pico-font-weight: 380;
 }
 
 #logo {
   display: block;
   margin: 1em auto;
-  width: 50%;
-  max-width: 30em;
+  float: left;
+  max-height: 3em;
+  margin-top: 0;
+}
+
+body > header {
+  padding-bottom: 5em;
 }
 
 body > header, body > footer {
@@ -23,6 +30,10 @@ body > header, body > footer {
 figure {
     text-align: center;
     padding: 1em;
+}
+
+.icon {
+  padding-bottom: 0.75em;
 }
 
 footer p {
@@ -45,6 +56,7 @@ nav {
 nav a {
   display: inline-block;
   margin: 0 10px;
+  float: right;
 }
 
 article header {
@@ -68,15 +80,15 @@ article header {
   text-decoration: none;
 }
 
-@media (min-width: 75%) {
+@media (min-width: 25%) {
   .services-home .grid {
-    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
 }
 
-@media (min-width: 75%) {
+@media (min-width: 768px) {
   .services .grid {
-    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
 }
 
@@ -86,11 +98,12 @@ article header {
   }
 }
 
-.services-home article, 
 .expertise article, 
 .services article {
   text-align: left;
   font-size: 0.9em;
+  box-shadow: 0.0145rem 0.029rem 0.174rem rgba(129, 145, 181, 0.01698),0.0335rem 0.067rem 0.402rem rgba(129, 145, 181, 0.024),0.0625rem 0.125rem 0.75rem rgba(129, 145, 181, 0.03),0.1125rem 0.225rem 1.35rem rgba(129, 145, 181, 0.036),0.2085rem 0.417rem 2.502rem rgba(129, 145, 181, 0.04302),0.5rem 1rem 6rem rgba(129, 145, 181, 0.06),0 0 0 0.0625rem rgba(129, 145, 181, 0.015)
+
 }
 
 
@@ -99,5 +112,5 @@ h4, h5 a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 550;
+  --pico-font-weight: 425;
 }

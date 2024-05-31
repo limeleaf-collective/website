@@ -6,9 +6,9 @@ feature_photo = "images/services/tech.svg"
 feature_photo_alt = "Tech illustration"
 +++
 
-We have decades of collective experience in every facet of building software. We've worked at [Google][2], [Electronic Arts][3], [ngrok][4], [Kinetic][5], [Harvard University][6], [RSA Security][8], [JW Player][7], and elsewhere creating APIs, video services, publishing platforms, IoT devices, and much more.
-
 Whether you're developing a new application or integrating with 3rd-party services, Limeleaf has the [expertise][1], [experience][9], and innovative spirit to get it done right.
+
+[Contact us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
 
 [1]: /expertise/ "Our software expertise"
 [2]: https://www.google.com/chrome "Google Chrome website"

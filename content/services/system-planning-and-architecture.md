@@ -6,9 +6,11 @@ weight = 2
 [extra]
 feature_photo = "images/services/network.svg"
 feature_photo_alt = "System Planning and Architecture illustration"
+icon = "images/services/design-50.png"
+icon_alt = "Design icon"
 +++
 
-With decades of combined industry experience, our team of expert software engineers and architects is ready to guide you through designing and implementing efficient, reliable, scalable software systems.
+Our team of expert software engineers and architects is ready to guide you through designing and implementing efficient, reliable, scalable software systems.
 
 <!-- more -->
 
