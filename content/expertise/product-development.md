@@ -10,8 +10,6 @@ feature_photo_alt = "Product development illustration"
 
 Do you have a great idea for a software product, but no idea where to start? Let us help!
 
-<!-- more -->
-
 We handle requirements, prototyping, architecture, coding, project management, testing, deployment, and maintenance to deliver high-quality software solutions on time and on budget. 
 
 [Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.

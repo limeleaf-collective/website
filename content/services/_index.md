@@ -1,5 +1,5 @@
 +++
-title = "Comprehensive Software and Product Development"
+title = "Comprehensive Software and Product Development Services"
 description = "Software and product services that Limeleaf provides to clients."
 sort_by = "weight"
 
@@ -7,5 +7,3 @@ sort_by = "weight"
 feature_photo = ""
 feature_photo_alt = ""
 +++
-
-We build software systems that solve tough problems and help grow your business. [Write to us](https://limeleaf.io/contact/ "Contact us") to discuss how we can solve problems for you.

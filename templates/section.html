@@ -53,14 +53,14 @@
         {% endfor %}
         <div>
           <h2>Ready to chat?</h2>
-          <p>Let's book a consultation and tell us about your project.</p>
+          <p>Schedule a consultation and tell us about your project.</p>
           <p>We'd love to work with you!</p>
           <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Hire Us</a>
         </div>
       </div>
     </section>
-    {% elif current_path == "/case-studies/" %}
-    <section class="case-studies">
+    {% elif current_path == "/expertise/" %}
+    <section class="expertise">
       <div class="grid">
         {% for page in section.pages %}
         <article>
@@ -71,7 +71,7 @@
         {% endfor %}
         <div>
           <h2>Ready to chat?</h2>
-          <p>Let's book a consultation and tell us about your project.</p>
+          <p>Schedule a consultation and tell us about your project.</p>
           <p>We'd love to work with you!</p>
           <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Hire Us</a>
         </div>
@@ -93,3 +93,4 @@
   {% endif %}
 </main>
 {% endblock content %}
+
