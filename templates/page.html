@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
-{% block title%}
-  {{ page.title}} - {{ config.title }}
-{% endblock title %}
+{% block meta_content %}
+  <title>{{ page.title}} - {{ config.title }}</title>
+  <meta property="og:title" content="{{ page.title }} — {{ config.title }}" />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:url" content="https://limeleaf.io" />
+  <meta property="og:image" content="https://limeleaf.io/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  <meta name="description" content="{{ page.description }}" />
+  {% endif %}
+{% endblock meta_content %}
 
 {% block content %}
 <main class="container">
@@ -37,4 +45,12 @@
     {% endif %}
   </section>
 </main>
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/limeleaf/30min', text: '🗓️ Schedule a call with us', color: '#1C7258', textColor: '#ffffff', branding: undefined }); }</script>
+
+<!-- Calendly badge widget end -->
+
 {% endblock content %}

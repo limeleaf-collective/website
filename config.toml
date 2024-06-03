@@ -1,6 +1,6 @@
 base_url = "https://limeleaf.io"
-title = "Limeleaf Worker Collective, LLC."
-description = "Limeleaf is a software development cooperative that builds fresh, sustainable, simple tech solutions for businesses, social impact startups, and technologically underserved communities."
+title = "Limeleaf Worker Collective | We Build Software"
+description = "Limeleaf is a software development cooperative that provides Staff-level software engineering and product development for businesses, brands, and startups."
 
 generate_feed = true
 feed_filename = "rss.xml"
@@ -12,3 +12,6 @@ taxonomies = [
 [markdown]
 highlight_code = true
 highlight_theme = "axar"
+
+[extra]
+copyright = "Limeleaf Worker Collective, LLC"

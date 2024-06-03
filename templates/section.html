@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
-{% block title%}
-  {{ section.title}} - {{ config.title }}
-{% endblock title %}
+{% block meta_content %}
+  <title>{{ section.title}} - {{ config.title }}</title>
+  <meta property="og:title" content="{{ section.title }} - {{ config.title }}" />
+  <meta property="og:url" content="https://limeleaf.io" />
+  <meta property="og:image" content="https://limeleaf.io/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  {% if section.description %}
+  <meta name="description" content="{{ section.description }}" />
+  <meta property="og:description" content="{{ section.description }}" />
+  {% endif %}
+{% endblock meta_content %}
 
 {% block content %}
 <main class="container">
@@ -39,9 +47,15 @@
         {% for page in section.pages %}
         <article>
             <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h4><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h4>
+            <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
         </article>
         {% endfor %}
+        <div>
+          <h2>Ready to chat?</h2>
+          <p>Let's book a consultation and tell us about your project.</p>
+          <p>We'd love to work with you!</p>
+          <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Hire Us</a>
+        </div>
       </div>
     </section>
   {% elif current_path == "/blog/" %}

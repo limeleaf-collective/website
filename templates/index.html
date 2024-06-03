@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
-{% block title%}
-  {{ config.title }}
-{% endblock title %}
+{% block meta_content %}
+  <title>{{ config.title }}</title>
+  <meta property="og:title" content="{{ config.title }}" />
+  <meta property="og:description" content="{{ config.description }}" />
+  <meta property="og:url" content="https://limeleaf.io" />
+  <meta property="og:image" content="https://limeleaf.io/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  <meta name="description" content="{{ config.description }}" />
+{% endblock meta_content %}
 
 {% block content %}
 <main class="container">
