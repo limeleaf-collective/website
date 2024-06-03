@@ -10,7 +10,9 @@ icon = "images/services/performance-50.png"
 icon_alt = "Performance icon"
 +++
 
-As your business and user base expand, the ability to seamlessly scale your software systems is crucial.<!-- more --> Limeleaf designs and implements highly scalable architectures that can handle intense traffic and data loads easily and cost-effectively.
+As your business grows, the ability to seamlessly scale your software systems is crucial. We design and implement highly scalable architectures that can handle intense traffic and data loads easily and cost-effectively.
+
+<!-- more --> 
 
 We leverage proven techniques such as load balancing, caching, and database sharding to ensure your applications remain responsive and efficient, even under the most demanding conditions.
 

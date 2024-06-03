@@ -10,11 +10,11 @@ icon = "images/services/integration-50.png"
 icon_alt = "Integration icon"
 +++
 
-Integrating with APIs and data stores is essential for optimizing business operations and adding new services.<!-- more --> We've helped many companies integrate software systems to streamline operations and improve data integrity. 
-
-Limeleaf can seamlessly connect systems or create custom APIs, if needed, eliminating data silos and providing a unified infrastructure.
+Integrate with APIs and data stores to optimize your business operations and add new services. We help you connect software systems to streamline operations and improve data integrity. 
 
 <!-- more -->
+
+Limeleaf can seamlessly connect systems or create custom APIs, if needed, eliminating data silos and providing a unified infrastructure.
 
 ## Expertise You Can Trust
 

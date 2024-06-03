@@ -10,7 +10,7 @@ icon = "images/services/design-50.png"
 icon_alt = "Design icon"
 +++
 
-Our team of expert software engineers and architects is ready to guide you through designing and implementing efficient, reliable, scalable software systems.
+Our team of expert software engineers and architects design and implement efficient, reliable, scalable software systems that solve complex problems.
 
 <!-- more -->
 
