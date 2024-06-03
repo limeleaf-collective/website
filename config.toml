@@ -11,5 +11,4 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-highlight_theme = "bbedit"
-
+highlight_theme = "axar"
