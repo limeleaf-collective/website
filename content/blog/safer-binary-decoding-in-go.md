@@ -175,6 +175,150 @@ more of the dreaded `if err != nil` Go error checking we end up with
 should something bad happen. We'll end up catching that error and
 returning it to the caller.
 
+## Bonus: Decoding the Entire `struct` at Once
+
+Since `Echo`'s fields are all fixed sizes we can pass the entire thing
+into `binary.Read` and get the same result as above, but with a single
+call.
+
+```go
+func (e *Echo) UnmarshalBinary(data []byte) error {
+  buf := bytes.NewBuffer(data)
+
+  return binary.Read(buf, binary.BigEndian, &e)
+}
+```
+
+This method works great for structs that have all fixed sized fields and
+the binary data on the wire matches our struct, but that will not
+alawys be the case. Sometimes we'll have to account for n-length
+strings and n-repeated fields.
+
+## Variable Length Strings
+
+For these examples lets assume we have a new message that is encoded as
+binary.
+
+```
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   Identifier  |  HostnameLen  |          Hostname ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+```
+
+Since we have a variable length string `Hostname` the the length is
+first encoded before the string data itself to tell us how many bytes
+we should read that represent the hostname.
+
+Knowing this we can now set up our type to store the relevant fields
+like we did with `Echo`.
+
+```go
+type Message struct {
+  Identifier uin16
+  Hostname   string
+}
+
+func (m *Message) UnmarshalBinary(data []byte) error {
+  buf := bytes.NewBuffer(data)
+
+  // Decode Identifer the same we did for others above in Echo
+  if err := binary.Read(buf, binary.BigEndian, &e.Identifier); err != nil {
+    return err
+  }
+
+  // Read the HostnameLen into a temporary variable
+  var hostnameLen uint16
+  if err := binary.Read(buf, binary.BigEndian, &hostnameLen); err != nil {
+    return err
+  }
+
+  // Make a slice with sizing it with the value of the temporary variable
+  // from above and read the next n bytes into it. Finally, we convert
+  // that []byte into string and set the field on the Message.
+  hostname := make([]byte, hostnameLen)
+  if _, err := buf.Read(hostname); err != nil {
+    return err
+  }
+  m.Hostname = string(hostname)
+
+  return nil
+}
+```
+
+This length-prefixed string format is very common for binary encodings.
+The only thing we need to know for sure is what type the length is
+encoded as so we know what kind of temorary variable to use.
+
+## Repeated Fields
+
+Repeated fields can work in a similar fashion by size-prefixing the
+number of times the field occurs in the data.
+
+For these examples lets assume we have a new message that is encoded as
+binary.
+
+```
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   Identifier  |    NumPorts   |      Port0      |    Port1    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|      Port2    |      Port3    |      PortN ...
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+```
+
+Now we can decode this data with the following strategy.
+
+```go
+type Message struct {
+  Identifier uin16
+  Ports      []uint16
+}
+
+func (m *Message) UnmarshalBinary(data []byte) error {
+  buf := bytes.NewBuffer(data)
+
+  if err := binary.Read(buf, binary.BigEndian, &e.Identifier); err != nil {
+    return err
+  }
+
+  // Read the HostnameLen into a temporary variable
+  var numPorts uint16
+  if err := binary.Read(buf, binary.BigEndian, &numPorts); err != nil {
+    return err
+  }
+
+  // Make a slice with sizing it with the value of the temporary variable
+  // from above and read the next n fields into it.
+  m.Ports = make([]uint16, numPorts)
+  for n := range numPorts {
+    if _, err := binary.Read(buf, binary.BigEndian, &m.Ports[n]); err != nil {
+      return err
+    }
+  }
+
+  return nil
+}
+```
+
+Since we're still using `binary.Read` and handling any `error` being
+returned we can safely handle any errors that might occur if the data
+we're decoding tells us we have 5 ports, but it only gives us 2. We'll
+catch the `io.EOF` error and return accordingly instead of needing to
+handle subslicing and potential `panic`s being throw.
+
+## Conclusion
+
+We've seen that using [`bytes.Buffer`][7] and [`binary.Read`][8] leads
+to safer reading of `[]byte` and clearer code to read for other
+engineers on your team who might read it later.
+
+So the next time you need to decode binary data and have a specification
+to follow try your hand at these techniques to make your code safe,
+correct, readable, and composable.
+
 [0]: https://pkg.go.dev/encoding/json
 [1]: https://pkg.go.dev/encoding#BinaryMarshaler
 [2]: https://pkg.go.dev/encoding#BinaryUnmarshaler
