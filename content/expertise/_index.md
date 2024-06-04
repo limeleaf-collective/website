@@ -7,3 +7,5 @@ sort_by = "weight"
 feature_photo = ""
 feature_photo_alt = ""
 +++
+
+#### Each member has 30 years of experience from companies such as Google, Electronic Arts Games, and ngrok.

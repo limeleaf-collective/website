@@ -13,22 +13,17 @@
 {% endblock meta_content %}
 
 {% block content %}
-<main class="container">
-  <section class="grid">
-    <div>
-      <h1>{{ section.title }}</h1>
+<main>
+  <section class="hero">
+    <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" class="hero-bg" />
+    <div class="hero-content">
+      <h2>{{ section.title }}</h2>
       {{ section.content | safe }}
     </div>
-
-    {% if section.extra.feature_photo != "" %}
-    <figure>
-        <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" />
-    </figure>
-    {% endif %}
   </section>
 
   {% if current_path == "/members/" %}
-    <section class="members">
+    <section class="container members">
       <div class="grid">
         {% for page in section.pages %}
         <article>
@@ -42,7 +37,7 @@
       </div>
     </section>
   {% elif current_path == "/services/" %}
-    <section class="services">
+    <section class="container services">
       <div class="grid">
         {% for page in section.pages %}
         <article>
@@ -60,7 +55,7 @@
       </div>
     </section>
     {% elif current_path == "/expertise/" %}
-    <section class="expertise">
+    <section class="container expertise">
       <div class="grid">
         {% for page in section.pages %}
         <article>
@@ -78,7 +73,7 @@
       </div>
     </section>
   {% elif current_path == "/blog/" %}
-    <section>
+    <section class="container">
       {% for post in section.pages %}
       <article>
         <header>

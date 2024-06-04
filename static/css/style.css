@@ -18,12 +18,16 @@
   margin-top: 0;
 }
 
-body > header {
-  padding-bottom: 5em;
-}
-
 body > header, body > footer {
   text-align: center;
+}
+
+h4, h5 a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  --pico-font-weight: 425;
 }
 
 figure {
@@ -31,9 +35,6 @@ figure {
     padding: 1em;
 }
 
-.icon {
-  padding-bottom: 0.75em;
-}
 
 footer p {
     font-size: 0.8em;
@@ -59,6 +60,53 @@ nav a {
 
 article header {
   text-align: left;
+}
+
+.hero {
+  padding: 2em;
+  background-color: var(--pico-primary);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-bg {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: -50%;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.hero-content > * {
+  --pico-font-weight: 700;
+  color: #fff !important;
+  position: relative;
+}
+
+.hero-content a[role=button] {
+  color: var(--pico-primary);
+  background-color: var(--pico-primary-inverse);
+}
+
+.icon {
+  padding-bottom: 0.75em;
+}
+
+.services-home article {
+  box-shadow: none;
+}
+
+.expertise article, 
+.services article {
+  text-align: left;
+  font-size: 0.9em;
 }
 
 .members article img {
@@ -94,22 +142,4 @@ article header {
   .expertise .grid {
     grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
   }
-}
-
-.services-home article {
-  box-shadow: none;
-}
-
-.expertise article, 
-.services article {
-  text-align: left;
-  font-size: 0.9em;
-}
-
-h4, h5 a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5 {
-  --pico-font-weight: 425;
 }

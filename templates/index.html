@@ -11,17 +11,15 @@
 {% endblock meta_content %}
 
 {% block content %}
-<main class="container">
-  <section class="grid">
-    <div>
+<main>
+  <section class="hero">
+    <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" class="hero-bg" />
+    <div class="hero-content">
       <h2>{{ section.title }}</h2>
       {{ section.content | safe }}
     </div>
-    <figure>
-      <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" />
-    </figure>
   </section>
-  <section class="services-home">
+  <section class="container grid services-home">
     <div class="grid">
       {% set section = get_section(path="services/_index.md") %}
       {% for page in section.pages %}
