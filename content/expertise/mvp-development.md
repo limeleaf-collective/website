@@ -29,3 +29,5 @@ Once the [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and C
 - Free demo hosting of your [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?") during development
 - Deployment of the final [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?") on your infrastructure
 - Unlimited email communications with a 12-hour guaranteed response time
+- 
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

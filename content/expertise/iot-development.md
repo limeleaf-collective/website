@@ -23,3 +23,5 @@ IoT devices are often battery-powered, so developers optimize firmware and softw
 By leveraging our IoT expertise, we can help you harness connected devices to streamline operations, gather data insights, and create new business opportunities. We work closely with you to design IoT solutions that seamlessly integrate with your existing systems.
 
 Let us guide you through the complexities of IoT technology to bring your product concept to your customers effectively.
+
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

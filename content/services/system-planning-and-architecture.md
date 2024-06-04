@@ -1,6 +1,6 @@
 +++
 title = "System Planning and Architecture"
-description = "??"
+description = "Limeleaf engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems."
 weight = 2
 
 [extra]
@@ -10,7 +10,7 @@ icon = "images/services/design-50.png"
 icon_alt = "Design icon"
 +++
 
-Our expert software engineers and architects design and implement efficient, reliable, scalable software systems that solve complex problems.
+Our engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems.
 
 <!-- more -->
 
@@ -26,4 +26,4 @@ Using industry best practices, we design optimized system architectures for perf
 
 Our engineers work closely with your team for a smooth implementation process. We provide ongoing support and optimization services to ensure your software system continues to meet your evolving business needs.
 
-[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

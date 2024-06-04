@@ -1,6 +1,6 @@
 +++
 title = "Service Integrations"
-description = "??"
+description = "Limeleaf connects your systems to 3rd party APIs and data stores to optimize your business operations and add new capabilities."
 weight = 1
 
 [extra]
@@ -10,7 +10,7 @@ icon = "images/services/integration-50.png"
 icon_alt = "Integration icon"
 +++
 
-We connect your systems to 3rd party APIs and data stores to optimize your business operations and add new services.
+We connect your systems to 3rd party APIs and data stores to optimize your business operations and add new capabilities.
 
 <!-- more -->
 
@@ -40,4 +40,4 @@ We emphasize close collaboration with clients, with frequent communication, week
 * **Identity and Access Management (IAM):** OAuth, OIDC, JWTs 
 * **Learning Management Systems (LMS):** Blackboard, Moodle, Canvas
 
-[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

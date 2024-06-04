@@ -23,3 +23,5 @@ Rust is also well-suited for building concurrent and parallel applications. Its 
 ## A Versatile Language
 
 While Rust is primarily known for its efficiency and performance, it is also a versatile language that can be used for a wide range of applications, from systems programming to web development and beyond. Its strong type system, extensive standard library, and growing ecosystem of third-party libraries make it a powerful choice for developers looking to build high-quality, scalable software.
+
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

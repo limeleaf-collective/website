@@ -1,5 +1,5 @@
 +++
-title = "Scalable, Sustainable Custom Software Systems"
+title = "Simple Solutions. Proven Technology."
 
 [extra]
 feature_photo = "images/services/tech.svg"

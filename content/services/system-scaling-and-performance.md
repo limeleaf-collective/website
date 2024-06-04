@@ -1,6 +1,6 @@
 +++
 title = "System Scaling and Performance"
-description = "??"
+description = "Limeleaf builds solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows."
 weight = 3
 
 [extra]
@@ -13,7 +13,7 @@ icon_alt = "Performance icon"
 We build solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows.
 
 <!-- more --> 
-
+`
 We leverage proven techniques such as load balancing, caching, and database sharding to ensure your applications remain responsive and efficient, even under the most demanding conditions.
 
 ## Optimized Performance for Maximum Impact
@@ -32,4 +32,4 @@ By automating deployment and monitoring processes, we ensure your systems remain
 
 With years of experience building complex software systems with millions of users, we are ready to tackle the most challenging performance and scalability requirements. 
 
-[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
+[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
