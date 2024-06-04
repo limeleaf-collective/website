@@ -81,11 +81,11 @@ article header {
 .hero-content {
   margin: 0 auto;
   width: 50%;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-content > * {
-  --pico-font-weight: 700;
+  --pico-font-weight: 425;
   color: #fff !important;
   position: relative;
 }
@@ -93,6 +93,10 @@ article header {
 .hero-content a[role=button] {
   color: var(--pico-primary);
   background-color: var(--pico-primary-inverse);
+}
+
+.hero-content a {
+  color: var(--pico-primary-hover);
 }
 
 .icon {

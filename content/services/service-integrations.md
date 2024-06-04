@@ -10,7 +10,7 @@ icon = "images/services/integration-50.png"
 icon_alt = "Integration icon"
 +++
 
-Integrate with APIs and data stores to optimize your business operations and add new services. We help you connect software systems to streamline operations and improve data integrity. 
+We connect your systems to 3rd party APIs and data stores to optimize your business operations and add new services.
 
 <!-- more -->
 

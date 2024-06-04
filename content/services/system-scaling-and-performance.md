@@ -10,7 +10,7 @@ icon = "images/services/performance-50.png"
 icon_alt = "Performance icon"
 +++
 
-As your business grows, the ability to seamlessly scale your software systems is crucial. We design and implement highly scalable architectures that can handle intense traffic and data loads easily and cost-effectively.
+We build solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows.
 
 <!-- more --> 
 

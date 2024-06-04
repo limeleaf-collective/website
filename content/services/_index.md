@@ -1,5 +1,5 @@
 +++
-title = "Services We Provide"
+title = "Comprehensive Software and Product Development Services"
 description = "Software and product services that Limeleaf provides to clients."
 sort_by = "weight"
 
@@ -8,4 +8,4 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-#### Comprehensive software and product development services
+##### We help organizations harness the power of technology compete in the digital world.
