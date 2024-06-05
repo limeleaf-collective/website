@@ -20,4 +20,4 @@ We have been using Go for over 10 years, have given talks in the community, and 
 
 We prioritize clean, maintainable, and well-documented code. By following best practices and industry standards, we ensure your codebase is robust and easy to manage. This approach reduces technical debt and facilitates future development, ensuring long-term sustainability and reliability.
 
-[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

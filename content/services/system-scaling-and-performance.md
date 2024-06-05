@@ -32,4 +32,4 @@ By automating deployment and monitoring processes, we ensure your systems remain
 
 With years of experience building complex software systems with millions of users, we are ready to tackle the most challenging performance and scalability requirements. 
 
-[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

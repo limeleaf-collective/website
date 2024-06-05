@@ -8,4 +8,4 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-##### We help organizations harness the power of technology compete in the digital world.
+##### We build tech solutions that solve complex problems and grow your business.

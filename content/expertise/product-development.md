@@ -57,4 +57,4 @@ We iterate over the product definition to improve its alignment with user needs,
 - **Feature Updates and Scaling**. Based on feedback and new requirements, additional features may be added, or existing features may be improved. The software may also need to be scaled to accommodate more users or data.
 - **Quality Assurance**. This includes functional testing, performance testing, usability testing, and security testing.
 
-[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

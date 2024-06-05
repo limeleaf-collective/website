@@ -18,8 +18,18 @@ Whether your audience is watching live broadcasts or on-demand content, our medi
 
 Expand your reach and ensure your content is accessible globally everywhere. We use CDNs distributed around the world to deliver your content quickly and reliably, minimizing latency and improving playback performance for your audience.
 
-## Unlock Revenue Potential with Video Monetization
+## Optimize Your Existing Media Workflow
+
+Already have a video workflow in place? We specialize in optimizing existing video workflows to deliver the best user experience possible. Some areas where we can help:
+
+- **Performance Analysis:** We conduct a thorough analysis of your current video delivery and playback systems to identify bottlenecks and inefficiencies.
+- **ABR Refinements:** We fine-tune your adaptive bitrate streaming (HLS, DASH) configurations to ensure videos adjust smoothly to varying user bandwidths, reducing buffering and enhancing playback quality.
+- **Streamlined Content Processing:** We implement load balancing and job scheduling techniques to distribute video encoding and packaging efficiently, preventing server overloads and ensuring more predictable costs.
+- **Content Delivery Network (CDN) Optimization:** We fine-tune CDN configurations to minimize latency and deliver your content faster, no matter where your audience is located.
+- **User Analytics:** We help you understand viewer behavior and engagement, allowing for continuous improvement of the user experience.
+
+## Unlock Revenue Potential with Monetization
 
 We work with monetization partners like [CakeWorks](https://cake-works.com/ "CakeWorks website") to maximize your earnings. We can integrate both [AVOD](https://www.wikiwand.com/en/AVOD#Advertising_video_on_demand) and [SVOD](https://www.wikiwand.com/en/AVOD#Subscription_models) models into your platform, giving you the flexibility to generate revenue through ads or subscriptions. Our optimized video player and ad management tools deliver ads seamlessly, providing a non-intrusive experience that keeps users engaged.
 
-[Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
