@@ -64,7 +64,15 @@
       <article>
         <header>
           <h4><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-          <time>{{ post.date | date(format="%B %e, %Y")}}</time>
+          <p>
+            Posted on <time>{{ post.date | date(format="%B %d, %Y") }}</time>
+            {% if post.taxonomies.tags %}
+              in
+              {% for tag in post.taxonomies.tags %}
+                <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+          </p>
         </header>
         {{ post.summary | safe }}
         <footer><a href="{{ post.permalink }}" title="{{ post.title }}">Continue Reading</a></footer>

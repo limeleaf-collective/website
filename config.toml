@@ -5,5 +5,13 @@ description = "Limeleaf is a software development cooperative that provides Staf
 generate_feed = true
 feed_filename = "rss.xml"
 
+taxonomies = [
+  { name = "tags", feed = false },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "axar"
+
 [extra]
 copyright = "Limeleaf Worker Collective, LLC"
