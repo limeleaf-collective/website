@@ -219,7 +219,7 @@ like we did with `Echo`.
 
 ```go
 type Message struct {
-  Identifier uin16
+  Identifier uint16
   Hostname   string
 }
 
@@ -227,7 +227,7 @@ func (m *Message) UnmarshalBinary(data []byte) error {
   buf := bytes.NewBuffer(data)
 
   // Decode Identifer the same we did for others above in Echo
-  if err := binary.Read(buf, binary.BigEndian, &e.Identifier); err != nil {
+  if err := binary.Read(buf, binary.BigEndian, &m.Identifier); err != nil {
     return err
   }
 
@@ -241,8 +241,12 @@ func (m *Message) UnmarshalBinary(data []byte) error {
   // from above and read the next n bytes into it. Finally, we convert
   // that []byte into string and set the field on the Message.
   hostname := make([]byte, hostnameLen)
-  if _, err := buf.Read(hostname); err != nil {
-    return err
+  n, err := buf.Read(hostname)
+  if err != nil {
+  	return err
+  }
+  if n != int(hostnameLen) {
+  	return io.ErrUnexpectedEOF
   }
   m.Hostname = string(hostname)
 
@@ -276,14 +280,14 @@ Now we can decode this data with the following strategy.
 
 ```go
 type Message struct {
-  Identifier uin16
+  Identifier uint16
   Ports      []uint16
 }
 
 func (m *Message) UnmarshalBinary(data []byte) error {
   buf := bytes.NewBuffer(data)
 
-  if err := binary.Read(buf, binary.BigEndian, &e.Identifier); err != nil {
+  if err := binary.Read(buf, binary.BigEndian, &m.Identifier); err != nil {
     return err
   }
 
@@ -297,7 +301,7 @@ func (m *Message) UnmarshalBinary(data []byte) error {
   // from above and read the next n fields into it.
   m.Ports = make([]uint16, numPorts)
   for n := range numPorts {
-    if _, err := binary.Read(buf, binary.BigEndian, &m.Ports[n]); err != nil {
+    if err := binary.Read(buf, binary.BigEndian, &m.Ports[n]); err != nil {
       return err
     }
   }
@@ -322,6 +326,8 @@ So, the next time you need to decode binary data and have a specification
 to follow, try your hand at these techniques to make your code safe,
 correct, readable, and composable.
 
+The [complete source code][9] is avaialable along with supporting tests.
+
 [0]: https://pkg.go.dev/encoding/json
 [1]: https://pkg.go.dev/encoding#BinaryMarshaler
 [2]: https://pkg.go.dev/encoding#BinaryUnmarshaler
@@ -331,3 +337,4 @@ correct, readable, and composable.
 [6]: https://en.wikipedia.org/wiki/Endianness
 [7]: https://pkg.go.dev/bytes#Buffer
 [8]: https://pkg.go.dev/encoding/binary#Read
+[9]: https://github.com/limeleaf-collective/limeleaf.io/tree/main/code/safer-binary-decoding
