@@ -2,6 +2,7 @@
 title = "Why Limeleaf Operates as a Co-Op"
 date = 2024-02-11
 updated = 2024-04-10
+authors = ["John Luther"]
 
 [taxonomies]
 tags = ["Company"]

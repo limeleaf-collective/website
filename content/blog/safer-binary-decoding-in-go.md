@@ -1,6 +1,7 @@
 +++
 title = "Safer Binary Decoding in Go"
 date = 2024-05-30
+authors = ["Blain Smith"]
 
 [taxonomies]
 tags = ["Engineering"]

@@ -1,6 +1,7 @@
 +++
 title = "Founding Limeleaf: Part 3, Finding Support in the Cooperative Community"
 date = 2024-05-03
+authors = ["John Luther"]
 
 [taxonomies]
 tags = ["Company"]

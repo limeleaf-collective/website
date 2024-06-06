@@ -21,7 +21,9 @@
             {% if page.extra.tagline %}
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
-
+            {% if page.authors %}
+            <p>By {{ page.authors[0] }}</p>
+            {% endif %}
             {% if page.date %}
             <p>
               Posted on <time>{{ page.date | date(format="%B %d, %Y") }}</time>

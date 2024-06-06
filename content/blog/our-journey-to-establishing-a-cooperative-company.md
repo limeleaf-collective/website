@@ -1,6 +1,7 @@
 +++
 title = "Foundling Limeleaf: Our Journey to Establishing a Cooperative Company"
 date = 2024-04-12
+authors = ["John Luther"]
 
 [taxonomies]
 tags = ["Company"]
