@@ -21,17 +21,25 @@
             {% if page.extra.tagline %}
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
-
             {% if page.date %}
             <p>
               Posted on <time>{{ page.date | date(format="%B %d, %Y") }}</time>
               {% if page.taxonomies.tags %}
                 in
                 {% for tag in page.taxonomies.tags %}
-                  <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
+                  <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>{% if not loop.last %}, 
+                  {% endif %}
                 {% endfor %}
               {% endif %}
-            </p>
+              {% if page.authors %}
+              by 
+                {%- for author in page.authors %}
+                  {%- set parts = author | split(pat=" ") %}
+                  {%- set first_name = parts[0] | lower %}
+                  {%- set last_name = parts[1] | lower %}
+                  <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
+                {%- endfor %}</p>
+              {% endif %}
             {% endif %}
         </header>
 
