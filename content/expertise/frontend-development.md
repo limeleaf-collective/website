@@ -2,6 +2,7 @@
 title = "Frontend Development"
 description = "Frontend software development services from Limeleaf."
 weight = 5
+draft = true
 
 [extra]
 feature_photo = "images/services/front-end.svg"

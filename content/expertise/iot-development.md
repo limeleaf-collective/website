@@ -1,7 +1,7 @@
 +++
 title = "IoT Development"
 description = "IoT software development services from Limeleaf."
-weight = 9
+weight = 4
 
 [extra]
 feature_photo = "images/services/iot2.svg"
