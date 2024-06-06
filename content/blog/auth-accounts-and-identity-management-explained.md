@@ -2,6 +2,7 @@
 title = "Auth, Accounts, and Identity Management Explained"
 date = 2024-05-06
 draft = true
+authors = ["Blain Smith"]
 
 [taxonomies]
 tags = ["Engineering", "Product"]
