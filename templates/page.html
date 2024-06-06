@@ -16,12 +16,24 @@
 <main class="container">
   <section class="grid">
     <article>
-        <hgroup>
+        <header>
             <h1>{{ page.title }}</h1>
             {% if page.extra.tagline %}
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
-        </hgroup>
+
+            {% if page.date %}
+            <p>
+              Posted on <time>{{ page.date | date(format="%B %d, %Y") }}</time>
+              {% if page.taxonomies.tags %}
+                in
+                {% for tag in page.taxonomies.tags %}
+                  <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
+                {% endfor %}
+              {% endif %}
+            </p>
+            {% endif %}
+        </header>
 
       {{ page.content | safe }}
     </article>

@@ -2,6 +2,9 @@
 title = "Founding Limeleaf: Part 3, Finding Support in the Cooperative Community"
 date = 2024-05-03
 
+[taxonomies]
+tags = ["Company"]
+
 [extra]
 feature_photo = ""
 feature_photo_alt = ""

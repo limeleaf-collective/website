@@ -2,6 +2,9 @@
 title = "Founding Limeleaf: Part 2, Writing Our Operating Agreement"
 date = 2024-04-25
 
+[taxonomies]
+tags = ["Company"]
+
 [extra]
 feature_photo = ""
 feature_photo_alt = ""
