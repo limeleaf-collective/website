@@ -3,12 +3,18 @@
 {% block meta_content %}
   <title>{{ page.title}} - {{ config.title }}</title>
   <meta property="og:title" content="{{ page.title }} — {{ config.title }}" />
-  {% if page.description %}
-  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.io">
+  <meta property="twitter:url" content="https://limeleaf.io">
+  <meta name="twitter:title" content="{{ page.title }} — {{ config.title }}">
+  <meta name="twitter:image" content="https://limeleaf.io/images/logo/limeleaf-logo.jpg">
   <meta property="og:url" content="https://limeleaf.io" />
   <meta property="og:image" content="https://limeleaf.io/images/logo/limeleaf-logo.jpg" />
   <meta property=”og:type” content=”website” />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
   <meta name="description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}">
   {% endif %}
 {% endblock meta_content %}
 
