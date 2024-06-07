@@ -1,14 +1,14 @@
 +++
 title = "IoT Development"
 description = "IoT software development services from Limeleaf."
-weight = 7
+weight = 4
 
 [extra]
 feature_photo = "images/services/iot2.svg"
 feature_photo_alt = "IoT illustration"
 +++
 
-IoT (Internet of Things) devices like smartwatches, thermostats, fridges, and coffee makers have become part of our daily lives. These devices are basically small, programmable computers that need to be especially reliable, secure, and stable since they often can't easily be reset or directly accessed. They might lose power or connectivity without warning.
+IoT (Internet of Things) devices like smartwatches, thermostats, fridges, and coffee makers have become part of our daily lives. These devices are basically small, programmable computers that need to be especially reliable, secure, and stable since they often can't easily be reset or directly accessed and  might connectivity without warning.
 
 ## Deep Expertise in IoT
 
@@ -23,3 +23,5 @@ IoT devices are often battery-powered, so developers optimize firmware and softw
 By leveraging our IoT expertise, we can help you harness connected devices to streamline operations, gather data insights, and create new business opportunities. We work closely with you to design IoT solutions that seamlessly integrate with your existing systems.
 
 Let us guide you through the complexities of IoT technology to bring your product concept to your customers effectively.
+
+Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.

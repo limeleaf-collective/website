@@ -16,16 +16,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
     <script data-goatcounter="https://limeleaf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/limeleaf/30min', text: '🗓️ Schedule a free project assessment', color: '#1C7258', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="container">
-      <a href="{{ get_url(path="@/_index.md") }}" title="Limeleaf logo"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" id="logo" alt="Limeleaf logo"/></a>
+      <div class="grid">
+        <a href="{{ get_url(path="@/_index.md") }}" title="Limeleaf logo"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" id="logo" alt="Limeleaf logo"/></a>
       <nav>
-        <a href="{{ get_url(path="@/contact/_index.md") }}" title="Contact">Hire Us</a>
-        <a href="{{ get_url(path="@/services/_index.md") }}" title="Services">Services</a>
-        <a href="{{ get_url(path="@/blog/_index.md") }}" title="Blog">Blog</a>
+        <a href="{{ get_url(path="@/contact/_index.md") }}" title="Contact Us">Contact</a>
         <a href="{{ get_url(path="@/members/_index.md") }}" title="About Us">About Us</a>
+        <a href="{{ get_url(path="@/blog/_index.md") }}" title="Blog">Blog</a>        
+        <a href="{{ get_url(path="@/expertise/_index.md") }}" title="Expertise">Expertise</a>
+        <a href="{{ get_url(path="@/services/_index.md") }}" title="Services">Services</a>
       </nav>
+    </div>
     </header>
 
     {% block content %} {% endblock content %}

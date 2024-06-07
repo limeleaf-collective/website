@@ -2,28 +2,39 @@
   --pico-primary: #1C7258 !important;
   --pico-primary-background: #1C7258 !important;
   --pico-primary-underline: #1C7258 !important;
-  --pico-primary-hover: #009472 !important;
-  --pico-primary-hover-background: #009472 !important;
-  --pico-font-size: 105% !important;
+  --pico-primary-hover: #31c79a !important;
+  --pico-primary-hover-background: #31c79a !important;
+  --pico-font-size: 100% !important;
   --pico-background-color: #fdfdfd !important;
-
+  --pico-font-family: "Open Sans", sans-serif;
+  --pico-font-weight: 380;
 }
 
 #logo {
   display: block;
   margin: 1em auto;
-  width: 50%;
-  max-width: 30em;
+  float: left;
+  max-height: 3em;
+  margin-top: 0;
 }
 
 body > header, body > footer {
   text-align: center;
 }
 
+h4, h5 a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  --pico-font-weight: 425;
+}
+
 figure {
     text-align: center;
     padding: 1em;
 }
+
 
 footer p {
     font-size: 0.8em;
@@ -43,12 +54,63 @@ nav {
 }
 
 nav a {
-  display: inline-block;
   margin: 0 10px;
+  float: right;
 }
 
 article header {
   text-align: left;
+}
+
+.hero {
+  padding: 2em;
+  background-color: var(--pico-primary);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-bg {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: -50%;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  margin: 0 auto;
+  width: 50%;
+  text-align: left;
+}
+
+.hero-content > * {
+  --pico-font-weight: 425;
+  color: #fff !important;
+  position: relative;
+}
+
+.hero-content a[role=button] {
+  color: var(--pico-primary);
+  background-color: var(--pico-primary-inverse);
+}
+
+.hero-content a {
+  color: var(--pico-primary-hover);
+}
+
+.icon {
+  padding-bottom: 0.75em;
+}
+
+.services-home article {
+  box-shadow: none;
+}
+
+.expertise article, 
+.services article {
+  text-align: left;
+  font-size: 0.9em;
 }
 
 .members article img {
@@ -68,20 +130,20 @@ article header {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .services .grid {
-    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+@media (min-width: 25%) {
+  .services-home .grid {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
 }
 
-.services article {
-  text-align: center;
+@media (min-width: 768px) {
+  .services .grid {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  }
 }
 
-h4, h5 a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: 550;
+@media (min-width: 768px) {
+  .expertise .grid {
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+  }
 }

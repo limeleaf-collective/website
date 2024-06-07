@@ -6,3 +6,5 @@ sort_by = "date"
 feature_photo = ""
 feature_photo_alt = ""
 +++
+
+##### Our thoughts on software engineering, product development, and cooperative workplaces.
