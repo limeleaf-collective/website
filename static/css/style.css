@@ -18,7 +18,7 @@
   margin-top: 0;
 }
 
-body > header, body > footer {
+body > footer {
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ nav a {
 }
 
 article header {
-  text-align: center;
+  text-align: left;
 }
 
 .hero {
