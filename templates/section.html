@@ -17,59 +17,45 @@
   <section class="hero">
     <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" class="hero-bg" />
     <div class="hero-content">
-      <h2>{{ section.title }}</h2>
-      {{ section.content | safe }}
+      <h1>{{ section.title }}</h1>
+      <p>{{ section.extra.subtitle }}</p>
+      {% if section.extra.feature_ctas %}
+        <p>
+        {% for cta in section.extra.feature_ctas %}
+          <a role="button" href="{{ cta.url }}">{{ cta.text }}</a>
+        {% endfor %}
+        </p>
+      {% endif %}
     </div>
   </section>
 
-  {% if current_path == "/members/" %}
-    <section class="container members">
-      <div class="grid">
-        {% for page in section.pages %}
-        <article>
-          <header>
-            <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h3><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h3>
-          </header>
-          {{ page.summary | safe }}
-        </article>
-        {% endfor %}
-      </div>
+  {% if current_path != "/blog/" %}
+    <section class="container {{ section.components[0] }}">
+      {{ section.content | safe }}
     </section>
-  {% elif current_path == "/services/" %}
-    <section class="container services">
-      <div class="grid">
-        {% for page in section.pages %}
-        <article>
-            <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
-            {{ page.summary | safe }}
-        </article>
-        {% endfor %}
-        <div>
-          <h2>Ready to Connect?</h2>
-          <p>Contact us to schedule a free project assessment.</p>
-          <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Contact</a>
+    {% if current_path != "/contact/" %}
+      <hr />
+      <section class="container {{ section.components[0] }}">
+        {% if section.pages %}
+          <div class="grid">
+            {% for page in section.pages %}
+            <article>
+              <header>
+                <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
+                <h4><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h4>
+              </header>
+              {{ page.summary | safe }}
+            </article>
+            {% endfor %}
+            <div>
+              <h2>Ready to Connect?</h2>
+              <p>Contact us to schedule a free project assessment.</p>
+              <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Contact</a>
+            </div>
+          {% endif %}
         </div>
-      </div>
-    </section>
-    {% elif current_path == "/expertise/" %}
-    <section class="container expertise">
-      <div class="grid">
-        {% for page in section.pages %}
-        <article>
-            <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-            <h5><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h5>
-            {{ page.summary | safe }}
-        </article>
-        {% endfor %}
-        <div>
-          <h2>Ready to Connect?</h2>
-          <p>Contact us to schedule a free project assessment.</p>
-          <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Contact</a>
-        </div>
-      </div>
-    </section>
+      </section>
+    {% endif %}
   {% elif current_path == "/blog/" %}
     <section class="container">
       {% for post in section.pages %}

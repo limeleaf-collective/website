@@ -3,11 +3,12 @@ title = "Who We Are"
 description = "Limeleaf team members and their backgrounds"
 
 [extra]
+subtitle = "Limeleaf team members bring over six decades of collective experience in every facet of software development to the table."
 feature_photo = "images/members/saratoga-springs.jpg"
 feature_photo_alt = "Saratoga Springs postcard image"
 +++
 
-Limeleaf team members bring over six decades of collective experience in every facet of software development to the table. Our members have worked at [Google][2], [Electronic Arts][3], [ngrok][4], [Kinetic][5], [Harvard University][6], [RSA Security][8], [JWP (JW Player)][7], and others on a wide range of projects.
+Our members have worked at [Google][2], [Electronic Arts][3], [ngrok][4], [Kinetic][5], [Harvard University][6], [RSA Security][8], [JWP (JW Player)][7], and others on a wide range of projects.
 
 After long careers in Big tech, we started Limeleaf to help others and share our expertise. Our team's skills in software engineering, systems design, project and product management, technical planning, R&D, and mission-critical deployments enable us to enhance your competitiveness in the tech industry. We aim to ensure your technology not only succeeds but also remains sustainable and secure, with a strong commitment to privacy and ethical practices.
 

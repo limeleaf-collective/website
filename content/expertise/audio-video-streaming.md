@@ -1,5 +1,5 @@
 +++
-title = "Audio/Video Streaming Solutions"
+title = "Audio/Video Streaming"
 description = "Media streaming software development services from Limeleaf."
 weight = 4
 
