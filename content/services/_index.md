@@ -5,6 +5,6 @@ sort_by = "weight"
 
 [extra]
 subtitle = "We build tech solutions that solve complex problems and grow your business."
-feature_photo = ""
+feature_photo = "images/services/services.svg"
 feature_photo_alt = ""
 +++

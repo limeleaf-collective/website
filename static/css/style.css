@@ -41,7 +41,6 @@ figure {
     padding: 1em;
 }
 
-
 footer p {
     font-size: 0.8em;
 }
@@ -69,7 +68,7 @@ article header {
 }
 
 .hero {
-  padding: 2em;
+  padding: 5em;
   background-color: var(--pico-primary);
   overflow: hidden;
   position: relative;
@@ -84,10 +83,10 @@ article header {
   height: auto;
 }
 
-.hero-content {
-  margin: 0 auto;
-  width: 50%;
-  text-align: left;
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px 20px;
+  }
 }
 
 .hero-content > * {
@@ -107,10 +106,6 @@ article header {
 
 .icon {
   padding-bottom: 0.75em;
-}
-
-.services-home article {
-  box-shadow: none;
 }
 
 .expertise article, 
