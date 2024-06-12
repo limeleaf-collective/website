@@ -30,6 +30,6 @@ By automating deployment and monitoring processes, we ensure your systems remain
 
 ## Proven Expertise and Collaborative Approach
 
-With years of experience building complex software systems with millions of users, we are ready to tackle the most challenging performance and scalability requirements. 
+With years of experience building high-availability, highly scalable applications, data pipelines, and analytics-ready data stores with millions of users, we are ready to tackle the most challenging performance and scalability requirements. 
 
 Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
