@@ -68,7 +68,7 @@ article header {
 }
 
 .hero {
-  padding: 5em;
+  padding: 2em 1em;
   background-color: var(--pico-primary);
   overflow: hidden;
   position: relative;
@@ -83,16 +83,11 @@ article header {
   height: auto;
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: 30px 20px;
-  }
-}
-
 .hero-content > * {
   --pico-font-weight: 425;
   color: #fff !important;
   position: relative;
+  text-align: center;
 }
 
 .hero-content a[role=button] {
@@ -138,12 +133,14 @@ article header {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    padding: 5em;
+  }
+
   .services .grid {
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
   }
-}
 
-@media (min-width: 768px) {
   .expertise .grid {
     grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
   }
