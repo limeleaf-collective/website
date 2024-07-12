@@ -4,7 +4,7 @@ date = 2024-04-12
 authors = ["John Luther"]
 
 [taxonomies]
-tags = ["Company"]
+tags = ["Company", "Co-Ops"]
 
 [extra]
 feature_photo = ""

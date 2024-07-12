@@ -8,7 +8,7 @@ feature_photo_alt = "Blain Smith photo"
 
 Blain has spent 27 years working in web, video streaming, gaming, cloud
 services, distributed systems, and networking. He has held many
-tehnical lead roles and worked closely with product leadership to build
+technical lead roles and worked closely with product leadership to build
 software solutions.
 
 <!-- more -->
