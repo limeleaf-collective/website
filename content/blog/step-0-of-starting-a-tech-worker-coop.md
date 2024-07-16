@@ -1,6 +1,6 @@
 +++
 title = "Step 0 of Starting a Tech Worker Co-Op: Define Your Goals"
-date = 2024-07-12
+date = 2024-07-16
 authors = ["John Luther"]
 
 [taxonomies]
