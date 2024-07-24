@@ -40,4 +40,4 @@ We emphasize close collaboration with clients, with frequent communication, week
 * **Identity and Access Management (IAM):** OAuth, OIDC, JWTs 
 * **Learning Management Systems (LMS):** Blackboard, Moodle, Canvas
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

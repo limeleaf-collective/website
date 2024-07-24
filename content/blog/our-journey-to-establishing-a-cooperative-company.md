@@ -11,7 +11,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-At Limeleaf, how we do our work is equally important as the work itself. [As we explained in a previous post](https://limeleaf.io/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), Limeleaf operates as a worker cooperative, and we are dedicated to embodying the [Seven Cooperative Principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Cooperative identity, values & principles").
+At Limeleaf, how we do our work is equally important as the work itself. [As we explained in a previous post](https://limeleaf.net/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), Limeleaf operates as a worker cooperative, and we are dedicated to embodying the [Seven Cooperative Principles](https://ica.coop/en/cooperatives/cooperative-identity/ "Cooperative identity, values & principles").
 
 <!-- more -->
 

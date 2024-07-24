@@ -338,4 +338,4 @@ The [complete source code][9] is avaialable along with supporting tests.
 [6]: https://en.wikipedia.org/wiki/Endianness
 [7]: https://pkg.go.dev/bytes#Buffer
 [8]: https://pkg.go.dev/encoding/binary#Read
-[9]: https://github.com/limeleaf-collective/limeleaf.io/tree/main/code/safer-binary-decoding
+[9]: https://github.com/limeleaf-collective/limeleaf.net/tree/main/code/safer-binary-decoding

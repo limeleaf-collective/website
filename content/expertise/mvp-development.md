@@ -30,4 +30,4 @@ Once the [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and C
 - Deployment of the final [SLC](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?") on your infrastructure
 - Unlimited email communications with a 12-hour guaranteed response time
   
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
