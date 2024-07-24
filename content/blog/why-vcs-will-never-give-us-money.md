@@ -17,6 +17,8 @@ feature_photo_alt = ""
 
 Since founding our company, a few people have asked how we plan to fund product development. Most assume we'll try to raise VC money. Today, we'll explain why we aren’t taking that approach and what we’re doing instead.
 
+<!-- more -->
+
 ## We're Not a Typical Startup
 
 As a [worker co-op](https://institute.coop/what-worker-cooperative "What is a worker co-op?"), our ownership structure is fundamentally different from traditional companies. We're owned and controlled by our members, who are also our employees. This means that taking money from any investor is complicated. We'd have to navigate a complex web of ownership and control issues, which would lead to more headaches than benefits.
