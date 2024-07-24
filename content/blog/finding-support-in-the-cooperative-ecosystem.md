@@ -11,7 +11,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-When we started Limeleaf, we wanted to do things differently. We wanted to create a democratically managed business where every worker had a voice and a stake in the company's success. In short, we wanted to start a worker cooperative (even though we don’t call ourselves that, for reasons we covered in [Part 1](https://limeleaf.io/blog/our-journey-to-establishing-a-cooperative-company/ "Our Journey to Establishing a Cooperative Company - Part 1")).
+When we started Limeleaf, we wanted to do things differently. We wanted to create a democratically managed business where every worker had a voice and a stake in the company's success. In short, we wanted to start a worker cooperative (even though we don’t call ourselves that, for reasons we covered in [Part 1](https://limeleaf.net/blog/our-journey-to-establishing-a-cooperative-company/ "Our Journey to Establishing a Cooperative Company - Part 1")).
 
 <!-- more -->
 

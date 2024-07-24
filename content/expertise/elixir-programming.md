@@ -22,4 +22,4 @@ We deliver customized solutions that align with your business goals. Our process
 
 ## Elevate Your Business with Elixir
 
-Ready to harness the power of Elixir for your business? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to harness the power of Elixir for your business? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

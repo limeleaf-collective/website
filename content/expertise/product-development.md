@@ -12,7 +12,7 @@ Do you have a great idea for a software product, but no idea where to start? Let
 
 We handle requirements, prototyping, architecture, coding, project management, testing, deployment, and maintenance to deliver high-quality software solutions on time and on budget.
 
-[Write to us](https://limeleaf.io/contact/ "Contact us") to discuss your project.
+[Write to us](https://limeleaf.net/contact/ "Contact us") to discuss your project.
 
 ## Our Process
 
@@ -36,4 +36,4 @@ From our experiences working on products at [Google Chrome](https://www.google.c
 
 7. **Monitor Requirements Post-Launch**. Have processes for submitting, reviewing, and prioritizing new requirements based on real-world user feedback. Revise requirements if needed to ensure user goals are met.
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

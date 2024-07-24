@@ -24,4 +24,4 @@ We work hand-in-glove with your design team to bring their creative visions to l
 
 Beyond development, we offer ongoing support and maintenance to ensure your backend systems remain up-to-date and secure. Our team is always ready to assist with any problems, updates, or enhancements, ensuring your application continues to run smoothly and efficiently. Partner with us to keep your backend infrastructure reliable and future-proof.
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

@@ -24,4 +24,4 @@ By leveraging our IoT expertise, we can help you harness connected devices to st
 
 Let us guide you through the complexities of IoT technology to bring your product concept to your customers effectively.
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

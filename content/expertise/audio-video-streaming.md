@@ -32,4 +32,4 @@ Already have a video workflow in place? We specialize in optimizing existing vid
 
 We work with monetization partners like [CakeWorks](https://cake-works.com/ "CakeWorks website") to maximize your earnings. We can integrate both [AVOD](https://www.wikiwand.com/en/AVOD#Advertising_video_on_demand) and [SVOD](https://www.wikiwand.com/en/AVOD#Subscription_models) models into your platform, giving you the flexibility to generate revenue through ads or subscriptions. Our optimized video player and ad management tools deliver ads seamlessly, providing a non-intrusive experience that keeps users engaged.
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

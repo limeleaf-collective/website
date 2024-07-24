@@ -26,4 +26,4 @@ Using industry best practices, we design optimized system architectures for perf
 
 Our engineers work closely with your team for a smooth implementation process. We provide ongoing support and optimization services to ensure your software system continues to meet your evolving business needs.
 
-Ready to get started? [Contact us](https://limeleaf.io/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
