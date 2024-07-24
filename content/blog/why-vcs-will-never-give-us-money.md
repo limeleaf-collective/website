@@ -11,8 +11,6 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-# Why VCs Will Never Give Us Money (And We're Okay With That)
-
 [Less than 1% of startups secure venture capital funding](https://www.fundera.com/resources/startup-funding-statistics "VC funding statistics"). At Limeleaf, we're part of that 99% – but by choice.
 
 Since founding our company, a few people have asked how we plan to fund product development. Most assume we'll try to raise VC money. Today, we'll explain why we aren’t taking that approach and what we’re doing instead.
