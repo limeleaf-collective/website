@@ -16,6 +16,6 @@ This morning, [Blain](/members/blain-smith/ "Blain Smith") educated me about the
 
 limeleaf.net wasn't available then, but to my surprise and delight, it was this morning, so I bought it. 
 
-All Limeleaf site traffic and email now redirect from limeleaf.net to limeleaf.net, and I have donated $50 to [Chagossian Voices](https://chagossianvoices.org/).
+All Limeleaf site traffic and email now redirect from limeleaf.io to limeleaf.net, and I have donated $50 to [Chagossian Voices](https://chagossianvoices.org/).
 
 <!-- more -->
