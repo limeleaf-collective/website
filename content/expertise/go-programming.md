@@ -3,12 +3,17 @@ title = "Go Programming"
 description = "Go programming and development services from Limeleaf."
 weight = 6
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/go-programming.svg"
-feature_photo_alt = "Go programming illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 The [Go language](https://go.dev "Go language website") is used for some of the most popular cloud-based and network-connected software and by some of the biggest infrastructure providers in the world. Its focus on simplicity, correctness, concurrency support, and “batteries-included” standard library make it the ideal choice when building network-connected software. 
+
+<!-- more -->
 
 Choose us for your Go programming projects to build high-performance, scalable, and maintainable applications that drive your business forward.
 

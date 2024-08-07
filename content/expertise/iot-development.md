@@ -3,12 +3,17 @@ title = "IoT Development"
 description = "IoT software development services from Limeleaf."
 weight = 4
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/iot2.svg"
-feature_photo_alt = "IoT illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 IoT (Internet of Things) devices like smartwatches, thermostats, fridges, and coffee makers have become part of our daily lives. These devices are basically small, programmable computers that need to be especially reliable, secure, and stable since they often can't easily be reset or directly accessed and  might connectivity without warning.
+
+<!-- more -->
 
 ## Deep Expertise in IoT
 

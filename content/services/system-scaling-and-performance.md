@@ -4,10 +4,8 @@ description = "Limeleaf builds solutions that scale to handle intense traffic an
 weight = 3
 
 [extra]
-feature_photo = "images/services/backend-developer.svg"
-feature_photo_alt = "System scaling and performance illustration"
-icon = "images/services/performance-50.png"
-icon_alt = "Performance icon"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 We build solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows.

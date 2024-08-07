@@ -4,10 +4,8 @@ description = "Limeleaf connects your systems to 3rd party APIs and data stores 
 weight = 1
 
 [extra]
-feature_photo = "images/services/software.svg"
-feature_photo_alt = "Product development illustration"
-icon = "images/services/integration-50.png"
-icon_alt = "Integration icon"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 We connect your systems to 3rd party APIs and data stores to optimize your business operations and add new capabilities.

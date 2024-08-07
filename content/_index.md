@@ -1,5 +1,5 @@
 +++
-title = "We help teams build software FASTER."
+title = "We are a software product, consulting & development worker collective from Saratoga Springs, NY."
 
 [extra]
 feature_photo = "images/services/tech.svg"

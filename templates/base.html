@@ -6,14 +6,13 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light" />
 
     {% block meta_content %} {% endblock meta_content %}
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
     <link rel="icon" type="image/png" href="{{ get_url(path="images/favicon.svg") }}" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
     <link rel="stylesheet" href="{{ get_url(path="css/style.css") }}" />
     <script data-goatcounter="https://limeleaf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <!-- Calendly badge widget begin -->
@@ -24,34 +23,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <div class="grid">
-        <a href="{{ get_url(path="@/_index.md") }}" title="Limeleaf logo"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" id="logo" alt="Limeleaf logo"/></a>
-        <nav>
-          <a href="{{ get_url(path="@/contact/_index.md") }}" title="Contact Us">Contact</a>
-          <a href="{{ get_url(path="@/members/_index.md") }}" title="About Us">About Us</a>
-          <a href="{{ get_url(path="@/blog/_index.md") }}" title="Blog">Blog</a>        
-          <a href="{{ get_url(path="@/expertise/_index.md") }}" title="Expertise">Expertise</a>
-          <a href="{{ get_url(path="@/services/_index.md") }}" title="Services">Services</a>
-        </nav>
+    <header>
+      <div class="container">
+        <section class="row middle-lg">
+          <div id="logo" class="col-lg-6">
+            <a href="{{ get_url(path="@/_index.md") }}" title="Limeleaf logo"><img src="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}" alt="Limeleaf logo"/></a>
+          </div>
+          <nav class="col-lg-6">
+            <a href="{{ get_url(path="@/services/_index.md") }}" title="Services">Services</a>
+            <a href="{{ get_url(path="@/expertise/_index.md") }}" title="Expertise">Expertise</a>
+            <a href="{{ get_url(path="@/blog/_index.md") }}" title="Blog">Blog</a>
+            <a href="{{ get_url(path="@/members/_index.md") }}" title="About Us">About Us</a>
+            <a href="{{ get_url(path="@/contact/_index.md") }}" title="Contact Us">Contact</a>
+          </nav>
+        </section>
+        <hr />
+        <section class="row">
+          <div class="col-lg-12">
+            <h1>{% block title %} {% endblock title %}</h1>
+          </div>
+        </section>
       </div>
     </header>
 
     {% block content %} {% endblock content %}
 
-    <footer class="container">
-      <p>&copy; {{ now() | date(format="%Y") }} {{ config.extra.copyright }}</p>
-      <p class="attribution"><a href="https://storyset.com" title="Storyset website">Site illustrations by Storyset</a> | <a href="{{ get_url(path="@/contact/privacy.md") }}" title="Limeleaf privacy policy">Privacy Policy</p>
-      <nav>
-        <a href="https://github.com/limeleaf-collective" alt="GitHub" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        <a href="https://social.coop/@limeleaf" alt="Mastodon" title="Mastodon"><i class="fa fa-mastodon" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/limeleaftech" alt="Twitter/X" title="Twitter/X"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/company/limeleaf-llc" alt="LinkedIn" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="https://opencollective.com/limeleaf-collective" alt="Open Collective" title="Open Collective"><i class="fa fa-open-collective" aria-hidden="true"></i></a>
-      </nav>
-      
+    <footer class="medium-section">
+      <div class="container">
+        <section class="row">
+          <div class="col-sm-9">
+            <h2>We would love to chat.</h2>
+            <p>So, please <a href="{{ get_url(path="@/contact/_index.md") }}">contact us</a>.</p>
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

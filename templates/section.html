@@ -18,71 +18,86 @@
   {% endif %}
 {% endblock meta_content %}
 
+{% block title %}
+  {% if current_path == "/contact/" %}
+    Send us <a href="mailto:info@limeleaf.net">an email</a> or
+    <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
+    project assessment.
+  {% else %}
+    {{ section.title }}
+  {% endif %}
+{% endblock title%}
+
 {% block content %}
 <main>
-  <section class="hero">
-    <img src="{{ get_url(path=section.extra.feature_photo) }}" alt="{{ section.extra.feature_photo_alt }}" class="hero-bg" />
-    <div class="hero-content">
-      <h1>{{ section.title }}</h1>
-      <p>{{ section.extra.subtitle }}</p>
-      {% if section.extra.feature_ctas %}
-        <p>
-        {% for cta in section.extra.feature_ctas %}
-          <a role="button" href="{{ cta.url }}">{{ cta.text }}</a>
-        {% endfor %}
-        </p>
-      {% endif %}
+  {% if current_path == "/blog/" %}
+    <div class="container">
+      {% for post in section.pages %}
+      <section class="row">
+        <article class="col-sm-12">
+          <header>
+            <h2><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+            <p>
+              <time>{{ post.date | date(format="%B %d, %Y") }}</time>
+              &bull;
+              {% if post.taxonomies.tags %}
+                {% for tag in post.taxonomies.tags %}
+                  <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
+                {% endfor %}
+              {% endif %}
+            </p>
+          </header>
+          {{ post.summary | safe }}
+        </article>
+      </section>
+      {% endfor %}
     </div>
-  </section>
-
-  {% if current_path != "/blog/" %}
-    <section class="container {{ section.components[0] }}">
-      {{ section.content | safe }}
-    </section>
-    {% if current_path != "/contact/" %}
-      <hr />
-      <section class="container {{ section.components[0] }}">
-        {% if section.pages %}
-          <div class="grid">
-            {% for page in section.pages %}
-            <article>
-              <header>
-                <a href="{{ page.permalink }}"><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" /></a>
-                <h4><a href="{{ page.permalink }}" title="{{ page.title }}">{{ page.title }}</a></h4>
-              </header>
-              {{ page.summary | safe }}
-            </article>
-            {% endfor %}
-            <div>
-              <h2>Ready to Connect?</h2>
-              <p>Contact us to schedule a free project assessment.</p>
-              <a role="button" href="{{ get_url(path="@/contact/_index.md") }}" title="Hire Us">Contact</a>
+  {% elif current_path == "/expertise/" %}
+    <div class="container">
+      {% set areas = get_taxonomy(kind="areas") %}
+      <section>
+        <div class="row">
+          {% for area in areas.items %}
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1>{{ area.name }}</h1>
+                </div>
+              </div>
+              {% for page in area.pages %}
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h2>{{ page.summary | striptags }}</h2>
+                    <p><a class="cta" href="{{ page.permalink }}">{{ page.title }}</a></p>
+                  </div>
+                </div>
+              {% endfor %}
             </div>
-          {% endif %}
+          {% endfor %}
         </div>
       </section>
-    {% endif %}
-  {% elif current_path == "/blog/" %}
-    <section class="container">
-      {% for post in section.pages %}
-      <article>
-        <header>
-          <h4><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-          <p>
-            Posted on <time>{{ post.date | date(format="%B %d, %Y") }}</time>
-            {% if post.taxonomies.tags %}
-              in
-              {% for tag in post.taxonomies.tags %}
-                <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
-              {% endfor %}
-            {% endif %}
-          </p>
-        </header>
-        {{ post.summary | safe }}
-        <footer><a href="{{ post.permalink }}" title="{{ post.title }}">Continue Reading</a></footer>
-      </article>
-      {% endfor %}
-    </section>
+    </div>
+  {% elif current_path == "/contact/" %}
+  {% else %}
+    {% for page in section.pages %}
+      <div {% if loop.index % 2 == 0 %}class="light-section"{% endif %}>
+      <div class="container">
+        <section class="row">
+          {% if page.extra.feature_photo != "" %}
+            <div class="col-lg-3">
+              <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem; border-radius: 50%;" /></p>
+            </div>
+            <div class="col-lg-9">
+          {% else %}
+              <div class="col-lg-12">
+          {% endif %}
+            <h2>{{ page.summary | striptags }}</h2>
+            <p><a class="cta" href="{{ page.permalink }}">{{ page.title }}</a></p>
+          </div>
+        </section>
+      </div>
+      </div>
+    {% endfor %}
   {% endif %}
 </main>
 {% endblock content %}

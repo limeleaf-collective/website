@@ -3,12 +3,17 @@ title = "Audio/Video Streaming"
 description = "Media streaming software development services from Limeleaf."
 weight = 4
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/video.svg"
-feature_photo_alt = "Video tech illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 We bring over 20 years of expertise in audio and video technology to the table, specializing in crafting streaming audio and video applications that enable media companies and brands to stand out in a crowded market.
+
+<!-- more -->
 
 Our streaming solutions deliver the best viewing experience for your users. By leveraging [adaptive bitrate streaming](https://www.wikiwand.com/en/Adaptive_bitrate_streaming "Wikipedia page for adaptive bitrate streaming") technology and the latest [codecs](https://www.wikiwand.com/en/Codec "Wikipedia page for codec"), we optimize video playback for the viewer's internet speed, reducing buffering and enhancing overall quality. 
 

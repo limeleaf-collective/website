@@ -3,12 +3,17 @@ title = "Building MVPs"
 description = "Minimal Viable Product (MVP) development services from Limeleaf."
 weight = 3
 
+[taxonomies]
+areas = ["Product"]
+
 [extra]
-feature_photo = "images/services/mvp.svg"
-feature_photo_alt = "MVP illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 We understand the importance of bringing your product to market quickly and efficiently, so we offer a unique service to help you build your Minimum Viable Product (MVP), which we prefer to call Simple, Lean, and Concise (SLC) solutions ([learn about the difference](https://longform.asmartbear.com/slc/ "What is Simple, Lean, and Concise (SLC)?")).
+
+<!-- more -->
 
 Our team of staff-level developers and product managers will collaborate closely with you to understand your vision and goals, ensuring we create an SLC that validates your idea in the market.
 

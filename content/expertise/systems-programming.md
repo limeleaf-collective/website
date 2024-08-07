@@ -3,12 +3,17 @@ title = "Systems Programming"
 description = "Systems programming services from Limeleaf"
 weight = 8
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/network.svg"
-feature_photo_alt = "Network programming illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 We specialize in Linux and BSD systems and network programming, offering tailored solutions. Our expertise lies in kernel-level programming, allowing us to optimize system performance and security through eBPF (Extended Berkeley Packet Filter) for efficient packet filtering and network traffic control.
+
+<!-- more -->
 
 ## Networking Proficiency
 

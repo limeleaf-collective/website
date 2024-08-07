@@ -4,10 +4,8 @@ description = "Limeleaf engineers and architects design and implement efficient,
 weight = 2
 
 [extra]
-feature_photo = "images/services/network.svg"
-feature_photo_alt = "System Planning and Architecture illustration"
-icon = "images/services/design-50.png"
-icon_alt = "Design icon"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 Our engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems.
