@@ -4,11 +4,13 @@ description = "Backend software development services from Limeleaf."
 weight = 1
 
 [extra]
-feature_photo = "images/services/backend-developer.svg"
-feature_photo_alt = "Developer illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 A well-designed and efficient backend system is essential for delivering a great user experience. We specialize in creating fast, scalable backend systems that ensure your application performs seamlessly under any load. 
+
+<!-- more -->
 
 We design and implement efficient software interfaces, allowing your frontend and backend to communicate effortlessly and handle high volumes of traffic while maintaining fast response times.
 

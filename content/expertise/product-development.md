@@ -3,14 +3,17 @@ title = "Product Development"
 description = "Product development and product management services from Limeleaf."
 weight = 4
 
+[taxonomies]
+areas = ["Product"]
+
 [extra]
-feature_photo = "images/services/prod-dev.svg"
-feature_photo_alt = "Product development illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
-Do you have a great idea for a software product, but no idea where to start? Let us help!
-
 We handle requirements, prototyping, architecture, coding, project management, testing, deployment, and maintenance to deliver high-quality software solutions on time and on budget.
+
+<!-- more -->
 
 [Write to us](https://limeleaf.net/contact/ "Contact us") to discuss your project.
 

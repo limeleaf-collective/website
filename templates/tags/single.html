@@ -1,24 +1,31 @@
 {% extends "base.html" %}
 
 {% block title%}
-  {{ term.name }} - {{ config.title }}
+  "{{ term.name }}" blog posts we've written about.
 {% endblock title %}
 
 {% block content %}
-<main class="container">
-  <section>
-      <h1>{{ term.name }} Posts</h1>
-  </section>
-
-  {% for post in term.pages %}
-  <article>
-    <header>
-      <h4><a href="{{ post.permalink }}">{{ post.title }}</a></h4>
-      <time>{{ post.date }}</time>
-    </header>
-    {{ post.summary | safe }}
-    <footer><a href="{{ post.permalink }}">Continue Reading</a></footer>
-  </article>
-  {% endfor %}
+<main>
+  <div class="container">
+    {% for post in term.pages %}
+    <section class="row">
+      <article class="col-lg-12">
+        <header>
+          <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+          <p>
+            <time>{{ post.date | date(format="%B %d, %Y") }}</time>
+            &bull;
+            {% if post.taxonomies.tags %}
+              {% for tag in post.taxonomies.tags %}
+                <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>&nbsp;
+              {% endfor %}
+            {% endif %}
+          </p>
+        </header>
+        {{ post.summary | safe }}
+      </article>
+    </section>
+    {% endfor %}
+  </div>
 </main>
 {% endblock content %}

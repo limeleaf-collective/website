@@ -18,12 +18,15 @@
   {% endif %}
 {% endblock meta_content %}
 
+{% block title %}
+  {{ page.title }}
+{% endblock title %}
+
 {% block content %}
 <main class="container">
-  <section class="grid">
+  <section class="row">
     <article>
         <header>
-            <h1>{{ page.title }}</h1>
             {% if page.extra.tagline %}
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
@@ -38,25 +41,26 @@
                 {% endfor %}
               {% endif %}
               {% if page.authors %}
-              by 
-                {%- for author in page.authors %}
-                  {%- set parts = author | split(pat=" ") %}
-                  {%- set first_name = parts[0] | lower %}
-                  {%- set last_name = parts[1] | lower %}
-                  <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
-                {%- endfor %}</p>
-              {% endif %}
+                by 
+                  {%- for author in page.authors %}
+                    {%- set parts = author | split(pat=" ") %}
+                    {%- set first_name = parts[0] | lower %}
+                    {%- set last_name = parts[1] | lower %}
+                    <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
+                  {%- endfor %}
+                {% endif %}
+            </p>
             {% endif %}
         </header>
 
-      {{ page.content | safe }}
-    </article>
+      {% if page.extra.feature_photo != "" %}
+      <figure style="float: right;">
+          <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" style="border-radius: 50%;" />
+      </figure>
+      {% endif %}
 
-    {% if page.extra.feature_photo != "" %}
-    <figure>
-        <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" class="feature" />
-    </figure>
-    {% endif %}
+      {{ page.content | safe }}
+      </article>
   </section>
 </main>
 

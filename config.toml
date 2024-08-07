@@ -7,6 +7,7 @@ feed_filenames = ["rss.xml"]
 
 taxonomies = [
   { name = "tags", feed = false },
+  { name = "areas", feed = false, render = false },
 ]
  
 [markdown]

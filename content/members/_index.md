@@ -1,9 +1,9 @@
 +++
-title = "Who We Are"
+title = "Limeleaf team members bring over six decades of collective experience in every facet of software development to the table."
 description = "Limeleaf team members and their backgrounds"
 
 [extra]
-subtitle = "Limeleaf team members bring over six decades of collective experience in every facet of software development to the table."
+subtitle = ""
 feature_photo = "images/members/saratoga-springs.jpg"
 feature_photo_alt = "Saratoga Springs postcard image"
 +++

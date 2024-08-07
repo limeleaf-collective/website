@@ -3,12 +3,17 @@ title = "Rust Programming"
 description = "Rust programming and development services from Limeleaf."
 weight = 7
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/rust-programming.svg"
-feature_photo_alt = "Rust programming illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 Rust is known for its exceptional efficiency and performance. It is designed to take full advantage of a device's hardware resources, including the CPU, RAM, and disk space. This means that Rust applications can run faster and use less memory than applications written in more conventional languages.
+
+<!-- more -->
 
 ## Memory Management Made Easy
 

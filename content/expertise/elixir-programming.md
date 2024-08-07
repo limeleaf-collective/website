@@ -3,12 +3,17 @@ title = "Elixir Programming"
 description = "Low-latency, distributed, fault-tolerant systems from Limeleaf."
 weight = 5
 
+[taxonomies]
+areas = ["Engineering"]
+
 [extra]
-feature_photo = "images/services/front-end.svg"
-feature_photo_alt = "Elixir development illustration"
+feature_photo = ""
+feature_photo_alt = ""
 +++
 
 Known for its concurrency, fault-tolerance, and scalability, Elixir is ideal for distributed applications, machine learning, multimedia processing, IoT, and more. 
+
+<!-- more -->
 
 Whether you need to build a new Elixir application from scratch or modernize an existing system, we have the technical chops to get the job done efficiently and effectively. We're well-versed in the full Elixir stack, including the Phoenix web framework and Erlang virtual machine. 
 

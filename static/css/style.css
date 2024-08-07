@@ -1,147 +1,120 @@
-:root {
-  --pico-primary: #1C7258 !important;
-  --pico-primary-background: #1C7258 !important;
-  --pico-primary-underline: #1C7258 !important;
-  --pico-primary-hover: #31c79a !important;
-  --pico-primary-hover-background: #31c79a !important;
-  --pico-font-size: 100% !important;
-  --pico-background-color: #fdfdfd !important;
-  --pico-font-family: "Open Sans", sans-serif;
-  --pico-font-weight: 380;
+@custom-media --sm-viewport only screen and (min-width: 48em);
+@custom-media --md-viewport only screen and (min-width: 64em);
+@custom-media --lg-viewport only screen and (min-width: 75em);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
-#logo {
-  display: block;
-  margin: 1em auto;
-  float: left;
-  max-height: 3em;
-  margin-top: 0;
+h1, h2, h3 {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
-body > footer {
-  text-align: center;
+h1 p, h2 p, h3 p {
+  font-family: "Open Sans", sans-serif;
 }
 
-h4, h5 a {
+h1 { font-size: 4rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+
+a {
+  color: #1C7258;
   text-decoration: none;
+  border-bottom: 1px solid #1c7258;
 }
 
-h1, h2, h3, h4, h5 {
-  --pico-font-weight: 425;
-  text-align: left;
+strong {
+  font-weight: 500;
 }
 
 hr {
-  width: 50%;
-  margin: 50px auto;
+  border-top: 1px solid #000;
 }
 
-figure {
-    text-align: center;
-    padding: 1em;
+section {
+  padding: 3rem 0;
 }
 
-footer p {
-    font-size: 0.8em;
+header nav {
+  text-align: right;
 }
 
-footer a {
-    font-size: 1.2em;
-    text-decoration: none;
+header nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 .5rem;
+  border: none;
 }
 
-footer .attribution a {
-  font-size: 0.9em;
-}
-nav {
-  display: inline-block;
-  justify-content: normal;
-}
-
-nav a {
-  margin: 0 5px;
-  float: right;
-}
-
-article header {
-  text-align: left;
-}
-
-.hero {
-  padding: 2em 1em;
-  background-color: var(--pico-primary);
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-bg {
-  opacity: 0.1;
-  position: absolute;
-  left: 0;
-  top: -50%;
-  width: 100%;
-  height: auto;
-}
-
-.hero-content > * {
-  --pico-font-weight: 425;
-  color: #fff !important;
-  position: relative;
+article header p {
+  font-size: 1rem;
   text-align: center;
 }
 
-.hero-content a[role=button] {
-  color: var(--pico-primary);
-  background-color: var(--pico-primary-inverse);
+a.cta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.hero-content a {
-  color: var(--pico-primary-hover);
+a.cta:after {
+  content: ' \219B';
 }
 
-.icon {
-  padding-bottom: 0.75em;
+.light-section {
+  background-color: #dff6e6;
 }
 
-.expertise article, 
-.services article {
-  text-align: left;
-  font-size: 0.9em;
+.medium-section {
+  background-color: #91e3a9;
 }
 
-.members article img {
-  width: 65%;
+.dark-section {
+  background-color: #1c7258;
+  color: #fff;
+}
+.dark-section a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
-.members article header {
+#logo a {
+  border: none;
+}
+
+#logo img {
+  max-width: 50%;
+}
+
+@media only screen and (max-width: 48rem) {
+  section {
+    padding: 2rem 0;
+  }
+
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1rem; }
+
+  header #logo, header nav {
     text-align: center;
-}
-
-.members article header img {
-  border-radius: 300px;
-  margin: 1em;
-}
-
-.members article header a {
-  text-decoration: none;
-}
-
-@media (min-width: 25%) {
-  .services-home .grid {
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  }
-}
-
-@media (min-width: 768px) {
-  .hero {
-    padding: 5em;
   }
 
-  .services .grid {
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  .container {
+    padding: 0 1rem;
   }
-
-  .expertise .grid {
-    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
+  
+  a.cta {
+      font-size: 1.5rem;
   }
 }

@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 
 {% block title%}
-  Tags - {{ config.title }}
+  All of the different tags we use when wiring our blog posts.
 {% endblock title %}
 
 {% block content %}
-<main class="container">
-  <section>
-      <h1>Tags</h1>
-  </section>
-
-  {% if terms %}
-    <ul>
-      {% for term in terms %}
-        <li><a href="{{ term.permalink | safe }}">{{ term.name }}</a> ({{ term.pages | length }})</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+<main>
+  <div class="container">
+    <section class="row">
+      {% if terms %}
+        {% for term in terms %}
+          <div class="col-sm-3">
+            <p><a class="cta" href="{{ term.permalink | safe }}">{{ term.name }} ({{ term.pages | length }})</a></p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+  </div>
 </main>
 {% endblock content %}
