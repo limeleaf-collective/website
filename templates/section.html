@@ -61,14 +61,14 @@
             <div class="col-md-6">
               <div class="row">
                 <div class="col-xs-12">
-                  <h1>{{ area.name }}</h1>
+                  <h2>{{ area.name }}</h2>
                 </div>
               </div>
               {% for page in area.pages %}
                 <div class="row">
                   <div class="col-xs-12">
-                    <h2>{{ page.summary | striptags }}</h2>
-                    <p><a class="cta" href="{{ page.permalink }}">{{ page.title }}</a></p>
+                    <p>{{ page.summary | striptags }}</p>
+                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
                   </div>
                 </div>
               {% endfor %}
