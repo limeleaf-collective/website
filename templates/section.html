@@ -61,14 +61,14 @@
             <div class="col-md-6">
               <div class="row">
                 <div class="col-xs-12">
-                  <h1>{{ area.name }}</h1>
+                  <h2>{{ area.name }}</h2>
                 </div>
               </div>
               {% for page in area.pages %}
                 <div class="row">
                   <div class="col-xs-12">
-                    <h2>{{ page.summary | striptags }}</h2>
-                    <p><a class="cta" href="{{ page.permalink }}">{{ page.title }}</a></p>
+                    <p>{{ page.summary | striptags }}</p>
+                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
                   </div>
                 </div>
               {% endfor %}
@@ -82,17 +82,17 @@
     {% for page in section.pages %}
       <div {% if loop.index % 2 == 0 %}class="light-section"{% endif %}>
       <div class="container">
-        <section class="row">
+        <section class="row middle-lg">
           {% if page.extra.feature_photo != "" %}
             <div class="col-lg-3">
               <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem; border-radius: 50%;" /></p>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-8 col-lg-offset-1">
           {% else %}
               <div class="col-lg-12">
           {% endif %}
-            <h2>{{ page.summary | striptags }}</h2>
-            <p><a class="cta" href="{{ page.permalink }}">{{ page.title }}</a></p>
+            <p>{{ page.summary | striptags }}</p>
+            <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
           </div>
         </section>
       </div>
