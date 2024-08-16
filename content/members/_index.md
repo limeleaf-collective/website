@@ -1,5 +1,5 @@
 +++
-title = "Limeleaf team members bring over six decades of collective experience in every facet of software development to the table."
+title = "We want to help others with the experience we've acquired and believe in technology being used for good."
 description = "Limeleaf team members and their backgrounds"
 
 [extra]
