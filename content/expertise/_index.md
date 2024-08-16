@@ -1,5 +1,5 @@
 +++
-title = "Each Limeleaf founder has decades of experience from companies such as Google, Electronic Arts Games, ngrok, and RSA Security."
+title = "We bring over six decades of collective experience in every facet of software development to the table."
 description = "Software and product expertise that Limeleaf provides to clients."
 sort_by = "weight"
 
