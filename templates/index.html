@@ -23,29 +23,53 @@
 {% endblock title%}
 
 {% block content %}
-<main>
-  <div class="dark-section">
-    <div class="container">
-      <section class="row">
-        <div class="col-sm-12">
-          <p>Each Limeleaf founder has decades of experience from companies such as Google, Electronic Arts Games, ngrok, and RSA Security.</h3>
-          <h3 class="cta"><a href="{{ get_url(path="@/expertise/_index.md") }}">Our Expertise</a></p>
+<main role="main">
+    <section class="dark-section">
+        <div class="container">
+            <div id="about-us" class="section row">
+                <div class="col-sm-12">
+                  Hiring and onboarding great software engineers can take months. If you have critical projects that can't wait that long, we can help.
+                    <h3 class="cta"><a href="{{ get_url(path="@/expertise/_index.md") }}">Our Expertise</a></h3>
+                </div>
+            </div>
         </div>
-      </section>
-    </div>
-  </div>
-  {% set section = get_section(path="services/_index.md") %}
-  {% for page in section.pages %}
-  <div {% if loop.index % 2 == 0 %}class="light-section"{% endif %}>
-    <div class="container">
-      <section class="row">
-        <div class="col-sm-12">
-          <p>{{ page.summary | striptags }}</p>
-          <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+    </section>
+
+    <section class="light-section">
+        <div class="container">
+            <div class="section row">
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                        <a href="https://rushdownstudio.com" class="logo"><img src="{{ get_url(path="images/clients/rushdown.png") }}" alt="Rushdown Studios"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                      <a href="https://pitonlabs.com" class="logo"><img src="{{ get_url(path="images/clients/piton-labs.webp") }}" alt="Piton Labs"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                      <a href="https://pitonlabs.com" class="logo"><img src="{{ get_url(path="images/clients/rocket-science.png") }}" alt="Rocket Science Group"></a>
+                    </div>
+                </div>
+                <h3 class="cta"><a href="{{ get_url(path="@/clients/_index.md") }}">Our Clients</a></h3>
+            </div>
         </div>
-      </section>
-    </div>
-  </div>
-  {% endfor %}
+    </section>
+
+    {% set section = get_section(path="services/_index.md") %}
+    {% for page in section.pages %}
+    <section class="{% if loop.index % 2 == 0 %}light-section{% else %}dark-section{% endif %}">
+        <div class="container">
+            <div class="section row">
+                <div class="col-sm-12">
+                    {{ page.summary | striptags }}
+                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
 </main>
 {% endblock content %}

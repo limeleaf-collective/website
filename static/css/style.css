@@ -9,7 +9,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h1, h2, h3 {
@@ -21,9 +21,9 @@ h1 p, h2 p, h3 p {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 { font-size: 3.75rem; }
-h2 { font-size: 2.75rem; }
-h3 { font-size: 1.75rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
 
 a {
   color: #1C7258;
@@ -58,7 +58,7 @@ header nav {
 
 header nav a {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 .5rem;
@@ -105,6 +105,47 @@ h3.cta a:after {
   max-width: 50%;
 }
 
+.client-logo {
+  text-align: center;
+  margin-bottom: 1rem;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.light-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2.homepage {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.light-section .client-description {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #444;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.client-logo a:link, a:visited {
+  text-decoration: none;
+  border: 0;
+}
+
 @media only screen and (max-width: 48rem) {
   section {
     padding: 2rem 0;
@@ -112,9 +153,9 @@ h3.cta a:after {
 
   body { font-size: 1.25rem; }
 
-  h1 { font-size: 2.25rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.5rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
 
   header #logo, header nav {
     text-align: center;
