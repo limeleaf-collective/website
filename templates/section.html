@@ -30,27 +30,7 @@
 
 {% block content %}
 <main>
-  {% if current_path == "/clients/" %}
-    {% for page in section.pages %}
-      <div {% if loop.index % 2 == 0 %}class="light-section"{% endif %}>
-      <div class="container">
-        <section class="row middle-lg">
-          {% if page.extra.feature_photo != "" %}
-            <div class="col-lg-3 client-logo">
-              <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem;" /></p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-1">  
-          {% else %}
-              <div class="col-lg-12">
-          {% endif %}
-            <p>{{ page.summary | striptags }}</p>
-            <h3 class="cta"><a href="{{ page.permalink }}">Learn More</a></h3>
-          </div>
-        </section>
-      </div>
-      </div>
-    {% endfor %}
-  {% elif current_path == "/blog/" %}
+  {% if current_path == "/blog/" %}
     <div class="container">
       {% for post in section.pages %}
       <section class="row">
@@ -107,7 +87,7 @@
             <div class="col-lg-3">
               <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem; border-radius: 50%;" /></p>
             </div>
-            <div class="col-lg-8 col-lg-offset-1">  
+            <div class="col-lg-8 col-lg-offset-1">
           {% else %}
               <div class="col-lg-12">
           {% endif %}
@@ -121,4 +101,3 @@
   {% endif %}
 </main>
 {% endblock content %}
-
