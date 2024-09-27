@@ -40,6 +40,10 @@ pre {
   border-radius: 1rem;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 strong {
   font-weight: 500;
 }
