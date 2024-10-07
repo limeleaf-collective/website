@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Limeleaf Worker Collective | We Build Software</title>
+      <link>https://limeleaf.net</link>
+      <description>Limeleaf is a software development cooperative that draws on decades of experience to help teams build software products faster.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://limeleaf.net/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 02 Oct 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Limecast and Dodgy AI Practices</title>
+          <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/limecast-and-dodgy-ai-practices/</link>
+          <guid>https://limeleaf.net/blog/limecast-and-dodgy-ai-practices/</guid>
+          <description xml:base="https://limeleaf.net/blog/limecast-and-dodgy-ai-practices/">&lt;p&gt;This week, we were &lt;a href=&quot;hhttps:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HMIyDf3gBoY&quot; title=&quot;Shocked, SHOCKED&quot;&gt;shocked&lt;&#x2F;a&gt; to &lt;a href=&quot;https:&#x2F;&#x2F;www.404media.co&#x2F;podcast-ai-companies-are-opting-you-in-by-default&#x2F;&quot; title=&quot;404 Media podcast&quot;&gt;learn that tech companies&lt;&#x2F;a&gt; are tricking hapless users into their AI data harvesting programs.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why Go and Rust?</title>
+          <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.net/blog/why-go-and-rust/</link>
+          <guid>https://limeleaf.net/blog/why-go-and-rust/</guid>
+          <description xml:base="https://limeleaf.net/blog/why-go-and-rust/">&lt;p&gt;I was about 80% finished with this post and I was going down the road of
+listing out all the great things both Go and Rust offer for us to build
+and maintain software for our clients and product, but then I threw it
+all out. I realized that posts like that are a dime a dozen and there
+are so many resources out there comparing, contrasting, and listing
+features of both languages, but none of that really explains WHY we, the
+humans Erik, John, and I, like using Go and Rust. So instead I thought
+it would be better to personalize this a bit and grab some quotes from
+each of us about why we like each of them, unedited, unfiltered, and
+raw!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why VCs Will Never Give Us Money (And We&#x27;re Okay With That)</title>
+          <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/why-vcs-will-never-give-us-money/</link>
+          <guid>https://limeleaf.net/blog/why-vcs-will-never-give-us-money/</guid>
+          <description xml:base="https://limeleaf.net/blog/why-vcs-will-never-give-us-money/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.fundera.com&#x2F;resources&#x2F;startup-funding-statistics&quot; title=&quot;VC funding statistics&quot;&gt;Less than 1% of startups secure venture capital funding&lt;&#x2F;a&gt;. At Limeleaf, we&#x27;re part of that 99% – but by choice.&lt;&#x2F;p&gt;
+&lt;p&gt;Since founding our company, a few people have asked how we plan to fund product development. Most assume we&#x27;ll try to raise VC money. Today, we&#x27;ll explain why we aren’t taking that approach and what we’re doing instead.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>We Are Changing Our Domain</title>
+          <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/changing-our-domian/</link>
+          <guid>https://limeleaf.net/blog/changing-our-domian/</guid>
+          <description xml:base="https://limeleaf.net/blog/changing-our-domian/">&lt;p&gt;This morning, &lt;a href=&quot;&#x2F;members&#x2F;blain-smith&#x2F;&quot; title=&quot;Blain Smith&quot;&gt;Blain&lt;&#x2F;a&gt; educated me about the &lt;a href=&quot;https:&#x2F;&#x2F;tamouse.github.io&#x2F;blog&#x2F;politics&#x2F;2019&#x2F;10&#x2F;02&#x2F;why-is-the-io-domain-problematic.html&quot; title=&quot;Why is the .io domain problematic?&quot;&gt;history of the .io top-level domain&lt;&#x2F;a&gt;. I didn&#x27;t know that history when I bought limeleaf.net last year before teaming up with Blain and Erik.&lt;&#x2F;p&gt;
+&lt;p&gt;limeleaf.net wasn&#x27;t available then, but to my surprise and delight, it was this morning, so I bought it.&lt;&#x2F;p&gt;
+&lt;p&gt;All Limeleaf site traffic and email now redirect from limeleaf.io to limeleaf.net, and I have donated $50 to &lt;a href=&quot;https:&#x2F;&#x2F;chagossianvoices.org&#x2F;&quot;&gt;Chagossian Voices&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Step 0 of Starting a Tech Worker Co-Op: Define Your Goals</title>
+          <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/step-0-of-starting-a-tech-worker-coop/</link>
+          <guid>https://limeleaf.net/blog/step-0-of-starting-a-tech-worker-coop/</guid>
+          <description xml:base="https://limeleaf.net/blog/step-0-of-starting-a-tech-worker-coop/">&lt;p&gt;Worker cooperatives (&quot;co-ops&quot;) are a growing &lt;a href=&quot;https:&#x2F;&#x2F;palantetech.coop&#x2F;blog&#x2F;worker-coops-better-way-make-living-tech&quot;&gt;alternative&lt;&#x2F;a&gt; to traditional hierarchical tech company structures, which often rely on &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@teresa.fric&#x2F;everything-you-need-to-know-about-venture-capital-vc-funding-da3a20691fba&quot;&gt;venture capital funding&lt;&#x2F;a&gt;. Unlike conventional startups that take VC money in exchange for an equity stake, co-ops prioritize worker ownership, democratic decision-making, and profit sharing and strive to embody the &lt;a href=&quot;https:&#x2F;&#x2F;ncbaclusa.coop&#x2F;resources&#x2F;7-cooperative-principles&#x2F;&quot;&gt;7 Cooperative Principles established by the International Co-operative Alliance&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Safer Binary Decoding in Go</title>
+          <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.net/blog/safer-binary-decoding-in-go/</link>
+          <guid>https://limeleaf.net/blog/safer-binary-decoding-in-go/</guid>
+          <description xml:base="https://limeleaf.net/blog/safer-binary-decoding-in-go/">&lt;p&gt;Go is a popular language choice for building web services. Typically, when
+building those web services, we end up encoding&#x2F;decoding JSON as the
+data format. The &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding&#x2F;json&quot;&gt;&lt;code&gt;encoding&#x2F;json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; package provides a safe way to turn
+JSON payloads into Go structs, and vice versa.&lt;&#x2F;p&gt;
+&lt;p&gt;However, if we need to
+handle raw &lt;code&gt;[]byte&lt;&#x2F;code&gt; that follow a binary encoding format that
+is not self-describing, we need to do a bit more work and
+implement the &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding#BinaryMarshaler&quot;&gt;&lt;code&gt;encoding.BinaryMarshaler&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding#BinaryUnmarshaler&quot;&gt;&lt;code&gt;encoding.BinaryUnmarshaler&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;
+directly. Since we&#x27;re dealing with &lt;code&gt;[]byte&lt;&#x2F;code&gt;, we need to respect slice
+bounds to avoid triggering a &lt;code&gt;panic()&lt;&#x2F;code&gt; and crashing our service.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s look at the two ways we can decode data into Go structs and compare how
+one way will be safer than the other while yielding the same result. As an
+added bonus, we&#x27;ll end up with easier to understand code.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Founding Limeleaf: Part 3, Finding Support in the Cooperative Community</title>
+          <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/finding-support-in-the-cooperative-ecosystem/</link>
+          <guid>https://limeleaf.net/blog/finding-support-in-the-cooperative-ecosystem/</guid>
+          <description xml:base="https://limeleaf.net/blog/finding-support-in-the-cooperative-ecosystem/">&lt;p&gt;When we started Limeleaf, we wanted to do things differently. We wanted to create a democratically managed business where every worker had a voice and a stake in the company&#x27;s success. In short, we wanted to start a worker cooperative (even though we don’t call ourselves that, for reasons we covered in &lt;a href=&quot;https:&#x2F;&#x2F;limeleaf.net&#x2F;blog&#x2F;our-journey-to-establishing-a-cooperative-company&#x2F;&quot; title=&quot;Our Journey to Establishing a Cooperative Company - Part 1&quot;&gt;Part 1&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Founding Limeleaf: Part 2, Writing Our Operating Agreement</title>
+          <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/writing-our-operating-agreement/</link>
+          <guid>https://limeleaf.net/blog/writing-our-operating-agreement/</guid>
+          <description xml:base="https://limeleaf.net/blog/writing-our-operating-agreement/">&lt;p&gt;In this second installment of our series on starting a tech company &lt;a href=&quot;https:&#x2F;&#x2F;limeleaf.net&#x2F;blog&#x2F;why-limeleaf-is-a-co-op&#x2F;&quot; title=&quot;Why Limeleaf is a Co-Op&quot;&gt;as a cooperative business&lt;&#x2F;a&gt;, we’ll discuss how we wrote our Operating Agreement (OA).&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Foundling Limeleaf: Our Journey to Establishing a Cooperative Company</title>
+          <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/our-journey-to-establishing-a-cooperative-company/</link>
+          <guid>https://limeleaf.net/blog/our-journey-to-establishing-a-cooperative-company/</guid>
+          <description xml:base="https://limeleaf.net/blog/our-journey-to-establishing-a-cooperative-company/">&lt;p&gt;At Limeleaf, how we do our work is equally important as the work itself. &lt;a href=&quot;https:&#x2F;&#x2F;limeleaf.net&#x2F;blog&#x2F;why-limeleaf-is-a-co-op&#x2F;&quot; title=&quot;Why Limeleaf is a Co-Op&quot;&gt;As we explained in a previous post&lt;&#x2F;a&gt;, Limeleaf operates as a worker cooperative, and we are dedicated to embodying the &lt;a href=&quot;https:&#x2F;&#x2F;ica.coop&#x2F;en&#x2F;cooperatives&#x2F;cooperative-identity&#x2F;&quot; title=&quot;Cooperative identity, values &amp;amp; principles&quot;&gt;Seven Cooperative Principles&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why Limeleaf Operates as a Co-Op</title>
+          <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.net/blog/why-limeleaf-is-a-co-op/</link>
+          <guid>https://limeleaf.net/blog/why-limeleaf-is-a-co-op/</guid>
+          <description xml:base="https://limeleaf.net/blog/why-limeleaf-is-a-co-op/">&lt;p&gt;Cooperatives have gotten a bad rap over the years. They’ve been portrayed as impractical, plagued by decision paralysis, and insufferably &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hXRa5eIlT4g&quot;&gt;hippy-dippy&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
