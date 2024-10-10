@@ -14,7 +14,7 @@ feature_photo_alt = ""
 
 [We started Limeleaf](/blog/our-journey-to-establishing-a-cooperative-company/ "Founding Limeleaf blog post") to work with smart people on interesting tech projects that make a difference.
 
-But we also did it to have fun, learn new things, and fall in love again with the web.
+But we also did it to have fun, learn new things, and fall in love again with tech.
 
 Today we launched [Diggetal](http://diggetal.com/ "Diggetal website"), an initiative dedicated to tinkering around with small projects.
 
