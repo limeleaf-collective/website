@@ -1,9 +1,9 @@
 +++
-title = "We help teams build software better and faster with Go, Rust, and Elixir."
+title = "Rust and Go Development Experts"
 
 [extra]
 feature_photo = "images/services/tech.svg"
 feature_photo_alt = "Tech illustration"
 +++
 
-Hiring and onboarding great software engineers can take months. If you have critical projects that can't wait that long, we can help.
+We draw on decades of experience to help teams build fast, reliable, maintainable software using modern programming languages.
