@@ -1,6 +1,6 @@
 +++
-title = "We want to help others with the experience we've acquired and believe in technology being used for good."
-description = "Limeleaf team members and their backgrounds"
+title = "About Limeleaf"
+description = "We want to help others with the experience we've acquired and believe in technology being used for good."
 
 [extra]
 subtitle = ""

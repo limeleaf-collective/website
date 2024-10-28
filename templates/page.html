@@ -18,16 +18,13 @@
   {% endif %}
 {% endblock meta_content %}
 
-{% block title %}
-  {{ page.title }}
-{% endblock title %}
-
 {% block content %}
 <main class="container">
   <section class="row">
-    <article>
-        <header>
-            {% if page.extra.tagline %}
+    <div class="col-sm-9">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+      {% if page.extra.tagline %}
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
             {% if page.date %}
@@ -50,18 +47,11 @@
                   {%- endfor %}
                 {% endif %}
             </p>
+            <hr />
             {% endif %}
-        </header>
-
-      {% if page.extra.feature_photo != "" %}
-      <figure style="float: right;">
-          <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}"" />
-      </figure>
-      {% endif %}
-
       {{ page.content | safe }}
       </article>
-  </section>
+    </div>
 </main>
 
 {% endblock content %}

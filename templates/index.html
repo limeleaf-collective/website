@@ -18,66 +18,77 @@
   <meta name="twitter:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg">
 {% endblock meta_content %}
 
-{% block title %}
-  {{ section.title }}
-{% endblock title%}
-
 {% block content %}
-<main role="main">
-    <section class="dark-section">
-        <div class="container">
-            <div id="about-us" class="section row">
-                <div class="col-sm-12">
-                  Hiring and onboarding great software engineers can take months. If you have critical projects that can't wait that long, we can help.
-                    <h3 class="cta"><a href="{{ get_url(path="@/expertise/_index.md") }}">Our Expertise</a></h3>
-                </div>
-            </div>
-        </div>
-    </section>
+<main class="container">
+  <section class="hero-section">
+      <div class="row">
+          <div class="col-sm-7">
+              <h1 class="home">
+                  Your Rust and Go Development Experts
+              </h1>
+              <p>
+                  We draw on decades of experience to help teams build
+                  fast, reliable, maintainable software using modern
+                  programming languages.
+              </p>
+          </div>
+          <div id="hero-image" class="col-xs-4">
+              <img src="/images/services/backend-developer.svg"/>
+          </div>
+      </div>
+  </section>
+  <hr />
 
-    <section class="light-section">
-        <div class="container">
-            <div class="section">
-                <h3 class="cta">Some of Our Clients</h3>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://rushdownstudio.com">
-                                <img src="{{ get_url(path='images/clients/rushdown.png') }}" alt="Rushdown Studios">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://pitonlabs.com">
-                                <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://rocketscience.gg">
-                                <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="services-section">
+      <div class="col-sm-12">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row">
+        <div class="col-xs-9 col-md-4">
+          <h3 class="service-title consulting">Consulting</h3>
+          <p class="service-description">Moving to Rust or Go? Great! We can help you navigate the complexities. <br /> <a href="/services/consulting/" class="link">Learn more</a>.</p>
         </div>
-    </section>
+        <div class="col-xs-9 col-md-4">
+          <h3 class="service-title training">Training</h3>
+          <p class="service-description">Our training programs are designed to equip your team with the skills needed for modern development with Go and Rust.
+            <br /><a href="/services/training/" class="link">Learn more</a>.</p>
+        </div>
+        <div class="col-xs-9 col-md-4">
+          <h3 class="service-title development">Development</h3>
+          <p class="service-description">We build high-quality software solutions tailored to your business needs using modern programming languages and frameworks.
+            <br /><a href="/services/development/" class="link">Learn more</a>.</p>
 
-    {% set section = get_section(path="services/_index.md") %}
-    {% for page in section.pages %}
-    <section class="{% if loop.index % 2 == 0 %}light-section{% else %}dark-section{% endif %}">
-        <div class="container">
-            <div class="section row">
-                <div class="col-sm-12">
-                    {{ page.summary | striptags }}
-                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+      </div>
+    </div>
+  </div>
+  </section>
+  <hr />
+<section>
+        <div>
+            <h2 class="section-title">Some of Our Clients</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                        <a href="https://rushdownstudio.com">
+                            <img src="{{ get_url(path='images/clients/rushdown.png') }}" alt="Rushdown Studios">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                        <a href="https://pitonlabs.com">
+                            <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="client-logo">
+                        <a href="https://rocketscience.gg">
+                            <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    {% endfor %}
+</section>
 </main>
 {% endblock content %}

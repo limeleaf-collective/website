@@ -1,5 +1,5 @@
 +++
-title = "System Planning and Architecture"
+title = "Training Services"
 description = "Limeleaf engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems."
 weight = 2
 
