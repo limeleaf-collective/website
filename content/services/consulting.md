@@ -8,20 +8,19 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-
 When moving to Rust and Go, we've seen companies struggle with new development and deployment processes, inexperienced engineers, and product leaders being unaware of what's possible with the languages. These result in launch delays, frustrated staff, and nervous investors. Let us help!
 
 <!-- more -->
 
-How we can help:
+How do we do it?
 
 - Mentor your staff in best practices as they transition from other languages to Rust or Go
-- Level up programmers with some Rust or Go knowledge into power users
+- Level up programmers with some Rust or Go knowledge into power developers
 - Identify bottlenecks in your processes that are slowing down your teams and resolve them
-- Educate Product about how Rust and Go can supercharge roadmaps
+- Educate Product about how Rust and Go to supercharge roadmaps
 - Recommend the best tools to get the most productivity out of the languages
  
-### Typical Activities
+## Typical Activities
 
 - Review application architecture and infrastructure plans and recommend improvements
 - Load test systems to identify breaking points and potential for runaway operational costs 
@@ -36,11 +35,16 @@ How we can help:
   - Feature writing
   - Bug fixing
 
-## What's Included
-- Two hours per week of live meeting participation
+## Consulting Packages for Projects of Any Size
+
+We can work with you to provide whatever level of help you need.
+
+Here's an example from a recent engagement. The customer engaged us for four weeks to help with an election reporting web app.
+
+- System architecture and infrastructure recommendations to ensure app can handle 8,500-10,000 new daily database records 
 - Five hours of document and/or code review
-- Join and answer questions in one of your internal chat channels (US Eastern business hours)
+- Two hours per week of live meeting participation
+- Join and answer questions in one internal chat channel for one month (US Eastern business hours)
 
 Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
-
 
