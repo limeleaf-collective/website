@@ -1,7 +1,7 @@
 +++
 title = "Consulting Services"
 description = "Limeleaf builds solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows."
-weight = 3
+weight = 1
 
 [extra]
 feature_photo = ""

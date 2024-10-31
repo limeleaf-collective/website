@@ -43,16 +43,16 @@
       <div class="col-sm-12">
       <h2 class="section-title">Our Services</h2>
       <div class="row">
-        <div class="col-xs-9 col-md-4">
+        <div class="col-sm-4 services">
           <h3 class="service-title consulting">Consulting</h3>
           <p class="service-description">Moving to Rust or Go? Great! We can help you navigate the complexities. <br /> <a href="/services/consulting/" class="link">Learn more</a>.</p>
         </div>
-        <div class="col-xs-9 col-md-4">
+        <div class="col-sm-4 services">
           <h3 class="service-title training">Training</h3>
           <p class="service-description">Our training programs are designed to equip your team with the skills needed for modern development with Go and Rust.
             <br /><a href="/services/training/" class="link">Learn more</a>.</p>
         </div>
-        <div class="col-xs-9 col-md-4">
+        <div class="col-sm-4 services">
           <h3 class="service-title development">Development</h3>
           <p class="service-description">We build high-quality software solutions tailored to your business needs using modern programming languages and frameworks.
             <br /><a href="/services/development/" class="link">Learn more</a>.</p>
@@ -62,33 +62,38 @@
   </div>
   </section>
   <hr />
-<section>
-        <div>
-            <h2 class="section-title">Some of Our Clients</h2>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="client-logo">
-                        <a href="https://rushdownstudio.com">
-                            <img src="{{ get_url(path='images/clients/rushdown.png') }}" alt="Rushdown Studios">
-                        </a>
-                    </div>
+    <section>
+        <h2 class="section-title">Some of Our Clients</h2>
+        <div class="row">
+            <div class="col-xs-3">
+                <div class="client-logo">
+                    <a href="https://rushdownstudio.com">
+                        <img src="{{ get_url(path='images/clients/rushdown-logo.png') }}" alt="Rushdown Studios">
+                    </a>
                 </div>
-                <div class="col-sm-4">
-                    <div class="client-logo">
-                        <a href="https://pitonlabs.com">
-                            <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
-                        </a>
-                    </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="client-logo">
+                    <a href="https://pitonlabs.com">
+                        <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
+                    </a>
                 </div>
-                <div class="col-sm-4">
-                    <div class="client-logo">
-                        <a href="https://rocketscience.gg">
-                            <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
-                        </a>
-                    </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="client-logo">
+                    <a href="https://rocketscience.gg">
+                        <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="client-logo">
+                    <a href="https://colab.coop">
+                        <img src="{{ get_url(path='images/clients/colab.svg') }}" alt="CoLab">
+                    </a>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 </main>
 {% endblock content %}
