@@ -23,7 +23,7 @@ We solve problems for our clients using a process that prioritizes goals and out
 
 We also believe that well-crafted requirements are the essential foundation for building great software products. Clear requirements require understanding the client's business and goals to ensure the end product aligns with the needs and expectations of its users and stakeholders.
 
-From our experiences working on products at [Google Chrome](https://www.google.com/chrome/ "Chrome website"), [Electronic Arts](https://www.ea.com "EA website"), [JW Platform](https://jwplayer.com "JW Player website"), [Kinetic](https://www.wearkinetic.com/ "Kinetic website"), [RSA Security](https://rsa.com "RSA Security"), [ngrok](https://ngrok.com "ngrok website"), and elsewhere, we have learned that high-quality requirements greatly reduce scope creep, missed deadlines, and unhappy users.
+From our experiences working on products at [Google Chrome](https://www.google.com/chrome/ "Chrome website"), [JW Platform](https://jwplayer.com "JW Player website"), [Kinetic](https://www.wearkinetic.com/ "Kinetic website"), [RSA Security](https://rsa.com "RSA Security"), [ngrok](https://ngrok.com "ngrok website"), and elsewhere, we have learned that high-quality requirements greatly reduce scope creep, missed deadlines, and unhappy users.
 
 1. **User Research**. Conduct surveys, interviews, and "design thinking" workshops to understand target users, their problems, and what success looks like. This discovery phase digs deep to identify the most pressing problems and define the outcomes needed to achieve the client's goals.
 
