@@ -1,6 +1,6 @@
 +++
 title = "Consulting Services"
-description = "Limeleaf builds solutions that scale to handle intense traffic and data load easily and cost-effectively as your business grows."
+description = "From code reviews to infrastructure planning, we'll help you ship better software faster."
 weight = 1
 
 [extra]
@@ -8,43 +8,46 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-When moving to Rust and Go, we've seen companies struggle with new development and deployment processes, inexperienced engineers, and product leaders being unaware of what's possible with the languages. These result in launch delays, frustrated staff, and nervous investors. Let us help!
+When transitioning to Rust and Go, organizations often face challenges with memory safety paradigms, concurrency patterns, and understanding the unique performance characteristics of each language. Teams struggle to leverage Rust's ownership model and Go's `goroutines` effectively, leading to development delays and underutilized potential. 
 
 <!-- more -->
 
-How do we do it?
+Here's how Limeleaf can help!
 
-- Mentor your staff in best practices as they transition from other languages to Rust or Go
-- Level up programmers with some Rust or Go knowledge into power developers
-- Identify bottlenecks in your processes that are slowing down your teams and resolve them
-- Educate Product about how Rust and Go to supercharge roadmaps
-- Recommend the best tools to get the most productivity out of the languages
- 
+- Guide developers in mastering Rust's borrow checker and Go's CSP-based concurrency
+- Transform intermediate Rust/Go developers into experts who can optimize compilers and runtime performance
+- Resolve common bottlenecks like compilation times in Rust and garbage collection tuning in Go
+- Show product teams how to leverage zero-cost abstractions and efficient concurrency for better features
+- Set up optimal toolchains including cargo, clippy, go modules, and performance profiling tools
+
 ## Typical Activities
 
-- Review application architecture and infrastructure plans and recommend improvements
-- Load test systems to identify breaking points and potential for runaway operational costs 
-- Set up automation and run books for failure scenarios
-- Plan and test for infrastructure capacity, scalability, and cost containment
-- Recommend the best tools to get the most productivity out of Rust and Go
-- Identify bottlenecks in your processes that are slowing down your teams and advise best practices to resolve them
-- Participate in meetings with your team to provide technical leadership services, including:
-- Project planning
-  - Code reviews
-  - Technical meetings
-  - Feature writing
-  - Bug fixing
+- Design memory-efficient architectures leveraging Rust's ownership model and Go's efficient runtime
+- Benchmark and profile applications to maximize performance in both languages
+- Implement robust error handling and recovery strategies
+- Plan for optimal resource utilization and concurrent workload management
+- Configure development environments with the best-in-class Rust and Go tooling
+- Optimize build pipelines and deployment workflows for both languages
+- Provide technical leadership through:
+  - [Architecture planning](/services/system-planning-and-architecture/)
+  - Code reviews focusing on safety and performance
+  - Technical design sessions
+  - Systems optimization
+  - Critical bug resolution
 
-## Consulting Packages for Projects of Any Size
+## Consulting Packages for Any Scale
 
-We can work with you to provide whatever level of help you need.
+We tailor our services to your specific Rust and Go development needs.
 
-Here's an example from a recent engagement. The customer engaged us for four weeks to help with an election reporting web app.
+Recent example: Four-week engagement helping migrate a high-throughput data processing service to Rust and Go.
 
-- System architecture and infrastructure recommendations to ensure app can handle 8,500-10,000 new daily database records 
-- Five hours of document and/or code review
-- Two hours per week of live meeting participation
-- Join and answer questions in one internal chat channel for one month (US Eastern business hours)
+- Duration: forty hours
+- Investment: $6,000
+- Deliverables:
+  - Architecture design optimizing Rust for data processing and Go for API services
+  - Code review emphasizing memory safety and concurrent performance
+  - Weekly technical guidance sessions
+  - On-demand support via internal channels during US Eastern business hours
 
 Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
 

@@ -21,7 +21,7 @@
 {% block content %}
 <main class="container">
   <section class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-10">
       <h1>{{ page.title }}</h1>
       <p><i>{{ page.description }}</i></p>
       <hr class="header" />
@@ -29,8 +29,8 @@
             <p>{{ page.extra.tagline }}</p>
             {% endif %}
             {% if page.date %}
-            <p>
-              Posted on <time>{{ page.date | date(format="%B %d, %Y") }}</time>
+            <p class="small"><i>
+              Posted on <time>{{ page.date | date(format="%B %d, %Y") }}</time> 
               {% if page.taxonomies.tags %}
                 in
                 {% for tag in page.taxonomies.tags %}
@@ -47,9 +47,14 @@
                     <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
                   {%- endfor %}
                 {% endif %}
-            </p>
-            <hr />
+              </i></p>
+
             {% endif %}
+            {% if page.extra.feature_photo != "" %}
+      <figure style="float: right; margin: 0 1em;">
+          <img style="border-radius: 50%;" src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}"" />
+      </figure>
+      {% endif %}
       {{ page.content | safe }}
       </article>
     </div>

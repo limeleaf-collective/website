@@ -1,5 +1,6 @@
 +++
 title = "Services We Provide"
-description = "We deliver Rust and Go solutions that solve complex problems and grow your business."
+description = "We help clients build high-performance software in Rust and Go to accelerate their business growth."
 sort_by = "weight"
 +++
+
