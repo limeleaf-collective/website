@@ -1,5 +1,6 @@
 +++
-title = "We produce solutions that solve complex problems and grow your business."
-description = "Software and product services that Limeleaf provides to clients."
+title = "Services We Provide"
+description = "We help clients build high-performance software in Rust and Go to accelerate their business growth."
 sort_by = "weight"
 +++
+

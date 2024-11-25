@@ -1,6 +1,6 @@
 +++
 title = "System Planning and Architecture"
-description = "Limeleaf engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems."
+description = "Limeleaf can help your team build Rust and Go solutions that scale to handle intense traffic cost-effectively as your business grows."
 weight = 2
 
 [extra]
@@ -8,20 +8,20 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-Our engineers and architects design and implement efficient, reliable, maintainable software systems that solve complex problems.
+Limeleaf designs efficient, highly scalable, maintainable software systems in Rust and Go that solve complex problems.
 
 <!-- more -->
 
 ## In-Depth System Analysis
 
-We start by conducting a thorough analysis of your business requirements, budget, existing systems and infrastructure, and long-term goals. This deep dive ensures that our recommendations are tailored to your specific needs, addressing your unique challenges and constraints.
+We begin with a comprehensive evaluation of your performance requirements, memory constraints, and concurrency needs to determine the optimal use of Rust and Go's strengths. Our analysis covers safety-critical components where Rust excels and high-throughput services where Go shines.
 
-## Proven Architectural Approaches
+## Proven Architecture Patterns
 
-Using industry best practices, we design optimized system architectures for performance, scalability, and maintainability. Whether you're building a new system or modernizing an existing one, we design the most effective solution.
+We architect systems leveraging Rust's zero-cost abstractions and memory safety guarantees for critical infrastructure, while utilizing Go's robust concurrency model and extensive ecosystem for microservices and network services. Our designs emphasize type safety, performance, and maintainable codebases.
 
-## Seamless Implementation and Support
+## Expert Implementation Support
 
-Our engineers work closely with your team for a smooth implementation process. We provide ongoing support and optimization services to ensure your software system continues to meet your evolving business needs.
+Our engineers specialize in idiomatic Rust and Go development, following each language's best practices and design patterns. We provide code reviews, performance profiling, and ongoing optimization to help your team build reliable, efficient systems that scale.
 
 Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.

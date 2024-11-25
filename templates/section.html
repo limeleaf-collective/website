@@ -5,7 +5,7 @@
   <meta property="og:title" content="{{ section.title }} - {{ config.title }}" />
   <meta property="og:url" content="https://limeleaf.net" />
   <meta property="og:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg" />
-  <meta property=”og:type” content=”website” />
+  <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="limeleaf.net">
   <meta property="twitter:url" content="https://limeleaf.net">
@@ -18,24 +18,17 @@
   {% endif %}
 {% endblock meta_content %}
 
-{% block title %}
-  {% if current_path == "/contact/" %}
-    Send us <a href="mailto:info@limeleaf.net">an email</a> or
-    <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
-    project assessment.
-  {% else %}
-    {{ section.title }}
-  {% endif %}
-{% endblock title%}
+{% block description %}
+{{ section.description }}
+{% endblock description %}
 
 {% block content %}
-<main>
+<main class="container">
   {% if current_path == "/blog/" %}
     <div class="container">
       {% for post in section.pages %}
       <section class="row">
         <article class="col-lg-12">
-          <header>
             <h2><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></h2>
             <p>
               <time>{{ post.date | date(format="%B %d, %Y") }}</time>
@@ -46,41 +39,32 @@
                 {% endfor %}
               {% endif %}
             </p>
-          </header>
-          {{ post.summary | safe }}
+          {{ post.summary | safe }} <a href="{{ post.permalink }}" title="{{ post.title }}">Read More >></a>
         </article>
       </section>
       {% endfor %}
     </div>
-  {% elif current_path == "/expertise/" %}
-    <div class="container">
-      {% set areas = get_taxonomy(kind="areas") %}
-      <section>
-        <div class="row">
-          {% for area in areas.items %}
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-xs-12">
-                  <h2>{{ area.name }}</h2>
-                </div>
-              </div>
-              {% for page in area.pages %}
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p>{{ page.summary | striptags }}</p>
-                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          {% endfor %}
-        </div>
-      </section>
-    </div>
+
   {% elif current_path == "/contact/" %}
+  <h1>{{section.title}}</h1>
+  <p>Send us <a href="mailto:info@limeleaf.net">an email</a> or
+    <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
+    project assessment.</p>
+  
+  {% elif current_path == "/open-source/" %}
+  <h1>{{section.title}}</h1>
+  <p><i>{{ section.description }}</i></p>
+  <hr class="header" />
+  <p>{{section.content | safe }}</p>
+
+
   {% else %}
+  <h1>{{section.title}}</h1>
+  <p><i>{{ section.description }}</i></p>
+  <hr class="header" />
+  <p>{{section.content | safe }}</p>
     {% for page in section.pages %}
-      <div {% if loop.index % 2 == 0 %}class="light-section"{% endif %}>
+      <div {% if loop.index % 2 == 0 %}{% endif %}>
       <div class="container">
         <section class="row middle-lg">
           {% if page.extra.feature_photo != "" %}
@@ -89,10 +73,10 @@
             </div>
             <div class="col-lg-8 col-lg-offset-1">
           {% else %}
-              <div class="col-lg-12">
+              <div class="col-12">
           {% endif %}
-            <p>{{ page.summary | striptags }}</p>
-            <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+          <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+          <p>{{ page.summary | striptags }}</p>
           </div>
         </section>
       </div>
@@ -101,3 +85,4 @@
   {% endif %}
 </main>
 {% endblock content %}
+

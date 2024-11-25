@@ -8,7 +8,7 @@
   <meta property="og:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta property=”og:type” content=”website” />
+  <meta property="og:type" content="website" />
   <meta name="description" content="{{ config.description }}" />
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="limeleaf.net">
@@ -18,66 +18,67 @@
   <meta name="twitter:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg">
 {% endblock meta_content %}
 
-{% block title %}
-  {{ section.title }}
-{% endblock title%}
-
 {% block content %}
-<main role="main">
-    <section class="dark-section">
-        <div class="container">
-            <div id="about-us" class="section row">
-                <div class="col-sm-12">
-                  Hiring and onboarding great software engineers can take months. If you have critical projects that can't wait that long, we can help.
-                    <h3 class="cta"><a href="{{ get_url(path="@/expertise/_index.md") }}">Our Expertise</a></h3>
-                </div>
-            </div>
-        </div>
-    </section>
+<main class="container">
+  <section class="hero-section">
+      <div class="row">
+          <div class="col-xs-6">
+              <h1 class="home">Your Rust and Go Development Experts</h1>
+              <p>We help teams build fast, reliable, maintainable software using modern programming languages.</p>
+          </div>
+          <div id="hero-image" class="col-xs-5">
+              <img src="/images/services/backend-developer.svg"/>
+          </div>
+      </div>
+  </section>
 
-    <section class="light-section">
-        <div class="container">
-            <div class="section">
-                <h3 class="cta">Some of Our Clients</h3>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://rushdownstudio.com">
-                                <img src="{{ get_url(path='images/clients/rushdown.png') }}" alt="Rushdown Studios">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://pitonlabs.com">
-                                <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="client-logo">
-                            <a href="https://rocketscience.gg">
-                                <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="home services-section">
+      <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-4 services consulting">
+          <h3 class="service-title">Consulting</h3>
+          <p class="service-description">From code reviews to infrastructure planning, we'll help you ship better software faster.</p>
+          <p><a href="/services/consulting/" class="link">Learn more</a></p>
         </div>
-    </section>
+        <div class="col-sm-4 services design">
+          <h3 class="service-title">System Design</h3>
+          <p class="service-description">We design highly scalable software systems that solve complex problems.</p>
+            <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
+      </div>
+      <div class="col-sm-4 services training">
+        <h3 class="service-title">Training</h3>
+        <p class="service-description">We train Rust and Go engineers at any skill level, virtually or on-site.</p>
+          <p><a href="/services/training/" class="link">Learn more</a></p>
+      </div>
+    </div>
+  </div>
+  </section>
 
-    {% set section = get_section(path="services/_index.md") %}
-    {% for page in section.pages %}
-    <section class="{% if loop.index % 2 == 0 %}light-section{% else %}dark-section{% endif %}">
-        <div class="container">
-            <div class="section row">
-                <div class="col-sm-12">
-                    {{ page.summary | striptags }}
-                    <h3 class="cta"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+    <section class="home clients">
+        <h2>Some of Our Clients</h2>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="client-logo">
+                    <a href="https://rushdownstudio.com">
+                        <img src="{{ get_url(path='images/clients/rushdown-logo.png') }}" alt="Rushdown Studios">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="client-logo">
+                    <a href="https://pitonlabs.com">
+                        <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="client-logo">
+                    <a href="https://rocketscience.gg">
+                        <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    {% endfor %}
 </main>
 {% endblock content %}

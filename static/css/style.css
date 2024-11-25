@@ -1,34 +1,88 @@
-@custom-media --sm-viewport only screen and (min-width: 48em);
-@custom-media --md-viewport only screen and (min-width: 64em);
-@custom-media --lg-viewport only screen and (min-width: 75em);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --pico-text-selection-color: rgba(107,180,78, 0.50);
+  --pico-primary: #5a9641;
+  --pico-primary-background: #4a7a36;
+  --pico-primary-underline: #5a9641;
+  --pico-primary-hover: #3b612b;
+  --pico-primary-hover-background: #6bb44e;
+  --pico-primary-focus: #4a7a36;
+  --pico-primary-inverse: #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --pico-text-selection-color: rgba(107,180,78, 0.50);
+    --pico-primary: #6bb44e;
+    --pico-primary-background: #4a7a36;
+    --pico-primary-underline: rgba(107,180,78, 0.75);
+    --pico-primary-hover: #79bd5c;
+    --pico-primary-hover-background: #79bd5c;
+    --pico-primary-focus: #a8d394;
+    --pico-primary-inverse: #fff;
+  }
+}
+
+[data-theme=dark] {
+    --pico-text-selection-color: rgba(107,180,78, 0.50);
+    --pico-primary: #6bb44e;
+    --pico-primary-background: #4a7a36;
+    --pico-primary-underline: rgba(107,180,78, 0.75);
+    --pico-primary-hover: #79bd5c;
+    --pico-primary-hover-background: #79bd5c;
+    --pico-primary-focus: #a8d394;
+    --pico-primary-inverse: #fff;
+}
+
+:root {
+    --pico-font-family: Inter, "Open Sans", "Helvetica Neue", sans-serif;
+    --pico-line-height: 1.65;
+    --pico-font-size: 110%;
+    --pico-font-weight: 400;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 1.5rem;
+  font-size: var(--pico-font-size);
+  font-weight: 400;
 }
 
 h1, h2, h3 {
-  font-weight: 340;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 425;
+  font-family: "Rubik", sans-serif;
 }
 
-h1 p, h2 p, h3 p {
-  font-family: "Open Sans", sans-serif;
+h1.home {
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  margin-bottom: 4rem;
+  color: var(--pico-color);
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+h1 { 
+  font-size: 3rem;
+  margin: 1em 0;
+  
+}
 
-a {
-  color: #1C7258;
-  text-decoration: none;
-  border-bottom: 1px solid #1c7258;
+h2 { 
+  font-size: 2rem; 
+  margin: 1em 0;
+}
+
+h3 { 
+  font-size: 1.5rem; 
+  margin: 1em 0;
+}
+
+a code {
+  color: var(--pico-color);
 }
 
 code {
@@ -49,24 +103,50 @@ strong {
 }
 
 hr {
-  border-top: 1px solid #000;
+  border-top: 1px solid #999;
 }
 
-section {
-  padding: 3rem 0;
+hr.header {
+  margin-bottom: 2rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff; /* For light theme */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* For dark theme */
+[data-theme=dark] header {
+  background-color: var(--pico-background-color, #11191f);
 }
 
 header nav {
   text-align: right;
+  margin-top: 1em;
 }
 
 header nav a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   border: none;
+  text-decoration: none;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: flex-end;
+  }
+
+main {
+  margin-top: 1.75rem;
 }
 
 article header p {
@@ -74,31 +154,27 @@ article header p {
   text-align: left;
 }
 
-h3.cta {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+footer {
+  position: sticky;
+  background-color: #e9ecef;
+  border-top: 1px solid #e9ecef;
+  font-size: 0.9rem;
 }
 
-h3.cta a:after {
-  content: ' \219B';
+footer p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.light-section {
-  background-color: #dff6e6;
-}
-
-.medium-section {
-  background-color: #91e3a9;
-}
-
-.dark-section {
-  background-color: #1c7258;
-  color: #fff;
-}
-.dark-section a {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
 }
 
 #logo a {
@@ -107,12 +183,23 @@ h3.cta a:after {
 
 #logo img {
   max-width: 50%;
+  display: block;
+  margin: 0;
+}
+
+#hero-image {
+  margin-left: 1rem;
+  display:block;
+}
+
+#hero-image .img {
+  vertical-align: middle;
 }
 
 .client-logo {
   text-align: center;
   margin-bottom: 1rem;
-  height: 150px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,14 +208,9 @@ h3.cta a:after {
 .client-logo img {
   max-width: 100%;
   max-height: 100%;
-  width: auto;
+  width: 220px;
   height: auto;
   object-fit: contain;
-}
-
-.light-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 h2.homepage {
@@ -137,39 +219,88 @@ h2.homepage {
   margin-bottom: 2rem;
 }
 
-.light-section .client-description {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: #444;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
 .client-logo a:link, a:visited {
   text-decoration: none;
   border: 0;
 }
 
-@media only screen and (max-width: 48rem) {
-  section {
-    padding: 2rem 0;
-  }
-
-  body { font-size: 1.25rem; }
-
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.25rem; }
-
-  header #logo, header nav {
+header #logo, header nav {
     text-align: center;
   }
 
-  .container {
-    padding: 0 1rem;
+.hero-section {
+  padding: 1rem 0;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+section.home {
+  margin-top: 5em;
+}
+
+.service-title {
+  font-size: 1.5rem;
+  border-radius: 0.375rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.consulting:before {
+  background-color: #8f2330; /* Red */
+}
+
+.training:before {
+  background-color: #FFBF00; /* Purple */
+}
+
+.design:before {
+  background-color: #4682b4; /* Teal */
+}
+
+.services:before {
+  padding: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 26px;
+  border-radius: 4px
+}
+
+.link {
+  color: var(--pico-primary);
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #218838;
+  text-decoration: underline;
+}
+
+.small {
+  font-size: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    width: 100%;
   }
   
-  a.cta {
-      font-size: 1.5rem;
+  #logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .middle-lg {
+    flex-direction: column;
   }
 }
