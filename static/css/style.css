@@ -81,6 +81,10 @@ h3 {
   margin: 1em 0;
 }
 
+a code {
+  color: var(--pico-color);
+}
+
 code {
   font-size: 80%;
 }
