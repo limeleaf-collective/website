@@ -281,7 +281,7 @@ section.home {
 }
 
 .link:hover {
-  color: #218838;
+  color: var(--pico-primary-hover);
   text-decoration: underline;
 }
 
