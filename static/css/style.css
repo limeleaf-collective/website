@@ -45,6 +45,18 @@
     --pico-font-weight: 400;
 }
 
+#full-footer {
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns:100%;
+
+  /* fallback height */
+  min-height:100vh;
+
+  /* new small viewport height for modern browsers */
+  min-height:100svh;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -60,7 +72,7 @@ h1, h2, h3 {
 h1.home {
   font-weight: 400;
   font-family: "Rubik", sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 6rem);
   margin-bottom: 4rem;
   color: var(--pico-color);
 }
@@ -158,6 +170,7 @@ footer {
   position: sticky;
   background-color: #e9ecef;
   border-top: 1px solid #e9ecef;
+  padding: 1em 0;
   font-size: 0.9rem;
 }
 
@@ -229,7 +242,7 @@ header #logo, header nav {
   }
 
 .hero-section {
-  padding: 1rem 0;
+  padding: 1rem 0 4em;
 }
 
 .section-title {
@@ -238,9 +251,7 @@ header #logo, header nav {
   margin: 2.5rem 0;
 }
 
-section.home {
-  margin-top: 5em;
-}
+
 
 .service-title {
   font-size: 1.5rem;
@@ -303,4 +314,17 @@ section.home {
   .middle-lg {
     flex-direction: column;
   }
+
+  #hero-image {
+    display: none; 
+  }
+
+  .hero-section {
+    padding: 1em 0;
+  }
+
+  h1.home {
+    margin-bottom: 0.5em;
+  }
+
 }
