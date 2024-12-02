@@ -21,7 +21,7 @@ An OA is a legal document that governs the operations and management of an LLC. 
 
 Here in New York State, LLCs are required to have an OA. You aren’t required to file the OA with the state, but it must be in writing, agreed upon, and signed by all members of the LLC.
 
-In keeping with our culture of openness, [our OA is publicly available](https://github.com/limeleaf-collective/Documents/blob/441e64b1c2cb1ad164810b33b73d45e3ad41ac8e/Legal/limeleaf-operating-agreement.pdf "Limeleaf OA in PDF format") (minus the signature page, for privacy reasons).
+In keeping with our culture of openness, [our OA is publicly available](/pdf/limeleaf-operating-agreement.pdf "Limeleaf OA in PDF format") (minus the signature page, for privacy reasons).
 
 ## First Things First
 
