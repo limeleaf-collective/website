@@ -6,7 +6,7 @@ generate_feeds = true
 feed_filenames = ["rss.xml"]
 
 taxonomies = [
-  { name = "tags", feed = false },
+  { name = "tags", feed = true },
   { name = "areas", feed = false, render = false },
 ]
  
