@@ -74,7 +74,6 @@ h1.home {
   font-family: "Rubik", sans-serif;
   font-size: clamp(2rem, 5vw, 6rem);
   margin-bottom: 4rem;
-  color: var(--pico-color);
 }
 
 h1 { 
@@ -93,9 +92,6 @@ h3 {
   margin: 1em 0;
 }
 
-a code {
-  color: var(--pico-color);
-}
 
 code {
   font-size: 80%;
@@ -220,15 +216,16 @@ footer p {
 .client-logo img {
   max-width: 100%;
   max-height: 100%;
-  width: 220px;
+  width: 200px;
   height: auto;
   object-fit: contain;
 }
 
-h2.homepage {
+#partners h2, #clients h2  {
   text-align: left;
   font-size: 2rem;
   margin-bottom: 2rem;
+  border-top: solid 1.5px #000;
 }
 
 .client-logo a:link, a:visited {
@@ -249,8 +246,6 @@ header #logo, header nav {
   text-align: center;
   margin: 2.5rem 0;
 }
-
-
 
 .service-title {
   font-size: 1.75rem;
