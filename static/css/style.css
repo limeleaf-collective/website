@@ -2,20 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-[data-theme=light],
-:root:not([data-theme=dark]) {
-  --pico-text-selection-color: rgba(107,180,78, 0.50);
-  --pico-primary: #5a9641;
-  --pico-primary-background: #4a7a36;
-  --pico-primary-underline: #5a9641;
-  --pico-primary-hover: #3b612b;
-  --pico-primary-hover-background: #6bb44e;
-  --pico-primary-focus: #4a7a36;
-  --pico-primary-inverse: #fff;
+:root {
+  --pico-font-family: Inter, "Open Sans", "Helvetica Neue", sans-serif;
+  --pico-line-height: 1.65;
+  --pico-font-size: calc(14px + 0.390625vw);
+  --pico-font-weight: 400;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
+    --pico-background-color: #11191f;
+    --pico-color: #eee;
     --pico-text-selection-color: rgba(107,180,78, 0.50);
     --pico-primary: #6bb44e;
     --pico-primary-background: #4a7a36;
@@ -28,6 +25,8 @@
 }
 
 [data-theme=dark] {
+    --pico-background-color: #11191f;
+    --pico-color: #eee;
     --pico-text-selection-color: rgba(107,180,78, 0.50);
     --pico-primary: #6bb44e;
     --pico-primary-background: #4a7a36;
@@ -38,11 +37,16 @@
     --pico-primary-inverse: #fff;
 }
 
-:root {
-    --pico-font-family: Inter, "Open Sans", "Helvetica Neue", sans-serif;
-    --pico-line-height: 1.65;
-    --pico-font-size: calc(14px + 0.390625vw);
-    --pico-font-weight: 400;
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --pico-text-selection-color: rgba(107,180,78, 0.50);
+  --pico-primary: #5a9641;
+  --pico-primary-background: #4a7a36;
+  --pico-primary-underline: #5a9641;
+  --pico-primary-hover: #3b612b;
+  --pico-primary-hover-background: #6bb44e;
+  --pico-primary-focus: #4a7a36;
+  --pico-primary-inverse: #fff;
 }
 
 #full-footer {
@@ -62,6 +66,8 @@ body {
   padding: 0;
   font-size: var(--pico-font-size);
   font-weight: 400;
+  background-color: var(--pico-background-color, #fff);
+  color: var(--pico-color, #11191f);
 }
 
 h1, h2, h3 {
@@ -124,11 +130,6 @@ header {
   z-index: 1000;
   background-color: #fff; /* For light theme */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* For dark theme */
-[data-theme=dark] header {
-  background-color: var(--pico-background-color, #11191f);
 }
 
 header nav {
@@ -208,6 +209,7 @@ footer p {
   text-align: center;
   margin-bottom: 1rem;
   height: auto;
+  padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,14 +218,14 @@ footer p {
 .client-logo img {
   max-width: 100%;
   max-height: 100%;
-  width: 200px;
+  width: 180px;
   height: auto;
   object-fit: contain;
 }
 
 #partners h2, #clients h2  {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 2rem;
   border-top: solid 1.5px #000;
 }
