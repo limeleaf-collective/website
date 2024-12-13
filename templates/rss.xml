@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+{%- if section.title and section.title == "Podcast" %}
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+{%- else -%}
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+{%- endif -%}
     <channel>
       <title>{{ config.title }}
         {%- if term %} - {{ term.name }}
@@ -18,7 +22,35 @@
       <language>{{ lang }}</language>
       <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
       <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
+  
+      {%- if section.title and section.title == "Podcast" %}
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:type>serial</itunes:type>
+      {%- endif -%}
+
       {%- for page in pages %}
+      {%- if section.title and section.title == "Podcast" %}
+      <item>
+          <title>{{ page.title }}</title>
+          <pubDate>{{ page.date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
+          <author>
+            {%- if page.authors -%}
+              {{ page.authors[0] }}
+            {%- elif config.author -%}
+              {{ config.author }}
+            {%- else -%}
+              Unknown
+            {%- endif -%}
+          </author>
+          <link>{{ page.permalink | escape_xml | safe }}</link>
+          <guid>{{ page.permalink | escape_xml | safe }}</guid>
+          <description xml:base="{{ page.permalink | escape_xml | safe }}">
+            <![CDATA[
+              {{ page.content }}
+            ]]>
+          </description>
+      </item>
+      {%- else -%}
       <item>
           <title>{{ page.title }}</title>
           <pubDate>{{ page.date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
@@ -35,6 +67,7 @@
           <guid>{{ page.permalink | escape_xml | safe }}</guid>
           <description xml:base="{{ page.permalink | escape_xml | safe }}">{% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}</description>
       </item>
+      {%- endif -%}
       {%- endfor %}
     </channel>
 </rss>
