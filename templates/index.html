@@ -22,7 +22,7 @@
 <main class="container">
   <section class="hero-section">
       <div class="row">
-          <div class="col-xs-11 col-sm-6">
+          <div class="col-sm">
               <h1 class="home">Your Rust and Go Development Experts</h1>
               <p>We help teams build fast, reliable, maintainable software using modern programming languages.</p>
           </div>
@@ -32,19 +32,19 @@
       </div>
   </section>
   <section class="home services-section">
-      <div class="col-sm-12">
+      <div class="col-sm">
       <div class="row">
-        <div class="col-sm-4 services consulting">
+        <div class="col-sm services consulting">
           <h2 class="service-title">Consulting</h2>
           <p class="service-description">Switching to Rust or Go? Need help with a complex project? From code reviews to infrastructure planning, we'll help you ship better software faster.</p>
           <p><a href="/services/consulting/" class="link">Learn more</a></p>
         </div>
-        <div class="col-sm-4 services design">
+        <div class="col-sm services design">
           <h2 class="service-title">System Design</h2>
           <p class="service-description">We design highly scalable software systems that solve complex problems.</p>
             <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
       </div>
-      <div class="col-sm-4 services training">
+      <div class="col-sm services training">
         <h2 class="service-title">Training</h2>
         <p class="service-description">We train Rust and Go engineers at any skill level, virtually or on-site.</p>
           <p><a href="/services/training/" class="link">Learn more</a></p>
@@ -52,27 +52,53 @@
     </div>
   </div>
   </section>
-    <section class="home clients">
-        <h2>Some of Our Clients</h2>
+    <section id="clients">
+        <h2>Clients</h2>
         <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs">
                 <div class="client-logo">
                     <a href="https://rushdownstudio.com">
                         <img src="{{ get_url(path='images/clients/rushdown-logo.png') }}" alt="Rushdown Studios">
                     </a>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs">
                 <div class="client-logo">
                     <a href="https://pitonlabs.com">
                         <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
                     </a>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-xs">
+                <div class="client-logo">
+                    <a href="https://colab.coop">
+                        <img src="{{ get_url(path='images/partners/colab.svg') }}" alt="Colab">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs">
                 <div class="client-logo">
                     <a href="https://rocketscience.gg">
                         <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="partners">
+        <h2>Partners</h2>
+        <div class="row">
+            <div class="col-xs">
+                <div class="client-logo">
+                    <a href="https://comp.coop">
+                        <img src="{{ get_url(path='images/partners/comp-coop.svg') }}" alt="Comp.coop">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs">
+                <div class="client-logo">
+                    <a href="https://farox.coop/en">
+                        <img src="{{ get_url(path='images/partners/farox.svg') }}" alt="Farox">
                     </a>
                 </div>
             </div>
