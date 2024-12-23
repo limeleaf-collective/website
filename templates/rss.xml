@@ -20,7 +20,6 @@
       <description>{{ config.description }}</description>
       <generator>Zola</generator>
       <language>{{ lang }}</language>
-      <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
       <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
   
       {%- if section.title and section.title == "Podcast" %}
@@ -46,9 +45,12 @@
           <guid>{{ page.permalink | escape_xml | safe }}</guid>
           <description xml:base="{{ page.permalink | escape_xml | safe }}">
             <![CDATA[
-              {{ page.content | safe }}
+              {{ page.content  | escape_xml| safe }}
             ]]>
           </description>
+
+          <enclosure url="{{ config.base_url | escape_xml | safe }}{{ page.extra.audio_file | escape_xml | safe }}" type="{{ page.extra.audio_type | escape_xml | safe }}" length="{{ page.extra.audio_size }}" />
+          <itunes:duration>{{ page.extra.audio_duration }}</itunes:duration>
       </item>
       {%- else -%}
       <item>

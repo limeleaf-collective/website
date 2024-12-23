@@ -52,7 +52,7 @@
 
             {% endif %}
             <audio controls>
-              <source src="{{ page.extra.audio_file }}" type="audio/mpeg" />
+              <source src="{{ page.extra.audio_file }}" type="{{ page.extra.audio_type }}" />
             </audio>
             {{ page.content | safe }}
       </article>

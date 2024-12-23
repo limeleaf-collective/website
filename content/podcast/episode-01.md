@@ -9,8 +9,9 @@ feature_photo = ""
 feature_photo_alt = ""
 
 audio_file = "/podcast/s01e01.mp3"
+audio_type = "audio/mpeg"
 audio_size = 24472994
-audio_duration = "42m26s"
+audio_duration = "46:26"
 +++
 
 In our inaugural episode, after introducing ourselves and the podcast,
