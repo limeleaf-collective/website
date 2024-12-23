@@ -46,7 +46,7 @@
           <guid>{{ page.permalink | escape_xml | safe }}</guid>
           <description xml:base="{{ page.permalink | escape_xml | safe }}">
             <![CDATA[
-              {{ page.content }}
+              {{ page.content | safe }}
             ]]>
           </description>
       </item>
