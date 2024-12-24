@@ -52,6 +52,11 @@
             ]]>
           </description>
 
+          <itunes:title>{{ page.title }}</itunes:title>
+          <itunes:episodeType>{{ page.extra.podcast.itunes.type }}</itunes:episodeType>
+          <itunes:episode>{{ page.extra.podcast.episode }}</itunes:episode>
+          <podcast:episode>{{ page.extra.podcast.episode }}</podcast:episode>
+
           <enclosure url="{{ config.base_url | escape_xml | safe }}{{ page.extra.podcast.source | escape_xml | safe }}" type="{{ page.extra.podcast.type | escape_xml | safe }}" length="{{ page.extra.podcast.size }}" />
           <itunes:duration>{{ page.extra.podcast.duration }}</itunes:duration>
       </item>

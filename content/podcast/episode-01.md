@@ -9,10 +9,14 @@ feature_photo = ""
 feature_photo_alt = ""
 
 [extra.podcast]
+episode = "1"
 source = "/podcast/s01e01.mp3"
 type = "audio/mpeg"
 size = 24472994
 duration = "46:26"
+
+[extra.podcast.itunes]
+type = "full"
 +++
 
 In our inaugural episode, after introducing ourselves and the podcast,
