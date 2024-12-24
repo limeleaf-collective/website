@@ -47,12 +47,12 @@
                     <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
                   {%- endfor %}
                 {% endif %}
-                &bull; Duration: {{ page.extra.audio_duration }}
+                &bull; Duration: {{ page.extra.podcast.duration }}
               </i></p>
 
             {% endif %}
             <audio controls>
-              <source src="{{ page.extra.audio_file }}" type="{{ page.extra.audio_type }}" />
+              <source src="{{ page.extra.podcast.source }}" type="{{ page.extra.podcast.type }}" />
             </audio>
             {{ page.content | safe }}
       </article>
