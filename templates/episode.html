@@ -30,7 +30,7 @@
             {% endif %}
             {% if page.date %}
             <p class="small"><i>
-              Recorded on <time>{{ page.date | date(format="%B %d, %Y") }}</time> 
+              Released on <time>{{ page.date | date(format="%B %d, %Y") }}</time> 
               {% if page.taxonomies.tags %}
                 in
                 {% for tag in page.taxonomies.tags %}
