@@ -33,3 +33,4 @@ In our inaugural episode, we introduce ourselves and talk about the conniving gr
 - ["Meta Fined $264M for Security Breach in Facebook's 'View As' Feature"](https://www.msn.com/en-us/news/technology/meta-fined-264m-for-security-breach-in-facebook-s-view-as-feature/ar-AA1w1PU6)
 - [Mealeo, a meal delivery service based in Latham, NY](https://www.mealeo.com)
 - [Limecast, a Privacy-First Podcasting Platform](https://limecast.net)
+- [Send us a donation!](https://opencollective.com/limeleaf)
