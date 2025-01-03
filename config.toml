@@ -1,6 +1,6 @@
 base_url = "https://limeleaf.net"
 title = "Limeleaf Worker Collective"
-description = "We draw on decades of experience to help teams build fast, reliable, maintainable software using modern programming languages."
+description = "We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages."
 
 generate_feeds = true
 feed_filenames = ["rss.xml"]

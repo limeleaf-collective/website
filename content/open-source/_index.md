@@ -14,6 +14,7 @@ Limeleaf and our member-owners are involved in a number of open-source projects.
 ## As Maintainers
 
 - [Limecast](https://codeberg.org/limeleaf/limecast "Limecast repo"), a privacy-first podcasting platform.
+- [Libera.Codes](https://codeberg.org/limeleaf/libera.codes "Libera.Codes"), a free, privacy-first, QR code generator.
 - [static-httpd](https://git.sr.ht/~blainsmith/static-httpd "static-httpd"), an HTTP static file server written in Hare.
 - [pprof.sh](http://pprof.sh "pprof.sh"), user-friendly CLI utility for running `Benchmark*()` Go tests.
 - [Various Go modules](https://sr.ht/~blainsmith/go/), a collection of Go modules
