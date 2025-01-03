@@ -12,8 +12,8 @@ feature_photo_alt = ""
 episode = "1"
 source = "/podcast/limeleafpod-e01.mp3"
 type = "audio/mpeg"
-size = 14814336
-duration = "36:08"
+size = 14670456
+duration = "35:47"
 
 [extra.podcast.itunes]
 type = "full"
