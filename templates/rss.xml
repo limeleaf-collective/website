@@ -28,7 +28,7 @@
       <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
   
       {%- if section.extra and section.extra.podcast %}
-      <itunes:image href="{{ get_url(path="images/logo/limeleaf-logo-L.svg") }}"></itunes:image>
+      <itunes:image href="{{ get_url(path="images/logo/podcast.png") }}"></itunes:image>
       <itunes:complete>{{ section.extra.podcast.itunes.complete }}</itunes:complete>
       <itunes:explicit>{{ section.extra.podcast.itunes.explicit }}</itunes:explicit>
       <itunes:type>{{ section.extra.podcast.itunes.type }}</itunes:type>
@@ -59,6 +59,7 @@
 
           <enclosure url="{{ config.base_url | escape_xml | safe }}{{ page.extra.podcast.source | escape_xml | safe }}" type="{{ page.extra.podcast.type | escape_xml | safe }}" length="{{ page.extra.podcast.size }}" />
           <itunes:duration>{{ page.extra.podcast.duration }}</itunes:duration>
+          <itunes:image href="{{ get_url(path="images/logo/podcast.png") }}"></itunes:image>
       </item>
       {%- else -%}
       <item>
