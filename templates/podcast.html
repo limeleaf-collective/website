@@ -26,6 +26,7 @@
 <main class="container">
   <h1>{{section.title}}</h1>
   <p><i>{{ section.description }}</i></p>
+  <p>Subscribe: <a href="{{ section.permalink }}rss.xml">RSS</a></p>
   <hr class="header" />
   <p>{{section.content | safe }}</p>
     {% for page in section.pages %}

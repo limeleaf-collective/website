@@ -48,6 +48,9 @@
                   {%- endfor %}
                 {% endif %}
                 &bull; Duration: {{ page.extra.podcast.duration }}
+
+                {% set section = get_section(path=page.ancestors | last) %}
+                &bull; Subscribe: <a href="{{ section.permalink }}rss.xml">RSS</a>
               </i></p>
 
             {% endif %}
