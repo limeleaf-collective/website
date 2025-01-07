@@ -1,5 +1,5 @@
 base_url = "https://limeleaf.net"
-title = "Limeleaf Worker Collective | Rust and Go Development Experts"
+title = "Limeleaf Worker Collective"
 description = "We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages."
 
 generate_feeds = true

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block meta_content %}
+  <title>{{ section.title}} - {{ config.title }}</title>
+  <meta property="og:title" content="{{ section.title }} - {{ config.title }}" />
+  <meta property="og:url" content="https://limeleaf.net" />
+  <meta property="og:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.net">
+  <meta property="twitter:url" content="https://limeleaf.net">
+  <meta name="twitter:title" content="{{ section.title }} - {{ config.title }}">
+  <meta name="twitter:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg">
+  {% if section.description %}
+  <meta name="description" content="{{ section.description }}" />
+  <meta property="og:description" content="{{ section.description }}" />
+  <meta name="twitter:description" content="{{ section.description }}">
+  {% endif %}
+{% endblock meta_content %}
+
+{% block description %}
+  {{ section.description }}
+{% endblock description %}
+
+{% block content %}
+<main class="container">
+  <h1>{{section.title}}</h1>
+  <p><i>{{ section.description }}</i></p>
+  <p>Subscribe: <a href="{{ section.permalink }}rss.xml">RSS</a></p>
+  <hr class="header" />
+  <p>{{section.content | safe }}</p>
+    {% for page in section.pages %}
+      <div {% if loop.index % 2 == 0 %}{% endif %}>
+      <div class="container">
+        <section class="row middle-lg">
+          {% if page.extra.feature_photo != "" %}
+            <div class="col-lg-3">
+              <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem; border-radius: 50%;" /></p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-1">
+          {% else %}
+              <div class="col-12">
+          {% endif %}
+          <h2><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+          <p>{{ page.summary | safe }}</p>
+          </div>
+        </section>
+      </div>
+      </div>
+    {% endfor %}
+</main>
+{% endblock content %}
+

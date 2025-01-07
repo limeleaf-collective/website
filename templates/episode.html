@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block meta_content %}
+  <title>{{ page.title}} - {{ config.title }}</title>
+  <meta property="og:title" content="{{ page.title }} — {{ config.title }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.net">
+  <meta property="twitter:url" content="https://limeleaf.net">
+  <meta name="twitter:title" content="{{ page.title }} — {{ config.title }}">
+  <meta name="twitter:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg">
+  <meta property="og:url" content="https://limeleaf.net" />
+  <meta property="og:image" content="https://limeleaf.net/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% endif %}
+{% endblock meta_content %}
+
+{% block content %}
+<main class="container">
+  <section class="row">
+    <div class="col-sm-12">
+      <h1>{{ page.title }}</h1>
+      <p><i>{{ page.description }}</i></p>
+      <hr class="header" />
+      {% if page.extra.tagline %}
+            <p>{{ page.extra.tagline }}</p>
+            {% endif %}
+            {% if page.date %}
+            <p class="small"><i>
+              Released on <time>{{ page.date | date(format="%B %d, %Y") }}</time> 
+              {% if page.taxonomies.tags %}
+                in
+                {% for tag in page.taxonomies.tags %}
+                  <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">{{ tag }}</a>{% if not loop.last %}, 
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if page.authors %}
+                with 
+                  {%- for author in page.authors %}
+                    {%- set parts = author | split(pat=" ") %}
+                    {%- set first_name = parts[0] | lower %}
+                    {%- set last_name = parts[1] | lower %}
+                    <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
+                  {%- endfor %}
+                {% endif %}
+                &bull; Duration: {{ page.extra.podcast.duration }}
+
+                {% set section = get_section(path=page.ancestors | last) %}
+                &bull; Subscribe: <a href="{{ section.permalink }}rss.xml">RSS</a>
+              </i></p>
+
+            {% endif %}
+            <audio controls>
+              <source src="{{ page.extra.podcast.source }}" type="{{ page.extra.podcast.type }}" />
+            </audio>
+            {{ page.content | safe }}
+      </article>
+    </div>
+</main>
+
+{% endblock content %}

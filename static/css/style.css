@@ -161,6 +161,11 @@ article header p {
   text-align: left;
 }
 
+audio {
+  width: 100%;
+  margin-bottom: var(--pico-typography-spacing-vertical);
+}
+
 footer {
   position: sticky;
   background-color: #e9ecef;
