@@ -1,5 +1,5 @@
 +++
-title = "Big Tech Gets Grubby"
+title = "Episode 1: Big Tech Gets Grubby"
 date = 2025-01-06
 authors = ["John Luther", "Blain Smith", "Erik Straub"]
 template = "episode.html"
