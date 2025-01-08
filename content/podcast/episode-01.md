@@ -3,6 +3,7 @@ title = "Big Tech Gets Grubby"
 date = 2025-01-06
 authors = ["John Luther", "Blain Smith", "Erik Straub"]
 template = "episode.html"
+description = "In our inaugural episode, we introduce ourselves and talk about the conniving grubs at Grubhub and why fining Big Tech companies is useless. We talk about the fine public service work being done by Trifecta Tech. In our \"Explain it to Me Like I'm John\" segment, Blain and Erik go deep into the Meta \"View As\" security breach and resulting EU fine."
 
 [extra]
 feature_photo = ""
