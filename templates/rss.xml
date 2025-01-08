@@ -6,7 +6,7 @@
 {%- endif -%}
     <channel>
       {%- if section.extra and section.extra.podcast %}
-      <title>{{ config.title }} - {{ section.title }}</title>
+      <title>{{ section.title }}</title>
       <description>{{ section.description }}</description>
       {%- else -%}
       <title>{{ config.title }}
