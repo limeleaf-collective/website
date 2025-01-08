@@ -32,6 +32,7 @@
       <itunes:complete>{{ section.extra.podcast.itunes.complete }}</itunes:complete>
       <itunes:explicit>{{ section.extra.podcast.itunes.explicit }}</itunes:explicit>
       <itunes:type>{{ section.extra.podcast.itunes.type }}</itunes:type>
+      <itunes:category text="Technology" />
       <itunes:owner>
         <itunes:name>{{ section.extra.podcast.itunes.owner.name }}</itunes:name>
         <itunes:email>{{ section.extra.podcast.itunes.owner.email }}</itunes:email>
