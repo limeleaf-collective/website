@@ -8,6 +8,7 @@
       {%- if section.extra and section.extra.podcast %}
       <title>{{ section.title }}</title>
       <description>{{ section.description }}</description>
+      <itunes:category text="Technology" />
       {%- else -%}
       <title>{{ config.title }}
         {%- if term %} - {{ term.name }}
@@ -26,7 +27,6 @@
       <generator>Zola</generator>
       <language>{{ lang }}</language>
       <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
-      <itunes:category text="Technology" />
       <copyright>Copyright 2005 Limeleaf Worker Collective, LLC</copyright>
       {%- if section.extra and section.extra.podcast %}
       <itunes:image href="{{ get_url(path="images/logo/podcast.png") }}"></itunes:image>
