@@ -1,6 +1,6 @@
 +++
 title = "The Limeleaf Podcast"
-description = "Discussions on technology, privacy, ethics, and the worker-owned startup movement."
+description = "Discussions on technology, privacy, ethics, and the worker-owned startup movement from the founders of the Limeleaf Worker Collective co-op."
 sort_by = "date"
 template = "podcast.html"
 generate_feeds = true
