@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel>
+      <title>The Limeleaf Podcast</title>
+      <description>Discussions on technology, privacy, ethics, and the worker-owned startup movement from the founders of the Limeleaf Worker Collective co-op.</description>
+      <itunes:category text="Technology" /><link>https://limeleaf.net/podcast/</link>
+      <generator>Zola</generator>
+      <language>en</language>
+      <lastBuildDate>Mon, 06 Jan 2025 00:00:00 +0000</lastBuildDate>
+      <copyright>Copyright 2005 Limeleaf Worker Collective, LLC</copyright>
+      <itunes:image href="https://limeleaf.net/images/logo/podcast.png"></itunes:image>
+      <itunes:complete>No</itunes:complete>
+      <itunes:explicit>Yes</itunes:explicit>
+      <itunes:type>episodic</itunes:type>
+      <itunes:owner>
+        <itunes:name>Limeleaf Worker Collective</itunes:name>
+        <itunes:email>info@limeleaf.net</itunes:email>
+      </itunes:owner>
+      <itunes:author>Limeleaf Worker Collective</itunes:author>
+      <item>
+          <title>Episode 1: Big Tech Gets Grubby</title>
+          <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.net/podcast/episode-01/</link>
+          <guid>https://limeleaf.net/podcast/episode-01/</guid>
+          <description xml:base="https://limeleaf.net/podcast/episode-01/">
+            <![CDATA[
+              <p>In our inaugural episode, we introduce ourselves and talk about the conniving grubs at Grubhub and why fining Big Tech companies is useless. We talk about the fine public service work being done by Trifecta Tech. In our "Explain it to Me Like I'm John" segment, Blain and Erik go deep into the Meta "View As" security breach and resulting EU fine.</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://www.404media.co/the-no-win-mystery-drone-clusterfuck/">"The No-Win 'Mystery Drone' Clusterf*ck" by 404 Media</a></li>
+<li><a href="https://pca.st/Mm82">Underunderstood episode about Grubhub</a></li>
+<li><a href="https://trifectatech.org">Trifecta Tech - Open infrastructure software in the public interest</a></li>
+<li><a href="https://www.memorysafety.org">Prossimo</a></li>
+<li><a href="https://paulkrugman.substack.com/p/health-insurance-is-a-racket">Krugman on the health insurance racket</a></li>
+<li><a href="https://www.msn.com/en-us/news/technology/meta-fined-264m-for-security-breach-in-facebook-s-view-as-feature/ar-AA1w1PU6">"Meta Fined $264M for Security Breach in Facebook's 'View As' Feature"</a></li>
+<li><a href="https://www.mealeo.com">Mealeo, a meal delivery service based in Latham, NY</a></li>
+<li><a href="https://limecast.net">Limecast, a Privacy-First Podcasting Platform</a></li>
+<li><a href="https://opencollective.com/limeleaf">Send us a donation!</a></li>
+</ul>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 1: Big Tech Gets Grubby</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>1</itunes:episode>
+          <podcast:episode>1</podcast:episode>
+
+          <enclosure url="https://limeleaf.net/podcast/limeleafpod-e01.mp3" type="audio/mpeg" length="14670456" />
+          <itunes:duration>35:47</itunes:duration>
+          <itunes:image href="https://limeleaf.net/images/logo/podcast.png"></itunes:image>
+      </item>
+    </channel>
+</rss>
