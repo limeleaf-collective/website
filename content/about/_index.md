@@ -10,7 +10,7 @@ feature_photo_alt = "Saratoga Springs postcard image"
 
 ## Limeleaf is a Worker Cooperative
 
-We are proud to be a member-owned, democratically managed company, based in [Saratoga Springs, New York][1]. We strive to embody the [Seven Cooperative Principles][9] in our work. 
+We are proud to be a member-owned, democratically managed company, based in [Saratoga Springs, New York][1]. We strive to embody the [Seven Cooperative Principles][9] in our work. You can download our Operating Agreement [here][11].
 
 We are members of the [Patio network of tech cooperatives][3] and the [U.S. Federation of Worker Cooperatives][10].
 
@@ -30,5 +30,6 @@ After long careers in Big tech, we started Limeleaf to help others and share our
 [8]: https://rsa.com "RSA website"
 [9]: https://uwcc.wisc.edu/about-co-ops/cooperative-principles/ "Seven Cooperative Principles page"
 [10]: https://www.usworker.coop/en/ "USFWC"
+[11]: /pdf/limeleaf-operating-agreement.pdf "Operating Agreement"
 
 ## Our Founding Members
