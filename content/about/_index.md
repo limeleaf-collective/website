@@ -30,6 +30,6 @@ After long careers in Big tech, we started Limeleaf to help others and share our
 [8]: https://rsa.com "RSA website"
 [9]: https://uwcc.wisc.edu/about-co-ops/cooperative-principles/ "Seven Cooperative Principles page"
 [10]: https://www.usworker.coop/en/ "USFWC"
-[11]: /about/limeleaf-operating-agreement-v2.pdf "Operating Agreement"
+[11]: /pdf/limeleaf-operating-agreement.pdf "Operating Agreement"
 
 ## Our Founding Members
