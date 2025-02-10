@@ -16,7 +16,7 @@ This a dark day for many of us in the United States. A government that we believ
 
 <!-- more -->
 
-We refuse to let them discourage us or distract us from what we want to accomplish with Limeleaf. In our view, the best way to resist the coming chaos is to stay focused on [our goals](https://limeleaf.coop/blog/step-0-of-starting-a-tech-worker-coop/ "Step 0 of Starting a Tech Worker Co-Op: Define Your Goals"),  support each other, and contribute to our communities (real and virtual). Moderating our media consumption probably won't hurt, either.
+We refuse to let them discourage us or distract us from what we want to accomplish with Limeleaf. In our view, the best way to resist the coming chaos is to stay focused on [our goals](/blog/step-0-of-starting-a-tech-worker-coop/ "Step 0 of Starting a Tech Worker Co-Op: Define Your Goals"),  support each other, and contribute to our communities (real and virtual). Moderating our media consumption probably won't hurt, either.
 
 We must also educate people about why the worker co-op model is a great way to run a business (note that I didn't say *corporation*), regardless of political persuasion. [Research shows](https://www.aspeninstitute.org/blog-posts/building-and-sustaining-worker-cooperatives-in-the-us/ "Building and Sustaining Worker Cooperatives in the US") that "Worker cooperatives are more resilient to economic shocks, experience lower turnover, and have higher productivity levels."
 
