@@ -113,5 +113,5 @@ We offer flexible training packages tailored to your team's needs:
 - Production readiness
 - Leadership development
 
-[Contact us](https://limeleaf.net/contact/ "Contact us") to design a custom training program for your organization's specific needs and goals.
+[Contact us](/contact/ "Contact us") to design a custom training program for your organization's specific needs and goals.
 

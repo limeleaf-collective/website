@@ -35,4 +35,4 @@ We hear you thinking, *That is a lot of words, what do they mean?* In brief:
 
 It's the early days of the project, but we've implemented some basic functionality (creating podcasts and adding/editing episode metadata, etc.), which you can demo on your local system by cloning [the Limecast repository on Codeberg](https://codeberg.org/limeleaf/limecast).
 
-To learn more, visit [limecast.net](https://limecast.net/). If you want to get involved, check out [the repo](https://codeberg.org/limeleaf/limecast)), support us on [Open Collective](https://opencollective.com/limeleaf/projects/limecast), or contact us at [info@limeleaf.net](mailto:info@limeleaf.net).
+To learn more, visit [limecast.coop](https://limecast.coop/). If you want to get involved, check out [the repo](https://codeberg.org/limeleaf/limecast)), support us on [Open Collective](https://opencollective.com/limeleaf/projects/limecast), or contact us at [info@limeleaf.coop](mailto:info@limeleaf.coop).
