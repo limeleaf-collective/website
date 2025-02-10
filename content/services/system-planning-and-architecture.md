@@ -24,4 +24,4 @@ We architect systems leveraging Rust's zero-cost abstractions and memory safety 
 
 Our engineers specialize in idiomatic Rust and Go development, following each language's best practices and design patterns. We provide code reviews, performance profiling, and ongoing optimization to help your team build reliable, efficient systems that scale.
 
-Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.coop/contact/ "Contact us") for a free project assessment.

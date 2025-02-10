@@ -11,7 +11,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-In this second installment of our series on starting a tech company [as a cooperative business](https://limeleaf.net/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), we’ll discuss how we wrote our Operating Agreement (OA).
+In this second installment of our series on starting a tech company [as a cooperative business](https://limeleaf.coop/blog/why-limeleaf-is-a-co-op/ "Why Limeleaf is a Co-Op"), we’ll discuss how we wrote our Operating Agreement (OA).
 
 <!-- more -->
 

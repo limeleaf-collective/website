@@ -49,5 +49,5 @@ Recent example: Four-week engagement helping migrate a high-throughput data proc
   - Weekly technical guidance sessions
   - On-demand support via internal channels during US Eastern business hours
 
-Ready to get started? [Contact us](https://limeleaf.net/contact/ "Contact us") for a free project assessment.
+Ready to get started? [Contact us](https://limeleaf.coop/contact/ "Contact us") for a free project assessment.
 
