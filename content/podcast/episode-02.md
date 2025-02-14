@@ -25,5 +25,5 @@ This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test A
 <!-- more -->
 
 ## Show Notes
-- Mavreen Smiel on LinkedIn: https://www.linkedin.com/in/mavreensmiel/
-- The TLA+ Home Page: https://lamport.azurewebsites.net/tla/tla.html
+- [Mavreen Smiel on LinkedIn](https://www.linkedin.com/in/mavreensmiel/)
+- [The TLA+ Home Page](https://lamport.azurewebsites.net/tla/tla.html)
