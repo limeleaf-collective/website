@@ -20,7 +20,7 @@ duration = "41:49"
 type = "full"
 +++
 
-This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test Automation Engineer and long-time veteran of the video gaming industry. She gives us an insider’s view on software testing past, present, and future. (Yes, including the impact that “AI” is having on software quality assurance folks.) For links, socials, and more info about Limeleaf Worker Collective, visit [limeleaf.coop](http://limeleaf.coop/).
+This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test Automation Engineer and long-time veteran of the video gaming industry. She gives us an insider’s view on software testing past, present, and future. (Yes, including the impact that “AI” is having on software quality assurance folks.)
 
 <!-- more -->
 
