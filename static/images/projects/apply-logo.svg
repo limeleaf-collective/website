@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="750"
+   height="750"
+   viewBox="0 0 750.00003 749.99997"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g1">
+    <g
+       id="group-R5"
+       transform="translate(-291.66667,-229.90731)">
+      <path
+         id="path2"
+         d="m 5000,4631.29 c -852.51,871.63 -1854.1,335.95 -1844.18,-820.3 4.46,-519.34 179.65,-1062.43 482.24,-1486.64 129.33,-181.32 303.6,-442.47 552.14,-473.57 193.46,-24.2 595.55,376.72 741.85,209.53 -257.59,297.87 -552.24,-91.76 -891.21,83.53 -321.37,166.18 -508.22,750.51 -584.46,1068.72 -268.87,1122.25 324.54,2176.43 1543.62,1418.73"
+         style="fill:#ed1e24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,1066.6667)" />
+      <path
+         id="path5"
+         d="m 819.65198,263.23468 c 0,0 -150.13866,-54.32534 -179.968,81.27999 0,0 16.9,-43.39599 111.61867,-59.43866 0,0 -96.336,41.09733 -108.15733,80.9 0,0 58.916,28.964 93.51466,-13.75467 34.6,-42.72 53.31867,-84.296 82.992,-88.98666"
+         style="fill:#59ad34;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.133333" />
+      <path
+         id="path3"
+         d="m 5000,4631.29 c 852.51,871.63 1854.1,335.95 1844.18,-820.3 -4.46,-519.34 -179.65,-1062.43 -482.24,-1486.64 -129.32,-181.32 -303.6,-442.47 -552.14,-473.57 -193.46,-24.2 -595.55,376.72 -741.84,209.53 257.58,297.87 552.23,-91.76 891.21,83.53 321.36,166.18 508.21,750.51 584.45,1068.72 C 6812.5,4334.81 6219.08,5388.99 5000,4631.29"
+         style="fill:#ed1e24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,1066.6667)" />
+      <path
+         id="path4"
+         d="m 5356.77,4580.33 c 0,0 620.09,67.64 777.24,-424.72 152.37,-477.4 33.98,-964.12 33.98,-964.12 0,0 322.78,637.08 106.18,1117.01 -244.99,542.82 -917.4,271.83 -917.4,271.83"
+         style="fill:#ed1e24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,1066.6667)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:96px;line-height:1.1;font-family:'SF Pro Display';-inkscape-font-specification:'SF Pro Display';letter-spacing:0.6px;fill:#59ad34;fill-opacity:1;stroke:#000000;stroke-width:1.00157;stroke-opacity:0"
+       x="126.15937"
+       y="702.07733"
+       id="text1"><tspan
+         id="tspan1"
+         x="126.15937"
+         y="702.07733"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:Futura;-inkscape-font-specification:Futura;fill:#59ad34;fill-opacity:1">apply.coop</tspan></text>
+  </g>
+</svg>
