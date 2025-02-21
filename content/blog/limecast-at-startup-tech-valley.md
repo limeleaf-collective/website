@@ -16,4 +16,6 @@ If you happen to be in or near Troy, New York, on Thursday, February 20th at 5:3
 
 <!-- more -->
 
-If you miss the event, a recording will be available on the [Startup Tech Valley YouTube page](https://youtube.com/playlist?list=PLUF7EbVnMOlMaGVhTsxt9n9k4KKS6aBD1&si=eOCeXZUK8Hs30nim "Startup Tech Valley YouTube page").
+If you missed the event, we've embedded a recording below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/psPg9Z51G1o?si=RVTEtbfnKVMzG6pR&amp;start=1320" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
