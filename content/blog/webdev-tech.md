@@ -19,18 +19,18 @@ At Limeleaf we chose to specialize in Go and Rust for our clients and we've cove
 ## TL;DR
 
 - Use [`templ`][0] in Go and [`maud`][1] for Rust to do server-side HTML rendering
-- Use [`net/http`][2] in Go and [`axum`][3], [`actix`][4], [`rocket`][5], or whatever flavor Rust for HTTP handling and routing
+- Use [`net/http`][2] in Go and [`axum`][3], [`actix`][4], [`rocket`][5], or whatever Rust crate for HTTP handling and routing
 - Start with and try to stay with [SQLite][6] and migrate to [PostgreSQL][7] if needed
 
 ---
 
 Go and Rust are great systems programming languages for networking and high performance services, but not many folks think to use them traditional web applications that render HTML and handle form data. Most modern web applications subscribe to the single page application (SPA) model where there exists some backend REST or GraphQL API and a completely separate frontend application written in JavaScript with some popular framework like React or Vue. 
 
-We think for the products we're building and for the open web these choices are wrong.
+We think for the products we're building and for the open web these choices are overkill.
 
 ## Core Web Application Components
 
-Breaking down what a web application to it's core components for it to be usable we get:
+If we break down what a web application really is to it's core components we end up with:
 
 - Presentation component to display information and accept user input
 - Session/Logic component to manage access, validate, and manipulate data between the Presentation and Persistence component
@@ -52,7 +52,7 @@ While you are correct we think that splitting up the Presentation and Session/Lo
 
 ## Go and Rust in Web Applications
 
-Circling back to our choice to specialize we can expand our uses of Go and Rust into building web applications. We, as mostly backend and systems engineers (and a product manager), can all certainly learn and understand HTML and CSS enough to product high quality web applications. The concrete ideas we practice are:
+Now, let's circle back to our choice to specialize. We can expand our uses of Go and Rust for building web applications. We, as mostly backend and systems engineers (and a product manager), can all certainly learn and understand HTML and CSS enough to produce high quality web applications. The concrete ideas we practice are:
 
 1. Render HTML server-side and send it to the browser to display information and form inputs.
 2. Leverage CDNs for 3rd part external CSS (and JavaScript if absolutely necessary).
