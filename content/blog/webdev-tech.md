@@ -1,5 +1,5 @@
 +++
-title = "WebDev Tech"
+title = "Go and Rust for the Small Web: How We Build Faster, Simpler Apps"
 date = 2025-02-26
 draft = false
 authors = ["Blain Smith"]
@@ -12,7 +12,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-At Limeleaf we chose to specialize in Go and Rust for our clients and we've covered that topic as to why we made that choice. However, since we're getting into building our own products we need to be able to develop applications for the web too.
+At Limeleaf, we chose to specialize in Go and Rust for our clients and [we've written about][9] why we made that choice. However, now that we're building our own products, we need to develop applications for the web, too.
 
 <!-- more -->
 
@@ -20,60 +20,61 @@ At Limeleaf we chose to specialize in Go and Rust for our clients and we've cove
 
 - Use [`templ`][0] in Go and [`maud`][1] for Rust to do server-side HTML rendering
 - Use [`net/http`][2] in Go and [`axum`][3], [`actix`][4], [`rocket`][5], or whatever Rust crate for HTTP handling and routing
-- Start with and try to stay with [SQLite][6] and migrate to [PostgreSQL][7] if needed
+- Start with and try to stay with [SQLite][6] and migrate to [PostgreSQL][7], if needed
 
 ---
 
-Go and Rust are great systems programming languages for networking and high performance services, but not many folks think to use them traditional web applications that render HTML and handle form data. Most modern web applications subscribe to the single page application (SPA) model where there exists some backend REST or GraphQL API and a completely separate frontend application written in JavaScript with some popular framework like React or Vue. 
+Go and Rust are great languages for systems programming, networking, and high-performance services, but not many folks think to use them for web applications that render HTML and handle form data. Most modern web applications employ the single page application (SPA) model. In these apps, a single web page is served to the user via a REST or GraphQL API (usually in JSON) and rendered in the user agent (usually a browser) by a separate frontend application written in a JavaScript framework like React or Vue.
 
-We think for the products we're building and for the open web these choices are overkill.
+For the products we're building, we want to keep the user's experience as simple and fast as possible. The SPA model is over-engineered for these kinds of apps. Instead, we implement most of the application on the server and send the UI over the wire in pure HTML, using only the bare minimum of JavaScript and CSS.
 
 ## Core Web Application Components
 
-If we break down what a web application really is to it's core components we end up with:
+These are the only components we need to build a usable application:
 
-- Presentation component to display information and accept user input
-- Session/Logic component to manage access, validate, and manipulate data between the Presentation and Persistence component
-- Persistence component to durably store data on a disk for future access between sessions, failures, and restarts.
+- *Presentation* component to display information and accept user input
+- *Persistence* component to durably store data for future access between sessions
+- *Session/logic* component to manage access, but also to validate and manipulate data between the Presentation and Persistence components
 
-Now, you might be thinking that I just described exactly what the modern web applications are doing:
+You might be thinking, *isn’t what you just described simply an SPA*? After all, the components seem to map:
 
-- Presentation -> React / Vue SPA
-- Session/Logic -> REST / GraphQL API
-- Persistence -> Database / File System
+* Presentation -> HTML and CSS
+* Persistence -> Database / File System
+* Session/Logic -> REST / GraphQL API
 
-While you are correct we think that splitting up the Presentation and Session/Logic components is needlessly complicated for a large class of web applications since at the end of the day the SPA choice ultimately ends up being plain old HTML and CSS, but with an extra step. Sure, there are times where the UX might warrant the need for such a technology choice, but we'd argue that using standard web protocols is a better choice for a few reasons:
+You’re right, this could describe an SPA. However, we believe separating the Presentation and Session/Logic components in SPAs adds unnecessary complexity for most web applications. In the end, an SPA results in plain HTML and CSS at render time, but with that unnecessary layer in between. While there are certainly cases where the user experience justifies this approach, we argue that standard web protocols are more often a better choice for several reasons:
 
-1. Simpler tech stacks can be shared easier across smaller teams requiring less cognitive load to grok
-2. Removing intermediate data transposing from JSON <-> HTML saves compute and loading times.
-3. Distribution and development become easier and less fragile since there is no extra transpiling step given that these steps are usually much slower than compilation steps.
-4. JavaScript is not type safe and, no, neither is TypeScript.
-5. Vanilla HTML and CSS are well defined standards, thoroughly documented, tested, and can be learned by all walks of life.
+1. Simpler tech stacks can be shared more easily across smaller teams, requiring less cognitive load to grok.
+2. Removing data transposing from JSON <-> HTML saves compute and loading times.
+3. Distribution and development become easier and less fragile since there is no extra transpiling step (these steps are usually far slower than compilation steps).
+4. JavaScript is not type-safe (and no, neither is TypeScript).
+5. HTML and CSS are well-defined standards. They are thoroughly documented, tested, and can be coded by engineers of any skill level.
 
 ## Go and Rust in Web Applications
 
-Now, let's circle back to our choice to specialize. We can expand our uses of Go and Rust for building web applications. We, as mostly backend and systems engineers (and a product manager), can all certainly learn and understand HTML and CSS enough to produce high quality web applications. The concrete ideas we practice are:
+Let's circle back to Rust and Go. We are backend and systems engineers (and a product manager). All of us (even John) can understand and write enough HTML and CSS to produce highly functional but simple web applications. Our foundational practices are:
 
-1. Render HTML server-side and send it to the browser to display information and form inputs.
-2. Leverage CDNs for 3rd part external CSS (and JavaScript if absolutely necessary).
-3. Use standard `<form method="post" action="*>` support in browsers to send user input to the server for validation and storage.
-4. Generate type safe template and embed and static content directly into the compiled binary
+1. Render all HTML server-side and send it to the user agent to display information and form inputs.
+2. Leverage CDNs for 3rd party CSS (and JavaScript if absolutely necessary).
+3. Use standard `<form method="post" action="[route]">` elements to send user input to the server for validation and storage.
+4. Generate type-safe template, embed, and static content directly into a single binary executable.
 
-The first 3 are relatively straightforward, but number 4 is a big one for us that we leverage heavily. This allows us to distribute and deploy a single binary file with all of the HTML, CSS, and images the application needs embedded directly into that same file and for the size of web applications we're building this is more than acceptable.
+The first three are relatively straightforward, but number four is a big one for us. It allows us to distribute and deploy entire products in *one* file that contains all the HTML, CSS, and images necessary to run the application. Compare that to something like PHP or Python, where we'd have to manage and distribute hundreds or thousands of smaller files.
 
 ### Generating Templates in Go with `templ`
 
-While Go does have its standard library package [`html/template`][8] we instead use `templ` which is a much more powerful choice to write HTML that gets directly transpiled into Go which then gets compiled into the final binary.  We can write simple HTML forms like:
+While Go has a standard template library package [`html/template`][8], we use [`templ`][10] instead, because it transpiles HTML into Go and then compiles it into the final binary. It allows us to write simple HTML forms like this:
 
 ```go
 templ RegisterSignInForm() {
 	<form method="post" action="/account">
-		<p><input type="email" name="email" placeholder="Email" /></p>                   <p><button type="submit">Submit</button></p>
+		<p><input type="email" name="email" placeholder="Email" /></p>
+		<p><button type="submit">Submit</button></p>
 	</form>
 }
 ```
 
-Then after running `$ templ generate` we end up with type-safe Go code:
+After running `$ templ generate`, we end up with type-safe Go code:
 
 ```go
 func RegisterSignInForm() templ.Component {   
@@ -105,11 +106,11 @@ func RegisterSignInForm() templ.Component {
 }
 ```
 
-Sure, it may not look like the prettiest output, but it is generated code so it doesn't matter. We can focus on writing the template code as regular HTML. `templ` supports much more functionality so I urge you to go and checkout their documentation for more details.
+Not the prettiest output, but it is generated code; we never read or edit it, so it doesn't matter. Instead, we can focus on writing the template code as simple, easy-to-understand HTML. `templ` supports much more functionality, so I urge you to check out their documentation for more details.
 
-### Generate Templates in Rust with `maud`
+### Generating Templates in Rust with `maud`
 
-Since Rust's standard library is much more focused on systems programming there isn't much in the way of templates, let alone HTML templates. However, `maud`, is a phenomenal package that offers macros to write HTML-like markup to compile and embed into the final compiled binary. 
+Since Rust's standard library is much more focused on systems programming, there isn't much in the way of templates, let alone HTML templates. However, [`maud`][11], is a phenomenal package that offers macros to write HTML-like markup to compile and embed into the final compiled binary. Here's an example:
 
 ```rust
 pub fn register() -> Markup {
@@ -139,11 +140,11 @@ pub fn register() -> Markup {
 }
 ```
 
-Even though this is not HTML like the Go version, we still have a familiar markup that captures the same intent. Since `html!` above is a Rust macro there is no need for a separate code generation step like Go needs with `templ`. Rust will automatically convert the macro into Rust code and compiling it once you run `$ cargo build`.
+Although this is not standard HTML like in the Go version, it still gives us a familiar markup that captures the same intent. Since `html!` is a Rust macro, there is no need for a separate code generation step like Go needs with `templ`. Rust will automatically convert the macro into Rust code and compile it when you run `$ cargo build`.
 
 ### HTTP Handlers and Routing
 
-Now that we have a way to generate and compile HTML server-side in each language we can use any number of HTTP modules to deliver them to the browser since `templ` and `maud` offer direct support for writing the results of their respective templates to standard HTTP handlers.
+With ways to generate and compile HTML server-side in each language, we can use just about any HTTP module to deliver it to the user since `templ` and `maud` offer direct support for writing the results of their respective templates to standard HTTP handlers. Here are examples in each:
 
 ```go
 func (s *Server) RootHandler() http.Handler {
@@ -174,11 +175,13 @@ pub async fn homepage(
 
 ### Persistence with SQLite (or PostgreSQL)
 
-Everything we've built so far use SQLite because, well, it works perfectly fine for the size, scale, and load of the application. Both choices are also just boring SQL and that is entirely the point here. We need a way to save data to disk with a well-known language and SQL does just that. If there comes a time where we need to scale up the service and split the database to a dedicated server then we can just migrate SQLite into PostgreSQL and re-deploy. However, SQLite should serve our purposes for a very long time and with the addition of running it in WAL-mode it allows for much higher throughput which serves our needs just fine as well.
+All the products we're working today on use SQLite because, well, it works perfectly fine for the size, scale, and load of the application. Both also use just boring old SQL, an easy way to save data to disk in a well-known language. If we ever need to scale up the service and split the database to a dedicated server, we can just migrate SQLite into PostgreSQL and re-deploy. However, we believe SQLite will serve our purposes for a long time. Since it now supports [WAL-mode][12] it can do much higher throughput, if we need it.
 
 ## Our Web Apps
 
-You can find all of our web applications that practice what we preach over on our [Codeberg](https://codeberg.org/limeleaf) page. Everything we do we try to keep open source to be transparent about what we build and how we build it.
+We're working on two web app products today. [Apply.coop][13] is a job board for coops, and [Limecast][14] is a podcasting platform.
+
+All of the code for these products, which practice what we preach, are in our [Codeberg](https://codeberg.org/limeleaf) repo. We open-source as much code as we can to be transparent about what we build and how we build it.
 
 [0]: https://templ.guide
 [1]: https://maud.lambda.xyz
@@ -189,3 +192,9 @@ You can find all of our web applications that practice what we preach over on ou
 [6]: https://sqlite.org
 [7]: https://www.postgresql.org
 [8]: https://pkg.go.dev/html/template
+[9]: https://limeleaf.coop/blog/why-go-and-rust/
+[10]: https://github.com/a-h/templ
+[11]: https://maud.lambda.xyz
+[12]: https://sqlite.org/wal.html
+[13]: https://apply.coop
+[14]: https://limecast.com
