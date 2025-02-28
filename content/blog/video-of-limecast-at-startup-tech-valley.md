@@ -18,5 +18,7 @@ Watch Blain and John talk about [Limecast](https://limecast.net "Limecast") at [
 
 For more information, visit [limecast.net](https://limecast.net/).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/psPg9Z51G1o?si=avt9u2-2wDYct1sr&amp;start=1323" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+We are waiting for Startup Tech Valley to post the video. In the meantime, you can watch previous pitch events on their [YouTube channel](https://youtube.com/playlist?list=PLUF7EbVnMOlMaGVhTsxt9n9k4KKS6aBD1&si=49Co3JLMByHmcZbs).
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/psPg9Z51G1o?si=avt9u2-2wDYct1sr&amp;start=1323" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
