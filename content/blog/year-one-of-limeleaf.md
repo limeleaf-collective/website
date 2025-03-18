@@ -14,6 +14,8 @@ feature_photo_alt = ""
 
 Limeleaf was born on March 18, 2024. Our first anniversary seemed like a good time to take stock of what we’ve achieved so far and where we want to go in 2025 and beyond.
 
+<!-- more -->
+
 ## Warren Buffett on Success
 
 Warren Buffett famously said that [successful people say no to almost everything](https://www.msn.com/en-us/money/savingandinvesting/warren-buffetts-surprising-secret-to-success-is-to-say-no-to-almost-everything/ar-BB1ncA2j "Warren Buffett reveals his surprising secret to success"). Here at Limeleaf HQ, we lean heavily to the Left, so an ultra-capitalist like Buffett is hardly a role model to us, but we must admit he has a point. The more you say no, the more you can focus on your mission, goals, and values. In today’s tech industry, this is especially true when the “no” is to anyone who offers to give you funding.
