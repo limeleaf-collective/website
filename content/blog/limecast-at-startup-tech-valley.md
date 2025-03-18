@@ -18,4 +18,4 @@ If you happen to be in or near Troy, New York, on Thursday, February 20th at 5:3
 
 If you missed the event, we've embedded a recording below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/psPg9Z51G1o?si=RVTEtbfnKVMzG6pR&amp;start=1320" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y3MbUCWJsoQ?si=Bv75WNGqSGA5o4t6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
