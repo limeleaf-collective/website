@@ -25,10 +25,14 @@ We started Limeleaf on March 18, 2024. To celebrate our one-year anniversary, we
 <!-- more -->
 
 ## Show Notes
-- [Tech Jobs for Good](https://techjobsforgood.com/)
+- [Tech Jobs for Good](https://techjobsforgood.com)
 - [comp.coop](https://comp.coop)
-- [Farox](https://www.farox.coop)
-- [Camplight](https://www.camplight.net/)
+- [Farox](https://farox.coop)
+- [Camplight](https://camplight.net)
 - [Patio](https://patio.coop)
+- [Colab](https://colab.coop)
+- [Rushdown Studios](https://rushdownstudio.com)
+- [Rocket Science](https://rocketscience.gg)
+- [Piton Labs](https://pitonlabs.com)
 
 For links, socials, and more info about Limeleaf Worker Cooperative, visit [limeleaf.coop](https://limeleaf.coop).
