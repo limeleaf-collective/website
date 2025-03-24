@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel>
+      <title>The Limeleaf Podcast</title>
+      <description>Discussions on technology, privacy, ethics, and the worker-owned startup movement from the founders of the Limeleaf Worker Collective co-op.</description>
+      <itunes:category text="Technology" /><link>https://limeleaf.coop/podcast/</link>
+      <generator>Zola</generator>
+      <language>en</language>
+      <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate>
+      <copyright>Copyright 2005 Limeleaf Worker Collective, LLC</copyright>
+      <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      <itunes:complete>No</itunes:complete>
+      <itunes:explicit>Yes</itunes:explicit>
+      <itunes:type>episodic</itunes:type>
+      <itunes:owner>
+        <itunes:name>Limeleaf Worker Collective</itunes:name>
+        <itunes:email>info@limeleaf.coop</itunes:email>
+      </itunes:owner>
+      <itunes:author>Limeleaf Worker Collective</itunes:author>
+      <item>
+          <title>Episode 3: Year One of Limeleaf</title>
+          <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-03/</link>
+          <guid>https://limeleaf.coop/podcast/episode-03/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-03/">
+            <![CDATA[
+              <p>We started Limeleaf on March 18, 2024. To celebrate our one-year anniversary, we'll take a look back at what we've accomplished and where we want to go in 2025 and beyond.</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://techjobsforgood.com">Tech Jobs for Good</a></li>
+<li><a href="https://comp.coop">comp.coop</a></li>
+<li><a href="https://farox.coop">Farox</a></li>
+<li><a href="https://camplight.net">Camplight</a></li>
+<li><a href="https://patio.coop">Patio</a></li>
+<li><a href="https://colab.coop">Colab</a></li>
+<li><a href="https://rushdownstudio.com">Rushdown Studios</a></li>
+<li><a href="https://rocketscience.gg">Rocket Science</a></li>
+<li><a href="https://pitonlabs.com">Piton Labs</a></li>
+</ul>
+<p>For links, socials, and more info about Limeleaf Worker Cooperative, visit <a href="https://limeleaf.coop">limeleaf.coop</a>.</p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 3: Year One of Limeleaf</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>3</itunes:episode>
+          <podcast:episode>3</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e03.mp3" type="audio/mpeg" length="14132634" />
+          <itunes:duration>28:34</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 2: The QA Bots are Coming! Maybe? Probably Not.</title>
+          <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-02/</link>
+          <guid>https://limeleaf.coop/podcast/episode-02/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-02/">
+            <![CDATA[
+              <p>This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test Automation Engineer and long-time veteran of the video gaming industry. She gives us an insider’s view on software testing past, present, and future. (Yes, including the impact that “AI” is having on software quality assurance folks.)</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/mavreensmiel/">Mavreen Smiel on LinkedIn</a></li>
+<li><a href="https://lamport.azurewebsites.net/tla/tla.html">The TLA+ Home Page</a></li>
+<li><a href="https://www.selenium.dev">Selenium</a></li>
+<li><a href="https://husobee.github.io/money/float/2016/09/23/never-use-floats-for-currency.html">Never Use Floats for Currency</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_methods">Formal Methods</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logic_in_computer_science">Logic in Computer Science</a></li>
+<li><a href="https://leanpub.com/logic">Logic for Programmers</a></li>
+</ul>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 2: The QA Bots are Coming! Maybe? Probably Not.</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>2</itunes:episode>
+          <podcast:episode>2</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e02.mp3" type="audio/mpeg" length="20332272" />
+          <itunes:duration>41:49</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 1: Big Tech Gets Grubby</title>
+          <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-01/</link>
+          <guid>https://limeleaf.coop/podcast/episode-01/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-01/">
+            <![CDATA[
+              <p>In our inaugural episode, we introduce ourselves and talk about the conniving grubs at Grubhub and why fining Big Tech companies is useless. We talk about the fine public service work being done by Trifecta Tech. In our "Explain it to Me Like I'm John" segment, Blain and Erik go deep into the Meta "View As" security breach and resulting EU fine.</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://www.404media.co/the-no-win-mystery-drone-clusterfuck/">"The No-Win 'Mystery Drone' Clusterf*ck" by 404 Media</a></li>
+<li><a href="https://pca.st/Mm82">Underunderstood episode about Grubhub</a></li>
+<li><a href="https://trifectatech.org">Trifecta Tech - Open infrastructure software in the public interest</a></li>
+<li><a href="https://www.memorysafety.org">Prossimo</a></li>
+<li><a href="https://paulkrugman.substack.com/p/health-insurance-is-a-racket">Krugman on the health insurance racket</a></li>
+<li><a href="https://www.msn.com/en-us/news/technology/meta-fined-264m-for-security-breach-in-facebook-s-view-as-feature/ar-AA1w1PU6">"Meta Fined $264M for Security Breach in Facebook's 'View As' Feature"</a></li>
+<li><a href="https://www.mealeo.com">Mealeo, a meal delivery service based in Latham, NY</a></li>
+<li><a href="https://limecast.net">Limecast, a Privacy-First Podcasting Platform</a></li>
+<li><a href="https://opencollective.com/limeleaf">Send us a donation!</a></li>
+</ul>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 1: Big Tech Gets Grubby</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>1</itunes:episode>
+          <podcast:episode>1</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e01.mp3" type="audio/mpeg" length="14670456" />
+          <itunes:duration>35:47</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+    </channel>
+</rss>
