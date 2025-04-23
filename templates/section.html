@@ -51,12 +51,72 @@
     <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
     project assessment.</p>
   
-  {% elif current_path == "/open-source/" %}
-  <h1>{{section.title}}</h1>
-  <p><i>{{ section.description }}</i></p>
-  <hr class="header" />
-  <p>{{section.content | safe }}</p>
-
+  {% elif current_path == "/products/" %}
+  <section id="products">
+    <h1>Our Products</h1>
+    <p><i>{{ section.description }}</i></p>
+    <div class="row">
+        <div class="col-sm">
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="https://blueskydirectory.com">
+                        <img src="{{ get_url(path='images/projects/bluesky-directory-logo.png') }}" alt="Bluesky Directory - A curated collection of all things relating to the Bluesky social media platform">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm small">
+                    <p>The ultimate collection of Starter Packs, tools, and applications for <a href="https://bsky.app">Bluesky</a> updated in real time.</p>
+                    <p><a href="https://blueskydirectory.com">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="https://limecast.net">
+                        <img src="{{ get_url(path='images/projects/limecast-logo.svg') }}" alt="Limecast - An open-source, privacy-first podcasting platform">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm small">
+                    <p>An open-source, privacy-first podcasting platform that manages, distributes, monetizes, and publishes podcasts to major podcast directories, RSS, and ActivityPub.</p>
+                    <p><a href="https://limecast.net">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="https://apply.coop">
+                        <img src="{{ get_url(path='images/projects/apply-logo.svg') }}" alt="Apply - A job board for co-ops">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm small">
+                    <p>A job board for co-ops. We make it easy to find qualified candidates who share your org's values and are excited to contribute.</p>
+                    <p><a href="https://apply.coop">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="https://diggetal.com">
+                        <img src="{{ get_url(path='images/projects/diggetal-logo.png') }}" alt="Diggetal - Online puzzles, utilities and other curiosities">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm small">
+                    <p>Online puzzles, utilities and other digital curiosities.</p>
+                    <p><a href="https://diggetal.com">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
   {% else %}
   <h1>{{section.title}}</h1>
