@@ -49,14 +49,20 @@
                   {%- endfor %}
                 {% endif %}
               </i></p>
-
             {% endif %}
-            {% if page.extra.feature_photo != "" %}
-      <figure style="float: right; margin: 0 1em;">
-          <img style="border-radius: 50%;" width="300" height="300" src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" />
-      </figure>
-      {% endif %}
-      {{ page.content | safe }}
+            <div class="row">
+                {% if page.extra.feature_photo != "" %}
+                  <div class="col-sm-2">
+                    <p><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" /></p>
+                  </div>
+                  <div class="col-sm-10">
+                {% else %}
+                    <div class="col-12">
+                {% endif %}
+                <p>{{ page.content | safe }}</p>
+                </div>
+              </div>
+
       </article>
     </div>
 </main>
