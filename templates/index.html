@@ -41,7 +41,7 @@
         </div>
         <div class="col-sm services design">
           <h2 class="service-title">System Design</h2>
-          <p class="service-description">We design highly scalable software systems that solve complex problems.</p>
+          <p class="service-description">We design and build reliable, highly scalable software systems that solve complex problems.</p>
             <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
       </div>
       <div class="col-sm services training">
@@ -55,61 +55,52 @@
   <section id="products">
     <h2>Our Products</h2>
     <div class="row">
-        <div class="col-xs">
-            <div class="client-logo">
-                <a href="https://blueskydirectory.com" title="Bluesky Directory - A curated collection of all things relating to the Bluesky social media platform">
-                    <img src="{{ get_url(path='images/projects/bluesky-directory-logo.png') }}" alt="Bluesky Directory - A curated collection of all things relating to the Bluesky social media platform">
-                </a>
+        {% set section = get_section(path="products/_index.md") %}
+        {% for page in section.pages %}
+        <div class="col-md" {% if loop.index % 2 == 0 %}{% endif %}>
+            {% if page.extra.feature_photo != "" %}
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="{{ page.extra.product_site_url }}">
+                        <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-xs">
-            <div class="client-logo">
-                <a href="https://limecast.net" title="Limecast - An open-source, privacy-first podcasting platform">
-                    <img src="{{ get_url(path='images/projects/limecast-logo.svg') }}" alt="Limecast - An open-source, privacy-first podcasting platform">
-                </a>
-            </div>
-        </div>
-        <div class="col-xs">
-            <div class="client-logo">
-                <a href="https://apply.coop" title="Apply - A job board for co-ops">
-                    <img src="{{ get_url(path='images/projects/apply-logo.svg') }}" alt="Apply - A job board for co-ops">
-                </a>
-            </div>
-        </div>
-        <div class="col-xs">
-            <div class="client-logo">
-                <a href="https://diggetal.com" title="Diggetal - Online games, utilities and other curiosities">
-                    <img src="{{ get_url(path='images/projects/diggetal-logo.png') }}" alt="Diggetal - Online games, utilities and other curiosities">
-                </a>
+        {% endif %}
+        <div class="row">
+            <div class="col-md small">
+                {{ page.summary | safe }}
             </div>
         </div>
     </div>
-</section>
+    {% endfor %}
+   </div>
+  </section>
     <section id="clients">
         <h2>Our Clients</h2>
         <div class="row">
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://rushdownstudio.com">
                         <img src="{{ get_url(path='images/clients/rushdown-logo.png') }}" alt="Rushdown Studios">
                     </a>
                 </div>
             </div>
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://pitonlabs.com">
                         <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
                     </a>
                 </div>
             </div>
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://rocketscience.gg">
                         <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
                     </a>
                 </div>
             </div>
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://colab.coop">
                         <img src="{{ get_url(path='images/partners/colab.svg') }}" alt="Colab">
@@ -121,21 +112,21 @@
     <section id="partners">
         <h2>Our Partners</h2>
         <div class="row">
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://comp.coop">
                         <img src="{{ get_url(path='images/partners/comp-coop.svg') }}" alt="Comp.coop">
                     </a>
                 </div>
             </div>
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://farox.coop/en">
                         <img src="{{ get_url(path='images/partners/farox.svg') }}" alt="Farox">
                     </a>
                 </div>
             </div>
-            <div class="col-xs">
+            <div class="col-md">
                 <div class="client-logo">
                     <a href="https://patio.coop">
                         <img src="{{ get_url(path='images/partners/patio.png') }}" alt="Patio">

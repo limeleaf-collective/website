@@ -51,11 +51,33 @@
     <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
     project assessment.</p>
   
-  {% elif current_path == "/open-source/" %}
+  {% elif current_path == "/products/" %}
   <h1>{{section.title}}</h1>
   <p><i>{{ section.description }}</i></p>
   <hr class="header" />
   <p>{{section.content | safe }}</p>
+  <section id="products">
+    <div class="row">
+        {% for page in section.pages %}
+        <div class="col-sm" {% if loop.index % 2 == 0 %}{% endif %}>
+            {% if page.extra.feature_photo != "" %}
+            <div class="row">
+                <div class="product-logo box">
+                    <a href="{{ page.extra.product_site_url }}">
+                        <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}">
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-sm small"> 
+                {{ page.summary | safe }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+   </div>
+  </section>
 
 
   {% else %}
@@ -66,7 +88,7 @@
     {% for page in section.pages %}
       <div {% if loop.index % 2 == 0 %}{% endif %}>
       <div class="container">
-        <section class="row middle-lg">
+        <section class="row">
           {% if page.extra.feature_photo != "" %}
             <div class="col-lg-3">
               <p><img src="{{ get_url(path=page.extra.feature_photo) }}" style="max-width: 100%; margin-top: 3rem; border-radius: 50%;" /></p>
