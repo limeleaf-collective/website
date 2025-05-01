@@ -135,5 +135,18 @@
             </div>
         </div>
     </section>
+    <section id="podcast-latest">
+        <h2>Our Podcast</h2>
+        <ul>
+          {% set podcast_section = get_section(path="podcast/_index.md") %}
+          {% for episode in podcast_section.pages | slice(end=5) %}
+            <li>
+              <a href="{{ episode.permalink }}">{{ episode.title }}</a>
+              <span class="small">({{ episode.date | date(format="%B %d, %Y") }})</span>
+            </li>
+          {% endfor %}
+        </ul>
+        <p><a href="{{ get_url(path='@/podcast/_index.md') }}" class="link">All episodes</a> | <a href="{{ get_url(path='@/podcast/_index.md') }}rss.xml" class="link">Subscribe to RSS</a></p>
+      </section>
 </main>
 {% endblock content %}
