@@ -5,7 +5,7 @@ draft = false
 authors = ["John Luther"]
 
 [taxonomies]
-tags = ["Limeleaf"]
+tags = ["Limeleaf", "Bluesky Directory"]
 
 [extra]
 feature_photo = ""
