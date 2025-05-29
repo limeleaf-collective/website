@@ -1,5 +1,5 @@
 +++
-title = "Understanding AWS IoT Core Device Shadow: Reported, Desired, and Delta State"
+title = "Understanding AWS IoT Core Device Shadow: Reported, Desired, and Delta States"
 date = 2025-05-29
 draft = false
 authors = ["Blain Smith"]
@@ -12,7 +12,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-AWS IoT Core Device Shadow is a powerful feature that allows connected devices and cloud applications to synchronize state seamlessly. This feature maintains a *virtual representation* of each device's state in the cloud, even when the device is offline. This blog post will explain how the device shadow works, focusing on the `reported`, `desired`, and `delta` states—and when devices should report their state or respond to changes.
+I've been doing some work for a client that uses Amazon Web Services (AWS) to manage their IoT devices. Specifically, they use [AWS IoT Core Device Shadow](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html) to synchronize state between their devices and their cloud applications. In this post, I thought it would be helpful to explain how the device shadow works, focusing on the `reported`, `desired`, and `delta` states—and when devices should report their state or respond to changes. Let's dive in!
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ AWS IoT Core Device Shadow is a powerful feature that allows connected devices a
 The shadow document is a JSON structure that contains three primary sections:
 
 * **`desired`**: What the cloud application wants the device’s state to be.
-* **`reported`**: What the device says its current state is.
+* **`reported`**: What the device reports its current state to be.
 * **`delta`**: What’s different between `desired` and `reported`.
 
 Here's a typical shadow document:
@@ -75,7 +75,7 @@ The device publishes this JSON to the shadow update topic `$aws/things/device123
 
 ### Setting a New Desired State
 
-A cloud application wants the light color to be white and the temperature to be 13. It publishes this JSON:
+Imagine you have a cloud application that must set a remote IoT device's light color to be white and its temperature to be 13. The application publishes this JSON to a specific [MQTT topic](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) for the device (e.g., `$aws/things/device123/shadow/update/delta`):
 
 ```json
 {
@@ -112,7 +112,7 @@ Then the `delta` will be:
 }
 ```
 
-This `delta` is published to a specific MQTT topic for the device (e.g., `$aws/things/device123/shadow/update/delta`). The device listens for this topic to know what has changed and should take action accordingly.
+The device listens for this topic to know what has changed and should take action accordingly.
 
 ## Synchronizing State
 
@@ -175,7 +175,7 @@ No further `delta` messages are sent unless the desired state changes again.
          |                               |                              |
 ```
 
-### Legend:
+***Legend of Diagram Actors:***
 
 * **Cloud App**: Publishes `desired` state changes to the device shadow on `$aws/things/device123/shadow/update`.
 * **AWS IoT Core**:
@@ -189,7 +189,7 @@ No further `delta` messages are sent unless the desired state changes again.
 
 ### Example Data Flow
 
-1. Cloud sets:
+1. Cloud App sets:
 
    ```json
    {
