@@ -337,3 +337,13 @@ header #logo, header nav {
   }
 
 }
+
+@media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    .col-xs {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
