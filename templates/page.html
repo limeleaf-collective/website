@@ -21,7 +21,7 @@
 {% block content %}
 <main class="container">
   <section class="row">
-    <div class="col-xs-12">
+    <div class="col-xs">
       <article>
       <h1>{{ page.title }}</h1>
       <p><i>{{ page.description }}</i></p>
@@ -52,12 +52,12 @@
             {% endif %}
             <div class="row">
                 {% if page.extra.feature_photo != "" %}
-                  <div class="col-sm-2">
+                  <div class="col-xs">
                     <p><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" /></p>
                   </div>
-                  <div class="col-sm-10">
+                  <div class="col-xs">
                 {% else %}
-                    <div class="col-xs-12">
+                    <div class="col-xs">
                 {% endif %}
                 <p>{{ page.content | safe }}</p>
                 </div>
