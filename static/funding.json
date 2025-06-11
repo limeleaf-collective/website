@@ -5,11 +5,9 @@
         "role": "owner",
         "name": "Limeleaf Worker Collective, LLC",
         "email": "info@limeleaf.coop",
-        "phone": "",
         "description": "Limeleaf is dedicated to the development and maintenance of privacy-focused open-source software written in Rust and Go. Our mission is to draw on our decades of experience building software to help others. We are proud to be a worker-owned cooperative, and strive to embody the [Seven Cooperative Principles](https://uwcc.wisc.edu/about-co-ops/cooperative-principles/) in ourt work. We are based in Schuylerville, New York, USA. For a full list of our open-source contributions, see https://limeleaf.coop/about/",
         "webpageUrl": {
-            "url": "https://limeleaf.coop",
-            "wellKnown": ""
+            "url": "https://limeleaf.coop"
         }
     },
     "projects": [
