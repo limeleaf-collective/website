@@ -17,6 +17,7 @@
             "description": "Limecast is a distributed, privacy-first podcast platform and CMS written in Rust. Using a simple web UI, Limecast handles content management, hosting of podcast audio and artwork assets, RSS and Atom feed creation, and automatically creates a visually appealing website and social sharing links for each podcast in the system. Limecast is deployed as a single binary and uses minimal system resources to operate.",
             "webpageUrl": {
                 "url": "https://limecast.net",
+                "wellKnown": "https://limecast.net/.well-known/funding-manifest-urls"
             },
             "repositoryUrl": {
                 "url": "https://codeberg.org/limeleaf/limecast",
@@ -44,6 +45,7 @@
             },
             "repositoryUrl": {
                 "url": "https://codeberg.org/limeleaf/apply-coop",
+                "wellKnown": "https://codeberg.org/limeleaf/apply-coop/src/branch/main/static/.well-known/funding-manifest-urls"
             },
             "licenses": [
                 "spdx:MPL-2.0"
