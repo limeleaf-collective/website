@@ -40,11 +40,10 @@
             "description": "apply.coop is a job board web app written in Go. Any organization can use aply.coop to advertise open jobs, but its primary audience is cooperatively managed organizations, nonprofits, and public benefit corporations (B Corps). It supports posting and editing jobs as well as RSS, Atom and JSON feed creation for workplaces, tags, and searches. It also supports multiple 'workplaces', so an organization can use it to create a profile and job list for each or its affiliated organizations (for example, a labor union whose members work at multiple companies. apply.coop is deployed as a single binary and uses minimal system resources to operate.",
             "webpageUrl": {
                 "url": "https://apply.coop",
-                "wellKnown": ""
+                "wellKnown": "https://apply.coop/.well-known/funding-manifest-urls"
             },
             "repositoryUrl": {
-                "url": "https://codeberg.org/limeleaf/apply-coop/.wellknown/funding-manifest-urls",
-                "wellKnown": ""
+                "url": "https://codeberg.org/limeleaf/apply-coop",
             },
             "licenses": [
                 "spdx:MPL-2.0"
