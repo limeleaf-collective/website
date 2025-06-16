@@ -44,7 +44,7 @@
                     {%- set parts = author | split(pat=" ") %}
                     {%- set first_name = parts[0] | lower %}
                     {%- set last_name = parts[1] | lower %}
-                    <a href="/members/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
+                    <a href="/about/{{ first_name }}-{{ last_name }}">{{ author }}</a>{%- if not loop.last %}, {% endif %}
                   {%- endfor %}
                 {% endif %}
                 &bull; Duration: {{ page.extra.podcast.duration }}
