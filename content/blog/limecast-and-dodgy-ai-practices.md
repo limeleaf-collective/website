@@ -4,7 +4,7 @@ date = 2024-10-02
 authors = ["John Luther"]
 
 [taxonomies]
-tags = ["Company", "Limecast"]
+tags = ["Product", "Limecast"]
 
 [extra]
 feature_photo = ""

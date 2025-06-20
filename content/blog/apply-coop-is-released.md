@@ -5,7 +5,7 @@ draft = false
 authors = ["John Luther"]
 
 [taxonomies]
-tags = ["Company", "apply.coop"]
+tags = ["Product", "apply.coop"]
 
 [extra]
 feature_photo = ""

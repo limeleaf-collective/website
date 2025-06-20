@@ -5,7 +5,7 @@ draft = false
 authors = ["John Luther"]
 
 [taxonomies]
-tags = ["Company", "Limecast"]
+tags = ["Product", "Limecast"]
 
 [extra]
 feature_photo = ""
