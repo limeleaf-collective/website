@@ -8,7 +8,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-The AT Protocol (also called ATProto, the technology that powers the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, and federation concepts. Teams often struggle with ATProto's lexicon system, Personal Data Servers (PDS), and the complexities of building interoperable social applications.
+The AT Protocol (also called ATProto, the technology that powers the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, and federation concepts. We can help teams navigate ATProto's lexicon system, Personal Data Servers (PDS), and the complexities of building interoperable social applications.
 
 <!-- more -->
 
