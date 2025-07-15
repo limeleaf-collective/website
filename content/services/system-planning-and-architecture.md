@@ -1,5 +1,5 @@
 +++
-title = "System Planning and Architecture"
+title = "System Design and Architecture"
 description = "Limeleaf can help your team build Rust and Go solutions that scale to handle intense traffic cost-effectively as your business grows."
 weight = 3
 
@@ -8,7 +8,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-Limeleaf designs efficient, highly scalable, maintainable software systems in Rust and Go that solve complex problems.
+Limeleaf designs efficient, highly scalable, maintainable software systems that solve complex problems.
 
 <!-- more -->
 
