@@ -1,5 +1,5 @@
 +++
-title = "Consulting Services"
+title = "Rust and Go Consulting Services"
 description = "From code reviews to infrastructure planning, we'll help you ship better software faster."
 weight = 1
 

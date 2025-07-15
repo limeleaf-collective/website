@@ -1,7 +1,7 @@
 +++
 title = "Rust and Go Engineering Training"
 description = "Equip your engineering team with the skills needed for world-class development with Go and Rust."
-weight = 3
+weight = 4
 
 [extra]
 feature_photo = ""
