@@ -12,14 +12,6 @@ The AT Protocol (also called ATProto, the technology that powers the [Bluesky](h
 
 <!-- more -->
 
-Here's how Limeleaf can provide strategic guidance for your ATProto initiatives:
-
-- Advise on ATProto architecture decisions and technical strategy
-- Provide technical leadership on complex federation and interoperability challenges
-- Guide architectural decisions for PDS, App View, and Feed Generator design
-- Offer strategic consulting on ATProto ecosystem positioning and compliance
-- Mentor your development team through protocol-specific challenges and best practices
-
 ## Our ATProto Expertise
 
 With hands-on experience building [Bluesky Directory](https://blueskydirectory.com) and other ATProto applications, we understand the practical challenges of developing on this platform:
@@ -29,6 +21,14 @@ With hands-on experience building [Bluesky Directory](https://blueskydirectory.c
 - **Custom Feed Development**: Created and deployed custom algorithms for content discovery
 - **Cross-Platform Compatibility**: Designed applications that work seamlessly across mobile, web, and desktop platforms
 - **Interoperability**: Built systems that integrate with other ATProto applications and services
+
+Here's how Limeleaf can provide strategic guidance for your ATProto initiatives:
+
+- Advise on ATProto architecture decisions and technical strategy
+- Provide technical leadership on complex federation and interoperability challenges
+- Guide architectural decisions for PDS, App View, and Feed Generator design
+- Offer strategic consulting on ATProto ecosystem positioning and compliance
+- Mentor your development team through protocol-specific challenges and best practices
 
 ## Typical Consulting Activities
 
