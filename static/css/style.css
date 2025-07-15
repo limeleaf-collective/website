@@ -278,12 +278,12 @@ header #logo, header nav {
   background-color: #8f2330; /* Red */
 }
 
-.training:before {
-  background-color: #FFBF00; /* Purple */
+.atproto:before {
+  background-color: #4682b4; /* Teal */
 }
 
 .design:before {
-  background-color: #4682b4; /* Teal */
+  background-color: #FFBF00; /* yellow */
 }
 
 .services:before {

@@ -1,7 +1,7 @@
 +++
 title = "System Planning and Architecture"
 description = "Limeleaf can help your team build Rust and Go solutions that scale to handle intense traffic cost-effectively as your business grows."
-weight = 2
+weight = 3
 
 [extra]
 feature_photo = ""

@@ -8,14 +8,13 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-The AT Protocol (the underlying technology on which the social network [Bluesky](https://bsky.app) is built) represents the future of decentralized social networking, but building on this emerging platform requires deep understanding of its unique architecture, data models, and federation concepts. Teams often struggle with AT Protocol's lexicon system, Personal Data Servers (PDS), and the complexities of building truly interoperable social applications.
+The AT Protocol (the technology that powers the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this emerging platform requires deep understanding of its unique architecture, data models, and federation concepts. Teams often struggle with AT Protocol's lexicon system, Personal Data Servers (PDS), and the complexities of building truly interoperable social applications.
 
 <!-- more -->
 
-Here's how Limeleaf can provide strategic guidance for your AT Protocol initiatives!
+Here's how Limeleaf can provide strategic guidance for your AT Protocol initiatives:
 
 - Advise on AT Protocol architecture decisions and technical strategy
-- Review and validate your team's approach to decentralized social development
 - Provide technical leadership on complex federation and interoperability challenges
 - Guide architectural decisions for Personal Data Servers, App Views, and Feed Generators
 - Offer strategic consulting on AT Protocol ecosystem positioning and compliance
@@ -25,10 +24,11 @@ Here's how Limeleaf can provide strategic guidance for your AT Protocol initiati
 
 With hands-on experience building [Bluesky Directory](https://blueskydirectory.com) and other AT Protocol applications, we understand the practical challenges of developing on this platform:
 
-- **Real-time Data Processing**: We've built systems that consume the Bluesky firehose to process millions of social interactions
+- **Real-time Data Processing**: We've built systems that consume the Bluesky firehose to process millions of profiles, feeds, posts, etc.
 - **API Integration**: Deep experience with AT Protocol APIs, authentication, and rate limiting
 - **Custom Feed Development**: Created and deployed custom algorithms for content discovery
-- **Cross-Platform Compatibility**: Built applications that work seamlessly across the AT Protocol ecosystem
+- **Cross-Platform Compatibility**: Designed applications that work seamlessly across mobile, web, and desktop platforms
+- **Interoperability**: Built systems that integrate with other AT Protocol applications and services
 
 ## Typical Consulting Activities
 
@@ -44,7 +44,7 @@ With hands-on experience building [Bluesky Directory](https://blueskydirectory.c
 
 We offer flexible engagement models tailored to your AT Protocol development needs.
 
-Recent example: Six-week strategic consulting engagement helping a media company architect their custom Bluesky client.
+Example: Six-week strategic consulting engagement helping a media company architect their custom Bluesky client.
 
 - Duration: 60 hours
 - Investment: $10,500
