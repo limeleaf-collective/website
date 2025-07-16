@@ -1,6 +1,6 @@
 +++
 title = "AT Protocol Development"
-description = "Build decentralized social applications on AT Protocol with expert guidance from developers who understand the ecosystem."
+description = "Build decentralized social applications on AT Protocol with expert guidance from developers and product leaders who understand the ecosystem."
 weight = 3
 
 [extra]
@@ -8,37 +8,30 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-The AT Protocol (also called ATProto, the technology that powers the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, and federation concepts. We can help teams navigate ATProto's lexicon system, Personal Data Servers (PDS), and the complexities of building interoperable social applications.
+The AT Protocol (also called ATProto, the technology that is best known for powering the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, identity systems, and federation concepts. We can help teams navigate ATProto's lexicon system, Personal Data Servers (PDS), and the complexities of building interoperable social applications.
 
 <!-- more -->
 
 ## Our ATProto Expertise
 
-With hands-on experience building [Bluesky Directory](https://blueskydirectory.com) and other ATProto applications, we understand the practical challenges of developing on this platform:
+With hands-on experience building the popular [Bluesky Directory](https://blueskydirectory.com) and other ATProto applications, we understand the unique challenges (and benefits!) of developing on this platform:
 
 - **Real-time Data Processing**: We've built systems that consume the Bluesky firehose to process millions of profiles, feeds, posts, and other objects.
 - **API Integration**: Deep experience with ATProto APIs, authentication, and rate limiting
 - **Custom Feed Development**: Created and deployed custom algorithms for content discovery
 - **Cross-Platform Compatibility**: Designed applications that work seamlessly across mobile, web, and desktop platforms
-- **Interoperability**: Built systems that integrate with other ATProto applications and services
+- **Platform Interoperability**: Built systems that integrate with other ATProto applications and services
+
+## Our ATProto Consulting Services
 
 Here's how Limeleaf can provide strategic guidance for your ATProto initiatives:
 
-- Advise on ATProto architecture decisions and technical strategy
-- Provide technical leadership on complex federation and interoperability challenges
+- Review, validate, and provide strategic guidance on product rationale, system architecture, technical requirements, launch planning, and scaling phases
 - Guide architectural decisions for PDS, App View, and Feed Generator design
-- Offer strategic consulting on ATProto ecosystem positioning and compliance
 - Mentor your development team through protocol-specific challenges and best practices
-
-## Typical Consulting Activities
-
-- Provide strategic guidance on ATProto application architecture and design patterns
-- Review technical specifications and validate architectural approaches
-- Advise on PDS deployment strategies and App View design
-- Consult on Feed Generator algorithms and content discovery optimization
+- Provide technical leadership on complex federation and interoperability challenges
+- Offer strategic advice on ATProto ecosystem positioning and compliance
 - Guide moderation strategy and content filtering implementation approaches
-- Mentor development teams on ATProto best practices and ecosystem integration
-- Offer technical leadership during critical architecture and scaling decisions
 
 ## ATProto Development Packages
 
