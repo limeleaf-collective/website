@@ -37,7 +37,7 @@ Here's how Limeleaf can provide strategic guidance for your ATProto initiatives:
 
 We offer flexible engagement models tailored to your ATProto development needs.
 
-Example: Six-week strategic consulting engagement helping a media company architect a custom Bluesky client.
+Example project: Six-week strategic consulting engagement helping a media company architect a custom Bluesky client.
 
 - Allocation: 60 hours
 - Investment: $10,500

@@ -1,5 +1,5 @@
 +++
-title = "Rust and Go Consulting Services"
+title = "Fractional CTOs for Rust and Go Projects"
 description = "From code reviews to infrastructure planning, we'll help you ship better software faster."
 weight = 1
 
@@ -8,7 +8,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-When transitioning to Rust and Go, organizations often face challenges with memory safety paradigms, concurrency patterns, and understanding the unique performance characteristics of each language. Teams struggle to leverage Rust's ownership model and Go's `goroutines` effectively, leading to development delays and underutilized potential. 
+When transitioning to Rust and Go, organizations often face challenges with deeply technical concepts such as memory safety paradigms, concurrency patterns, and the unique performance characteristics of each language. For example, even the most experienced developers struggle to leverage Rust's ownership model and Go's `goroutines` effectively, leading to development delays and underutilized potential.
 
 <!-- more -->
 
@@ -39,9 +39,9 @@ Here's how Limeleaf can help!
 
 We tailor our services to your specific Rust and Go development needs.
 
-Recent example: Four-week engagement helping migrate a high-throughput data processing service to Rust and Go.
+Example project: Four-week engagement helping migrate a high-throughput data processing service to Rust and Go.
 
-- Duration: forty hours
+- Allocation: 40 hours
 - Investment: $6,000
 - Deliverables:
   - Architecture design optimizing Rust for data processing and Go for API services
