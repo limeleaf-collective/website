@@ -1,83 +1,89 @@
 {% extends "base.html" %}
 
 {% block meta_content %}
-  <title>{{ config.title }}</title>
-  <meta property="og:title" content="{{ config.title }}" />
-  <meta property="og:description" content="{{ config.description }}" />
-  <meta property="og:url" content="https://limeleaf.coop" />
-  <meta property="og:image" content="/images/logo/limeleaf-logo.jpg" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta property="og:type" content="website" />
-  <meta name="description" content="{{ config.description }}" />
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="limeleaf.net">
-  <meta property="twitter:url" content="https://limeleaf.coop">
-  <meta name="twitter:title" content="{{ config.title }}">
-  <meta name="twitter:description" content="{{ config.description }}">
-  <meta name="twitter:image" content="/images/logo/limeleaf-logo.jpg">
-  <link rel="me" href="https://social.coop/@applycoop" />
-  <link rel="me" href="https://social.coop/@limeleaf" />
+<title>{{ config.title }}</title>
+<meta property="og:title" content="{{ config.title }}" />
+<meta property="og:description" content="{{ config.description }}" />
+<meta property="og:url" content="https://limeleaf.coop" />
+<meta property="og:image" content="/images/logo/limeleaf-logo.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:type" content="website" />
+<meta name="description" content="{{ config.description }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="limeleaf.net">
+<meta property="twitter:url" content="https://limeleaf.coop">
+<meta name="twitter:title" content="{{ config.title }}">
+<meta name="twitter:description" content="{{ config.description }}">
+<meta name="twitter:image" content="/images/logo/limeleaf-logo.jpg">
+<link rel="me" href="https://social.coop/@applycoop" />
+<link rel="me" href="https://social.coop/@limeleaf" />
 {% endblock meta_content %}
 
 {% block content %}
 <main class="container">
-  <section class="hero-section">
-      <div class="row">
-          <div class="col-sm">
-              <h1 class="home">Your Rust and Go Development Experts</h1>
-              <p>We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages.</p>
-          </div>
-          <div id="hero-image" class="col-sm-5">
-              <img src="/images/services/backend-developer.svg"/>
-          </div>
-      </div>
-  </section>
-  <section class="home services-section">
-      <div class="col-sm">
-      <div class="row">
-        <div class="col-sm services consulting">
-          <h2 class="service-title">Consulting</h2>
-          <p class="service-description">Switching to Rust or Go? Need help with a complex project? From code reviews to infrastructure planning, we'll help you ship better software faster.</p>
-          <p><a href="/services/consulting/" class="link">Learn more</a></p>
-        </div>
-        <div class="col-sm services design">
-          <h2 class="service-title">System Design</h2>
-          <p class="service-description">We design and build reliable, highly scalable software systems that solve complex problems.</p>
-            <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
-      </div>
-      <div class="col-sm services training">
-        <h2 class="service-title">Training</h2>
-        <p class="service-description">We train Rust and Go engineers at any skill level, virtually or on-site.</p>
-          <p><a href="/services/training/" class="link">Learn more</a></p>
-      </div>
-    </div>
-  </div>
-  </section>
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="row">
-        {% set section = get_section(path="products/_index.md") %}
-        {% for page in section.pages %}
-        <div class="col-md" {% if loop.index % 2 == 0 %}{% endif %}>
-            {% if page.extra.feature_photo != "" %}
-            <div class="row">
-                <div class="product-logo box">
-                    <a href="{{ page.extra.product_site_url }}">
-                        <img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}">
-                    </a>
+    <section class="hero-section">
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="home">Your Fractional CTO for Complex Software Projects</h1>
+                <p>We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages and cutting-edge protocols like ATProto.</p>
+                <div class="hero-cta">
+                    <a href="/contact/" class="btn btn-primary">Start Your Project</a> | 
+                    <a href="/services/" class="btn btn-secondary">Our Services</a>
                 </div>
             </div>
-        {% endif %}
-        <div class="row">
-            <div class="col-md small">
-                {{ page.summary | safe }}
+            <div id="hero-image" class="col-sm-5">
+                <img alt="Backend developer hero image" src="/images/services/backend-developer.svg" />
             </div>
         </div>
-    </div>
-    {% endfor %}
-   </div>
-  </section>
+    </section>
+    <section class="home services-section">
+        <div class="col-sm">
+            <div class="row">
+                <div class="col-sm services atproto">
+                    <h2 class="service-title">AT Proto Development</h2>
+                    <p class="service-description">We build custom tools and social applications for the AT Protocol ecosystem, including <a href="https://blueskydirectory.com">Bluesky Directory</a> and <a href="https://bsky.app">Bluesky</a> integrations.</p>
+                    <p><a href="/services/at-proto-development/" class="link">Learn more</a></p>
+                </div>
+                <div class="col-sm services design">
+                    <h2 class="service-title">System Design</h2>
+                    <p class="service-description">We architect and build reliable, highly scalable software systems that solve complex problems.</p>
+                    <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
+                </div>
+                <div class="col-sm services consulting">
+                    <h2 class="service-title">Consulting</h2>
+                    <p class="service-description">Switching to Rust or Go? Need help with a complex project? From code reviews to infrastructure planning, we'll help you ship better software faster.</p>
+                    <p><a href="/services/consulting/" class="link">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>We make small-tech products that prioritize user privacy, openness, and platform independence.</p>
+        <div class="row">
+            {% set section = get_section(path="products/_index.md") %}
+            {% for page in section.pages %}
+            <div class="col-md" {% if loop.index % 2==0 %}{% endif %}>
+                {% if page.extra.feature_photo != "" %}
+                <div class="row">
+                    <div class="product-logo box">
+                        <a href="{{ page.extra.product_site_url }}">
+                            <img src="{{ get_url(path=page.extra.feature_photo) }}"
+                                alt="{{ page.extra.feature_photo_alt }}">
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-md small">
+                        {{ page.summary | safe }}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
     <section id="clients">
         <h2>Our Clients</h2>
         <div class="row">
