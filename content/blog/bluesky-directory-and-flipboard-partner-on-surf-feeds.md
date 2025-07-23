@@ -16,6 +16,6 @@ We've teamed up with [Flipboard](https://flipboard.com) to make custom feeds cre
 
 <!-- more -->
 
-Surf creates a personalized social experience tailored to your interests, not the "For You" algorithms of closed social platforms. Get the Surf beta at https://surf.social with code SURF+DIRECTORY, and then explore Surf feeds at [Bluesky Directory](https://blueskydirectory.com/feeds/all?q=surf.social).
+Surf creates a personalized social experience tailored to your interests, not the "For You" algorithms of closed social platforms. Get the Surf beta at [surf.social](https://surf.social) with code SURF+DIRECTORY, and then explore Surf feeds at [Bluesky Directory](https://blueskydirectory.com/feeds/all?q=surf.social).
 
 
