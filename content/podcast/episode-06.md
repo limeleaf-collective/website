@@ -20,7 +20,7 @@ duration = "00:47:00"
 type = "full"
 +++
 
-This month, we talk about the state of computer science instruction in higher education, and how it's changing. What even _is_ "computer science" these days? Do tech workers really need a degree in it? Should schools develop a new degree in application development that focuses on product and project management instead of coding and algorithms? Naturally, AI comes up in the conversation. We also cover some clever new robot slurs that have been making the rounds online. Don't be a clanker, give it a listen!
+This month, we talk about the state of computer science instruction in higher education, and how it's changing. What even _is_ "computer science" these days? Do tech workers really need a degree in it? Should schools develop new degrees in topics like application development instead of coding and algorithms? Naturally, AI comes up in the conversation. We also cover some clever new robot slurs that have been making the rounds online. Don't be a clanker, give it a listen!
 
 apply.coop, our privacy-first job board for values-driven organizations, is in production! Visit [apply.coop](https://apply.coop) and use promo code "solidarity" for free job postings!
 
