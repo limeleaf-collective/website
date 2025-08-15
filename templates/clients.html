@@ -31,13 +31,9 @@
       {% for page in section.pages %}
         <div class="col-sm">
           <div class="client-logo">
-            {% if page.extra.site_url %}
-              <a href="{{ page.extra.site_url }}">
-                <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
-              </a>
-            {% else %}
+            <a href="{{ page.permalink }}">
               <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
-            {% endif %}
+            </a>
           </div>
           <div class="client-blurb">{{ page.summary | safe }}</div>
         </div>

@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block meta_content %}
+  <title>{{ page.title}} - {{ config.title }}</title>
+  <meta property="og:title" content="{{ page.title }} — {{ config.title }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.net">
+  <meta property="twitter:url" content="https://limeleaf.coop">
+  <meta name="twitter:title" content="{{ page.title }} — {{ config.title }}">
+  <meta name="twitter:image" content="/images/logo/limeleaf-logo.jpg">
+  <meta property="og:url" content="https://limeleaf.coop" />
+  <meta property="og:image" content="/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% endif %}
+{% endblock meta_content %}
+
+{% block content %}
+<main class="container">
+  <p><a href="/clients/">All clients</a></p>
+  {# Case study four-column strip #}
+  <section class="case-grid">
+    <div class="case-col client-col">
+      {% set heading = page.extra.case_title | default(value=page.title) %}
+      {% if heading %}
+        <h3 class="case-col-title">{{ heading }}</h3>
+      {% endif %}
+
+      {% if page.extra.logo %}
+        <div class="client-logo">
+          {% if page.extra.site_url %}
+            <a href="{{ page.extra.site_url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+            </a>
+          {% else %}
+            <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if page.extra.client_subtitle %}
+        <p class="small">{{ page.extra.client_subtitle }}</p>
+      {% elif page.description %}
+        <p class="small">{{ page.description }}</p>
+      {% elif page.extra.client_note %}
+        <p class="small">{{ page.extra.client_note }}</p>
+      {% endif %}
+    </div>
+
+    <div class="case-col problem-col">
+      <div class="case-icon">
+        <img src="{{ get_url(path='images/clients/idea.svg') }}" alt="Problem icon" aria-hidden="true" />
+      </div>
+      <h3 class="case-col-title">Problem</h3>
+      {% if page.extra.problem %}
+        <p>{{ page.extra.problem }}</p>
+      {% else %}
+        <p>{{ page.summary | default(value=page.content) | safe }}</p>
+      {% endif %}
+    </div>
+
+    <div class="case-col solution-col">
+      <div class="case-icon">
+        <img src="{{ get_url(path='images/clients/solution.svg') }}" alt="Problem icon" aria-hidden="true" />
+      </div>
+      <h3 class="case-col-title">Solution</h3>
+      {% if page.extra.solution %}
+        <p>{{ page.extra.solution }}</p>
+      {% else %}
+        <p>{{ page.content | safe }}</p>
+      {% endif %}
+    </div>
+
+    <div class="case-col results-col">
+      <div class="case-icon">
+        <img src="{{ get_url(path='images/clients/results.svg') }}" alt="Problem icon" aria-hidden="true" />
+      </div>
+      <h3 class="case-col-title">Results</h3>
+      {% if page.extra.results_list %}
+        <ul>
+          {% for item in page.extra.results_list %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% elif page.extra.results %}
+        <p>{{ page.extra.results }}</p>
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% endblock content %}

@@ -5,7 +5,13 @@ weight = 10
 site_url = "https://worxprinting.coop"
 logo = "images/clients/worxprinting.png"
 logo_alt = "Worx Printing"
+case_title = "Case Study"
+client_name = "Worx Printing"
+client_subtitle = "Engagement summary coming soon."
+problem = "TBD"
+solution = "TBD"
+results = "TBD"
 +++
-TODO: Replace with a 1–2 sentence blurb about our work with Worx Printing.
+Engagement details coming soon.
 
 <!-- more -->

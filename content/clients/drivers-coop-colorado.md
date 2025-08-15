@@ -5,7 +5,13 @@ weight = 70
 site_url = "https://www.coloradodrivers.coop"
 logo = "images/partners/drivers-coop-colorado.svg"
 logo_alt = "Drivers Cooperative - Colorado"
+case_title = "Case Study"
+client_name = "Drivers Cooperative (Colorado)"
+client_subtitle = "Engagement summary coming soon."
+problem = "TBD"
+solution = "TBD"
+results = "TBD"
 +++
-TODO: Replace with a 1–2 sentence blurb about our work with the Drivers Cooperative (Colorado).
+Engagement details coming soon.
 
 <!-- more -->
