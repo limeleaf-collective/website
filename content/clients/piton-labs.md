@@ -1,6 +1,6 @@
 +++
 title = "Piton Labs"
-weight = 30
+weight = 45
 [extra]
 site_url = "https://pitonlabs.com"
 logo = "images/clients/piton-labs.png"

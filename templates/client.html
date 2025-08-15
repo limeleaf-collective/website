@@ -20,8 +20,33 @@
 
 {% block content %}
 <main class="container">
-  <p><a href="/clients/">All clients</a></p>
   {# Case study four-column strip #}
+  <h1>Client Case Study</h1>
+  {# Prev/Next navigation across clients, ordered by section sorting (weight) #}
+  {% set clients = get_section(path="clients/_index.md") %}
+  <nav class="pager" aria-label="Case study navigation">
+    {% for p in clients.pages %}
+      {% if p.permalink == page.permalink %}
+        {# Previous #}
+        {% set idx = loop.index0 %}
+        {% if idx > 0 %}
+          {% set prev_index = idx - 1 %}
+          {% set prev = clients.pages[prev_index] %}
+          <a class="prev" rel="prev" href="{{ prev.permalink }}">← {{ prev.extra.client_name | default(value=prev.client_name) }}</a>
+        {% else %}
+          <a class="prev all-clients" href="{{ clients.permalink }}">All Clients</a>
+        {% endif %}
+        {# Next #}
+        {% if idx + 1 < clients.pages | length %}
+          {% set next_index = idx + 1 %}
+          {% set next = clients.pages[next_index] %}
+          <a class="next" rel="next" href="{{ next.permalink }}">{{ next.extra.client_name | default(value=next.client_name) }} →</a>
+        {% else %}
+          <a class="next all-clients" href="{{ clients.permalink }}">All Clients</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
   <section class="case-grid">
     <div class="case-col client-col">
       {% set heading = page.extra.case_title | default(value=page.title) %}
@@ -42,11 +67,11 @@
       {% endif %}
 
       {% if page.extra.client_subtitle %}
-        <p class="small">{{ page.extra.client_subtitle }}</p>
+        <p class="small">{{ page.extra.client_subtitle | markdown | safe }}</p>
       {% elif page.description %}
-        <p class="small">{{ page.description }}</p>
+        <p class="small">{{ page.description | markdown | safe }}</p>
       {% elif page.extra.client_note %}
-        <p class="small">{{ page.extra.client_note }}</p>
+        <p class="small">{{ page.extra.client_note | markdown | safe }}</p>
       {% endif %}
     </div>
 
@@ -56,7 +81,7 @@
       </div>
       <h3 class="case-col-title">Problem</h3>
       {% if page.extra.problem %}
-        <p>{{ page.extra.problem }}</p>
+        <p>{{ page.extra.problem | markdown | safe }}</p>
       {% else %}
         <p>{{ page.summary | default(value=page.content) | safe }}</p>
       {% endif %}
@@ -68,7 +93,7 @@
       </div>
       <h3 class="case-col-title">Solution</h3>
       {% if page.extra.solution %}
-        <p>{{ page.extra.solution }}</p>
+        <p>{{ page.extra.solution | markdown | safe }}</p>
       {% else %}
         <p>{{ page.content | safe }}</p>
       {% endif %}
@@ -82,13 +107,39 @@
       {% if page.extra.results_list %}
         <ul>
           {% for item in page.extra.results_list %}
-            <li>{{ item }}</li>
+            <li>{{ item | markdown | safe }}</li>
           {% endfor %}
         </ul>
       {% elif page.extra.results %}
-        <p>{{ page.extra.results }}</p>
+        <p>{{ page.extra.results | markdown | safe }}</p>
       {% endif %}
     </div>
   </section>
+
+  {# Prev/Next navigation across clients, ordered by section sorting (weight) #}
+  {% set clients = get_section(path="clients/_index.md") %}
+  <nav class="pager" aria-label="Case study navigation">
+    {% for p in clients.pages %}
+      {% if p.permalink == page.permalink %}
+        {# Previous #}
+        {% set idx = loop.index0 %}
+        {% if idx > 0 %}
+          {% set prev_index = idx - 1 %}
+          {% set prev = clients.pages[prev_index] %}
+          <a class="prev" rel="prev" href="{{ prev.permalink }}">← {{ prev.extra.client_name | default(value=prev.client_name) }}</a>
+        {% else %}
+          <a class="prev all-clients" href="{{ clients.permalink }}">All Clients</a>
+        {% endif %}
+        {# Next #}
+        {% if idx + 1 < clients.pages | length %}
+          {% set next_index = idx + 1 %}
+          {% set next = clients.pages[next_index] %}
+          <a class="next" rel="next" href="{{ next.permalink }}">{{ next.extra.client_name | default(value=next.client_name) }} →</a>
+        {% else %}
+          <a class="next all-clients" href="{{ clients.permalink }}">All Clients</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
 </main>
 {% endblock content %}

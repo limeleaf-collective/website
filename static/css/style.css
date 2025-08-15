@@ -150,6 +150,18 @@ nav {
 	justify-content: flex-end;
   }
 
+/* Case study pager: keep Previous aligned left */
+.pager {
+  display: flex; /* explicit to override element-wide nav rules */
+  justify-content: flex-start; /* left-align contents */
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.25rem;
+}
+/* Push Next to the right edge */
+.pager .next {
+  margin-left: auto;
+}
+
 main {
   margin-top: 1.75rem;
 }
@@ -220,7 +232,7 @@ footer p {
 .client-logo img {
   max-width: 100%;
   max-height: 100%;
-  width: 180px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
@@ -239,7 +251,7 @@ footer p {
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.5;
-    margin: 0 auto 1.25rem; /* reduce space above blurb */
+    margin: 0 auto 1rem; /* reduce space above blurb */
     max-width: 30rem;
   }
 
@@ -248,7 +260,7 @@ footer p {
 .clients-grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 2rem 3rem; /* more horizontal breathing room */
+  gap: 2rem 2rem; /* more horizontal breathing room */
   align-items: stretch; /* equal height per row */
   justify-items: center; /* center cards within their tracks */
   max-width: 1200px; /* center whole grid so last row appears centered */
@@ -456,6 +468,10 @@ header #logo, header nav {
   nav {
     justify-content: center;
     width: 100%;
+  }
+  /* Keep client pager left-aligned on mobile */
+  .pager {
+    justify-content: flex-start;
   }
   
   #logo {

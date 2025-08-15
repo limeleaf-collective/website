@@ -1,6 +1,6 @@
 +++
 title = "Fandemic"
-weight = 60
+weight = 70
 [extra]
 site_url = "https://www.fandemicapp.com"
 logo = "images/clients/fandemic.png"

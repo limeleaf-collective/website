@@ -35,7 +35,7 @@
               <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
             </a>
           </div>
-          <div class="client-blurb">{{ page.summary | safe }}</div>
+          <div class="client-blurb">{{ page.extra.client_subtitle | markdown | safe }}</div>
         </div>
       {% endfor %}
     </div>
