@@ -51,6 +51,31 @@
     <a href="https://calendly.com/limeleaf/30min">schedule a call</a> for a free
     project assessment.</p>
   
+  {% elif current_path == "/clients/" %}
+  <h1>{{section.title}}</h1>
+  {% if section.description %}
+  <p><i>{{ section.description }}</i></p>
+  {% endif %}
+  <hr class="header" />
+  <section id="clients">
+    <div class="clients-grid">
+      {% for page in section.pages %}
+      <div class="col-sm">
+        <div class="client-logo">
+          {% if page.extra.site_url %}
+            <a href="{{ page.extra.site_url }}">
+              <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+            </a>
+          {% else %}
+            <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+          {% endif %}
+        </div>
+        <div class="client-blurb">{{ page.summary | safe }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  
   {% elif current_path == "/products/" %}
   <h1>{{section.title}}</h1>
   <p><i>{{ section.description }}</i></p>

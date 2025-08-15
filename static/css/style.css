@@ -235,6 +235,59 @@ footer p {
     display: block;
   }
 
+  .client-blurb {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 auto 1.25rem; /* reduce space above blurb */
+    max-width: 30rem;
+  }
+
+
+/* Clients grid: responsive 1/2/3 columns with equal-height cards */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem 3rem; /* more horizontal breathing room */
+  align-items: stretch; /* equal height per row */
+  justify-items: center; /* center cards within their tracks */
+  max-width: 1200px; /* center whole grid so last row appears centered */
+  margin: 0 auto;
+}
+
+.clients-grid > .col-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clients-grid .client-logo {
+  min-height: 120px; /* normalize logo area heights (base/mobile) */
+  margin-bottom: 0.35rem; /* slightly tighter gap to blurb */
+}
+
+@media (min-width: 640px) {
+  .clients-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .clients-grid .client-logo {
+    min-height: 130px; /* tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .clients-grid .client-logo {
+    min-height: 150px; /* desktop */
+  }
+  .clients-grid .client-blurb {
+    font-size: 0.9rem; /* slightly smaller text on desktop */
+  }
+}
+
 
 #partners h2, #clients h2, #products h2  {
   text-align: left;

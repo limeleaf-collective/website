@@ -51,13 +51,24 @@
               </i></p>
             {% endif %}
             <div class="row">
-                {% if page.extra.feature_photo != "" %}
+                {% if page.extra is defined and page.extra.feature_photo is defined and page.extra.feature_photo %}
                   <div class="col-xs">
-                    <p><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt }}" /></p>
+                    <p><img src="{{ get_url(path=page.extra.feature_photo) }}" alt="{{ page.extra.feature_photo_alt | default(value=page.title) }}" /></p>
                   </div>
                   <div class="col-xs">
                 {% else %}
-                    <div class="col-xs">
+                  <div class="col-xs">
+                {% endif %}
+                {% if page.extra is defined and page.extra.logo is defined and page.extra.logo %}
+                <div class="client-logo">
+                  {% if page.extra.site_url %}
+                    <a href="{{ page.extra.site_url }}">
+                      <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+                    </a>
+                  {% else %}
+                    <img src="{{ get_url(path=page.extra.logo) }}" alt="{{ page.extra.logo_alt | default(value=page.title) }}">
+                  {% endif %}
+                </div>
                 {% endif %}
                 <p>{{ page.content | safe }}</p>
                 </div>
