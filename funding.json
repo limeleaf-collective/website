@@ -1,0 +1,137 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "organisation",
+        "role": "owner",
+        "name": "Limeleaf Worker Collective, LLC",
+        "email": "info@limeleaf.coop",
+        "description": "Limeleaf is dedicated to the development and maintenance of privacy-focused open-source software written in Rust and Go. Our mission is to draw on our decades of experience building software to help others. We are proud to be a worker-owned cooperative, and strive to embody the [Seven Cooperative Principles](https://uwcc.wisc.edu/about-co-ops/cooperative-principles/) in ourt work. We are based in Schuylerville, New York, USA. For a full list of our open-source contributions, see https://limeleaf.coop/about/",
+        "webpageUrl": {
+            "url": "https://limeleaf.coop"
+        }
+    },
+    "projects": [
+        {
+            "guid": "limecast-podcasting-platform",
+            "name": "Limecast",
+            "description": "Limecast is a distributed, privacy-first podcast platform and CMS written in Rust. Using a simple web UI, Limecast handles content management, hosting of podcast audio and artwork assets, RSS and Atom feed creation, and automatically creates a visually appealing website and social sharing links for each podcast in the system. Limecast is deployed as a single binary and uses minimal system resources to operate.",
+            "webpageUrl": {
+                "url": "https://limecast.net",
+                "wellKnown": "https://limecast.net/.well-known/funding-manifest-urls"
+            },
+            "repositoryUrl": {
+                "url": "https://codeberg.org/limeleaf/limecast",
+                "wellKnown": "https://codeberg.org/limeleaf/limecast/src/branch/main/static/.well-known/funding-manifest-urls"
+            },
+            "licenses": [
+                "spdx:MPL-2.0"
+            ],
+            "tags": [
+                "audio",
+                "publishing",
+                "podcasting",
+                "privacy",
+                "communication",
+                "rust"
+            ]
+        },
+        {
+            "guid": "apply-coop-job-board",
+            "name": "apply.coop",
+            "description": "apply.coop is a job board web app written in Go. Any organization can use aply.coop to advertise open jobs, but its primary audience is cooperatively managed organizations, nonprofits, and public benefit corporations (B Corps). It supports posting and editing jobs as well as RSS, Atom and JSON feed creation for workplaces, tags, and searches. It also supports multiple 'workplaces', so an organization can use it to create a profile and job list for each or its affiliated organizations (for example, a labor union whose members work at multiple companies. apply.coop is deployed as a single binary and uses minimal system resources to operate.",
+            "webpageUrl": {
+                "url": "https://apply.coop",
+                "wellKnown": "https://apply.coop/.well-known/funding-manifest-urls"
+            },
+            "repositoryUrl": {
+                "url": "https://codeberg.org/limeleaf/apply-coop",
+                "wellKnown": "https://codeberg.org/limeleaf/apply-coop/src/branch/main/static/.well-known/funding-manifest-urls"
+            },
+            "licenses": [
+                "spdx:MPL-2.0"
+            ],
+            "tags": [
+                "job-board",
+                "employment",
+                "cooperatives",
+                "privacy",
+                "go"
+            ]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "open-collective-limeleaf",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/limeleaf",
+                "description": "Limeleaf on Open Collective"
+            },
+            {
+                "guid": "limeleaf-bank",
+                "type": "bank",
+                "address": "",
+                "description": "We accept direct bank transfers. Please e-mail us for account details."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "hosting-monthly",
+                "status": "active",
+                "name": "Hosting support",
+                "description": "This will cover the monthly server hosting costs for the projects.",
+                "amount": 150,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "open-collective-limeleaf",
+                    "limeleaf-bank"
+                ]
+            },
+            {
+                "guid": "developer-time",
+                "status": "active",
+                "name": "Developer compensation",
+                "description": "This will cover the cost of one developer working part-time on the projects.",
+                "amount": 1000,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": [
+                    "open-collective-limeleaf",
+                    "limeleaf-bank"
+                ]
+            },
+            {
+                "guid": "angel-plan",
+                "status": "active",
+                "name": "Goodwill plan",
+                "description": "Pay anything you want to show your goodwill for the projects.",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": [
+                    "open-collective-limeleaf",
+                    "limeleaf-bank"
+                ]
+            }
+        ],
+        "history": [
+            {
+                "year": 2024,
+                "income": 0,
+                "expenses": 2000,
+                "taxes": 0,
+                "currency": "USD",
+                "description": "Initial development with one part-time engineer"
+            },
+            {
+                "year": 2025,
+                "income": 0,
+                "expenses": 24000,
+                "taxes": 2400,
+                "currency": "USD",
+                "description": "Development with one part-time product manager and one full-time engineer."
+            }
+        ]
+    }
+}
