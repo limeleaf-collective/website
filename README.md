@@ -1,4 +1,4 @@
-# limeleaf.net
+# limeleaf.coop
 
 The website built with [Zola][1].
 
