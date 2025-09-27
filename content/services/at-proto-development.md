@@ -1,6 +1,6 @@
 +++
 title = "AT Protocol Development"
-description = "Build decentralized social applications on AT Protocol with expert guidance from developers and product leaders who understand the ecosystem."
+description = "Build social applications on AT Protocol with expert guidance from developers and product leaders who understand the ecosystem."
 weight = 3
 
 [extra]
@@ -8,7 +8,7 @@ feature_photo = ""
 feature_photo_alt = ""
 +++
 
-The AT Protocol (also called ATProto, the technology that is best known for powering the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, identity systems, and federation concepts. We can help teams navigate ATProto's lexicon system, Personal Data Servers (PDS), and the complexities of building interoperable social applications.
+The [AT Protocol](https://atproto.com) (also called ATProto, the technology that is best known for powering the [Bluesky](https://bsky.app) social network) represents the future of decentralized social networking, but building on this platform requires deep understanding of its unique architecture, data models, identity systems, and federation concepts. We can help teams navigate ATProto's lexicon system, DID implementation, Personal Data Servers (PDS), OAuth profile, and the complexities of building interoperable social applications.
 
 <!-- more -->
 
@@ -37,16 +37,18 @@ Here's how Limeleaf can provide strategic guidance for your ATProto initiatives:
 
 We offer flexible engagement models tailored to your ATProto development needs.
 
-Example project: Six-week strategic consulting engagement helping a media company architect a custom Bluesky client.
+Example project: Twelve-week engagement to design and deploy a multi-tenant PDS (tenant isolation, sharding strategy, backup/restore, and rollout plan).
 
-- Allocation: 60 hours
-- Investment: $10,500
-- Deliverables:
-  - ATProto application architecture review and recommendations
-  - Technical specification validation and optimization guidance
-  - Strategic consultation on federation and interoperability approaches
-  - Code review sessions focusing on protocol compliance and best practices
-  - Weekly technical leadership sessions with development team
-  - Architectural guidance via internal channels during US Eastern business hours
+- Product requirements review and validation
+- Architecture and isolation brief (tenant model, quotas, noisy-neighbor controls)
+- Identity and federation plan (DID handling, rotation, tenant-scoped allow/deny lists)
+- Storage topology (per-tenant buckets/prefixes, encryption, retention, backup/restore drills)
+- Compute and deployment automation (IaC, tenant config, blue/green or canary rollouts)
+- Traffic management and scale (per-tenant rate limits, concurrency, capacity thresholds)
+- Security and compliance (RBAC, audit logging, data boundaries, deletion requests)
+- Observability (metrics by tenant, tracing with tenant tags, alerts and runbooks)
+- Operations runbook (failure modes, isolation/throttle/migrate procedures)
+- Testing and validation (isolation tests, uneven-load scenarios, DR exercise)
+- Documentation and handoff (tenant onboarding guide, migration playbook)
 
 Ready to build the future of social networking? [Contact us](/contact/ "Contact us") for a free ATProto project consultation.
