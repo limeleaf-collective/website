@@ -22,7 +22,7 @@ type = "full"
 
 In this episode, we discuss AT Protocol, a technology that underpins [Bluesky](https://bsky.app) and many believe is the future of social media. ATProto pioneer Boris Mann [@bmann.ca](https://bsky.app/profile/bmann.ca) educates us about AT Protocol, where it's used, why so many people are excited about it, and even how it's pronounced.
 
-**Breaking news**: In the episode, we discuss software patents. Today, Bluesky published a [patent pledge](https://bsky.social/about/blog/10-01-2025-patent-pledge) vowing to "not enforce any of the patents on any software invention Bluesky Social owns now or in the future." The pledge includes IP related to ATProto. Progress!
+**Breaking news**: In the episode, we discuss software patents as they relate to ATProto standardization. Today, Bluesky published a [patent pledge](https://bsky.social/about/blog/10-01-2025-patent-pledge) vowing to "not enforce any of the patents on any software invention Bluesky Social owns now or in the future." The pledge includes IP related to ATProto. Progress!
 
 <!-- more -->
 
