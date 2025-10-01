@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light" />
+
+    
+  <title>Safer Binary Decoding in Go - Limeleaf Worker Collective</title>
+  <meta property="og:title" content="Safer Binary Decoding in Go — Limeleaf Worker Collective" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.coop">
+  <meta property="twitter:url" content="https://limeleaf.coop">
+  <meta name="twitter:title" content="Safer Binary Decoding in Go — Limeleaf Worker Collective">
+  <meta name="twitter:image" content="/images/logo/limeleaf-logo.jpg">
+  <meta property="og:url" content="https://limeleaf.coop" />
+  <meta property="og:image" content="/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  
+
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+    <link rel="icon" type="image/png" href="https://limeleaf.coop/images/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://limeleaf.coop/css/style.css" />
+    <script data-goatcounter="https://limeleaf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/limeleaf/30min', text: '🗓️ Schedule a free project assessment', color: '#1C7258', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
+  </head>
+  <body>
+    <div id="full-footer">
+    <header class="home">
+      <div class="container">
+        <section class="row">
+          <div id="logo" class="col-sm-4 col-xs-10">
+            <a href="https://limeleaf.coop/" title="Limeleaf logo"><img src="https://limeleaf.coop/images/logo/limeleaf-logo-L.svg" alt="Limeleaf logo"/></a>
+          </div>
+          <nav class="col-sm-8">
+            <a href="https://limeleaf.coop/services/" class="link" title="Services">Services</a>
+            <a href="https://limeleaf.coop/products/" class="link" title="Products">Products</a>
+            <a href="https://limeleaf.coop/blog/" class="link" title="Blog">Blog</a>
+            <a href="https://limeleaf.coop/podcast/" class="link" title="Podcast">Podcast</a>
+            <a href="https://limeleaf.coop/about/" class="link" title="About Limeleaf">About</a>
+            <a href="https://limeleaf.coop/contact/" class="link" title="Contact Us">Contact</a>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    
+<main class="container">
+  <section class="row">
+    <div class="col-xs">
+      <article>
+      <h1>Safer Binary Decoding in Go</h1>
+      <p><i></i></p>
+      <hr class="header" />
+      
+            
+            <p class="small"><i>
+              Posted on <time>May 30, 2024</time> 
+              
+                in
+                
+                  <a href="https://limeleaf.coop/tags/engineering/">Engineering</a>
+                
+              
+              
+                by
+                    <a href="/members/blain-smith">Blain Smith</a>
+                
+              </i></p>
+            
+            <div class="row">
+                
+                    <div class="col-xs">
+                
+                <p><p>Go is a popular language choice for building web services. Typically, when
+building those web services, we end up encoding/decoding JSON as the
+data format. The <a href="https://pkg.go.dev/encoding/json"><code>encoding/json</code></a> package provides a safe way to turn
+JSON payloads into Go structs, and vice versa.</p>
+<p>However, if we need to
+handle raw <code>[]byte</code> that follow a binary encoding format that
+is not self-describing, we need to do a bit more work and
+implement the <a href="https://pkg.go.dev/encoding#BinaryMarshaler"><code>encoding.BinaryMarshaler</code></a> and <a href="https://pkg.go.dev/encoding#BinaryUnmarshaler"><code>encoding.BinaryUnmarshaler</code></a>
+directly. Since we're dealing with <code>[]byte</code>, we need to respect slice
+bounds to avoid triggering a <code>panic()</code> and crashing our service.</p>
+<p>Let's look at the two ways we can decode data into Go structs and compare how
+one way will be safer than the other while yielding the same result. As an
+added bonus, we'll end up with easier to understand code.</p>
+<span id="continue-reading"></span><h2 id="icmp-packet-format">ICMP Packet Format</h2>
+<p>To make this a bit more fun and challenging, lets decode a packet format
+we all tend to take for granted, <a href="https://www.rfc-editor.org/rfc/rfc792">Internet Control Message Protocol or
+ICMP</a>. If you have every used <a href="https://www.man7.org/linux/man-pages/man8/ping.8.html"><code>ping</code></a>, then you've sent ICMP packets in
+order to test and measure a remote host.</p>
+<p>Reading the ICMP specification, we see that the packet format is
+as follows for Echo and Echo Reply messages only, since they are more
+interesting than some of the other ICMP payloads with fewer fields.</p>
+<ul>
+<li>Type (1 byte)</li>
+<li>Code (1 byte)</li>
+<li>Checksum (2 bytes)</li>
+<li>ID (2 bytes)</li>
+<li>Sequence Number (2 bytes)</li>
+</ul>
+<p>Another way to read these payloads is to look at the protocol layout
+in ASCII, like you see in the ICMP RFC:</p>
+<pre style="background-color:#191919;color:#ffffff;"><code><span> 0                   1                   2                   3
+</span><span> 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|     Type      |     Code      |          Checksum             |
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|           Identifier          |        Sequence Number        |
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|     Data ...
+</span><span>+-+-+-+-+-
+</span></code></pre>
+<p>In this view, we can visualize the bounds of the fields by number of
+bits. For example, we see that <code>Code</code> occupied bits 8 to 15 which is 8
+total bits or 1 byte.</p>
+<h2 id="defining-the-struct-and-decoding-function">Defining the Struct and Decoding Function</h2>
+<p>Now that we know the layout of the binary data, we can define our Go
+struct. Notice we are defining explicit sizes to our fields and not
+using regular <code>int</code> types. We explicitly want <code>uint8</code> or <code>uint16</code> types
+for our fields so we can properly decode it in binary.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">type </span><span style="color:#cccccc;">Echo </span><span style="color:#80d500;">struct </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  Type        </span><span style="color:#8aa6c1;">uint8
+</span><span style="color:#cccccc;">  Code        </span><span style="color:#8aa6c1;">uint8
+</span><span style="color:#cccccc;">  Checksum    </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  Identifier  </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  SequenceNum </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>Next, we can set up the stub decoding function. We define the function
+with this name and signature to implement the <code>encoding.UnmarshalBinary</code>
+interface to make this flexible throughout the Go standard library.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">e </span><span>*</span><span style="color:#80d500;">Echo</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">buf </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Read through buf and assign to Echo fields
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<h2 id="decoding-by-subslicing-the-byte">Decoding by Subslicing the <code>[]byte</code></h2>
+<p>First, we are going to perform the decoding by subslicing the <code>[]byte</code>
+into our required <code>uint8</code> and <code>uint16</code> fields.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">e </span><span>*</span><span style="color:#80d500;">Echo</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">data </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#8aa6c1;">len</span><span style="color:#cccccc;">(data) </span><span>&lt; </span><span style="color:#eddd5a;">8 </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">errors.New(</span><span style="color:#ffd700;">&quot;invalid packet size&quot;</span><span style="color:#cccccc;">)
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  e.Type </span><span>= </span><span style="color:#cccccc;">data[</span><span style="color:#eddd5a;">0</span><span style="color:#cccccc;">]
+</span><span style="color:#cccccc;">  e.Code </span><span>= </span><span style="color:#cccccc;">data[</span><span style="color:#eddd5a;">1</span><span style="color:#cccccc;">]
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  e.Checksum </span><span>= </span><span style="color:#cccccc;">binary.BigEndian.Uint16(data[</span><span style="color:#eddd5a;">2</span><span style="color:#cccccc;">:</span><span style="color:#eddd5a;">4</span><span style="color:#cccccc;">])
+</span><span style="color:#cccccc;">  e.Identifier </span><span>= </span><span style="color:#cccccc;">binary.BigEndian.Uint16(data[</span><span style="color:#eddd5a;">4</span><span style="color:#cccccc;">:</span><span style="color:#eddd5a;">6</span><span style="color:#cccccc;">])
+</span><span style="color:#cccccc;">  e.SequenceNum </span><span>= </span><span style="color:#cccccc;">binary.BigEndian.Uint16(data[</span><span style="color:#eddd5a;">6</span><span style="color:#cccccc;">:</span><span style="color:#eddd5a;">8</span><span style="color:#cccccc;">])
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>We can assign <code>Type</code> and <code>Code</code> fields directly since a <code>byte</code> is just
+a <code>uint8</code>. You can see this in the <a href="https://pkg.go.dev/builtin#byte">type definition for <code>byte</code></a>. However,
+since the rest of our fields are <code>uint16</code>, we need to
+take 2 <code>byte</code>s and convert both of them at the same time to a single
+<code>uint16</code> value using <a href="https://en.wikipedia.org/wiki/Endianness">big endian</a>.</p>
+<p>Looking back at our protocol format, we see that <code>Checksum</code> occupies bits
+16 to 32 which is a total of 16 bits or 2 bytes. That is why we are
+taking bytes 2 up to, but not including 4 (2 and 3 only). We follow the
+same pattern for the rest of the <code>uint16</code> fields.</p>
+<p>You might be thinking this is a perfectly good way to decode a byte
+slice into a struct since we're also checking the length of the incoming
+slice to ensure we won't slice out of bounds and cause a <code>panic</code>. While
+you would be correct, it is a bit awkward to reason about the slicing
+semantics as you're scanning the code. The <code>buf[2:4]</code> isn't very clear
+if your goal is to scan the code and understand it quickly. What if this
+payload had 5-10 times as many fields? Slicing could lead to incorrect
+field bounds. Fortunately, there is a clearer and safer way to perform
+the same decoding.</p>
+<h2 id="deocoding-with-bytes-buffer-and-binary-read">Deocoding with <code>bytes.Buffer</code> and <code>binary.Read</code></h2>
+<p>For the clearer and safer method, we use <a href="https://pkg.go.dev/bytes#Buffer"><code>bytes.Buffer</code></a> and
+<a href="https://pkg.go.dev/encoding/binary#Read"><code>binary.Read</code></a>. Converting our <code>BinaryUnmarshal</code> function now looks
+like this.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">e </span><span>*</span><span style="color:#80d500;">Echo</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">data </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  buf </span><span>:= </span><span style="color:#cccccc;">bytes.NewBuffer(data)
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e.Type); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e.Code); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e.Checksum); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e.Identifier); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e.SequenceNum); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>Now we have a much clearer and safer decoding function that reads from
+the <code>bytes.Buffer</code> that wraps the <code>data []byte</code>, and since our struct
+fields contain the correct sizes (<code>uint8</code> and <code>uint16</code>), we no longer
+have to keep track of the subslicing indicies. Even though we have much
+more of the dreaded <code>if err != nil</code> Go error checking, we end up with
+<code>panic</code> free code since <code>binary.Read</code> will safely return an <code>io.EOF</code>
+should something bad happen. We'll end up catching that error and
+returning it to the caller.</p>
+<h2 id="bonus-decoding-the-entire-struct-at-once">Bonus: Decoding the Entire <code>struct</code> at Once</h2>
+<p>Since <code>Echo</code>'s fields are all fixed sizes, we can pass the entire thing
+into <code>binary.Read</code> and get the same result as above, but with a single
+call.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">e </span><span>*</span><span style="color:#80d500;">Echo</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">data </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  buf </span><span>:= </span><span style="color:#cccccc;">bytes.NewBuffer(data)
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">e)
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>This method works great for structs that have all fixed sized fields and
+the binary data on the wire matches our struct, but that will not
+always be the case. Sometimes we'll have to account for n-length
+strings and n-repeated fields.</p>
+<h2 id="variable-length-strings">Variable Length Strings</h2>
+<p>For these examples, let's assume we have a new message that is encoded as
+binary.</p>
+<pre style="background-color:#191919;color:#ffffff;"><code><span> 0                   1                   2                   3
+</span><span> 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|   Identifier  |  HostnameLen  |          Hostname ...
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+</span></code></pre>
+<p>Since we have a variable length string <code>Hostname</code>, the length is
+first encoded before the string data itself to tell us how many bytes
+we should read that represent the hostname.</p>
+<p>Knowing this, we can now set up our type to store the relevant fields
+like we did with <code>Echo</code>.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">type </span><span style="color:#cccccc;">Message </span><span style="color:#80d500;">struct </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  Identifier </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  Hostname   </span><span style="color:#8aa6c1;">string
+</span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">m </span><span>*</span><span style="color:#80d500;">Message</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">data </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  buf </span><span>:= </span><span style="color:#cccccc;">bytes.NewBuffer(data)
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Decode Identifer the same we did for others above in Echo
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">m.Identifier); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Read the HostnameLen into a temporary variable
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">var </span><span style="color:#cccccc;">hostnameLen </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">hostnameLen); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Make a slice with sizing it with the value of the temporary variable
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// from above and read the next n bytes into it. Finally, we convert
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// that []byte into string and set the field on the Message.
+</span><span style="color:#cccccc;">  hostname </span><span>:= </span><span style="color:#8aa6c1;">make</span><span style="color:#cccccc;">([]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">, hostnameLen)
+</span><span style="color:#cccccc;">  n, err </span><span>:= </span><span style="color:#cccccc;">buf.Read(hostname)
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  	</span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">n </span><span>!= </span><span style="color:#8aa6c1;">int</span><span style="color:#cccccc;">(hostnameLen) {
+</span><span style="color:#cccccc;">  	</span><span style="color:#80d500;">return </span><span style="color:#cccccc;">io.ErrUnexpectedEOF
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">  m.Hostname </span><span>= </span><span style="color:#8aa6c1;">string</span><span style="color:#cccccc;">(hostname)
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>This length-prefixed string format is very common for binary encodings.
+The only thing we need to know for sure is what type the length is
+encoded as so we know what kind of temporary variable to use.</p>
+<h2 id="repeated-fields">Repeated Fields</h2>
+<p>Repeated fields can work in a similar fashion by size-prefixing the
+number of times the field occurs in the data.</p>
+<p>For these examples, lets assume we have a new message that is encoded as
+binary.</p>
+<pre style="background-color:#191919;color:#ffffff;"><code><span> 0                   1                   2                   3
+</span><span> 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|   Identifier  |    NumPorts   |      Port0      |    Port1    |
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</span><span>|      Port2    |      Port3    |      PortN ...
+</span><span>+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+</span></code></pre>
+<p>Now we can decode this data with the following strategy.</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">type </span><span style="color:#cccccc;">Message </span><span style="color:#80d500;">struct </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  Identifier </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  Ports      []</span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">m </span><span>*</span><span style="color:#80d500;">Message</span><span style="color:#cccccc;">) </span><span>UnmarshalBinary</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">data </span><span style="color:#cccccc;">[]</span><span style="color:#8aa6c1;">byte</span><span style="color:#cccccc;">) </span><span style="color:#8aa6c1;">error </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  buf </span><span>:= </span><span style="color:#cccccc;">bytes.NewBuffer(data)
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">m.Identifier); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Read the HostnameLen into a temporary variable
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">var </span><span style="color:#cccccc;">numPorts </span><span style="color:#8aa6c1;">uint16
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">numPorts); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Make a slice with sizing it with the value of the temporary variable
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// from above and read the next n fields into it.
+</span><span style="color:#cccccc;">  m.Ports </span><span>= </span><span style="color:#8aa6c1;">make</span><span style="color:#cccccc;">([]</span><span style="color:#8aa6c1;">uint16</span><span style="color:#cccccc;">, numPorts)
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">for </span><span style="color:#cccccc;">n </span><span>:= range </span><span style="color:#cccccc;">numPorts {
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>:= </span><span style="color:#cccccc;">binary.Read(buf, binary.BigEndian, </span><span>&amp;</span><span style="color:#cccccc;">m.Ports[n]); err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">      </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">err
+</span><span style="color:#cccccc;">    }
+</span><span style="color:#cccccc;">  }
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>Since we're still using <code>binary.Read</code> and managing any returned <code>error</code>,
+we can safely handle situations where the data we're decoding indicates
+there should be 5 ports, but only provides 2. We'll catch the <code>io.EOF</code>
+error and return accordingly instead of needing to handle subslicing
+and potential <code>panic</code>s being thrown.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>We've seen that using <a href="https://pkg.go.dev/bytes#Buffer"><code>bytes.Buffer</code></a> and <a href="https://pkg.go.dev/encoding/binary#Read"><code>binary.Read</code></a> leads
+to safer reading of <code>[]byte</code> and clearer code for other
+engineers on your team who might read it later.</p>
+<p>So, the next time you need to decode binary data and have a specification
+to follow, try your hand at these techniques to make your code safe,
+correct, readable, and composable.</p>
+<p>The <a href="https://github.com/limeleaf-collective/website/tree/main/code/safer-binary-decoding">complete source code</a> is avaialable along with supporting tests.</p>
+</p>
+                </div>
+              </div>
+
+      </article>
+    </div>
+</main>
+
+
+
+    <footer>
+      <div class="container">
+          <div class="col-lg-9">
+            <p>We would love to chat about your project and how we can help!</p>
+            <p>
+              <a href="https://limeleaf.coop/contact/">Contact us</a> or find us on
+              <a href="https://bsky.app/profile/limeleaf.coop" alt="Bluesky" title="Bluesky">Bluesky</a>,
+              <a href="https://codeberg.org/limeleaf" alt="Gitea" title="Codeberg">Codeberg</a>,
+              <a href="https://social.coop/@limeleaf" alt="Mastodon" title="Mastodon">Mastodon</a>,
+              <a href="https://opencollective.com/limeleaf" alt="Open Collective" title="Open Collective">Open Collective</a>, 
+              <a href="https://www.linkedin.com/company/limeleaf-llc" alt="LinkedIn" title="LinkedIn">LinkedIn</a>, and
+              <a href="https://github.com/limeleaf-collective" alt="GitHub" title="GitHub">GitHub</a>.
+            </p>
+            <p>Copyright 2025 by Limeleaf Worker Collective, LLC</p>
+          </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
