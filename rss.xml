@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Limeleaf Worker Collective</title>
+      <description>We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages.</description><link>https://limeleaf.coop</link>
+      <generator>Zola</generator>
+      <language>en</language>
+      <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+      <copyright>Copyright 2025 Limeleaf Worker Collective, LLC</copyright><item>
+          <title>Episode 7: Into the ATmosphere</title>
+          <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-07/</link>
+          <guid>https://limeleaf.coop/podcast/episode-07/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-07/">&lt;p&gt;In this episode, we discuss AT Protocol, a technology that underpins &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&quot;&gt;Bluesky&lt;&#x2F;a&gt; and many believe is the future of social media. ATProto pioneer Boris Mann &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;bmann.ca&quot;&gt;@bmann.ca&lt;&#x2F;a&gt; educates us about AT Protocol, where it&#x27;s used, why so many people are excited about it, and even how it&#x27;s pronounced.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Breaking news&lt;&#x2F;strong&gt;: In the episode, we discuss software patents as they relate to ATProto standardization. Today, Bluesky published a &lt;a href=&quot;https:&#x2F;&#x2F;bsky.social&#x2F;about&#x2F;blog&#x2F;10-01-2025-patent-pledge&quot;&gt;patent pledge&lt;&#x2F;a&gt; vowing to &quot;not enforce any of the patents on any software invention Bluesky Social owns now or in the future.&quot; The pledge includes IP related to ATProto. Progress!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Protocols for Publishers: Building an Open Social Web with AT Proto</title>
+          <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/limeleaf-at-protocols-for-publishers-event/</link>
+          <guid>https://limeleaf.coop/blog/limeleaf-at-protocols-for-publishers-event/</guid>
+          <description xml:base="https://limeleaf.coop/blog/limeleaf-at-protocols-for-publishers-event/">&lt;p&gt;Last Wednesday evening, I attended the &lt;a href=&quot;https:&#x2F;&#x2F;pfp.unternet.co&quot;&gt;​Protocols for Publishers (PfP) Showcase​&lt;&#x2F;a&gt; in New York City. The event brought together publishers, developers, and researchers to explore the future of social content and publishing as AI devours the web, and how adopting open distributed technologies like &lt;a href=&quot;https:&#x2F;&#x2F;atproto.com&quot;&gt;AT Protocol&lt;&#x2F;a&gt; (a.k.a., &quot;AT Proto&quot;) can help prevent creators and publishers from getting squeezed out by the big tech corporations.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 6: Computer Science in Higher Education</title>
+          <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-06/</link>
+          <guid>https://limeleaf.coop/podcast/episode-06/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-06/">&lt;p&gt;This month, we talk about the state of computer science instruction in higher education, and how it&#x27;s changing. What even &lt;em&gt;is&lt;&#x2F;em&gt; &quot;computer science&quot; these days? Do tech workers really need a degree in it? Should schools develop new degrees in topics like application development instead of coding and algorithms? Naturally, AI comes up in the conversation. We also cover some clever new robot slurs that have been making the rounds online. Don&#x27;t be a clanker, give it a listen!&lt;&#x2F;p&gt;
+&lt;p&gt;apply.coop, our privacy-first job board for values-driven organizations, is in production! Visit &lt;a href=&quot;https:&#x2F;&#x2F;apply.coop&quot;&gt;apply.coop&lt;&#x2F;a&gt; and use promo code &quot;solidarity&quot; for free job postings!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Bluesky Directory and Flipboard Partner on Custom Feeds in Surf Social Browser</title>
+          <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/bluesky-directory-and-flipboard-partner-on-surf-feeds/</link>
+          <guid>https://limeleaf.coop/blog/bluesky-directory-and-flipboard-partner-on-surf-feeds/</guid>
+          <description xml:base="https://limeleaf.coop/blog/bluesky-directory-and-flipboard-partner-on-surf-feeds/">&lt;p&gt;We&#x27;ve teamed up with &lt;a href=&quot;https:&#x2F;&#x2F;flipboard.com&quot;&gt;Flipboard&lt;&#x2F;a&gt; to make custom feeds created in &lt;a href=&quot;https:&#x2F;&#x2F;surf.social&quot;&gt;Surf social browser&lt;&#x2F;a&gt; discoverable in &lt;a href=&quot;https:&#x2F;&#x2F;blueskydirectory.com&quot;&gt;Bluesky Directory&lt;&#x2F;a&gt;! Read the full announcement on the &lt;a href=&quot;https:&#x2F;&#x2F;about.flipboard.com&#x2F;press&#x2F;now-discover-surf-custom-feeds-on-bluesky-directory&#x2F;&quot;&gt;Flipboard blog&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>🚀 apply.coop is Released!</title>
+          <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/apply-coop-is-released/</link>
+          <guid>https://limeleaf.coop/blog/apply-coop-is-released/</guid>
+          <description xml:base="https://limeleaf.coop/blog/apply-coop-is-released/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;apply.coop&#x2F;&quot;&gt;apply.coop&lt;&#x2F;a&gt;, where good people find great jobs, is out of Beta and in production!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;apply.coop&#x2F;jobs&quot;&gt;Our database&lt;&#x2F;a&gt; features over 100 well-paying jobs at co-ops, nonprofits, and public benefit corporations (PBCs) worldwide, with more being added daily.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 5: Paradigms in Psychology and Software</title>
+          <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-05/</link>
+          <guid>https://limeleaf.coop/podcast/episode-05/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-05/">&lt;p&gt;In this episode, we explore paradigms in psychology and software development, with guest Laurie Smith, a human services expert and applied behavior analyst. The discussion traces psychology&#x27;s evolution from behaviorism to cognitive approaches, and software&#x27;s progression from procedural to object-oriented and functional programming, and, of course, artificial intelligence. We also explore emerging paradigms in psychology, computer science, and economics, emphasizing the need to measure success beyond traditional metrics.&lt;&#x2F;p&gt;
+&lt;p&gt;apply.coop, our privacy-first job board for values-driven organizations, is in production! Visit &lt;a href=&quot;https:&#x2F;&#x2F;apply.coop&quot;&gt;apply.coop&lt;&#x2F;a&gt; and use promo code &quot;solidarity&quot; for free job postings!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Understanding AWS IoT Core Device Shadow: Reported, Desired, and Delta States</title>
+          <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.coop/blog/understanding-aws-iot-core-device-shadow-reported-desired-delta-states/</link>
+          <guid>https://limeleaf.coop/blog/understanding-aws-iot-core-device-shadow-reported-desired-delta-states/</guid>
+          <description xml:base="https://limeleaf.coop/blog/understanding-aws-iot-core-device-shadow-reported-desired-delta-states/">&lt;p&gt;I&#x27;ve been doing some work for a client that uses Amazon Web Services (AWS) to manage their IoT devices. Specifically, they use &lt;a href=&quot;https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;iot&#x2F;latest&#x2F;developerguide&#x2F;iot-device-shadows.html&quot;&gt;AWS IoT Core Device Shadow&lt;&#x2F;a&gt; to synchronize state between their devices and their cloud applications. In this post, I thought it would be helpful to explain how the device shadow works, focusing on the &lt;code&gt;reported&lt;&#x2F;code&gt;, &lt;code&gt;desired&lt;&#x2F;code&gt;, and &lt;code&gt;delta&lt;&#x2F;code&gt; states—and when devices should report their state or respond to changes. Let&#x27;s dive in!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>🚀 apply.coop is in Beta!</title>
+          <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/apply-coop-is-in-beta/</link>
+          <guid>https://limeleaf.coop/blog/apply-coop-is-in-beta/</guid>
+          <description xml:base="https://limeleaf.coop/blog/apply-coop-is-in-beta/">&lt;p&gt;We are excited to unveil &lt;a href=&quot;https:&#x2F;&#x2F;apply.coop&#x2F;&quot;&gt;apply.coop&lt;&#x2F;a&gt;, a platform that connects purpose-driven job seekers with values-driven workplaces.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Graze Integrates the Bluesky Directory API to Streamline No-Code Social Feed Creation</title>
+          <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/graze-and-bluesky-directory/</link>
+          <guid>https://limeleaf.coop/blog/graze-and-bluesky-directory/</guid>
+          <description xml:base="https://limeleaf.coop/blog/graze-and-bluesky-directory/">&lt;p&gt;We are excited to announce that the fine folks at &lt;a href=&quot;https:&#x2F;&#x2F;graze.social&quot;&gt;Graze&lt;&#x2F;a&gt; have integrated our &lt;a href=&quot;https:&#x2F;&#x2F;blueskydirectory.com&quot;&gt;Bluesky Directory API&lt;&#x2F;a&gt; into their platform.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 4: Welcome, Mubs! Plus, All About AT Protocol</title>
+          <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-04/</link>
+          <guid>https://limeleaf.coop/podcast/episode-04/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-04/">&lt;p&gt;It’s Mubs! The newest owner-member of Limeleaf joins us to discuss his career, his past collaborations with Blain and Erik, and his experience launching over 100 digital products. In our “Explain It to Me Like I’m John” segment, we learn about AT Protocol (the tech that powers Bluesky), the pain of moving your “social graph” to a new social platform, and how AT Protocol might help solve it. For links, socials, and more info about Limeleaf Worker Cooperative, visit &lt;a href=&quot;https:&#x2F;&#x2F;limeleaf.coop&quot;&gt;limeleaf.coop&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Welcoming Mubs, Our Fourth Limeleaf Member-Owner</title>
+          <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/welcome-mubs-to-limeleaf/</link>
+          <guid>https://limeleaf.coop/blog/welcome-mubs-to-limeleaf/</guid>
+          <description xml:base="https://limeleaf.coop/blog/welcome-mubs-to-limeleaf/">&lt;p&gt;We are beyond excited to announce that &lt;a href=&quot;&#x2F;about&#x2F;mubs&#x2F;&quot;&gt;Mubashar Iqbal (&quot;Mubs&quot;)&lt;&#x2F;a&gt; is joining the Limeleaf family!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 3: Year One of Limeleaf</title>
+          <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-03/</link>
+          <guid>https://limeleaf.coop/podcast/episode-03/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-03/">&lt;p&gt;We started Limeleaf on March 18, 2024. To celebrate our one-year anniversary, we&#x27;ll take a look back at what we&#x27;ve accomplished and where we want to go in 2025 and beyond.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Year One of Limeleaf</title>
+          <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/year-one-of-limeleaf/</link>
+          <guid>https://limeleaf.coop/blog/year-one-of-limeleaf/</guid>
+          <description xml:base="https://limeleaf.coop/blog/year-one-of-limeleaf/">&lt;p&gt;Limeleaf was born on March 18, 2024. Our first anniversary seemed like a good time to take stock of what we’ve achieved so far and where we want to go in 2025 and beyond.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Go and Rust for the Small Web: How We Build Faster, Simpler Apps</title>
+          <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.coop/blog/webdev-tech/</link>
+          <guid>https://limeleaf.coop/blog/webdev-tech/</guid>
+          <description xml:base="https://limeleaf.coop/blog/webdev-tech/">&lt;p&gt;At Limeleaf, we chose to specialize in Go and Rust for our clients and &lt;a href=&quot;https:&#x2F;&#x2F;limeleaf.coop&#x2F;blog&#x2F;why-go-and-rust&#x2F;&quot;&gt;we&#x27;ve written about&lt;&#x2F;a&gt; why we made that choice. However, now that we&#x27;re building our own products, we need to develop applications for the web, too.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Video of Limecast at Startup Tech Valley</title>
+          <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/video-of-limecast-at-startup-tech-valley/</link>
+          <guid>https://limeleaf.coop/blog/video-of-limecast-at-startup-tech-valley/</guid>
+          <description xml:base="https://limeleaf.coop/blog/video-of-limecast-at-startup-tech-valley/">&lt;p&gt;Watch Blain and John talk about &lt;a href=&quot;https:&#x2F;&#x2F;limecast.net&quot; title=&quot;Limecast&quot;&gt;Limecast&lt;&#x2F;a&gt; at &lt;a href=&quot;https:&#x2F;&#x2F;www.startuptechvalley.com&#x2F;&quot; title=&quot;Startup Tech Valley&quot;&gt;Startup Tech Valley&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Limecast at Startup Tech Valley on February 20th</title>
+          <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/limecast-at-startup-tech-valley/</link>
+          <guid>https://limeleaf.coop/blog/limecast-at-startup-tech-valley/</guid>
+          <description xml:base="https://limeleaf.coop/blog/limecast-at-startup-tech-valley/">&lt;p&gt;If you happen to be in or near Troy, New York, on Thursday, February 20th at 5:30 p.m., come see us present at &lt;a href=&quot;https:&#x2F;&#x2F;www.startuptechvalley.org&#x2F;&quot; title=&quot;Startup Tech Valley website&quot;&gt;Startup Tech Valley&lt;&#x2F;a&gt;! We&#x27;ll talk about &lt;a href=&quot;https:&#x2F;&#x2F;limecast.net&quot; title=&quot;Limecast&quot;&gt;Limecast.net&lt;&#x2F;a&gt;, our open-source, privacy-first podcasting platform. You won&#x27;t want to miss these eight minutes of high-powered product pitch perfection!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 2: The QA Bots are Coming! Maybe? Probably Not.</title>
+          <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-02/</link>
+          <guid>https://limeleaf.coop/podcast/episode-02/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-02/">&lt;p&gt;This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test Automation Engineer and long-time veteran of the video gaming industry. She gives us an insider’s view on software testing past, present, and future. (Yes, including the impact that “AI” is having on software quality assurance folks.)&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Worker Ownership Is Resistance</title>
+          <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/worker-ownership-is-resistance/</link>
+          <guid>https://limeleaf.coop/blog/worker-ownership-is-resistance/</guid>
+          <description xml:base="https://limeleaf.coop/blog/worker-ownership-is-resistance/">&lt;p&gt;This a dark day for many of us in the United States. A government that we believe will undermine the fundamental values of our country and &lt;a href=&quot;https:&#x2F;&#x2F;www.msn.com&#x2F;en-gb&#x2F;news&#x2F;world&#x2F;trump-to-sign-order-proclaiming-there-are-only-two-sexes&#x2F;ar-AA1xx9vp&quot; title=&quot;Trump to sign order proclaiming there are only two sexes&quot;&gt;harm vulnerable citizens&lt;&#x2F;a&gt; has assumed power. While no one can predict the future, if &lt;a href=&quot;https:&#x2F;&#x2F;www.project2025.org&quot; title=&quot;Project 2025&quot;&gt;their stated plans&lt;&#x2F;a&gt; are any indication, we are in for a tumultuous four years that could erase over a century of progress for working people.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Episode 1: Big Tech Gets Grubby</title>
+          <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/podcast/episode-01/</link>
+          <guid>https://limeleaf.coop/podcast/episode-01/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-01/">&lt;p&gt;In our inaugural episode, we introduce ourselves and talk about the conniving grubs at Grubhub and why fining Big Tech companies is useless. We talk about the fine public service work being done by Trifecta Tech. In our &quot;Explain it to Me Like I&#x27;m John&quot; segment, Blain and Erik go deep into the Meta &quot;View As&quot; security breach and resulting EU fine.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>An Update on Limecast</title>
+          <pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/an-update-on-limecast/</link>
+          <guid>https://limeleaf.coop/blog/an-update-on-limecast/</guid>
+          <description xml:base="https://limeleaf.coop/blog/an-update-on-limecast/">&lt;p&gt;Online content distribution has become highly centralized and increasingly dominated by a few tech monopolies.&lt;&#x2F;p&gt;
+&lt;p&gt;We believe these companies prioritize profit and growth over user privacy and freedom of speech. What&#x27;s more concerning is that their leaders are &lt;a href=&quot;https:&#x2F;&#x2F;prospect.org&#x2F;politics&#x2F;2024-10-22-silicon-valley-billionaires-supporting-trump&#x2F;&quot;&gt;cozying up to politicians&lt;&#x2F;a&gt; who have &lt;a href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;politics&#x2F;archive&#x2F;2024&#x2F;11&#x2F;donald-trump-hates-free-speech&#x2F;680515&#x2F;&quot;&gt;repeatedly promised to crack down on the press and free expression&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>The OSI defined open-source AI. Surprise, big-tech AI projects aren&#x27;t open source.</title>
+          <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/osi-ai-definition/</link>
+          <guid>https://limeleaf.coop/blog/osi-ai-definition/</guid>
+          <description xml:base="https://limeleaf.coop/blog/osi-ai-definition/">&lt;p&gt;This week, the &lt;a href=&quot;https:&#x2F;&#x2F;opensource.org&#x2F;&quot;&gt;Open Source Initiative&lt;&#x2F;a&gt; (OSI) released &lt;a href=&quot;https:&#x2F;&#x2F;www.prweb.com&#x2F;releases&#x2F;the-open-source-initiative-announces-the-release-of-the-industrys-first-open-source-ai-definition-302288553.html&quot;&gt;&quot;The Open Source AI Definition&quot;&lt;&#x2F;a&gt; (OSAID). This is an important step in establishing guidelines around what &quot;AI&quot; means in relation to intellectual property rights and how open-source definitions apply to the technology.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Introducing Diggetal</title>
+          <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/diggetal-launch/</link>
+          <guid>https://limeleaf.coop/blog/diggetal-launch/</guid>
+          <description xml:base="https://limeleaf.coop/blog/diggetal-launch/">&lt;p&gt;&lt;a href=&quot;&#x2F;blog&#x2F;our-journey-to-establishing-a-cooperative-company&#x2F;&quot; title=&quot;Founding Limeleaf blog post&quot;&gt;We started Limeleaf&lt;&#x2F;a&gt; to work with smart people on interesting tech projects that make a difference.&lt;&#x2F;p&gt;
+&lt;p&gt;But we also did it to have fun, learn new things, and fall in love again with tech.&lt;&#x2F;p&gt;
+&lt;p&gt;Today we launched &lt;a href=&quot;http:&#x2F;&#x2F;diggetal.com&#x2F;&quot; title=&quot;Diggetal website&quot;&gt;Diggetal&lt;&#x2F;a&gt;, an initiative dedicated to tinkering around with small projects.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Limecast and Dodgy AI Practices</title>
+          <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/limecast-and-dodgy-ai-practices/</link>
+          <guid>https://limeleaf.coop/blog/limecast-and-dodgy-ai-practices/</guid>
+          <description xml:base="https://limeleaf.coop/blog/limecast-and-dodgy-ai-practices/">&lt;p&gt;This week, we were &lt;a href=&quot;hhttps:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HMIyDf3gBoY&quot; title=&quot;Shocked, SHOCKED&quot;&gt;shocked&lt;&#x2F;a&gt; to &lt;a href=&quot;https:&#x2F;&#x2F;www.404media.co&#x2F;podcast-ai-companies-are-opting-you-in-by-default&#x2F;&quot; title=&quot;404 Media podcast&quot;&gt;learn that tech companies&lt;&#x2F;a&gt; are tricking hapless users into their AI data harvesting programs.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Why Go and Rust?</title>
+          <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.coop/blog/why-go-and-rust/</link>
+          <guid>https://limeleaf.coop/blog/why-go-and-rust/</guid>
+          <description xml:base="https://limeleaf.coop/blog/why-go-and-rust/">&lt;p&gt;I was about 80% finished with this post and I was going down the road of
+listing out all the great things both Go and Rust offer for us to build
+and maintain software for our clients and product, but then I threw it
+all out. I realized that posts like that are a dime a dozen and there
+are so many resources out there comparing, contrasting, and listing
+features of both languages, but none of that really explains WHY we, the
+humans Erik, John, and I, like using Go and Rust. So instead I thought
+it would be better to personalize this a bit and grab some quotes from
+each of us about why we like each of them, unedited, unfiltered, and
+raw!&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Why VCs Will Never Give Us Money (And We&#x27;re Okay With That)</title>
+          <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/why-vcs-will-never-give-us-money/</link>
+          <guid>https://limeleaf.coop/blog/why-vcs-will-never-give-us-money/</guid>
+          <description xml:base="https://limeleaf.coop/blog/why-vcs-will-never-give-us-money/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.fundera.com&#x2F;resources&#x2F;startup-funding-statistics&quot; title=&quot;VC funding statistics&quot;&gt;Less than 1% of startups secure venture capital funding&lt;&#x2F;a&gt;. At Limeleaf, we&#x27;re part of that 99% – but by choice.&lt;&#x2F;p&gt;
+&lt;p&gt;Since founding our company, a few people have asked how we plan to fund product development. Most assume we&#x27;ll try to raise VC money. Today, we&#x27;ll explain why we aren’t taking that approach and what we’re doing instead.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>We Are Changing Our Domain</title>
+          <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/changing-our-domian/</link>
+          <guid>https://limeleaf.coop/blog/changing-our-domian/</guid>
+          <description xml:base="https://limeleaf.coop/blog/changing-our-domian/">&lt;p&gt;This morning, &lt;a href=&quot;&#x2F;members&#x2F;blain-smith&#x2F;&quot; title=&quot;Blain Smith&quot;&gt;Blain&lt;&#x2F;a&gt; educated me about the &lt;a href=&quot;https:&#x2F;&#x2F;tamouse.github.io&#x2F;blog&#x2F;politics&#x2F;2019&#x2F;10&#x2F;02&#x2F;why-is-the-io-domain-problematic.html&quot; title=&quot;Why is the .io domain problematic?&quot;&gt;history of the .io top-level domain&lt;&#x2F;a&gt;. I didn&#x27;t know that history when I bought limeleaf.net last year before teaming up with Blain and Erik.&lt;&#x2F;p&gt;
+&lt;p&gt;limeleaf.net wasn&#x27;t available then, but to my surprise and delight, it was this morning, so I bought it.&lt;&#x2F;p&gt;
+&lt;p&gt;All Limeleaf site traffic and email now redirect from limeleaf.io to limeleaf.net, and I have donated $50 to &lt;a href=&quot;https:&#x2F;&#x2F;chagossianvoices.org&#x2F;&quot;&gt;Chagossian Voices&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Step 0 of Starting a Tech Worker Co-Op: Define Your Goals</title>
+          <pubDate>Tue, 16 Jul 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/step-0-of-starting-a-tech-worker-coop/</link>
+          <guid>https://limeleaf.coop/blog/step-0-of-starting-a-tech-worker-coop/</guid>
+          <description xml:base="https://limeleaf.coop/blog/step-0-of-starting-a-tech-worker-coop/">&lt;p&gt;Worker cooperatives (&quot;co-ops&quot;) are a growing &lt;a href=&quot;https:&#x2F;&#x2F;palantetech.coop&#x2F;blog&#x2F;worker-coops-better-way-make-living-tech&quot;&gt;alternative&lt;&#x2F;a&gt; to traditional hierarchical tech company structures, which often rely on &lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@teresa.fric&#x2F;everything-you-need-to-know-about-venture-capital-vc-funding-da3a20691fba&quot;&gt;venture capital funding&lt;&#x2F;a&gt;. Unlike conventional startups that take VC money in exchange for an equity stake, co-ops prioritize worker ownership, democratic decision-making, and profit sharing and strive to embody the &lt;a href=&quot;https:&#x2F;&#x2F;ncbaclusa.coop&#x2F;resources&#x2F;7-cooperative-principles&#x2F;&quot;&gt;7 Cooperative Principles established by the International Co-operative Alliance&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Safer Binary Decoding in Go</title>
+          <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+          <author>Blain Smith</author>
+          <link>https://limeleaf.coop/blog/safer-binary-decoding-in-go/</link>
+          <guid>https://limeleaf.coop/blog/safer-binary-decoding-in-go/</guid>
+          <description xml:base="https://limeleaf.coop/blog/safer-binary-decoding-in-go/">&lt;p&gt;Go is a popular language choice for building web services. Typically, when
+building those web services, we end up encoding&#x2F;decoding JSON as the
+data format. The &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding&#x2F;json&quot;&gt;&lt;code&gt;encoding&#x2F;json&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; package provides a safe way to turn
+JSON payloads into Go structs, and vice versa.&lt;&#x2F;p&gt;
+&lt;p&gt;However, if we need to
+handle raw &lt;code&gt;[]byte&lt;&#x2F;code&gt; that follow a binary encoding format that
+is not self-describing, we need to do a bit more work and
+implement the &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding#BinaryMarshaler&quot;&gt;&lt;code&gt;encoding.BinaryMarshaler&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;pkg.go.dev&#x2F;encoding#BinaryUnmarshaler&quot;&gt;&lt;code&gt;encoding.BinaryUnmarshaler&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;
+directly. Since we&#x27;re dealing with &lt;code&gt;[]byte&lt;&#x2F;code&gt;, we need to respect slice
+bounds to avoid triggering a &lt;code&gt;panic()&lt;&#x2F;code&gt; and crashing our service.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s look at the two ways we can decode data into Go structs and compare how
+one way will be safer than the other while yielding the same result. As an
+added bonus, we&#x27;ll end up with easier to understand code.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Founding Limeleaf: Part 3, Finding Support in the Cooperative Community</title>
+          <pubDate>Fri, 03 May 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/finding-support-in-the-cooperative-ecosystem/</link>
+          <guid>https://limeleaf.coop/blog/finding-support-in-the-cooperative-ecosystem/</guid>
+          <description xml:base="https://limeleaf.coop/blog/finding-support-in-the-cooperative-ecosystem/">&lt;p&gt;When we started Limeleaf, we wanted to do things differently. We wanted to create a democratically managed business where every worker had a voice and a stake in the company&#x27;s success. In short, we wanted to start a worker cooperative (even though we don’t call ourselves that, for reasons we covered in &lt;a href=&quot;&#x2F;blog&#x2F;our-journey-to-establishing-a-cooperative-company&#x2F;&quot; title=&quot;Our Journey to Establishing a Cooperative Company - Part 1&quot;&gt;Part 1&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Founding Limeleaf: Part 2, Writing Our Operating Agreement</title>
+          <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/writing-our-operating-agreement/</link>
+          <guid>https://limeleaf.coop/blog/writing-our-operating-agreement/</guid>
+          <description xml:base="https://limeleaf.coop/blog/writing-our-operating-agreement/">&lt;p&gt;In this second installment of our series on starting a tech company &lt;a href=&quot;&#x2F;blog&#x2F;why-limeleaf-is-a-co-op&#x2F;&quot; title=&quot;Why Limeleaf is a Co-Op&quot;&gt;as a cooperative business&lt;&#x2F;a&gt;, we’ll discuss how we wrote our Operating Agreement (OA).&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Foundling Limeleaf: Our Journey to Establishing a Cooperative Company</title>
+          <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/our-journey-to-establishing-a-cooperative-company/</link>
+          <guid>https://limeleaf.coop/blog/our-journey-to-establishing-a-cooperative-company/</guid>
+          <description xml:base="https://limeleaf.coop/blog/our-journey-to-establishing-a-cooperative-company/">&lt;p&gt;At Limeleaf, how we do our work is equally important as the work itself. &lt;a href=&quot;&#x2F;blog&#x2F;why-limeleaf-is-a-co-op&#x2F;&quot; title=&quot;Why Limeleaf is a Co-Op&quot;&gt;As we explained in a previous post&lt;&#x2F;a&gt;, Limeleaf operates as a worker cooperative, and we are dedicated to embodying the &lt;a href=&quot;https:&#x2F;&#x2F;ica.coop&#x2F;en&#x2F;cooperatives&#x2F;cooperative-identity&#x2F;&quot; title=&quot;Cooperative identity, values &amp;amp; principles&quot;&gt;Seven Cooperative Principles&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item><item>
+          <title>Why Limeleaf Operates as a Co-Op</title>
+          <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+          <author>John Luther</author>
+          <link>https://limeleaf.coop/blog/why-limeleaf-is-a-co-op/</link>
+          <guid>https://limeleaf.coop/blog/why-limeleaf-is-a-co-op/</guid>
+          <description xml:base="https://limeleaf.coop/blog/why-limeleaf-is-a-co-op/">&lt;p&gt;Cooperatives have gotten a bad rap over the years. They’ve been portrayed as impractical, plagued by decision paralysis, and insufferably &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=hXRa5eIlT4g&quot;&gt;hippy-dippy&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

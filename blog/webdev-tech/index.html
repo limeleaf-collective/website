@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light" />
+
+    
+  <title>Go and Rust for the Small Web: How We Build Faster, Simpler Apps - Limeleaf Worker Collective</title>
+  <meta property="og:title" content="Go and Rust for the Small Web: How We Build Faster, Simpler Apps — Limeleaf Worker Collective" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="limeleaf.coop">
+  <meta property="twitter:url" content="https://limeleaf.coop">
+  <meta name="twitter:title" content="Go and Rust for the Small Web: How We Build Faster, Simpler Apps — Limeleaf Worker Collective">
+  <meta name="twitter:image" content="/images/logo/limeleaf-logo.jpg">
+  <meta property="og:url" content="https://limeleaf.coop" />
+  <meta property="og:image" content="/images/logo/limeleaf-logo.jpg" />
+  <meta property=”og:type” content=”website” />
+  
+
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+    <link rel="icon" type="image/png" href="https://limeleaf.coop/images/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="https://limeleaf.coop/css/style.css" />
+    <script data-goatcounter="https://limeleaf.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/limeleaf/30min', text: '🗓️ Schedule a free project assessment', color: '#1C7258', textColor: '#ffffff', branding: undefined }); }</script>
+    <!-- Calendly badge widget end -->
+  </head>
+  <body>
+    <div id="full-footer">
+    <header class="home">
+      <div class="container">
+        <section class="row">
+          <div id="logo" class="col-sm-4 col-xs-10">
+            <a href="https://limeleaf.coop/" title="Limeleaf logo"><img src="https://limeleaf.coop/images/logo/limeleaf-logo-L.svg" alt="Limeleaf logo"/></a>
+          </div>
+          <nav class="col-sm-8">
+            <a href="https://limeleaf.coop/services/" class="link" title="Services">Services</a>
+            <a href="https://limeleaf.coop/products/" class="link" title="Products">Products</a>
+            <a href="https://limeleaf.coop/blog/" class="link" title="Blog">Blog</a>
+            <a href="https://limeleaf.coop/podcast/" class="link" title="Podcast">Podcast</a>
+            <a href="https://limeleaf.coop/about/" class="link" title="About Limeleaf">About</a>
+            <a href="https://limeleaf.coop/contact/" class="link" title="Contact Us">Contact</a>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    
+<main class="container">
+  <section class="row">
+    <div class="col-xs">
+      <article>
+      <h1>Go and Rust for the Small Web: How We Build Faster, Simpler Apps</h1>
+      <p><i></i></p>
+      <hr class="header" />
+      
+            
+            <p class="small"><i>
+              Posted on <time>February 26, 2025</time> 
+              
+                in
+                
+                  <a href="https://limeleaf.coop/tags/engineering/">Engineering</a>
+                
+              
+              
+                by
+                    <a href="/members/blain-smith">Blain Smith</a>
+                
+              </i></p>
+            
+            <div class="row">
+                
+                    <div class="col-xs">
+                
+                <p><p>At Limeleaf, we chose to specialize in Go and Rust for our clients and <a href="https://limeleaf.coop/blog/why-go-and-rust/">we've written about</a> why we made that choice. However, now that we're building our own products, we need to develop applications for the web, too.</p>
+<span id="continue-reading"></span><h2 id="tl-dr">TL;DR</h2>
+<ul>
+<li>Use <a href="https://templ.guide"><code>templ</code></a> in Go and <a href="https://maud.lambda.xyz"><code>maud</code></a> for Rust to do server-side HTML rendering</li>
+<li>Use <a href="https://pkg.go.dev/net/http"><code>net/http</code></a> in Go and <a href="https://docs.rs/axum"><code>axum</code></a>, <a href="https://docs.rs/actix"><code>actix</code></a>, <a href="https://docs.rs/rocket"><code>rocket</code></a>, or whatever Rust crate for HTTP handling and routing</li>
+<li>Start with and try to stay with <a href="https://sqlite.org">SQLite</a> and migrate to <a href="https://www.postgresql.org">PostgreSQL</a>, if needed</li>
+</ul>
+<hr />
+<p>Go and Rust are great languages for systems programming, networking, and high-performance services, but not many folks think to use them for web applications that render HTML and handle form data. Most modern web applications employ the single page application (SPA) model. In these apps, a single web page is served to the user via a REST or GraphQL API (usually in JSON) and rendered in the user agent (usually a browser) by a separate frontend application written in a JavaScript framework like React or Vue.</p>
+<p>For the products we're building, we want to keep the user's experience as simple and fast as possible. The SPA model is over-engineered for these kinds of apps. Instead, we implement most of the application on the server and send the UI over the wire in pure HTML, using only the bare minimum of JavaScript and CSS.</p>
+<h2 id="core-web-application-components">Core Web Application Components</h2>
+<p>These are the only components we need to build a usable application:</p>
+<ul>
+<li><em>Presentation</em> component to display information and accept user input</li>
+<li><em>Persistence</em> component to durably store data for future access between sessions</li>
+<li><em>Session/logic</em> component to manage access, but also to validate and manipulate data between the Presentation and Persistence components</li>
+</ul>
+<p>You might be thinking, <em>isn’t what you just described simply an SPA</em>? After all, the components seem to map:</p>
+<ul>
+<li>Presentation -&gt; HTML and CSS</li>
+<li>Persistence -&gt; Database / File System</li>
+<li>Session/Logic -&gt; REST / GraphQL API</li>
+</ul>
+<p>You’re right, this could describe an SPA. However, we believe separating the Presentation and Session/Logic components in SPAs adds unnecessary complexity for most web applications. In the end, an SPA results in plain HTML and CSS at render time, but with that unnecessary layer in between. While there are certainly cases where the user experience justifies this approach, we argue that standard web protocols are more often a better choice for several reasons:</p>
+<ol>
+<li>Simpler tech stacks can be shared more easily across smaller teams, requiring less cognitive load to grok.</li>
+<li>Removing data transposing from JSON &lt;-&gt; HTML saves compute and loading times.</li>
+<li>Distribution and development become easier and less fragile since there is no extra transpiling step (these steps are usually far slower than compilation steps).</li>
+<li>JavaScript is not type-safe (and no, neither is TypeScript).</li>
+<li>HTML and CSS are well-defined standards. They are thoroughly documented, tested, and can be coded by engineers of any skill level.</li>
+</ol>
+<h2 id="go-and-rust-in-web-applications">Go and Rust in Web Applications</h2>
+<p>Let's circle back to Rust and Go. We are backend and systems engineers (and a product manager). All of us (even John) can understand and write enough HTML and CSS to produce highly functional but simple web applications. Our foundational practices are:</p>
+<ol>
+<li>Render all HTML server-side and send it to the user agent to display information and form inputs.</li>
+<li>Leverage CDNs for 3rd party CSS (and JavaScript if absolutely necessary).</li>
+<li>Use standard <code>&lt;form method="post" action="[route]"&gt;</code> elements to send user input to the server for validation and storage.</li>
+<li>Generate type-safe template, embed, and static content directly into a single binary executable.</li>
+</ol>
+<p>The first three are relatively straightforward, but number four is a big one for us. It allows us to distribute and deploy entire products in <em>one</em> file that contains all the HTML, CSS, and images necessary to run the application. Compare that to something like PHP or Python, where we'd have to manage and distribute hundreds or thousands of smaller files.</p>
+<h3 id="generating-templates-in-go-with-templ">Generating Templates in Go with <code>templ</code></h3>
+<p>While Go has a standard template library package <a href="https://pkg.go.dev/html/template"><code>html/template</code></a>, we use <a href="https://github.com/a-h/templ"><code>templ</code></a> instead, because it transpiles HTML into Go and then compiles it into the final binary. It allows us to write simple HTML forms like this:</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#cccccc;">templ RegisterSignInForm() {
+</span><span style="color:#cccccc;">	</span><span>&lt;</span><span style="color:#cccccc;">form method</span><span>=</span><span style="color:#ffd700;">&quot;post&quot; </span><span style="color:#cccccc;">action</span><span>=</span><span style="color:#ffd700;">&quot;/account&quot;</span><span>&gt;
+</span><span style="color:#cccccc;">		</span><span>&lt;</span><span style="color:#cccccc;">p</span><span>&gt;&lt;</span><span style="color:#cccccc;">input </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;email&quot; </span><span style="color:#cccccc;">name</span><span>=</span><span style="color:#ffd700;">&quot;email&quot; </span><span style="color:#cccccc;">placeholder</span><span>=</span><span style="color:#ffd700;">&quot;Email&quot; </span><span>/&gt;&lt;/</span><span style="color:#cccccc;">p</span><span>&gt;
+</span><span style="color:#cccccc;">		</span><span>&lt;</span><span style="color:#cccccc;">p</span><span>&gt;&lt;</span><span style="color:#cccccc;">button </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;submit&quot;</span><span>&gt;</span><span style="color:#cccccc;">Submit</span><span>&lt;/</span><span style="color:#cccccc;">button</span><span>&gt;&lt;/</span><span style="color:#cccccc;">p</span><span>&gt;
+</span><span style="color:#cccccc;">	</span><span>&lt;/</span><span style="color:#cccccc;">form</span><span>&gt;
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>After running <code>$ templ generate</code>, we end up with type-safe Go code:</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span>RegisterSignInForm</span><span style="color:#cccccc;">() templ.</span><span style="color:#80d500;">Component </span><span style="color:#cccccc;">{   
+</span><span style="color:#cccccc;">	</span><span style="color:#80d500;">return </span><span style="color:#cccccc;">templruntime.GeneratedTemplate(</span><span style="color:#80d500;">func</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">templ_7745c5c3_Input </span><span style="color:#cccccc;">templruntime.</span><span style="color:#80d500;">GeneratedComponentInput</span><span style="color:#cccccc;">) (</span><span style="font-style:italic;color:#8aa6c1;">templ_7745c5c3_Err </span><span style="color:#8aa6c1;">error</span><span style="color:#cccccc;">) {
+</span><span style="color:#cccccc;">		templ_7745c5c3_W, ctx </span><span>:= </span><span style="color:#cccccc;">templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">if </span><span style="color:#cccccc;">templ_7745c5c3_CtxErr </span><span>:= </span><span style="color:#cccccc;">ctx.Err(); templ_7745c5c3_CtxErr </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{                </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">templ_7745c5c3_CtxErr    
+</span><span style="color:#cccccc;">		}                                
+</span><span style="color:#cccccc;">		templ_7745c5c3_Buffer, templ_7745c5c3_IsBuffer </span><span>:= </span><span style="color:#cccccc;">templruntime.GetBuffer(templ_7745c5c3_W)
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">if </span><span>!</span><span style="color:#cccccc;">templ_7745c5c3_IsBuffer {
+</span><span style="color:#cccccc;">			</span><span style="color:#80d500;">defer func</span><span style="color:#cccccc;">() {
+</span><span style="color:#cccccc;">				templ_7745c5c3_BufErr </span><span>:= </span><span style="color:#cccccc;">templruntime.ReleaseBuffer(templ_7745c5c3_Buffer)
+</span><span style="color:#cccccc;">				</span><span style="color:#80d500;">if </span><span style="color:#cccccc;">templ_7745c5c3_Err </span><span>== </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">					templ_7745c5c3_Err </span><span>= </span><span style="color:#cccccc;">templ_7745c5c3_BufErr
+</span><span style="color:#cccccc;">				}
+</span><span style="color:#cccccc;">			}()
+</span><span style="color:#cccccc;">		}
+</span><span style="color:#cccccc;">		ctx </span><span>= </span><span style="color:#cccccc;">templ.InitializeContext(ctx)
+</span><span style="color:#cccccc;">		templ_7745c5c3_Var1 </span><span>:= </span><span style="color:#cccccc;">templ.GetChildren(ctx)
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">if </span><span style="color:#cccccc;">templ_7745c5c3_Var1 </span><span>== </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">			templ_7745c5c3_Var1 </span><span>= </span><span style="color:#cccccc;">templ.NopComponent
+</span><span style="color:#cccccc;">		}
+</span><span style="color:#cccccc;">		ctx </span><span>= </span><span style="color:#cccccc;">templ.ClearChildren(ctx)
+</span><span style="color:#cccccc;">		templ_7745c5c3_Err </span><span>= </span><span style="color:#cccccc;">templruntime.WriteString(templ_7745c5c3_Buffer, </span><span style="color:#eddd5a;">1</span><span style="color:#cccccc;">, </span><span style="color:#ffd700;">&quot;&lt;form method=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">post</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;"> action=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">/account</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">&gt;&lt;p&gt;&lt;input type=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">email</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;"> name=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">email</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;"> placeholder=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">Email</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">&gt;&lt;/p&gt;&lt;p&gt;&lt;button type=</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">submit</span><span style="font-weight:bold;color:#ff2837;">\&quot;</span><span style="color:#ffd700;">&gt;Submit&lt;/button&gt;&lt;/p&gt;&lt;/form&gt;&quot;</span><span style="color:#cccccc;">)
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">if </span><span style="color:#cccccc;">templ_7745c5c3_Err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">			</span><span style="color:#80d500;">return </span><span style="color:#cccccc;">templ_7745c5c3_Err
+</span><span style="color:#cccccc;">		}
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">return nil
+</span><span style="color:#cccccc;">	})
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>Not the prettiest output, but it is generated code; we never read or edit it, so it doesn't matter. Instead, we can focus on writing the template code as simple, easy-to-understand HTML. <code>templ</code> supports much more functionality, so I urge you to check out their documentation for more details.</p>
+<h3 id="generating-templates-in-rust-with-maud">Generating Templates in Rust with <code>maud</code></h3>
+<p>Since Rust's standard library is much more focused on systems programming, there isn't much in the way of templates, let alone HTML templates. However, <a href="https://maud.lambda.xyz"><code>maud</code></a>, is a phenomenal package that offers macros to write HTML-like markup to compile and embed into the final compiled binary. Here's an example:</p>
+<pre data-lang="rust" style="background-color:#191919;color:#ffffff;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#80d500;">pub fn </span><span>register</span><span style="color:#cccccc;">() -&gt; Markup {
+</span><span style="color:#cccccc;">    html! {
+</span><span style="color:#cccccc;">        form method</span><span>=</span><span style="color:#ffd700;">&quot;post&quot;</span><span style="color:#cccccc;"> action</span><span>=</span><span style="color:#ffd700;">&quot;/register&quot; </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">            p {
+</span><span style="color:#cccccc;">                label </span><span style="color:#80d500;">for</span><span>=</span><span style="color:#ffd700;">&quot;name&quot; </span><span style="color:#cccccc;">{ </span><span style="color:#ffd700;">&quot;Full Name&quot; </span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">                input </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;text&quot;</span><span style="color:#cccccc;"> name</span><span>=</span><span style="color:#ffd700;">&quot;name&quot;</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">            }
+</span><span style="color:#cccccc;">            p {
+</span><span style="color:#cccccc;">                label </span><span style="color:#80d500;">for</span><span>=</span><span style="color:#ffd700;">&quot;email&quot; </span><span style="color:#cccccc;">{ </span><span style="color:#ffd700;">&quot;Email&quot; </span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">                input </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;email&quot;</span><span style="color:#cccccc;"> name</span><span>=</span><span style="color:#ffd700;">&quot;email&quot;</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">            }
+</span><span style="color:#cccccc;">            p {
+</span><span style="color:#cccccc;">                label </span><span style="color:#80d500;">for</span><span>=</span><span style="color:#ffd700;">&quot;password&quot; </span><span style="color:#cccccc;">{ </span><span style="color:#ffd700;">&quot;Password&quot; </span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">                input </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;password&quot;</span><span style="color:#cccccc;"> name</span><span>=</span><span style="color:#ffd700;">&quot;password&quot;</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">            }
+</span><span style="color:#cccccc;">            p {
+</span><span style="color:#cccccc;">                input </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;checkbox&quot;</span><span style="color:#cccccc;"> name</span><span>=</span><span style="color:#ffd700;">&quot;tos&quot;</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">                label </span><span style="color:#80d500;">for</span><span>=</span><span style="color:#ffd700;">&quot;tos&quot; </span><span style="color:#cccccc;">{ </span><span style="color:#ffd700;">&quot;I agree to Limecast&#39;s Terms of Service&quot; </span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">            }
+</span><span style="color:#cccccc;">            p {
+</span><span style="color:#cccccc;">                button </span><span style="color:#80d500;">type</span><span>=</span><span style="color:#ffd700;">&quot;submit&quot; </span><span style="color:#cccccc;">{ </span><span style="color:#ffd700;">&quot;Register&quot; </span><span style="color:#cccccc;">};
+</span><span style="color:#cccccc;">            }
+</span><span style="color:#cccccc;">        }
+</span><span style="color:#cccccc;">    }
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>Although this is not standard HTML like in the Go version, it still gives us a familiar markup that captures the same intent. Since <code>html!</code> is a Rust macro, there is no need for a separate code generation step like Go needs with <code>templ</code>. Rust will automatically convert the macro into Rust code and compile it when you run <code>$ cargo build</code>.</p>
+<h3 id="http-handlers-and-routing">HTTP Handlers and Routing</h3>
+<p>With ways to generate and compile HTML server-side in each language, we can use just about any HTTP module to deliver it to the user since <code>templ</code> and <code>maud</code> offer direct support for writing the results of their respective templates to standard HTTP handlers. Here are examples in each:</p>
+<pre data-lang="go" style="background-color:#191919;color:#ffffff;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#80d500;">func </span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">s </span><span>*</span><span style="color:#80d500;">Server</span><span style="color:#cccccc;">) </span><span>RootHandler</span><span style="color:#cccccc;">() http.</span><span style="color:#80d500;">Handler </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">	</span><span style="color:#80d500;">return </span><span style="color:#cccccc;">http.HandlerFunc(</span><span style="color:#80d500;">func</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">w </span><span style="color:#cccccc;">http.</span><span style="color:#80d500;">ResponseWriter</span><span style="color:#cccccc;">, </span><span style="font-style:italic;color:#8aa6c1;">r </span><span>*</span><span style="color:#cccccc;">http.</span><span style="color:#80d500;">Request</span><span style="color:#cccccc;">) {
+</span><span style="color:#cccccc;">		jobs, err </span><span>:= ...
+</span><span style="color:#cccccc;">		</span><span style="color:#80d500;">if </span><span style="color:#cccccc;">err </span><span>!= </span><span style="color:#80d500;">nil </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">			templates.Error(err).Render(r.Context(), w)
+</span><span style="color:#cccccc;">			</span><span style="color:#80d500;">return
+</span><span style="color:#cccccc;">		}
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">		templates.Root(jobs).Render(r.Context(), w)
+</span><span style="color:#cccccc;">	})
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<pre data-lang="rust" style="background-color:#191919;color:#ffffff;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#80d500;">pub</span><span style="color:#cccccc;"> async </span><span style="color:#80d500;">fn </span><span>homepage</span><span style="color:#cccccc;">(
+</span><span style="color:#cccccc;">    Extension(</span><span style="font-style:italic;color:#8aa6c1;">pool</span><span style="color:#cccccc;">): Extension&lt;SqlitePool&gt;,
+</span><span style="color:#cccccc;">    Path(</span><span style="font-style:italic;color:#8aa6c1;">slug</span><span style="color:#cccccc;">): Path&lt;</span><span style="color:#8aa6c1;">String</span><span style="color:#cccccc;">&gt;,
+</span><span style="color:#cccccc;">    Query(</span><span style="font-style:italic;color:#8aa6c1;">params</span><span style="color:#cccccc;">): Query&lt;HomepageParams&gt;,
+</span><span style="color:#cccccc;">) -&gt; </span><span style="color:#8aa6c1;">Result</span><span style="color:#cccccc;">&lt;Markup, AppError&gt; {
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">let</span><span style="color:#cccccc;"> podcast: Podcast </span><span>= ...</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">let</span><span style="color:#cccccc;"> episodes: </span><span style="color:#8aa6c1;">Vec</span><span style="color:#cccccc;">&lt;Episode&gt; </span><span>= ...</span><span style="color:#cccccc;">;
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">    </span><span style="color:#8aa6c1;">Ok</span><span style="color:#cccccc;">(templates::homepage(podcast, episodes))
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<h3 id="persistence-with-sqlite-or-postgresql">Persistence with SQLite (or PostgreSQL)</h3>
+<p>All the products we're working today on use SQLite because, well, it works perfectly fine for the size, scale, and load of the application. Both also use just boring old SQL, an easy way to save data to disk in a well-known language. If we ever need to scale up the service and split the database to a dedicated server, we can just migrate SQLite into PostgreSQL and re-deploy. However, we believe SQLite will serve our purposes for a long time. Since it now supports <a href="https://sqlite.org/wal.html">WAL-mode</a> it can do much higher throughput, if we need it.</p>
+<h2 id="our-web-apps">Our Web Apps</h2>
+<p>We're working on two web app products today. <a href="https://apply.coop">Apply.coop</a> is a job board for coops, and <a href="https://limecast.com">Limecast</a> is a podcasting platform.</p>
+<p>All of the code for these products, which practice what we preach, are in our <a href="https://codeberg.org/limeleaf">Codeberg</a> repo. We open-source as much code as we can to be transparent about what we build and how we build it.</p>
+</p>
+                </div>
+              </div>
+
+      </article>
+    </div>
+</main>
+
+
+
+    <footer>
+      <div class="container">
+          <div class="col-lg-9">
+            <p>We would love to chat about your project and how we can help!</p>
+            <p>
+              <a href="https://limeleaf.coop/contact/">Contact us</a> or find us on
+              <a href="https://bsky.app/profile/limeleaf.coop" alt="Bluesky" title="Bluesky">Bluesky</a>,
+              <a href="https://codeberg.org/limeleaf" alt="Gitea" title="Codeberg">Codeberg</a>,
+              <a href="https://social.coop/@limeleaf" alt="Mastodon" title="Mastodon">Mastodon</a>,
+              <a href="https://opencollective.com/limeleaf" alt="Open Collective" title="Open Collective">Open Collective</a>, 
+              <a href="https://www.linkedin.com/company/limeleaf-llc" alt="LinkedIn" title="LinkedIn">LinkedIn</a>, and
+              <a href="https://github.com/limeleaf-collective" alt="GitHub" title="GitHub">GitHub</a>.
+            </p>
+            <p>Copyright 2025 by Limeleaf Worker Collective, LLC</p>
+          </div>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

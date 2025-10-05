@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel>
+      <title>The Limeleaf Podcast</title>
+      <description>Discussions on technology, privacy, ethics, and the worker-owned startup movement from the founders of the Limeleaf Worker Collective co-op.</description>
+      <itunes:category text="Technology" /><link>https://limeleaf.coop/podcast/</link>
+      <generator>Zola</generator>
+      <language>en</language>
+      <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+      <copyright>Copyright 2025 Limeleaf Worker Collective, LLC</copyright>
+      <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      <itunes:complete>No</itunes:complete>
+      <itunes:explicit>Yes</itunes:explicit>
+      <itunes:type>episodic</itunes:type>
+      <itunes:owner>
+        <itunes:name>Limeleaf Worker Collective</itunes:name>
+        <itunes:email>info@limeleaf.coop</itunes:email>
+      </itunes:owner>
+      <itunes:author>Limeleaf Worker Collective</itunes:author>
+      <item>
+          <title>Episode 7: Into the ATmosphere</title>
+          <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-07/</link>
+          <guid>https://limeleaf.coop/podcast/episode-07/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-07/">
+            <![CDATA[
+              <p>In this episode, we discuss AT Protocol, a technology that underpins <a href="https://bsky.app">Bluesky</a> and many believe is the future of social media. ATProto pioneer Boris Mann <a href="https://bsky.app/profile/bmann.ca">@bmann.ca</a> educates us about AT Protocol, where it's used, why so many people are excited about it, and even how it's pronounced.</p>
+<p><strong>Breaking news</strong>: In the episode, we discuss software patents as they relate to ATProto standardization. Today, Bluesky published a <a href="https://bsky.social/about/blog/10-01-2025-patent-pledge">patent pledge</a> vowing to "not enforce any of the patents on any software invention Bluesky Social owns now or in the future." The pledge includes IP related to ATProto. Progress!</p>
+<span id="continue-reading"></span><h2 id="at-protocol-software-development">AT Protocol Software Development</h2>
+<p>Do you have an idea for a Bluesky or AT Protocol product? Build it! Our team can guide you through every step, from defining requirements to launching your product, scaling your infrastructure to handle millions of users, and beyond. <a href="https://limeleaf.coop/services/at-proto-development/">Learn more</a>.</p>
+<h2 id="links">Links</h2>
+<p><a href="https://overreacted.io/open-social">Overview of the ATmosphere's potential from Dan Abramov</a></p>
+<p><a href="https://atproto.com/guides/overview">AT Protocol Specification</a></p>
+<p><a href="https://github.com/bluesky-social/atproto">AT Protocol on Github</a></p>
+<p><a href="https://freeourfeeds.com">Free Our Feeds, "A campaign to support open, people-powered social media"</a></p>
+<p><a href="https://blackskyweb.xyz">Blacksky, "Decentralized tools for creating safe, independent online spaces"</a></p>
+<p><a href="https://bmannconsulting.com/notes/beyond-microblogging-atproto/">Boris' "Beyond Microblogging: AT Protocol for Building Unique Social Apps" post</a></p>
+<p><a href="https://infrequently.org/2025/09/standards-and-the-fall-of-iamus/">Alex Russell's post about web standards</a></p>
+<p><a href="https://discover.toronto.inc">Toronto User Directory</a></p>
+<h3 id="some-cool-atproto-apps">Some Cool ATProto Apps</h3>
+<p><a href="https://leaflet.pub">Leaflet - online publishing</a></p>
+<p><a href="https://tangled.sh">Tangled - source code management</a></p>
+<p><a href="https://graze.social">Graze - custom feed creator</a></p>
+<p><a href="https://stream.place">Streamplace - video livestreaming</a></p>
+<p><a href="https://sprk.so">Spark - decentralized social networking</a></p>
+<p><a href="https://germnetwork.com">Germ - secure chat</a></p>
+<p><a href="https://semble.so">Semble - social knowledge network for researchers</a></p>
+<p><a href="https://smokesignal.events">Smoke Signal - event planning</a></p>
+<p><a href="https://flushes.app">Flushes - uh, wtf?</a></p>
+<p><a href="https://anisota.net">Anisota - experimental social media interface</a></p>
+<p><a href="https://recipe.exchange">Recipe Exchange</a></p>
+<p><a href="https://roomy.space">Roomy Chat - group chat</a></p>
+<p><a href="https://grain.social">Grain Photos - photo storage</a></p>
+<p><a href="https://dropanchor.app">Anchor - geo checkins</a></p>
+<p>Find many more at <a href="https://blueskydirectory.com">blueskydirectory.com</a></p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 7: Into the ATmosphere</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>7</itunes:episode>
+          <podcast:episode>7</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e07.mp3" type="audio/mpeg" length="29355960" />
+          <itunes:duration>00:53:37</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 6: Computer Science in Higher Education</title>
+          <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-06/</link>
+          <guid>https://limeleaf.coop/podcast/episode-06/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-06/">
+            <![CDATA[
+              <p>This month, we talk about the state of computer science instruction in higher education, and how it's changing. What even <em>is</em> "computer science" these days? Do tech workers really need a degree in it? Should schools develop new degrees in topics like application development instead of coding and algorithms? Naturally, AI comes up in the conversation. We also cover some clever new robot slurs that have been making the rounds online. Don't be a clanker, give it a listen!</p>
+<p>apply.coop, our privacy-first job board for values-driven organizations, is in production! Visit <a href="https://apply.coop">apply.coop</a> and use promo code "solidarity" for free job postings!</p>
+<span id="continue-reading"></span><h2 id="show-notes-and-links">Show Notes and Links</h2>
+<p><a href="https://en.m.wikipedia.org/wiki/Slopsquatting">Slopsquatting</a></p>
+<p><a href="https://www.rollingstone.com/culture/culture-features/clanker-cogsucker-robot-ai-slurs-viral-1235401262/">How ‘Clanker’ Became the Internet’s New Favorite Slur</a></p>
+<p><a href="https://www.geekwire.com/2025/coding-is-dead-uw-computer-science-program-rethinks-curriculum-for-the-ai-era/">Coding is dead: UW computer science program rethinks curriculum for the AI era</a></p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 6: Computer Science in Higher Education</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>6</itunes:episode>
+          <podcast:episode>6</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e06.mp3" type="audio/mpeg" length="19281816" />
+          <itunes:duration>00:47:00</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 5: Paradigms in Psychology and Software</title>
+          <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-05/</link>
+          <guid>https://limeleaf.coop/podcast/episode-05/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-05/">
+            <![CDATA[
+              <p>In this episode, we explore paradigms in psychology and software development, with guest Laurie Smith, a human services expert and applied behavior analyst. The discussion traces psychology's evolution from behaviorism to cognitive approaches, and software's progression from procedural to object-oriented and functional programming, and, of course, artificial intelligence. We also explore emerging paradigms in psychology, computer science, and economics, emphasizing the need to measure success beyond traditional metrics.</p>
+<p>apply.coop, our privacy-first job board for values-driven organizations, is in production! Visit <a href="https://apply.coop">apply.coop</a> and use promo code "solidarity" for free job postings!</p>
+<span id="continue-reading"></span><h2 id="show-notes-and-links">Show Notes and Links</h2>
+<p><a href="https://www.experimental-history.com/p/new-paradigm-for-psychology-just">New paradigm for psychology just dropped</a></p>
+<p><a href="https://simplypsychology.org/kuhn-paradigm.html">Kuhn’s phases of science</a></p>
+<p><a href="https://unsceb.org/valuing-what-counts-united-nations-system-wide-contribution-beyond-gross-domestic-product-gdp">Valuing What Counts: United Nations System-wide Contribution on Beyond Gross Domestic Product (GDP)</a></p>
+<p><a href="https://start.coop">start.coop - Our mission is to scale the next generation of cooperatively owned businesses</a></p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 5: Paradigms in Psychology and Software</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>5</itunes:episode>
+          <podcast:episode>5</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e05.mp3" type="audio/mpeg" length="21966984" />
+          <itunes:duration>00:53:21</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 4: Welcome, Mubs! Plus, All About AT Protocol</title>
+          <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-04/</link>
+          <guid>https://limeleaf.coop/podcast/episode-04/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-04/">
+            <![CDATA[
+              <p>It’s Mubs! The newest owner-member of Limeleaf joins us to discuss his career, his past collaborations with Blain and Erik, and his experience launching over 100 digital products. In our “Explain It to Me Like I’m John” segment, we learn about AT Protocol (the tech that powers Bluesky), the pain of moving your “social graph” to a new social platform, and how AT Protocol might help solve it. For links, socials, and more info about Limeleaf Worker Cooperative, visit <a href="https://limeleaf.coop">limeleaf.coop</a>.</p>
+<span id="continue-reading"></span><h2 id="show-notes-and-links">Show Notes and Links</h2>
+<p><a href="https://blueskydirectory.com">Bluesky Directory</a></p>
+<p><a href="https://mubs.me">Mubs’ website</a></p>
+<p><a href="https://atproto.com">AT Protocol</a></p>
+<p><a href="https://bsky.app">Bluesky</a></p>
+<p><a href="https://www.fcc.gov/general/wireless-local-number-portability-wlnp">Phone Number Portability</a></p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 4: Welcome, Mubs! Plus, All About AT Protocol</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>4</itunes:episode>
+          <podcast:episode>4</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e04.mp3" type="audio/mpeg" length="29795241" />
+          <itunes:duration>01:00:45</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 3: Year One of Limeleaf</title>
+          <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-03/</link>
+          <guid>https://limeleaf.coop/podcast/episode-03/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-03/">
+            <![CDATA[
+              <p>We started Limeleaf on March 18, 2024. To celebrate our one-year anniversary, we'll take a look back at what we've accomplished and where we want to go in 2025 and beyond.</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://techjobsforgood.com">Tech Jobs for Good</a></li>
+<li><a href="https://comp.coop">comp.coop</a></li>
+<li><a href="https://farox.coop">Farox</a></li>
+<li><a href="https://camplight.net">Camplight</a></li>
+<li><a href="https://patio.coop">Patio</a></li>
+<li><a href="https://colab.coop">Colab</a></li>
+<li><a href="https://rushdownstudio.com">Rushdown Studios</a></li>
+<li><a href="https://rocketscience.gg">Rocket Science</a></li>
+<li><a href="https://pitonlabs.com">Piton Labs</a></li>
+</ul>
+<p>For links, socials, and more info about Limeleaf Worker Cooperative, visit <a href="https://limeleaf.coop">limeleaf.coop</a>.</p>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 3: Year One of Limeleaf</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>3</itunes:episode>
+          <podcast:episode>3</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e03.mp3" type="audio/mpeg" length="14132634" />
+          <itunes:duration>28:34</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 2: The QA Bots are Coming! Maybe? Probably Not.</title>
+          <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-02/</link>
+          <guid>https://limeleaf.coop/podcast/episode-02/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-02/">
+            <![CDATA[
+              <p>This month, we have a special episode with Mavreen Smiel. Mav is a Senior Test Automation Engineer and long-time veteran of the video gaming industry. She gives us an insider’s view on software testing past, present, and future. (Yes, including the impact that “AI” is having on software quality assurance folks.)</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/mavreensmiel/">Mavreen Smiel on LinkedIn</a></li>
+<li><a href="https://lamport.azurewebsites.net/tla/tla.html">The TLA+ Home Page</a></li>
+<li><a href="https://www.selenium.dev">Selenium</a></li>
+<li><a href="https://husobee.github.io/money/float/2016/09/23/never-use-floats-for-currency.html">Never Use Floats for Currency</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Formal_methods">Formal Methods</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logic_in_computer_science">Logic in Computer Science</a></li>
+<li><a href="https://leanpub.com/logic">Logic for Programmers</a></li>
+</ul>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 2: The QA Bots are Coming! Maybe? Probably Not.</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>2</itunes:episode>
+          <podcast:episode>2</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e02.mp3" type="audio/mpeg" length="20332272" />
+          <itunes:duration>41:49</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+      <item>
+          <title>Episode 1: Big Tech Gets Grubby</title>
+          <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+          <link>https://limeleaf.coop/podcast/episode-01/</link>
+          <guid>https://limeleaf.coop/podcast/episode-01/</guid>
+          <description xml:base="https://limeleaf.coop/podcast/episode-01/">
+            <![CDATA[
+              <p>In our inaugural episode, we introduce ourselves and talk about the conniving grubs at Grubhub and why fining Big Tech companies is useless. We talk about the fine public service work being done by Trifecta Tech. In our "Explain it to Me Like I'm John" segment, Blain and Erik go deep into the Meta "View As" security breach and resulting EU fine.</p>
+<span id="continue-reading"></span><h2 id="show-notes">Show Notes</h2>
+<ul>
+<li><a href="https://www.404media.co/the-no-win-mystery-drone-clusterfuck/">"The No-Win 'Mystery Drone' Clusterf*ck" by 404 Media</a></li>
+<li><a href="https://pca.st/Mm82">Underunderstood episode about Grubhub</a></li>
+<li><a href="https://trifectatech.org">Trifecta Tech - Open infrastructure software in the public interest</a></li>
+<li><a href="https://www.memorysafety.org">Prossimo</a></li>
+<li><a href="https://paulkrugman.substack.com/p/health-insurance-is-a-racket">Krugman on the health insurance racket</a></li>
+<li><a href="https://www.msn.com/en-us/news/technology/meta-fined-264m-for-security-breach-in-facebook-s-view-as-feature/ar-AA1w1PU6">"Meta Fined $264M for Security Breach in Facebook's 'View As' Feature"</a></li>
+<li><a href="https://www.mealeo.com">Mealeo, a meal delivery service based in Latham, NY</a></li>
+<li><a href="https://limecast.net">Limecast, a Privacy-First Podcasting Platform</a></li>
+<li><a href="https://opencollective.com/limeleaf">Send us a donation!</a></li>
+</ul>
+
+            ]]>
+          </description>
+
+          <itunes:title>Episode 1: Big Tech Gets Grubby</itunes:title>
+          <itunes:episodeType>full</itunes:episodeType>
+          <itunes:episode>1</itunes:episode>
+          <podcast:episode>1</podcast:episode>
+
+          <enclosure url="https://limeleaf.coop/podcast/limeleafpod-e01.mp3" type="audio/mpeg" length="14670456" />
+          <itunes:duration>35:47</itunes:duration>
+          <itunes:image href="https://limeleaf.coop/images/logo/podcast.png"></itunes:image>
+      </item>
+    </channel>
+</rss>
