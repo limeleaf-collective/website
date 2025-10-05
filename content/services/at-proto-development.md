@@ -1,7 +1,7 @@
 +++
 title = "AT Protocol Development"
 description = "Build social applications on AT Protocol with expert guidance from developers and product leaders who understand the ecosystem."
-weight = 3
+weight = 1
 
 [extra]
 feature_photo = ""

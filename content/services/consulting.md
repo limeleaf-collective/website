@@ -1,7 +1,7 @@
 +++
 title = "Fractional CTOs for Rust and Go Projects"
 description = "From code reviews to infrastructure planning, we'll help you ship better software faster."
-weight = 1
+weight = 2
 
 [extra]
 feature_photo = ""
