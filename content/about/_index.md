@@ -54,5 +54,5 @@ Limeleaf and our member-owners are involved in a number of open-source projects.
 - [Helix Editor](https://helix-editor.com), a post-modern text editor written in Rust.
 - [Starship](https://starship.rs), a cross-platform, minimal, blazing-fast, and infinitely customizable prompt.
 
-## Our Founding Members
+
 

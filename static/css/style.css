@@ -1,18 +1,19 @@
-@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600|rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800);
+@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600|rubik:300,300i,400,400i,500,500i,600,600i,700,700i,800|instrument-sans:400,500,600,700,800);
 
 :root {
   --pico-font-family: Inter, "Helvetica Neue", sans-serif;
   --pico-line-height: 1.65;
-  --pico-font-size: calc(14px + 0.390625vw);
-  --pico-font-weight: 375;
+  --pico-color: #000;
+  --pico-font-size: calc(13px + 0.3vw);
+  --pico-font-weight: 385;
   font-feature-settings: normal;
   font-variation-settings: normal;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --pico-background-color: #11191f;
-    --pico-color: #eee;
+    --pico-background-color: #262626;
+    --pico-h1-color: #eee;
     --pico-text-selection-color: rgba(107,180,78, 0.50);
     --pico-primary: #6bb44e;
     --pico-primary-background: #4a7a36;
@@ -21,24 +22,35 @@
     --pico-primary-hover-background: #79bd5c;
     --pico-primary-focus: #a8d394;
     --pico-primary-inverse: #fff;
+    --footer-link: #11191f;
   }
 }
 
 [data-theme=dark] {
-    --pico-background-color: #11191f;
-    --pico-color: #eee;
-    --pico-text-selection-color: rgba(107,180,78, 0.50);
-    --pico-primary: #6bb44e;
-    --pico-primary-background: #4a7a36;
-    --pico-primary-underline: rgba(107,180,78, 0.75);
-    --pico-primary-hover: #79bd5c;
-    --pico-primary-hover-background: #79bd5c;
-    --pico-primary-focus: #a8d394;
-    --pico-primary-inverse: #fff;
+  --pico-background-color: #11191f;
+  --pico-color: #eeeeee;
+  --pico-text-selection-color: rgba(107,180,78, 0.50);
+  --pico-primary: #6bb44e;
+  --pico-primary-background: #4a7a36;
+  --pico-primary-underline: rgba(107,180,78, 0.75);
+  --pico-primary-hover: #79bd5c;
+  --pico-primary-hover-background: #79bd5c;
+  --pico-primary-focus: #a8d394;
+  --pico-primary-inverse: #fff;
 }
 
-[data-theme=light],
-:root:not([data-theme=dark]) {
+[data-theme=light] {
+  --pico-text-selection-color: rgba(107,180,78, 0.50);
+  --pico-primary: #5a9641;
+  --pico-primary-background: #4a7a36;
+  --pico-primary-underline: #5a9641;
+  --pico-primary-hover: #3b612b;
+  --pico-primary-hover-background: #6bb44e;
+  --pico-primary-focus: #4a7a36;
+  --pico-primary-inverse: #fff;
+}
+
+:root {
   --pico-text-selection-color: rgba(107,180,78, 0.50);
   --pico-primary: #5a9641;
   --pico-primary-background: #4a7a36;
@@ -51,50 +63,54 @@
 
 #full-footer {
   display:grid;
-  grid-template-rows:auto 1fr auto;
+  grid-template-rows:1fr auto;
   grid-template-columns:100%;
-  margin-top: 1.5em;
-  min-height:100vh;
-  /* new small viewport height for modern browsers */
-  min-height:100svh;
+  gap: 2rem;
+  min-height:90vh;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-size: var(--pico-font-size);
-  background-color: var(--pico-background-color, #fff);
-  color: var(--pico-color, #11191f);
+  background-color: var(--pico-background-color);
+  color: var(--pico-color);
 }
 
-h1, h2, h3 {
-  font-weight: 425;
-  font-family: "Rubik", sans-serif;
-}
+.hero {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
 
-h1.home {
+h1, h2, h3, h4 {
   font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  font-size: clamp(1.75rem, 4.75vw, 5rem);
-  margin-bottom: 4rem;
+  font-family: "Instrument Sans", sans-serif;
+  color: var(--pico-h1-color);
 }
 
-h1 { 
-  font-size: 3rem;
-  margin: 1em 0;
-  
+.build-with-others h2 {
+    font-size: 1.2rem;
 }
 
-h2 { 
-  font-size: 2rem; 
-  margin: 1em 0;
+.build-with-others h3 {
+    font-size: 1.1rem;
 }
 
-h3 { 
-  font-size: 1.5rem; 
-  margin: 1em 0;
+.our-projects h2 {
+    font-size: 1.2rem;
 }
 
+.text-2xl {
+  font-size: calc(var(--pico-font-size) * 1.25);
+}
+
+.text-3xl {
+  font-size: calc(var(--pico-font-size) * 1.5);
+}
+
+.text-1x2 {
+  font-size: calc(var(--pico-font-size) * .75);
+}
 
 code {
   font-size: 80%;
@@ -117,38 +133,28 @@ hr {
   border-top: 1px solid #999;
 }
 
-hr.header {
-  margin-bottom: 2rem;
-}
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #fff; /* For light theme */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-header nav {
-  text-align: right;
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
   margin-top: 1em;
 }
 
-header nav a {
-  font-family: "Rubik", sans-serif;
+footer nav a {
+  font-family: "Instrument Sans", sans-serif;
   font-weight: 400;
+  color: var(--footer-link);
   text-transform: uppercase;
   margin: 0 0.5rem;
   border: none;
   text-decoration: none;
 }
 
-nav {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	justify-content: flex-end;
-  }
+footer nav a:hover {
+  text-decoration: underline;
+}
 
 main {
   margin-top: 1.75rem;
@@ -165,11 +171,20 @@ audio {
 }
 
 footer {
-  position: sticky;
   background-color: #e9ecef;
   border-top: 1px solid #e9ecef;
   padding: 1em 0;
-  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
 }
 
 footer p {
@@ -203,11 +218,52 @@ footer p {
   display:block;
 }
 
-#hero-image .img {
-  vertical-align: middle;
+.client-logo {
+  max-height: 48px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 1rem 0.5rem;
+  display: inline-block;
 }
 
-.client-logo, .product-logo {
+/* Light mode - use light versions */
+.client-logo[alt="Rocket Science logo"] {
+  content: url('/images/clients/rocket-science-light.svg');
+}
+
+.client-logo[alt="Piton labs logo"] {
+  content: url('/images/clients/piton-labs-light.png');
+}
+
+.client-logo[alt="Worx Printing logo"] {
+  content: url('/images/clients/worxprinting.png');
+}
+
+.client-logo[alt="Rushdown logo"] {
+    content: url('/images/clients/rushdown-logo.png');
+  }
+
+/* Dark mode - use dark versions */
+@media only screen and (prefers-color-scheme: dark) {
+  .client-logo[alt="Rocket Science logo"] {
+    content: url('/images/clients/rocket-science-dark.svg');
+  }
+  
+  .client-logo[alt="Piton labs logo"] {
+    content: url('/images/clients/piton-labs-dark.png');
+  }
+
+  .client-logo[alt="Worx Printing logo"] {
+    content: url('/images/clients/worxprinting-dark.png');
+  }
+
+  .client-logo[alt="Rushdown logo"] {
+    content: url('/images/clients/rushdown-logo-dark.png');
+  }
+}
+
+.product-logo {
   margin-bottom: 1rem;
   height: auto;
   padding: 1rem 0;
@@ -215,16 +271,6 @@ footer p {
   width: 100%;
   align-items: center;
   justify-content: center;
-}
-
-.client-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 180px;
-  height: auto;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
 }
 
 .product-logo img {
@@ -235,6 +281,70 @@ footer p {
     display: block;
   }
 
+  .social-icon {
+    margin: 0 0.35rem;
+    filter: grayscale(100%);
+  }
+
+.row {
+  gap: 3rem;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  border: none;
+}
+
+.project-table tbody tr {
+  border-bottom: none;
+}
+
+.project-table td {
+  border: none;
+}
+
+.project-info-logo {
+  width: 100px;
+  padding: 1rem 1rem 1rem 0;
+  vertical-align: top;
+}
+
+/* Light mode - use light versions */
+.project-logo[alt="Bluesky Directory logo"] {
+    content: url('/images/projects/bluesky-directory-logo.png');
+  }
+
+/* Dark mode - use light versions */
+@media only screen and (prefers-color-scheme: dark) {
+.project-logo[alt="Bluesky Directory logo"] {
+    content: url('/images/projects/bluesky-directory-logo-dark.png');
+  }
+}
+
+.project-info-logo img {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 1rem 0;
+  vertical-align: top;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.project-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
 #partners h2, #clients h2, #products h2  {
   text-align: left;
@@ -247,10 +357,6 @@ footer p {
   text-decoration: none;
   border: 0;
 }
-
-header #logo, header nav {
-    text-align: center;
-  }
 
 .hero-section {
   padding: 1rem 0 4em;
@@ -306,7 +412,7 @@ header #logo, header nav {
 }
 
 .small {
-  font-size: 90%;
+  font-size: .95em;
 }
 
 @media screen and (max-width: 768px) {
@@ -332,9 +438,7 @@ header #logo, header nav {
     padding: 1em 0;
   }
 
-  h1.home {
-    margin-bottom: 0.5em;
-  }
+ 
 
 }
 

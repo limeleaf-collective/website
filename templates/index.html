@@ -22,152 +22,107 @@
 
 {% block content %}
 <main class="container">
-    <section class="hero-section">
+    <section class="main">
         <div class="row">
-            <div class="col-sm">
-                <h1 class="home">Your Tech Experts for Complex Software Projects</h1>
-                <p>We are a worker-owned cooperative that helps teams build fast, reliable, maintainable software using modern programming languages and cutting-edge protocols like ATProto.</p>
-                <div class="hero-cta">
-                    <a href="/contact/" class="btn btn-primary">Start Your Project</a> | 
-                    <a href="/services/" class="btn btn-secondary">Our Services</a>
-                </div>
+            <div class="col-sm hero">
+                <h1 class="text-2xl">
+                    We are a worker-owned cooperative, based in Upstate New York.
+                </h1>
             </div>
         </div>
-    </section>
-    <section class="home services-section">
-        <div class="col-sm">
-            <div class="row">
-                <div class="col-sm services atproto">
-                    <h2 class="service-title">ATProto Development</h2>
-                    <p class="service-description">We build custom tools and social applications for the AT Protocol ecosystem, including <a href="https://bsky.app">Bluesky</a> integrations.</p>
-                    <p><a href="/services/at-proto-development/" class="link">Learn more</a></p>
-                </div>
-                <div class="col-sm services design">
-                    <h2 class="service-title">System Design</h2>
-                    <p class="service-description">We architect and build reliable, highly scalable software systems that solve complex problems.</p>
-                    <p><a href="/services/system-planning-and-architecture/" class="link">Learn more</a></p>
-                </div>
-                <div class="col-sm services consulting">
-                    <h2 class="service-title">Consulting</h2>
-                    <p class="service-description">Switching to Rust or Go? Need help with a complex project? From code reviews to infrastructure planning, we'll help you ship better software faster.</p>
-                    <p><a href="/services/consulting/" class="link">Learn more</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="products">
-        <h2>Our Products</h2>
-        <p>We make small-tech products that prioritize user privacy, openness, and platform independence.</p>
         <div class="row">
-            {% set section = get_section(path="products/_index.md") %}
-            {% for page in section.pages %}
-            <div class="col-md" {% if loop.index % 2==0 %}{% endif %}>
-                {% if page.extra.feature_photo != "" %}
-                <div class="row">
-                    <div class="product-logo box">
-                        <a href="{{ page.extra.product_site_url }}">
-                            <img src="{{ get_url(path=page.extra.feature_photo) }}"
-                                alt="{{ page.extra.feature_photo_alt }}">
-                        </a>
+            <div class="col-sm-5 build-with-others">
+                <h2>We build software with others</h2>
+                <p>
+                    We build fast, reliable, maintainable software using modern programming languages.
+                </p>
+                <p>
+                    Whether you need help: planning, optimizing, getting your project over the line, or someone to build your software platform from scratch, we can help.
+                </p>
+                <h3>Who we've worked with</h3>
+                <div>
+                    <a href="https://meta.com"><img width="48px" class="client-logo" src="images/clients/meta.svg" alt="Meta logo"></a>
+                    <a href="https://google.com"><img width="48px" class="client-logo" src="images/clients/google.svg" alt="Google logo"></a>
+                    <a href="https://netflix.com"><img width="48px" class="client-logo" src="images/clients/netflix.svg" alt="Netflix logo"></a>
+                    <a href="https://jwp.com"><img width="48px" class="client-logo" src="images/clients/jwp-logo.png" alt="JWP logo"></a>
+                    <a href="https://nytimes.com"><img width="48px" class="client-logo" src="images/clients/nyt.svg" alt="NYT logo"></a>
+                    <a href="https://cloudflare.com"><img width="48px" class="client-logo" src="images/clients/cloudflare.svg" alt="Cloudflare logo"></a>
+                    <br/>
+                    <a href="https://pitonlabs.com"><img width="96px" class="client-logo" src="images/clients/piton-labs.png" alt="Piton labs logo"></a>
+                    <a href="https://rocketscience.gg"><img width="96px" class="client-logo" src="images/clients/rocket-science.svg" alt="Rocket Science logo"></a>
+                    <a href="https://colab.coop"><img width="96px" class="client-logo" src="images/clients/colab.svg" alt="Colab logo"></a>
+                    <a href="https://fandemicapp.com"><img width="96px" class="client-logo" src="images/clients/fandemic.png" alt="Fandemic logo"></a>
+                    <a href="https://worxprinting.com"><img width="96px" class="client-logo" src="images/clients/worxprinting.png" alt="Worx Printing logo"></a>
+                    <a href="https://rushdown.com"><img width="96px" class="client-logo" src="images/clients/rushdown-logo.png" alt="Rushdown logo"></a>
+                </div>
+                <h3>Technologies we champion</h3>
+                <div class="project-info">
+                    <ul>
+                        <li><a href="https://rust-lang.org">Rust</a></li>
+                        <li><a href="https://atproto.com">AT Protocol</a></li>
+                        <li><a href="https://golang.org">Go</a></li>
+                        <li><a href="https://harelang.org">Hare</a></li>
+                        <li><a href="{{ get_url(path="@/about/_index.md") }}" class="link" title="About Limeleaf"><i>Learn more</i></a></li>
+                    </ul>
+                </div>
+                <h3>Get in touch</h3>
+                <p>
+                    We would love to chat about your project and how we can help!
+                </p>
+                <div>
+                    <div class="flex gap-4">
+                        <a href="https://bsky.app/profile/limeleaf.coop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32" class="social-icon"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"/></svg></a>
+                        <a href="https://social.coop/@limeleaf"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" class="social-icon"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zM357.9 304.3l-46.6 0 0-114.2c0-49.7-64-51.6-64 6.9l0 62.5-46.3 0 0-62.5c0-58.5-64-56.6-64-6.9l0 114.2-46.7 0c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175l0 0z"/></svg></a>
+                        <a href="mailto:info@limeleaf.coop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32" class="social-icon"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc. --><path fill="currentColor" d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z"/></svg></a>
                     </div>
                 </div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-md small">
-                        {{ page.summary | safe }}
-                    </div>
-                </div>
             </div>
-            {% endfor %}
-        </div>
-    </section>
-    <section id="clients">
-        <h2>Our Clients</h2>
-        <div class="row">
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://worxprinting.coop">
-                        <img src="{{ get_url(path='images/clients/worxprinting.png') }}" alt="Worx Printing">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://rushdownstudio.com">
-                        <img src="{{ get_url(path='images/clients/rushdown-logo.png') }}" alt="Rushdown Studios">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://pitonlabs.com">
-                        <img src="{{ get_url(path='images/clients/piton-labs.png') }}" alt="Piton Labs">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://rocketscience.gg">
-                        <img src="{{ get_url(path='images/clients/rocket-science.svg') }}" alt="Rocket Science Group">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://colab.coop">
-                        <img src="{{ get_url(path='images/partners/colab.svg') }}" alt="Colab">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://www.fandemicapp.com">
-                        <img src="{{ get_url(path='images/clients/fandemic.png') }}" alt="Fandemic">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://www.coloradodrivers.coop">
-                        <img src="{{ get_url(path='images/partners/drivers-coop-colorado.svg') }}" alt="Drivers Cooperative - Colorado">
-                    </a>
-                </div>
+            <div class="col-sm-5 col-sm-offset-1 our-projects">
+                <h2>Our projects</h2>
+                <p>
+                    We make tech products that prioritize user privacy, openness, and platform independence.
+                </p>
+                <table class="project-table">
+                    <tbody>
+                        <tr>
+                            <td class="project-info-logo">
+                                <a href="https://apply.coop/">
+                                    <img class="project-logo"src="images/projects/apply-logo.svg" alt="apply.coop logo">
+                                </a>
+                            </td>
+                            <td class="project-info">
+                                <h3>apply.coop</h3>
+                                <p>Connecting qualified job-seekers with opportunities at worker owned and democratically managed orgs. <a href="https://apply.coop/">Learn more</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="project-info-logo">
+                                <a href="https://blueskydirectory.com/">
+                                    <img class="project-logo" src="images/projects/bluesky-directory-logo.png" alt="Bluesky Directory logo">
+                                </a>
+                            </td>
+                            <td class="project-info">
+                                <h3>Bluesky Directory</h3>
+                                <p>A curated collection of all things relating to the Bluesky social media platform. <a href="https://blueskydirectory.com/">Learn more</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="project-info-logo">
+                                <a href="https://limecast.net/">
+                                    <img src="images/projects/limecast-logo.svg" alt="Limecast logo">
+                                </a>
+                            </td>
+                            <td class="project-info">
+                                <h3>Limecast</h3>
+                                <p>A Privacy-First Podcasting Platform. <a href="https://limecast.net/">Learn more</a></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </section>
-    <section id="partners">
-        <h2>Our Partners</h2>
-        <div class="row">
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://about.flipboard.com">
-                        <img src="{{ get_url(path='images/partners/flipboard.svg') }}" alt="Flipboard">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://comp.coop">
-                        <img src="{{ get_url(path='images/partners/comp-coop.svg') }}" alt="Comp.coop">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://farox.coop/en">
-                        <img src="{{ get_url(path='images/partners/farox.svg') }}" alt="Farox">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="client-logo">
-                    <a href="https://patio.coop">
-                        <img src="{{ get_url(path='images/partners/patio.png') }}" alt="Patio">
-                    </a>
-                </div>
-            </div>
+
+                
         </div>
     </section>
 </main>

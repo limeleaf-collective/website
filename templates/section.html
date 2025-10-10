@@ -84,7 +84,7 @@
   <h1>{{section.title}}</h1>
   <p><i>{{ section.description }}</i></p>
   <hr class="header" />
-  <p>{{section.content | safe }}</p>
+  <h2>Our Founding Members</h2>
     {% for page in section.pages %}
       <div {% if loop.index % 2 == 0 %}{% endif %}>
       <div class="container">
@@ -104,6 +104,8 @@
       </div>
       </div>
     {% endfor %}
+    
+    <p>{{section.content | safe }}</p>
   {% endif %}
 </main>
 {% endblock content %}
